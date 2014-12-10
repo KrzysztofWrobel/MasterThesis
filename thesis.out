@@ -1,0 +1,68 @@
+\BOOKMARK [0][]{chapter*.2}{List of Figures}{}% 1
+\BOOKMARK [0][]{chapter*.3}{List of Tables}{}% 2
+\BOOKMARK [0][]{chapter*.4}{Glossary}{}% 3
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 4
+\BOOKMARK [1][]{section.1.1}{1.1 Purpose of this thesis}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.2}{1.2 Scope}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.3}{1.3 Initial assumptions}{chapter.1}% 7
+\BOOKMARK [1][]{section.1.4}{1.4 Thesis Outline}{chapter.1}% 8
+\BOOKMARK [0][]{chapter.2}{2 Fundamentals}{}% 9
+\BOOKMARK [1][]{section.2.1}{2.1 3-D reconstruction in general}{chapter.2}% 10
+\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Feature extraction and correspondence matching}{section.2.1}% 11
+\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Fundamental \046 Essential Matrices}{section.2.1}% 12
+\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Triangulation}{section.2.1}% 13
+\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 Common problems}{section.2.1}% 14
+\BOOKMARK [1][]{section.2.2}{2.2 Structure from Motion}{chapter.2}% 15
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 Relative Pose Estimation}{section.2.2}% 16
+\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Homography estimation}{section.2.2}% 17
+\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Projective Factorization}{section.2.2}% 18
+\BOOKMARK [2][]{subsection.2.2.4}{2.2.4 Bundle Adjustment}{section.2.2}% 19
+\BOOKMARK [2][]{subsection.2.2.5}{2.2.5 Common problems}{section.2.2}% 20
+\BOOKMARK [1][]{section.2.3}{2.3 Mobile Sensors overview}{chapter.2}% 21
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Accelerometer}{section.2.3}% 22
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Gyroscope}{section.2.3}% 23
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 Magnetometer}{section.2.3}% 24
+\BOOKMARK [2][]{subsection.2.3.4}{2.3.4 Sensor Fusion}{section.2.3}% 25
+\BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 26
+\BOOKMARK [0][]{chapter.4}{4 Requirements}{}% 27
+\BOOKMARK [1][]{section.4.1}{4.1 Overview}{chapter.4}% 28
+\BOOKMARK [1][]{section.4.2}{4.2 Functional requirements}{chapter.4}% 29
+\BOOKMARK [1][]{section.4.3}{4.3 Technical requirements}{chapter.4}% 30
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Smartphone with Camera, Accelerometer, Gyroscope \046 Magnetometer}{section.4.3}% 31
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Desktop app for data processing}{section.4.3}% 32
+\BOOKMARK [0][]{chapter.5}{5 Concept}{}% 33
+\BOOKMARK [1][]{section.5.1}{5.1 Enhancing fundamental equation}{chapter.5}% 34
+\BOOKMARK [2][]{subsection.5.1.1}{5.1.1 Rotation enhancements}{section.5.1}% 35
+\BOOKMARK [2][]{subsection.5.1.2}{5.1.2 Rotation \046 translation enhancements}{section.5.1}% 36
+\BOOKMARK [1][]{section.5.2}{5.2 Enhancing essential equation}{chapter.5}% 37
+\BOOKMARK [2][]{subsection.5.2.1}{5.2.1 Rotation enhancements}{section.5.2}% 38
+\BOOKMARK [2][]{subsection.5.2.2}{5.2.2 Rotation \046 translation enhancements}{section.5.2}% 39
+\BOOKMARK [1][]{section.5.3}{5.3 Alternative 3-point algorithm}{chapter.5}% 40
+\BOOKMARK [1][]{section.5.4}{5.4 Alternative 1-point algorithm}{chapter.5}% 41
+\BOOKMARK [1][]{section.5.5}{5.5 Pose estimation}{chapter.5}% 42
+\BOOKMARK [2][]{subsection.5.5.1}{5.5.1 Rotation enhancements}{section.5.5}% 43
+\BOOKMARK [2][]{subsection.5.5.2}{5.5.2 Rotation \046 translation enhancements}{section.5.5}% 44
+\BOOKMARK [0][]{chapter.6}{6 Implementation}{}% 45
+\BOOKMARK [1][]{section.6.1}{6.1 Environment}{chapter.6}% 46
+\BOOKMARK [1][]{section.6.2}{6.2 Project Structure}{chapter.6}% 47
+\BOOKMARK [2][]{subsection.6.2.1}{6.2.1 Android application}{section.6.2}% 48
+\BOOKMARK [2][]{subsection.6.2.2}{6.2.2 OSX CMake base project}{section.6.2}% 49
+\BOOKMARK [1][]{section.6.3}{6.3 Important Implementation Aspects}{chapter.6}% 50
+\BOOKMARK [2][]{subsection.6.3.1}{6.3.1 Custom Sensor Data File format}{section.6.3}% 51
+\BOOKMARK [1][]{section.6.4}{6.4 Graphical User Interface}{chapter.6}% 52
+\BOOKMARK [1][]{section.6.5}{6.5 Documentation}{chapter.6}% 53
+\BOOKMARK [0][]{chapter.7}{7 Evaluation}{}% 54
+\BOOKMARK [1][]{section.7.1}{7.1 Test Environment}{chapter.7}% 55
+\BOOKMARK [2][]{subsection.7.1.1}{7.1.1 Synthetic Data}{section.7.1}% 56
+\BOOKMARK [2][]{subsection.7.1.2}{7.1.2 Real world Data}{section.7.1}% 57
+\BOOKMARK [1][]{section.7.2}{7.2 Usability}{chapter.7}% 58
+\BOOKMARK [1][]{section.7.3}{7.3 Performence}{chapter.7}% 59
+\BOOKMARK [2][]{subsection.7.3.1}{7.3.1 Accuracy comparison}{section.7.3}% 60
+\BOOKMARK [2][]{subsection.7.3.2}{7.3.2 Time comparison}{section.7.3}% 61
+\BOOKMARK [0][]{chapter.8}{8 Conclusion}{}% 62
+\BOOKMARK [1][]{section.8.1}{8.1 Summary}{chapter.8}% 63
+\BOOKMARK [1][]{section.8.2}{8.2 Dissemination}{chapter.8}% 64
+\BOOKMARK [1][]{section.8.3}{8.3 Problems Encountered}{chapter.8}% 65
+\BOOKMARK [1][]{section.8.4}{8.4 Future work}{chapter.8}% 66
+\BOOKMARK [0][]{chapter.9}{9 Materials \046 methods}{}% 67
+\BOOKMARK [0][]{chapter*.5}{References}{}% 68

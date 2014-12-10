@@ -1,0 +1,53 @@
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- name of chapter  -------------------------
+\chapter{Concept} % top level followed by section, subsection
+As indicated in similar research it's very attractive to use additional data to enhance reconstruction and reduce ambiguity in finding correct solution of 3D reconstruction. It also helps to achive faster, more stable and robust algorithms. This thesis will show how prior knowledge of rotation or translation can be used to faster process 3D reconstruction of series of images. 
+However there are many algorithms, which relay on accuracy of additional rotation and translation data. In reality especially, when it comes to hand-held smartphones, collected data are very noisy and unstable. That's why this thesis also proposes enhancements of most popular algorytmic approaches, when noisy data are used.
+
+\section{Requirements}
+Proposed methodology needs as the input series of images with additional information about position of the camera - euclidan rotation and optionally translation. Usage of smartphone is actually not necessary. Any camera with SensorFusioned accelerometer and gyroscope(magnotometer is optional and as discussed in 2.5??? has its up and downsides) capable of storing pictures and sensor data can be used. During algorithm runtime either both rotation and translation informations are used or just rotation, which as indicated in ....??? is less noisy than translation estimation. Internal camera parameters need to be calculated before reconstruction process is began. Additional sensor data can be unaccurate and noisy.
+\section{Enhancing fundamental equation}
+Taking standard fundamental geometry equation and relative camera based system (P = [I|0], P' = [R|t]) we can note that:
+\begin{equation} \label{eq:relativeFundamntal}
+{x}'^{T} * K^{-T} * [T]_{x} * R * K^{-1} = 0
+\end{equation}
+It's also good to note that:
+\begin{equation} \label{eq:skewTranslation}
+[T]_{x} = \begin{bmatrix} 0 & -t_{z} & t_{y}\\ t_{z} & 0 & -t_{x}\\ -t_{y} & t_{x} & 0 \end{bmatrix} where T = [t_{x},t_{y},t_{z}]
+\end{equation}
+As we were discussing both rotation and translation can be distorted with noise. This can be written as:
+\begin{equation} \label{eq:Rerror}
+R = R_{init} * R_{error}
+\end{equation}
+where $R_{init}$ is rotation matrix from measured angles and $R_{error}$ is rotation matrix of angles errors. Analogically
+\begin{equation} \label{eq:TransError}
+[T]_{x} = [T_{init}]_{x} * [T_{error}]_{x} 
+\end{equation}
+
+\subsection{Rotation enhancements}
+\subsection{Rotation \& translation enhancements}
+\section{Enhancing essential equation}
+\subsection{Rotation enhancements}
+\subsection{Rotation \& translation enhancements}
+\section{Pose estimation}
+\subsection{Rotation enhancements}
+\subsection{Rotation \& translation enhancements}
+\subsection{Alternative 3-point algorithm for translation finding}
+
+\section{Reconstruction process strategy}
+Description of steps in whole reconstruction pipeline depending on which data are present and what accuracy and convergence speed we need.
+Approaches:
+1) Known rotations and translations -> feature finding and outliers removal -> triangulation/pose estimation -> with or without BA (to reduce outliers further)
+2) Noisy rotations and translations -> feature finding and outliers removal -> with or without BA -> super convergance
+3) Noisy rotations and translations -> feature finding and outliers removal -> dR and dT estimation from modified essential decomposition -> with or without BA -> better accuracy and robustness
+4) Noisy rotation -> feature finding and outliers removal -> translation from essential decomposition or pose estimation -> with or without BA -> better accuracy and robustness
+5) Noisy rotation -> feature finding and outliers removal -> translation from essential decomposition or pose estimation -> with or without BA -> better accuracy and robustness
+6) Known rotations -> feature finding and outliers removal -> Alternative 3-point algorithm for translation finding -> triangulation/pose estimation -> with or without BA (to reduce outliers further)
+
+
+% ---------------------------------------------------------------------------
+%: ----------------------- end of thesis sub-document ------------------------
+% ---------------------------------------------------------------------------
+

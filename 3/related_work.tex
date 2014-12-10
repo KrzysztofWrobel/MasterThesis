@@ -1,0 +1,28 @@
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+%: ----------------------- name of chapter  -------------------------
+\chapter{Related Work} % top level followed by section, subsection
+There are many approaches to the problems, from raw one by one pixel analysis to high level abstraction of objects, light and shadows estimation[some references to each].However this thesis does not focus on high-level abstraction reconstruction, but focuses on refining relative poses estimation steps. In order to estimates especially first two relative positions of cameras essential matrix must be decomposed.
+Since basic epipolar geometry equation many scientist introduced a way to solve this linear problems, where the main differences were in terms of accuracy and speed. One of the first was 8-point algorithm[reference], which can be used to compute a fundamental matrix. This is done without any prior knowledge of the scene, as well as camera parameters. Still to find relative position knowledge of internal camera parameters is needed in order to calculate and decompose Essential Matrix. Later on 5-point algorithm approaches were introduced[references], which needed  prior knowledge of internal camera parameters. David Nister in his paper shows that 5-point outperforms almost all similar algorithms in terms of accuracy and speed. Only 8-point algorithm can be competitive, when it comes to forward image sequences. One of the state-of-art real-time and roboust approaches is iterative 5-pt Algorithm created by Vincent Lui
+and Tom Drummond[].
+
+ Most of algorithms are very sensitive to presence of outliers. One of the most common approach is to use of RANSAC modelling[refining estimates], where iteratively  subset of data is chosen to find a solution and then other points are checked, if they also satisfy equation with calculated solution.
+
+Research group from Technishe Univeristät Berlin  made an comparison and evaluation of methods, which were published at that point. It turned out that estimation of camera rotation is much more stable than translation. Also there are a lot of ambiguities in terms of choosing the correct solution of epipolar geometry equation. 
+
+In certain situation where external camera parameters as rotation and translation can be measured more accurate algorithms were proposed.  In 2011 D. Scaramuzza from Zurich proposed a 1-point algorithm[reference], which shows how to describe and use model of camera mounted on a car to enhance 3D reconstruction. Introduced in 2013  4- point algorithm, which uses information of rotation angle in certain axis from additional sensor as show in paper[reference] can outperform even some versions 5-point algorithm. Lately scientists are creating more complex models to estimates relative stereometry. For instance group from Zurich proposed a way to enhance reconstruction with additional 6DOF sensor [Robust Real-Time Visual Odometry with a Single Camera and an IMU].
+
+There are also different approaches like [Line-Based Relative Pose Estimation], where it's shown how to estimates the relative pose from 3  lines with two of the lines parallel and orthogonal to the third. Very accurate estimations also can be achieved when there is no camera rotation[Epipole Estimation under Pure Camera Translation*]. All these references shows that enhanced models help to achieve often faster more accurate solution.
+
+Accuracy and speed are very important, when it comes to create systems capable of augmenting our reality. One of first successful systems for such situations were proposed by research group[PTAM]. They showed how two simultaneously working threads can be used to both create model of environment and use this knowledge to apply graphical effects to objects presented on stream camera video. Also some of these concepts where applied already even to robotic vision. Authors showed efficiency of proposed system for robot walking in cluttered indoor workspaces[MonoSLAM: Real-Time Single Camera SLAM].
+
+The most important things, which can be concluded are rotation estimation is more stable than translation estimation and the more well described model of setup.
+%In terms of position tracking for mobile devices there are also many interesting scientific papers
+
+
+% ---------------------------------------------------------------------------
+%: ----------------------- end of thesis sub-document ------------------------
+% ---------------------------------------------------------------------------
+
+%Issues in 3D Reconstruction from Multiple Views - > Problems
