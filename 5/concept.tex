@@ -3,48 +3,187 @@
 
 %: ----------------------- name of chapter  -------------------------
 \chapter{Concept} % top level followed by section, subsection
+Here general concept will be described without details about descriptors used and so on...
 As indicated in similar research it's very attractive to use additional data to enhance reconstruction and reduce ambiguity in finding correct solution of 3D reconstruction. It also helps to achive faster, more stable and robust algorithms. This thesis will show how prior knowledge of rotation or translation can be used to faster process 3D reconstruction of series of images. 
-However there are many algorithms, which relay on accuracy of additional rotation and translation data. In reality especially, when it comes to hand-held smartphones, collected data are very noisy and unstable. That's why this thesis also proposes enhancements of most popular algorytmic approaches, when noisy data are used.
+However there are many algorithms, which relay on accuracy of additional rotation and translation data. In reality especially, when it comes to hand-held smartphones, collected data are very noisy. That's why this thesis also proposes enhancements of most popular algorytmic approaches, when noisy data are used.
 
 \section{Requirements}
-Proposed methodology needs as the input series of images with additional information about position of the camera - euclidan rotation and optionally translation. Usage of smartphone is actually not necessary. Any camera with SensorFusioned accelerometer and gyroscope(magnotometer is optional and as discussed in 2.5??? has its up and downsides) capable of storing pictures and sensor data can be used. During algorithm runtime either both rotation and translation informations are used or just rotation, which as indicated in ....??? is less noisy than translation estimation. Internal camera parameters need to be calculated before reconstruction process is began. Additional sensor data can be unaccurate and noisy.
-\section{Enhancing fundamental equation}
-Taking standard fundamental geometry equation and relative camera based system (P = [I|0], P' = [R|t]) we can note that:
+Proposed methodology needs as the input series of images with additional information about position of the camera - euclidan rotation and optionally translation. Usage of smartphone is actually not necessary. Any camera with SensorFusioned accelerometer and gyroscope(magnotometer is optional and as discussed in 2.5??? has its up and downsides) capable of storing pictures and sensor data can be  used. During algorithm runtime either both rotation and translation informations are used or just rotation, which as indicated in ....??? is less noisy than translation estimation. Internal camera parameters need to be calculated before reconstruction process is began. Additional sensor data can be unaccurate and noisy.
+\section{Reconstruction process strategy}
+Both Epipolar equations and Pose Estimation improvments can be used in different configurations. It's expected that some of them are more accurate and some are faster. It was necessery to evaluate this approaches both in term of speed and accuracy.   Author of this thesis proposes environment, where user can decide what type of stargy she/he wants to use. In terms of initialization of 3D cloud point reconstraction can be made using: 
+%TODO zrobic tabelke
+\begin{enumerate}
+\item Known rotatations and translations - relative poses are calculated from sensor data - euclidan reconstruction
+\item Known rotations - Alternative 3-point algorithm for translation finding or enhanced fundamental/essential
+\item Noisy rotation - enhanced fundamental/essential for dR and translation
+\item No known extrisinc parameters - standard fundamental/essential for R and Translation
+\end{enumerate}
+Later one new images are analized in comparison to previous one to enrich initial cloud point with new points. It's only necessery to keep track of each 3D cloud point corresponding 2D positions in images. In terms of Pose Estimation following methodologies can be used:
+\begin{enumerate}
+\item Known rotatation and translations - no additional calculations, just triangulation - euclidan reconstruction
+\item Known rotation - looking for relative translation by backProjection optimisations
+\item Noisy rotation - looking for dR and translation by backProjection optimisations
+\item No known extrisinc parameters - standard pose estimation
+\end{enumerate}
+Of cource in all of this steps it's really important to have as minimum outliers as possible. All of this methods are pretty good in terms of removing outliers, espiecially when connected with RANSAC algorithm.
+
+\section{Enhancing epipolar geometry equation}
+\subsection{Rotation enhancements}
+Taking standard fundamental geometry equation and relative camera based system ($P = \begin{bmatrix}I |0\end{bmatrix}, P' = \begin{bmatrix}R|t\end{bmatrix}$) we can note that:
 \begin{equation} \label{eq:relativeFundamntal}
-{x}'^{T} * K^{-T} * [T]_{x} * R * K^{-1} = 0
+{x}_{'}^{T} * K^{-T} * \begin{bmatrix}T\end{bmatrix}_{x} * R * K^{-1} * x = 0
 \end{equation}
 It's also good to note that:
 \begin{equation} \label{eq:skewTranslation}
-[T]_{x} = \begin{bmatrix} 0 & -t_{z} & t_{y}\\ t_{z} & 0 & -t_{x}\\ -t_{y} & t_{x} & 0 \end{bmatrix} where T = [t_{x},t_{y},t_{z}]
+\begin{bmatrix}T\end{bmatrix}_{x} = 
+\begin{bmatrix*}[c]
+ 0 & -t_{z} & t_{y}\\
+ t_{z} & 0 & -t_{x}\\
+-t_{y} & t_{x} & 0 
+\end{bmatrix*} 
+where T = \begin{bmatrix}t_{x},t_{y},t_{z}\end{bmatrix}
 \end{equation}
 As we were discussing both rotation and translation can be distorted with noise. This can be written as:
 \begin{equation} \label{eq:Rerror}
-R = R_{init} * R_{error}
+R = R_{error} * R_{init} 
 \end{equation}
-where $R_{init}$ is rotation matrix from measured angles and $R_{error}$ is rotation matrix of angles errors. Analogically
-\begin{equation} \label{eq:TransError}
-[T]_{x} = [T_{init}]_{x} * [T_{error}]_{x} 
+where $R_{init}$ is rotation matrix from measured angles and $R_{error}$ is rotation matrix of angles errors.
+Looking at this from different point of view \ref{eq:Rerror} can be interpreted as multipling two rotations matrix: 
+One estimated, but close to local optimum initial rotation matrix and second one correcting noise error rotation matrix. 
+Basic idea of algorithm proposed in this thesis is instead of R calculation, which as described in [reference] can be acquired from Essential matrix SVD decomposition, $R_{error}$ will be estimated. In the end \ref{eq:relativeFundamntal} can be rewritten in form:
+\begin{equation} \label{eq:relativeFundamntalEnhanced}
+{x}_{'}^{T} * K^{-T} * \begin{bmatrix}T\end{bmatrix}_{x} * R_{error} * R_{init} * K^{-1} * x = 0
+\end{equation}
+Having:
+\begin{equation} \label{eq:leftRelative}
+\begin{array}{lcl}
+h_{'}^{T} &=& {x}_{'}^{T} * K^{-T} \\
+h &=& R_{init} * K^{-1} * x \\
+G &=& \begin{bmatrix}T\end{bmatrix}_{x} * R_{error} \\
+\end{array}
 \end{equation}
 
-\subsection{Rotation enhancements}
-\subsection{Rotation \& translation enhancements}
-\section{Enhancing essential equation}
-\subsection{Rotation enhancements}
-\subsection{Rotation \& translation enhancements}
-\section{Pose estimation}
-\subsection{Rotation enhancements}
-\subsection{Rotation \& translation enhancements}
+With such notation one can notice that
+\begin{equation} \label{eq:alternativeEnhancedEquation}
+{h}_{'}^{T} * G * h = 0
+\end{equation}
+quite resembles both standard fundamental and essential equation [reference]. Of cource $h_{'}$ and h are both homogenous. From analysis it's known that G has 6DOF: 3 due to unknown translation and 3 due to unknown correction angles. From theory such matrix can be resolved for instance by both 5 and 8-point algorithms. So basicly standard fundamental and essential equation solvers can be used in order to retrieve both $\begin{bmatrix}T\end{bmatrix}_{x}$ and $R_{error}$ in order to resolve some common problems in retrieving correct solution and improve accuracy. 
+In the end estimated $R_{error}$ and calculated $R_{init}$ can be multiplied to retrieve new rotation R (\ref{eq:Rerror}).
+Also to reduce error estimation using Rodigues parametrization, when the angles are small(and they indeed are because only small error is present in sensor data) we can note that $R_{error}$ in fact is more or less equals to:
+\begin{equation}
+R_{error} \cong 
+\begin{bmatrix*}[c]
+ 1& -w_{z}  &w_{y}\\ 
+ w_{z} &1  & -w_{x}\\
+  -w_{y}&  w_{x}&1
+\end{bmatrix*}
+\end{equation} 
+[Refernece to Hartley]. It can be used when decomposing G to ensure proper decomposition.
 \subsection{Alternative 3-point algorithm for translation finding}
+Starting \ref{eq:alternativeEnhancedEquation} it can be written that:
+\begin{equation} \label{eq:alternative3point}
+{x}_{'}^{T} * K^{-T} * \begin{bmatrix*}[c]
+ 0 & -t_{z} & t_{y}\\
+ t_{z} & 0 & -t_{x}\\
+-t_{y} & t_{x} & 0 
+\end{bmatrix*} * R * K^{-1} * x = 0
+\end{equation}
+Having:
+\begin{equation} \label{eq:leftRelative}
+\begin{array}{lcl}
+h_{'}^{T} &=& {x}_{'}^{T} * K^{-T} \\
+h &=& K^{-1} * x \\
+\end{array}
+\end{equation}
+\begin{equation} \label{eq:alternative3point}
+\begin{bmatrix*}[c]
+h_{'1} & h_{'2} & h_{'3}
+\end{bmatrix*}
+* \begin{bmatrix*}[c]
+ 0 & -t_{z} & t_{y}\\
+ t_{z} & 0 & -t_{x}\\
+-t_{y} & t_{x} & 0 
+\end{bmatrix*} 
+* \begin{bmatrix*}[c]
+h_{1} \\
+h_{2} \\
+h_{3}
+\end{bmatrix*}
+= 0
+\end{equation}
+and multiplying it we will end up with
+\begin{equation} \label{eq:alternative3point}
+h_{1}*h_{'2}*t_{z} - h_{1}*h_{'3}*t_{y} - h_{2}*h_{'1}*t_{z} + h_{2}*h_{'3}*t_{x} + h_{3}*h_{'1}*t_{y} - h_{3}*h_{'2}*t_{x}
+= 0
+\end{equation}
+what can be grouped:
+\begin{equation}
+t_{x} * (h_{2}*h_{'3} - h_{3}*h_{'2}) + t_{y} * (h_{3}*h_{'1} - h_{1}*h_{'3}) + t_{z} * (h_{1}*h_{'2} - h_{2}*h_{'1}) = 0
+\end{equation}
+rewritten as:
+\begin{equation}
+\begin{bmatrix*}[c]
+t_{x} &
+t_{y} &
+t_{z}
+\end{bmatrix*} * \begin{bmatrix*}[c]
+(h_{2}*h_{'3} - h_{3}*h_{'2}) \\ 
+(h_{3}*h_{'1} - h_{1}*h_{'3}) \\
+(h_{1}*h_{'2} - h_{2}*h_{'1}) 
+\end{bmatrix*} 
+= 0
+\end{equation}
+and solved for instance with SVD with only 3 points. This is very attractive way of reconstracting images from only 3 points especially in terms of speed. Overall accuracy strictly relies on precise measuerments of camera orientation.
+\subsection{Translation enhancements}
+It's known that without any additional informations about photographed scene or exact translation of camera scale cannot be retrived and only affine reconstruction can be done. As descriped in [ref] using SensorFusion linear acceleration of the capable camera can be calculated. Combining it with certain robust heuristic for movement estimation and low-pass filter relative/global translation of the camera can also be estimated. This information can be used to perform Euclidan reconstruction. Calculated T from G decomposition(\ref{eq:gMatrix}) can be combined with $T_{global}$ acquired by double integration of linear acceleration. Due to double integration error can be big, but in general it's almost the same in every direction. It may not be perfect, but still it can help to estimate range of euclidian reconstruction.
+\section{Pose estimation}
+Different approaches to continous multiview 3D reconstruction were discussed. This research main goal was to make it more accurate and faster. That is way it focuses on pose estimation instead of homographies merging. This is also good in terms of keeping scale in between next image analysis. For any point in image following condition is kept:
+\begin{equation} \label{eq:projectionEquation}
+ x = P * X
+\end{equation}
+where x is homogenous image point (x , y , 1) and X homogenous 3D  point (X , Y , Z , 1). Of course 
+\begin{equation} \label{eq:projectionEquation}
+ P = K * \begin{bmatrix}R\mid t\end{bmatrix}
+\end{equation}
+\subsection{Known rotations \& translations}
+In situation were rotations and translations of cameras are known no aditional calculations are needed. Both rotation and translation of the camera can be estimated from sensors. Such situation is interesting, because there is already everything needed for triangulation of points. To resolve inaccuracy of especially translation measurements standard Bundle Adjustment methods can be used in order to refine reconstruction results.
+\subsection{Rotation enhancements}
+Using similar thinking as in previous section[ref] we can note that:
 
-\section{Reconstruction process strategy}
-Description of steps in whole reconstruction pipeline depending on which data are present and what accuracy and convergence speed we need.
-Approaches:
-1) Known rotations and translations -> feature finding and outliers removal -> triangulation/pose estimation -> with or without BA (to reduce outliers further)
-2) Noisy rotations and translations -> feature finding and outliers removal -> with or without BA -> super convergance
-3) Noisy rotations and translations -> feature finding and outliers removal -> dR and dT estimation from modified essential decomposition -> with or without BA -> better accuracy and robustness
-4) Noisy rotation -> feature finding and outliers removal -> translation from essential decomposition or pose estimation -> with or without BA -> better accuracy and robustness
-5) Noisy rotation -> feature finding and outliers removal -> translation from essential decomposition or pose estimation -> with or without BA -> better accuracy and robustness
-6) Known rotations -> feature finding and outliers removal -> Alternative 3-point algorithm for translation finding -> triangulation/pose estimation -> with or without BA (to reduce outliers further)
+\begin{equation} \label{eq:projectionRotError1}
+\begin{array}{rcl}
+ x & = & K * \begin{bmatrix}Rinit + dR\mid t\end{bmatrix} * X \\
+ x & = & K * \begin{bmatrix}Rinit\mid 0\end{bmatrix} * X + K * \begin{bmatrix}dR\mid t\end{bmatrix} * X \\
+ x - K * \begin{bmatrix}Rinit\mid 0\end{bmatrix} & = & K * \begin{bmatrix}dR\mid t\end{bmatrix} * X
+\end{array}
+\end{equation}
+Substituting $x_{m} = x - K * \begin{bmatrix}Rinit\mid 0\end{bmatrix}$ we get: 
+\begin{equation} \label{eq:projectionRotError2}
+x_{m} = K * \begin{bmatrix}dR\mid t\end{bmatrix} * X
+\end{equation}
+This can be solved using normal PNP calculating algorithms. It's known that orientation estimation is more accurate than translation estimation using SensorFusion and this approach allows very accurate calculation of rotation error matrix dR and translation t, which keeps the scale of initially reconstructed points cloud.
+\subsection{Rotation \& translation enhancements}
+Similar to \ref{eq:projectionRotError1}:
+\begin{equation} \label{eq:projectionRotError3}
+\begin{array}{rcl}
+ x & = & K * \begin{bmatrix}Rinit + dR\mid Tinit + dt\end{bmatrix} * X \\
+ x & = & K * \begin{bmatrix}Rinit\mid Tinit\end{bmatrix} * X + K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X \\
+ x - K * \begin{bmatrix}Rinit\mid Tinit\end{bmatrix} & = & K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X
+\end{array}
+\end{equation}
+end in the end by Substituting $x_{n} = x - K * \begin{bmatrix}Rinit\mid Tinit\end{bmatrix}$ we get: 
+\begin{equation} \label{eq:projectionRotError4}
+x_{n} = K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X
+\end{equation}
+We can note that when initial solution is already known, the problems begins to focus on refining pose estimation instead of searching for it.
+ 
+ 
+%TODO
+%In this thesis I will propose different approaches, where reconstruction process can be dymacily adapted in terms of accuracy and speed. There are few approaches:
+%Noisy rotation -> feature finding and outliers removal -> dR and translation from essential decomposition or pose estimation -> with or without BA -> better accuracy and robustness
+%Noisy rotations and translations -> feature finding and outliers removal -> with or without BA -> super convergance
+%Noisy rotations and translations -> feature finding and outliers removal -> dR and dT estimation from modified essential decomposition -> with or without BA -> better accuracy and robustness
+%Noisy rotation -> feature finding and outliers removal -> translation from essential decomposition or pose estimation -> with or without BA -> better accuracy and robustness
 
 
 % ---------------------------------------------------------------------------

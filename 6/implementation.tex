@@ -1,23 +1,166 @@
 % this file is called up by thesis.tex
 % content in this file will be fed into the main document
-
+\raggedbottom
 %: ----------------------- name of chapter  -------------------------
 \chapter{Implementation} % top level followed by section, subsection
+In order to perform some tests with proposed methodology there was a need to prepare enviornment for it. 
+\section{Choosing Environment}
+One thing was to prepare application, which would be capable of taking both pictures with additional SensorFusioned data. Currently Android has one of the best APIs which allows user to get both raw and fusioned sensor data. In order to avoid coding from scratch all sterometry algorithms there was need to choose library, which is fast and has most of discussed algorithms implemented. This is where OpenCV performs really good. However it's really hard to get it running on Android, due to long time compiling, problematic error debbuging and speed performance. This is why author decided to seperate process of acquiring images from processing them. In order to enrich images with sensor data Android app was created and standalone C++ desktop app to perform processing and evaluation.
+\section{Project Structure} \label{sec:ProjectStructure}
+Both applications source can be found on attached CD and under the Github webpage: \url{https://github.com/KrzysztofWrobel/MasterThesisSource.git}. In general project was seperated to different subprojects: Android and Desktop. In addition some sample datasets were added to Dataset folder.
+\section{"Sensor Enhanced Images" - Android Gradle based project}
+In order to capture images and associate them with Sensor data custom photo capture app called "..." were created. User can track in real time parameters euclidan angles of smartphone in global earth coordinate system. When taking picture current roation data as well relative translation from last capture are stored in custom JSON file, which is later saved along taken picture in seperate folder. All of captured pictures and sensor data can be compressed and send though internet to the user. By default they are saved on internal SD card in folder, which is automaticly created timestamp folder.
+\subsection{Installation}
+Gradle based built system was used, which is currently recomended way to handle Android based projects{ref. google}. Currently this app supports devices with Android 4.0 and above. In order to compile this project it's recomended to install Android Studio. It already contains Android SDK and also has built-in Gradle support.
+More informations about configuration, compilation and install steps can be found in README.md in main catalog. 
+\subsection{User Interface}
+ScreenShot.
+Apps allows to track camera angles in real time, so user can precisly decide angles of capture. Also heuristical movement and translation estimation can be seen. In order to capture photo, user only has to click in the screen center.
+\subsection{Important Implementation Aspects}
+Only master thesis specific code is described in detail.
+\subsubsection{Rotation calculation}
+Android SDK has already API, which can be used to access noth raw and "sensor fusioned" data. In particular for rotation estimation $Sensor.TYPE\_ROTATION\_VECTOR$  
+was used. It returns 9DOF quaternion in reference to geomagnetic north. In order to decompose it to euler angles helper method were used:
+\lstset{escapechar=@,style=customjava}
+\begin{lstlisting}
+private float[] euclidanAnglesFromQuaternion(float[] quaternion) {
+        ...
+        //Converts quaternion to 4x4 rotation matrix
+        SensorManager.getRotationMatrixFromVector(rotMat, quaternion);
+        ...
+        //Extracts euclidan Angles in radians
+        SensorManager.getOrientation(rotMat, orientation);
+        ...
+        return orientation;
+}
+\end{lstlisting}
+\subsubsection{Custom heouristic for move estimation}
+Unfortunately using only accessible sensor data it's hard to estimate relative translation of the device. Accelerometer, even compensated Android $Sensor.TYPE\_LINEAR\_ACCELERATION$, measures only linear acceleration of the device. These measures, which are very noisy itself, not only due to for instance hands shaking, need to be double integrated in time in order to get move distance. As proposed system is supposed to be used for hand-held cameras on order to minimise noise influence following enhanced heuristic for people walk model was proposed:
+%TODO chane it to diagram maybe
+\begin{enumerate}
+\item When new linear acceleration sensor data is ready, first apply lowPass filtering in order to reduce some high frequency noise.
+\item Change sensor datda vector from local camera coordinates to global reference system(multiply with inverted rotation matrix)
+\item Decide depending on current state, if deviceMovmentState has changed:
+\begin{enumerate}
+\item If device was previously IDLE and incoming Acceleration value is bigger than $0.5\frac{m}{s^2}$ change device state to MOVING and reset current velocity to $0\frac{m}{s}$
+\item If device was previously MOVING and incoming Acceleration value is smaller than $0.1\frac{m}{s^2}$ change device state to IDLE
+\end{enumerate}
+\item Only if device is currently moving:
+\begin{enumerate}
+\item Update device velocity
+\item Check current speed with walk constraint(People walk with avarage speed $1.5\frac{m}{s}$) and eventually scale it down to maximum value
+\item Update device postion
+\end{enumerate}
+\end{enumerate}
+Described algorithm implementation snippet can be found in listing \ref{lst:positionHeuristic}. Human walking model was introduced in order to constarint the velocity. Without it integrating small noise over time, would eventually results in high unrealistic movements. Maximum walking speed can be adjusted but be default it should be around $1.5\frac{m}{s}$ \url{http://en.wikipedia.org/wiki/Preferred_walking_speed}. In fact the most important factor of good position estimation is vector angle, fortunately noise equally influence each axes, so it should be statisticly correct.
+%TODO Maybe some more description about algorithms itself
+%\begin{minipage}{\linewidth}
+\begin{lstlisting}[caption={Snippet from Android source code position estimation heuristic},label={lst:positionHeuristic},numbers=left,escapeinside={@}{@},float]
+    public void onSensorChanged(SensorEvent event) {
+            ...
+        } else if (event.sensor == mLinearAcceleration) { 
+            ...   
+            //Filtering out some noise
+            newGlobalAcceleration = lowPass(newGlobalAcceleration, currentGlobalAcceleration);
+            //Switch linear acceleration from phone local coordinates to global coordinates
+            Matrix.multiplyMV(newGlobalAcceleration, 0, invertedRotationMatrix.clone(), 0, newGlobalAcceleration, 0);
 
+            double distance = getLength(currentGlobalAcceleration);
+            long currentTimeMillis = System.currentTimeMillis();
+            //Decide state of the device. Distance is in m/s^2
+            if (distance > 0.5 && deviceState == State.IDLE) {
+                if (currentTimeMillis - movingEndTime > 300) {
+                    deviceState = State.MOVING;
+                    currentGlobalVelocity = {0,0,0};
+                }
+            } else if (distance < 0.1 && deviceState == State.MOVING) {
+                if (currentTimeMillis - movingStartTime > 350) {
+                    deviceState = State.IDLE;
+                }
+            }
 
-%: ----------------------- contents from here ------------------------
-
-\section{Environment}
-\section{Project Structure}
-\subsection{Android application}
-\subsection{OSX CMake base project}
-\section{Important Implementation Aspects}
-\subsection{Custom Sensor Data File format}
-\section{Graphical User Interface}
-\section{Documentation}
-
-
-
+            if (deviceState == State.MOVING) {
+                //Update current device velocity
+                currentGlobalVelocity += currentGlobalAcceleration * dT;
+                
+                double velocity = getLength(currentGlobalVelocity);
+                //Check and adjust current velocity. People walk with avarage speed 1.5\frac{m}{s}
+                if (velocity > WALKING_MAX_VELOCITY) {
+                    currentGlobalVelocity /= velocity / WALKING_MAX_VELOCITY;
+                }
+                
+                //Update device relative position, s = V0 * t + a * t^2/2;
+                currentRelativePosition += currentGlobalVelocity * dT + currentGlobalAcceleration * dT * dT / 2;                 
+            }
+            ...
+    }   
+\end{lstlisting}
+%\end{minipage}
+\subsubsection{Custom Sensor Data File format}
+As mentiond each photo capture stores additional sensor information. These informations are: 
+\begin{itemize}
+\item id - indicates order of photos
+\item relative path to image file
+\item Euler Angles - pitch, roll, azimuth %TODO check it
+\item Position coordinates in geomagnetic north system(relative to previous image)
+\item Android rotation quaternion %TODO change it to quaternion
+\end{itemize} 
+All of this information are stored in a list and when the user is done with taking pictures all informations are saved into JSON file named sensor.txt. Sample file can be found in atachments.\pagebreak
+\section{"Enhanced Reconstructer" - OSX CMake based project}
+In order to evaluate algorithms there was need to prepare project environment suitable for this task. Discussion of choosing motivations, where done in \ref{sec:ProjectStructure}. Author choosed CMake in order to make simpler build and compilation process. Whole project, where developed and tested on OSX 10.9 Mavericks. In order to compile this project following things need to be installed first:
+\begin{itemize}
+\item CMake 2.8
+\item OpenCV 2.4.10
+\item Point Cloud Library (PCL) 1.7
+\item Boost 1.55
+\item cvsba \url(http://www.uco.es/investiga/grupos/ava/node/39)
+\end{itemize}
+\subsection{User Interface}
+There two targets defined in CMake file:
+\begin{enumerate}
+\item Test efficiency - used to evaluate pair reconstruction methods, draw epipolar lines in images and calculate samson error distances
+\item Test reconsturction - used to evaluate proposed initialization reconstruction with different pose estimation methods
+\end{enumerate}
+\subsubsection{Test Efficiency}
+There is no graphical interface for reconstruction parameters configuration. However at the beginning there are few command-line inputs required to continue reconstruction. User needs to configure:
+\begin{enumerate}
+\item Enhanced Photo Data folder path
+\item SIFT features number
+\end{enumerate}
+Calculated parameters are printed to Console Window. %TODO
+TODO What can be seen there? Screenshot from console output.
+\subsubsection{Test reconstruction}
+There is no graphical interface for reconstruction parameters configuration. However at the beginning there are few command-line inputs required to continue reconstruction. User needs to configure:
+%TODO
+\begin{enumerate}
+\item Enhanced Photo Data folder path
+\item SIFT features number
+\item Init pair reconstruct method:
+\begin{itemize}
+\item Standard Fundamental equation based
+\item Enhanced Fundamental equation based
+\item Standard essential equation based
+\item Enhanced essential equation based
+\item 3-point Translation estimation
+\item None - use existing rotations and translations
+\end{itemize}
+\item Pose estimation method:
+\begin{itemize}
+\item Standard 3d-2d perspective estimation
+\item Enhanced 3d-2d perspective estimation with noisy rotation
+\item Enhanced 3d-2d perspective estimation with noisy rotation and translation
+\item None - use existing rotations and translations
+\end{itemize}
+\item Whether drop outliers or not %TODO
+\item Whether use Bundla Adjustment or not %TODO
+\end{enumerate}
+As output user gets reconstructed *.asc files with suffix depending on used methods and choosed features. TODO write more about it
+%TODO write more about what can be seen in PCL visualizer and about differences with and without BA. When BA is used and so on
+\subsection{Important Implementation Aspects}
+Write about how you modified different libraries and how you tricked OpenCV to do what you need to get
+\subsubsection{Enhancing epipolar equations}
+\subsubsection{3-point translation estimation, between cameras}
+\subsubsection{Enhancing pose estimation}
 
 
 % ---------------------------------------------------------------------------
