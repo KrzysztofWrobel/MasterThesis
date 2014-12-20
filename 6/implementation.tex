@@ -8,7 +8,7 @@ In order to perform some tests with proposed methodology there was a need to pre
 One thing was to prepare application, which would be capable of taking both pictures with additional SensorFusioned data. Currently Android has one of the best APIs which allows user to get both raw and fusioned sensor data. In order to avoid coding from scratch all sterometry algorithms there was need to choose library, which is fast and has most of discussed algorithms implemented. This is where OpenCV performs really good. However it's really hard to get it running on Android, due to long time compiling, problematic error debbuging and speed performance. This is why author decided to seperate process of acquiring images from processing them. In order to enrich images with sensor data Android app was created and standalone C++ desktop app to perform processing and evaluation.
 \section{Project Structure} \label{sec:ProjectStructure}
 Both applications source can be found on attached CD and under the Github webpage: \url{https://github.com/KrzysztofWrobel/MasterThesisSource.git}. In general project was seperated to different subprojects: Android and Desktop. In addition some sample datasets were added to Dataset folder.
-\section{"Sensor Enhanced Images" - Android Gradle based project}
+\section{"Sensor Enhanced Images Camera" - Android Gradle based project}
 In order to capture images and associate them with Sensor data custom photo capture app called "..." were created. User can track in real time parameters euclidan angles of smartphone in global earth coordinate system. When taking picture current roation data as well relative translation from last capture are stored in custom JSON file, which is later saved along taken picture in seperate folder. All of captured pictures and sensor data can be compressed and send though internet to the user. By default they are saved on internal SD card in folder, which is automaticly created timestamp folder.
 \subsection{Installation}
 Gradle based built system was used, which is currently recomended way to handle Android based projects{ref. google}. Currently this app supports devices with Android 4.0 and above. In order to compile this project it's recomended to install Android Studio. It already contains Android SDK and also has built-in Gradle support.
@@ -106,7 +106,7 @@ As mentiond each photo capture stores additional sensor information. These infor
 \item Android rotation quaternion %TODO change it to quaternion
 \end{itemize} 
 All of this information are stored in a list and when the user is done with taking pictures all informations are saved into JSON file named sensor.txt. Sample file can be found in atachments.\pagebreak
-\section{"Enhanced Reconstructer" - OSX CMake based project}
+\section{"Enhanced 3D Reconstructer" - OSX CMake based project}
 In order to evaluate algorithms there was need to prepare project environment suitable for this task. Discussion of choosing motivations, where done in \ref{sec:ProjectStructure}. Author choosed CMake in order to make simpler build and compilation process. Whole project, where developed and tested on OSX 10.9 Mavericks. In order to compile this project following things need to be installed first:
 \begin{itemize}
 \item CMake 2.8
@@ -158,9 +158,133 @@ As output user gets reconstructed *.asc files with suffix depending on used meth
 %TODO write more about what can be seen in PCL visualizer and about differences with and without BA. When BA is used and so on
 \subsection{Important Implementation Aspects}
 Write about how you modified different libraries and how you tricked OpenCV to do what you need to get
+\subsubsection{Rotation matrix generation}
+To parse Android generated Sensor data file Boost JsonParser was used. As mentioned earlier Android saves decomposed Euler Angles. In order to properly multiply this angles to acquire proper rotation matrix following code inspired on MathWorld Wolfram \url{http://mathworld.wolfram.com/EulerAngles.html}
+\begin{lstlisting}
+Mat getRotation3DMatrix(double pitch, double azimuth, double roll) {
+    Mat D = (Mat_<T>(3, 3) <<
+            cos(roll), -sin(roll), 0,
+            sin(roll), cos(roll), 0,
+            0, 0, 1);
+
+    Mat C = (Mat_<T>(3, 3) <<
+            cos(azimuth), 0, -sin(azimuth),
+            0, 1, 0,
+            sin(azimuth), 0, cos(azimuth));
+    Mat B = (Mat_<T>(3, 3) <<
+            1, 0, 0,
+            0, cos(pitch), -sin(pitch),
+            0, sin(pitch), cos(pitch));
+    //Important
+    return B * C * D;
+}
+\end{lstlisting}
 \subsubsection{Enhancing epipolar equations}
+As we could observe in \ref{sec:EpipolarEquation} in order to enhance initial pair reconstruction we can use the same algorithms as standard ones, for example 8-point and 5-point algorithms. The only thing to do is to change input data from local image coordinates into camera coordinates. In OpenCV it can be done  with:
+\begin{lstlisting}
+    ...
+    undistortPoints(points1Exp, points1Exp, K, distCoeffs, rotDiffGlobal);
+    undistortPoints(points2Exp, points2Exp, K, distCoeffs);
+    ...
+\end{lstlisting}
+where rotDiffGlobal is rotation between 2 cameras.
+These lines autmaticaly allow as to calculate $h_{'} and h$ from \ref{eq:relativeFundamntalEnhanced}. In order to choose proper matrix decomposition we can do as follows:
+\begin{lstlisting}
+void chooseProperMatrixFromEnhanced(Mat &dRx, Mat &dR1x, Mat &TdRExp, Mat &dR, Mat &T) {
+    dR = dRx;
+    if (decideProperMatrix(dRx, 0.05)) {
+        dR = constraintMatrix(dRx);
+    } else if (decideProperMatrix(dR1x, 0.05)) {
+        dR = constraintMatrix(dR1x);
+    } else if (decideProperMatrix(-dRx, 0.05)) {
+        dR = constraintMatrix(-dRx);
+    } else if (decideProperMatrix(-dR1x, 0.05)) {
+        dR = constraintMatrix(-dR1x);
+    }
+
+    Mat skewT = TdRExp * dR.inv();
+    cout << "skewT" << skewT << endl;
+
+    Mat tdecx = Mat(3,1, CV_64FC1);
+    tdecx.at<double>(0) = (skewT.at<double>(2,1) - skewT.at<double>(1,2))/2;
+    tdecx.at<double>(1) = (skewT.at<double>(0,2) - skewT.at<double>(2,0))/2;
+    tdecx.at<double>(2) = (skewT.at<double>(1,0) - skewT.at<double>(0,1))/2;
+    T = tdecx;
+
+}
+
+bool decideProperMatrix(Mat dRot, double tolerance){
+    double a00 = abs(dRot.at<double>(0,0) - 1);
+    double a11 = abs(dRot.at<double>(1,1) - 1);
+    double a22 = abs(dRot.at<double>(2,2) - 1);
+    if((a00 + a11 + a22)/3< tolerance) {
+        return true;
+    }else {
+        return false;
+    }
+}
+\end{lstlisting}
+
+
 \subsubsection{3-point translation estimation, between cameras}
+When we do have rotation data, which are more or less accuratre, we can focus on estimating only translation between images. Proposed in \ref{eq:alternative3point} and \ref{eq:translation3point} were implemented. As similar to other Epipolar estimations methods implemented in OpenCV, this one also has ability to filter out outliers with RANSAC schema.
+\begin{lstlisting}
+    ...
+    for (iterationNumber = 0; iterationNumber < niters; iterationNumber++) {
+
+        getSubsety(prev_points_raw, next_points_raw, point1s, point2s, 300, modelPoints);
+        Mat t = findTranslation(point1s, point2s, rotDiffGlobal, Kinv);
+        Mat F1 = constructFundamentalMatrix(rotDiffGlobal, t, Kinv);
+
+        int goodCount = findInliersy(prev_points_raw, next_points_raw, F1, errors, statuses, reprojThreshold);
+        if (goodCount > maxGoodCount) {
+            swap(statuses, goodStatuses);
+            FEnhanced = F1;
+            tEnhanced = t / t.at<double>(2);
+            maxGoodCount = goodCount;
+            niters = cvRANSACUpdateNumIters(confidence,
+                    (double) (count - maxGoodCount) / count, modelPoints, niters);
+        }
+
+    }
+    ...
+    
+    
+    Mat findTranslation(std::vector<cv::Point2d> &points1, std::vector<cv::Point2d> &points2, Mat &rotDiff, Mat &Kinv) {
+
+    Mat hg1 = Mat::zeros(points1.size(), 3, CV_64FC1);
+    Mat hg2 = Mat::zeros(points2.size(), 3, CV_64FC1);
+    for (int i = 0; i < points1.size(); i++) {
+        hg1.at<double>(i, 0) = points1[i].x;
+        hg1.at<double>(i, 1) = points1[i].y;
+        hg1.at<double>(i, 2) = 1;
+        hg2.at<double>(i, 0) = points2[i].x;
+        hg2.at<double>(i, 1) = points2[i].y;
+        hg2.at<double>(i, 2) = 1;
+    }
+
+    hg1 = hg1 * (rotDiff * Kinv).t();
+    hg2 = hg2 * (Kinv).t();
+
+    Mat A = Mat::zeros(hg1.rows, 3, CV_64FC1);
+    for (int i = 0; i < hg1.rows; i++) {
+        A.at<double>(i, 0) = (hg2.at<double>(i, 2) * hg1.at<double>(i, 1) - hg2.at<double>(i, 1) * hg1.at<double>(i, 2));
+        A.at<double>(i, 1) = (hg2.at<double>(i, 0) * hg1.at<double>(i, 2) - hg2.at<double>(i, 2) * hg1.at<double>(i, 0));
+        A.at<double>(i, 2) = (hg2.at<double>(i, 1) * hg1.at<double>(i, 0) - hg2.at<double>(i, 0) * hg1.at<double>(i, 1));
+    }
+
+    SVD svd1(A);
+    Mat tCalc = svd1.vt.row(2);
+
+    //Translation between cameras estimated and Fundamental Matrix from that as well
+    Mat T = (tCalc.t());
+
+    return T;
+
+\end{lstlisting}
+
 \subsubsection{Enhancing pose estimation}
+There was nothing special to implement regarding enhanced pose estimation. OpenCv has option to use initially estimated rotation and translation values(reference)%TODO ref to Open CVmanual.
 
 
 % ---------------------------------------------------------------------------

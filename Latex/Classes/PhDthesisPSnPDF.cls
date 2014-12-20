@@ -41,6 +41,8 @@
 
 \usepackage{amssymb}
 \usepackage{graphics} % for improved inclusion of graphics
+
+
 %\usepackage{wrapfig} % to include figure with text wrapping around it
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption} % for improved layout of figure captions with extra margin, smaller font than text
 \usepackage{fancyhdr} % for better header layout
@@ -127,7 +129,7 @@
     \DeclareGraphicsExtensions{.png, .jpg, .jpeg, .pdf, .gif} %GIF doesn't work??
     \usepackage[pdftex]{graphicx}
     \pdfcompresslevel=9
-    \graphicspath{{0_frontmatter/figures/PNG/}{0_frontmatter/figures/PDF/}{0_frontmatter/figures/}}
+    \graphicspath{{0_frontmatter/figures/PNG/}{0_frontmatter/figures/PDF/}{0_frontmatter/figures/}{figures/}}
 \else
     \usepackage[ dvips, 
                  bookmarks,
@@ -148,7 +150,7 @@
     \DeclareGraphicsExtensions{.eps, .ps}
     \usepackage{epsfig}
     \usepackage{graphicx}
-    \graphicspath{{0_frontmatter/figures/EPS/}{0_frontmatter/figures/}}
+    \graphicspath{{0_frontmatter/figures/EPS/}{0_frontmatter/figures/}{8/figures/EPS/}{figures/}}
 \fi
 
 

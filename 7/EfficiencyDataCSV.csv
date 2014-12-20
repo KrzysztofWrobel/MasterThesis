@@ -1,0 +1,29 @@
+Number of Sift features,,,,
+Total Sampson Error,100,500,1000,5000
+8-point OpenCV,20.5793,100.584,265.637,0.4387
+Alternative 3-point,112.749,220.722,640.895,0.1484
+8-point enhanced,67.2559,112.7,295.152,0.3867
+Known rot and trans,3501.23,14770.7,27394.4,0.0001
+Essential 5-point,43.5866,404.098,518.293,0.684
+5-point enhanced,1863.66,501.987,349.393,13.4643
+,,,,
+,,,,
+,,,,
+Number of Sift features,,,,
+Sampson Error per Point,100,500,1000,5000
+8-point OpenCV,0.478588,0.543697,0.781287,0.439413
+Alternative 3-point,4.17588,2.53704,4.1083,3.28094
+8-point enhanced,1.56409,0.609189,0.868093,0.924199
+Known rot and trans,83.3625,80.2756,77.1673,77.9677
+Essential 5-point,1.06309,2.29601,1.85768,1.95736
+5-point enhanced,45.4552,2.8522,1.2523,2.0468
+,,,,
+,,,,
+",",,,,
+Execution time(ms),100,500,1000,5000
+8-point OpenCV,0.4387,1.0833,1.5055,2.187
+Alternative 3-point,0.1484,0.2692,0.4725,0.8286
+8-point enhanced,0.3867,0.8362,1.8099,5.4395
+Known rot and trans,0.0001,0.0001,0.0001,0.0001
+Essential 5-point,0.684,3.8827,5.4482,15.2223
+5-point enhanced,13.4643,47.0683,204.2998,355.464

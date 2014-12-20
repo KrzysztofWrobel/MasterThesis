@@ -1,0 +1,5 @@
+Number of Sift features,8-pointInit+NormalPoseEstim,Enhanced8-point+NormalPoseEstim,Enhanced8-point+EnhancedPoseEstim,Alternative3-point+NormalPoseEstim,Alternative3-point+EnhancedPoseEstim,Known Rotations and Translations
+100,2908,2697,2732,2571,2575,2253
+500,2939,2907,2904,2683,2361,2407
+1000,3155,3070,2936,2873,2676,2584
+5000,4599,4254,4312,3840,4205,3750

@@ -1,0 +1,5 @@
+Number of Sift features,8-point OpenCV,Alternative 3-point,8-point enhanced,Known rot and trans,Essential 5-point,5-point enhanced
+100,0.4387,0.1484,0.3867,0.0001,0.684,13.4643
+500,1.0833,0.2692,0.8362,0.0001,3.8827,47.0683
+1000,1.5055,0.4725,1.8099,0.0001,5.4482,204.2998
+5000,2.187,0.8286,5.4395,0.0001,15.2223,355.464

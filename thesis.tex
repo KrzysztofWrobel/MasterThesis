@@ -20,6 +20,18 @@
 % Here, they are placed in an external file /Latex/Macros/MacroFile1.tex
 % An macro that you may use frequently is the figuremacro (see introduction.tex)
 \usepackage{mathtools}
+\usepackage{siunitx}
+\usepackage{tikz} % To generate the plot from csv
+\usepackage{pgfplots}
+\usepackage{adjustbox}
+
+\pgfplotsset{compat=newest} % Allows to place the legend below plot
+\usepgfplotslibrary{units} % Allows to enter the units nicely
+
+\sisetup{
+  round-mode          = places,
+  round-precision     = 2,
+}
 
 \usepackage{color}
 
@@ -86,8 +98,6 @@
 
 \include{Latex/Macros/MacroFile1}
 
-
-
 %: ----------------------------------------------------------------------
 %:                  TITLE PAGE: name, degree,..
 % ----------------------------------------------------------------------
@@ -110,8 +120,6 @@
 %\include{title}
 
 \title{Enhancing 3D reconstruction using Mobile Sensors Data}
-
-
 
 % ----------------------------------------------------------------------
 % The section below defines www links/email for author and institutions
@@ -140,6 +148,11 @@
 %\renewcommand{\submittedtext}{change the default text here if needed}
 \degree{Philosophi\ae Doctor (PhD), DPhil,..}
 \degreedate{year month}
+
+
+
+
+
 
 
 % ----------------------------------------------------------------------

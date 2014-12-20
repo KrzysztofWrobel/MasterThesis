@@ -78,7 +78,7 @@ R_{error} \cong
   -w_{y}&  w_{x}&1
 \end{bmatrix*}
 \end{equation} 
-[Refernece to Hartley]. It can be used when decomposing G to ensure proper decomposition.
+[Refernece to Hartley]. It can be used when decomposing G to ensure proper decomposition. What's more in normal situation in case of both these algorithms we have to decompose recovered matrix to both relative rotation and translation. However we normally have to deal with small ambiguity and check for instance by initial triangulation, which R and T use. Using this Rodriguez representation, we can reduce 4 solution test cases to 2 possibly solutions test-case.
 \subsection{Alternative 3-point algorithm for translation finding}
 Starting \ref{eq:alternativeEnhancedEquation} it can be written that:
 \begin{equation} \label{eq:alternative3point}
@@ -121,7 +121,7 @@ what can be grouped:
 t_{x} * (h_{2}*h_{'3} - h_{3}*h_{'2}) + t_{y} * (h_{3}*h_{'1} - h_{1}*h_{'3}) + t_{z} * (h_{1}*h_{'2} - h_{2}*h_{'1}) = 0
 \end{equation}
 rewritten as:
-\begin{equation}
+\begin{equation} \label{eq:translation3point}
 \begin{bmatrix*}[c]
 t_{x} &
 t_{y} &
