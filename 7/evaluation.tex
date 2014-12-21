@@ -62,12 +62,12 @@ In the case of initial pair images one of the most imporant factors include the 
         \legend{Standard 8-point,Enhanced 8-point,Alternative 3-point,Known rotations and translations,Standard essential 5-point,Enhanced essential 5-point}
       \end{axis}
     \end{tikzpicture}
-    \caption{Plot of total Sampson Error in picture(1024x768pixels) in comparison to initial Sift feature number}
+    \caption{Chart showing the sum of Sampson Errors in a picture(1024x768pixels) per various initial Sift features sets sizes}
     \label{plot:TotalSampsonError}
   \end{center}
 \end{figure}
 Its primary function is to measure the sum of distance between all points and their corresponding epipolar lines. However, each of proposed methods has different outliers removal capabilities, therefore in order to compare their efficiency the average of Samson Error per a corresponding pair was calculated.
-On plot \ref{plot:TotalSampsonError} were visualized calculated total sampson errors for different initial SIFT features sets. Knowing that Total Sampson Error were calculated for different number of final inliers the only thing that can be noted here that most of the algoritms properly filter out outliers. Obviously drawing epipolar lines from heuristicaly estimated movement and noisy rotation gives extremly large error in comparison to others.
+The following chart \ref{plot:TotalSampsonError} shows the total Sampson Errors for different sets of initial SIFT features. The major observation made based on these results is that most of the algorithms remove outliers properly. As could have been expected the only one that is not efficient in this regard is the method involving drawing epipolar lines from heuristically estimated movement and noisy rotation, which produces significantly larger error than the other algorithms.
 \begin{figure}[hb!]
   \begin{center}
     \begin{tikzpicture}
@@ -93,37 +93,38 @@ On plot \ref{plot:TotalSampsonError} were visualized calculated total sampson er
         \legend{Standard 8-point,Enhanced 8-point,Alternative 3-point,Known rotations and translations,Standard essential 5-point,Enhanced essential 5-point}
       \end{axis}
     \end{tikzpicture}
-    \caption{Plot of per point Sampson Error in picture(1024x768pixels) in comparison to initial Sift feature number}
+    \caption{Chart showing per point Sampson Error in a picture(1024x768pixels) per various initial Sift features sets sizes}
     \label{plot:SampsonErrorPerPoint}
   \end{center}
 \end{figure}
-Taking a look at Per Pair Sampson Error \ref{plot:SampsonErrorPerPoint} one can note that proposed sensor enhanced versions neither had improved 8-point nor 5-point algorithm. However proposed 3-point algorithm, which was much faster than 8-point algorithm turned out to be quite accurate. To present the reader, of what errors are we talking about on figures \ref{fig:SummaryEpiLines1300} - \ref{fig:SummaryEpiLines2300} estimated epipolar lines for 300 initial SIFT features were drawn. 
+Analysing the Per Pair Sampson Error results \ref{plot:SampsonErrorPerPoint} it can be noted that the proposed sensor enhanced methods did not improve either the 8-point or 5-point algorithms, but the 3-point algorithm developed for the purposes of this thesis proved to be much faster than the 8-point algorithm and also quite accurate. To present the discussed errors, estimated epipolar lines for 300 initial SIFT features set were drawn on the figures \ref{fig:SummaryEpiLines1300} - \ref{fig:SummaryEpiLines2300}.
 \begin{figure}[b!]
     \centering
     \includegraphics[width=0.8\textwidth]{summary1Sift300}
-    \caption{Results of drawing estimated Epipolar lines on Warsaw Univeristy Dataset for 300 Sift points. 1) Standard Fundamental 8-point(upper pair), 2) Rotation Enhanced Fundamental 8-point(middle), 3) Alternative 3-point algorithm(bottom) }
+    \caption{The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) }
     \label{fig:SummaryEpiLines1300}
 \end{figure}
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{summary2Sift300}
-    \caption{Results of drawing estimated Epipolar lines on Warsaw Univeristy Dataset for 300 Sift points. 1) Fundamental matrix created from rotation and translation(upper pair), 2) Standard Essential matrix 5-point(middle), 3)Rotation Enhanced Essential 5-point(bottom) }
+    \caption{The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) }
     \label{fig:SummaryEpiLines2300}
 \end{figure}
-It can be seen that both Standard 8-point algorithm and proposed Rotation Enhanced version give very good results in term of epipolar lines. Alternative 3-point algorithm gives slightly worse results having good direction of lines, but due to uncompansated mobile sensors noise slightly incorrect. In these particular dataset Essential 5-point method in really sparse datasets had some problems in Essential matrix estimation, but our proposed imporved 5-point version found pretty good corresponding sets. To check if number of SIFT features influence these visualization epipolar calculation was also presented on 1000 SIFT features(\ref{fig:SummaryEpiLines11000} - \ref{fig:SummaryEpiLines21000}). 
+It can be seen that both standard 8-point algorithm and the proposed rotation enhanced version return very good results in terms of epipolar lines accuracy. The alternative 3-point algorithm gives slightly worse results due to uncompansated mobile sensors noise. In this particular dataset the essential 5-point method was inefficient in producing proper essential matrix estimation, contrary to the proposed sensor enhanced 5-point algorithm, which found satisfactory corresponding epipolar lines. \newline
+To verify whether the epipolar lines calculation is influenced by the number of SIFT features, the same process was applied to 1000 SIFT features set(\ref{fig:SummaryEpiLines11000} - \ref{fig:SummaryEpiLines21000}). 
 \begin{figure}[b!]
     \centering
     \includegraphics[width=0.8\textwidth]{summary1Sift1000}
-    \caption{Results of drawing estimated Epipolar lines on Warsaw Univeristy Dataset for 1000 Sift points. 1) Standard Fundamental 8-point(upper pair), 2) Rotation Enhanced Fundamental 8-point(middle), 3) Alternative 3-point algorithm(bottom) }
+    \caption{Results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) }
     \label{fig:SummaryEpiLines11000}
 \end{figure}
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{summary2Sift1000}
-    \caption{Results of drawing estimated Epipolar lines on Warsaw Univeristy Dataset for 1000 Sift points. 1) Fundamental matrix created from rotation and translation(upper pair), 2) Standard Essential matrix 5-point(middle), 3)Rotation Enhanced Essential 5-point(bottom) }
+    \caption{Results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) }
     \label{fig:SummaryEpiLines21000}
 \end{figure}
-Generally proposed improvements versions aren't better in terms of accuracy due to noise in data sensors, however they are always close to optimal solutions, when standard versions can fail sometimes.
+In general, the proposed enhanced algorithms are not better in terms of accuracy due to noise in data sensors, however they are always close to optimal solutions, when standard versions can fail sometimes.
 \clearpage
 
 \subsection{Time comparison}
