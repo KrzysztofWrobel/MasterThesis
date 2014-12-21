@@ -66,32 +66,32 @@ Internal camera parameters are expressed by the following matrix:
 \end{equation}
 where αx = fmx and αy = fmy represent the focal length of the camera expressed in pixel dimensions in the x and y direction respectively. 
 Similarly, x ̃0 = (x0,y0) is the principal point of pixel dimensions. These parameters need to be calculated only once for each camera model. Cameras can be calibrated with special reference boards of the known dimensions and chracteristics.
-For the proper 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation(orientation angles of the camera) and global postition of the camera. Usually in terms of 3D reconstraction these parametrs are not known. However in Chapter 9 of Multiple View Geometry in Computer Vision(\cite{HartleyMultipleView}) shows how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to relative camera positioning system of two projections:
+For the proper 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation (orientation angles of the camera) and global postition of the camera. It is often the case in 3D reconstruction that these parametrs are not known. However, it is showed in Chapter 9 of Multiple View Geometry in Computer Vision (\cite{HartleyMultipleView}), how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to relative camera positioning system of two projections:
 \begin{equation}
  P1 = K * \begin{bmatrix}I\mid 0\end{bmatrix}
 \end{equation}
-second one is equall to 
+the second one is equal to 
 \begin{equation}
  P2 = K * \begin{bmatrix}RDiff\mid tDiff\end{bmatrix}
 \end{equation}
-Unfortunately there are 4 possible solutions for such decomposition and it's not always possible to identify correct one.
+Unfortunately, there are four possible solutions for such a decomposition and it is not always possible to identify the correct one.
 \subsection{Points Triangulation}
-Once internal and external(global or relative) parameters triangulation can be performed in order to acquire up to affine reconstruction model (\ref{eq:3Dreconstruction}).
+Once internal and external (global or relative) camera parameters are calculated, the triangulation can be performed in order to acquire an up-to-affine reconstruction model (\ref{eq:3Dreconstruction}).
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{3Dreconstruction}
     \caption{}
     \label{fig:3Dreconstruction}
 \end{figure}
-Only scale factor cannot be determined in such relative case situation. In [TODO hartley chapter 10] this process is described in details.
+The only elemnt that cannot be determined in such a relative case is the scale. This process is described in detail in [TODO hartley chapter 10].
 \section{Structure from Motion}
-Term of Structure from Motion(SfM) refers to structure reconstraction from consecutive sequences of moving camera. It is really popular research topic and two main different approaches called Pose Estimation and Homography Estimation can be used to make it happen.
+The term "Structure from Motion(SfM)" refers to the reconstruction performed from the consecutive sequences of a moving camera. It is a popular research topic and the two main approaches, namely the Pose Estimation and Homography Estimation, can be used for the [urposes of reconstructing a 3D model of an object.
 \subsection{3D Pose Estimation}
-Assuming that some 3D cloud point is already known, correspondences between 2D features in new image and 3D point clouds positions can be established. Such 3D-2D correspondences can be used to estimate next camera relative to model position. This allows of reconstraction of new 3D points and merging them smoothly into existing model. Unfortunately this process is also highly sensitive to presence of outliers, so adequate measeures has to be made in order to reduce their influence. One of the main advanteges this method is speed, but on the other hand it's effectiveness strongly relies on exising 3D cloud quality. 
+Assuming that some of the 3D cloud points are already known, the matches between 2D features in a new image and 3D point cloud positions can be established. Such 3D-2D matches can be used to estimate the camera position. This allows for reconstructing new 3D points and merging them smoothly into a functional model. Unfortunately,  this process is also highly sensitive to the occurence of outliers, therefore adequate measeures have to be undertaken to reduce their influence. One of the main advanteges of this method is its speed. On the other hand, its effectiveness relies strongly on the exising 3D cloud quality. 
 \subsection{Homography estimation}
-New image can be reconstructed with previous once in a standard way to recive up to scale 3D model. Later freshly acquired model can be merged to existing one using Homography estimation between coresponding 3D points. Such strategy is slowet than previous, but it is not influenced by quality of existing 3D model. It's also higly sensitive to outliers, but once made accurately produces much more new 3D points.
+A new image can be reconstructed with a previous one in a standard way in order to recive an up-to-scale 3D model. Afterwards, a newly acquired model can be merged into existing one using homography estimation between the coresponding 3D points. Such a strategy is slower than the previous one, but it is not influenced by the quality of the existing 3D model. Although it is highly sensitive to outliers as well, if used properly it can produce more new 3D points.
 \subsection{Structure Adjustment}
-After some time of SfM reconstruction some techniques, which compensate increasing error of wrong estimates propagating through images special algorithms can be used to refine reconstructed models. One of such techniques is Bundle Adjustment\gls{ba} \url{http://en.wikipedia.org/wiki/Bundle_adjustment}. Through finding point correspondances between multiple sets of images algorithm iterativly modifies either both of one camera external paramaters as well as 3D points positions. It's main disadvantages is execution times. It takes a lot of time to use it in real-time applications. In figure \ref{fig:BundleAdjustment} basic idea of BA is expresed.
+Special refinement methods can be used to compensate for an error of mismatched points propagating through images. They include. among others, Bundle Adjustment\gls{ba} \url{http://en.wikipedia.org/wiki/Bundle_adjustment}. The algorithm, using the information concerning the corresponding matches between multiple sets of images, iteratively modifies either both the camera external paramaters and 3D points positions or one of them. The main disadvantage of the method is its execution time. It is too time-consuming to use it in real-time applications. The basic idea of BA is expresed in figure \ref{fig:BundleAdjustment}.
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{BundleAdjustment}
