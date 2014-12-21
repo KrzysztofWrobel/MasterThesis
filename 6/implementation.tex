@@ -6,20 +6,20 @@
 
 %: ----------------------- name of chapter  -------------------------
 \chapter{Implementation} % top level followed by section, subsection
-This chapter describes choosen implementation environment. This chapter also describes Android application, which was created in order to acquire image sequences with additional sensor data. Sturctures of both Android and Desktop projects are explained and most important implementation details of proposed algorithms and strategies are discussed.
+This chapter describes the chosen implementation environment. It also describes an Android application which was created in order to acquire image sequences with additional sensor data. The structure of both Android and Desktop projects is explained and essential implementation details of the proposed algorithms and strategies are discussed herein.
 \section{Choosing Environment}
-Currently Android has one of the best API, which allows programmers to acquire Sensor fusioned data of rotation and linear acceleration.
-In order to avoid coding from scratch all epipolar geometry algorithms C++ version of OpenCV library was used. Image acquiering process was seperated from model reconstruction. This allowed to saved a lot of time in debbuging, which is extremly hard in native C++ development on Android. In order to enrich images with sensor data Android app was created and standalone C++ desktop app to perform processing and evaluation.
+Currently, Android has one of the best APIs which allows programmers to acquire sensor fusioned data of rotation and linear acceleration.
+In order to avoid coding anew all epipolar geometry algorithms, C++ version of OpenCV library was used. Image acquiring process was seperated from model reconstruction. This allowed to save a lot of time in debugging which is highly difficult in native C++ development on Android. In order to enrich images with sensor data an Android app was created and a standalone C++ desktop app to perform processing and evaluation.
 \section{Project Structure} \label{sec:ProjectStructure}
-Both applications source codes can be found on attached CD and under the Github webpage: TODO \url{https://github.com/KrzysztofWrobel/MasterThesisSource.git}. In general project was seperated to different subprojects: Android and Desktop. In addition some of sample datasets were added to Dataset folder in order to perform similar to described in next chapter evaluations.
+Source codes of both applications can be found on an attached CD and in the Github repository at the following web address: TODO \url{https://github.com/KrzysztofWrobel/MasterThesisSource.git}. In general, the project was split into two subprojects: Android and Desktop. In addition, some of the sample datasets were added to the dataset folder in order to perform evaluations similar to the ones described in the next chapter.
 \section{"Sensor Enhanced Images Camera" - Android Gradle based project}
-In order to capture images and associate them with Sensor data custom photo capture app called "Sensor Enhanced Images Camera" was created.
-Using this application camera orientation angles can be tracked in real-time in reference to Earth's coordinate system. Also linear acceleration, current velocity and relative translation from last taken picture location can be tracked. 
-When taking picture current camera rotation, relative translation are stored in custom JSON file. Corresponding image is saved along this JSON file in folder, which is created on every app start-up. It allows for taking different dataset captures without mixing them up.
+In order to capture images and associate them with sensor data, a custom photo capture app called "Sensor Enhanced Images Camera" was created.
+Using this application, the camera orientation angles can be tracked in real-time in reference to the Earth's coordinate system. Also linear acceleration, current velocity and relative translation from the location of the last picture taken can be tracked. 
+Upon the photo capture the current camera rotation and relative translation are stored in a custom JSON file. A corresponding image is saved along with this JSON file in folder, which is created upon every app start-up. It allows for taking different dataset captures without them being mixed up.
 \subsection{Installation}
-In order to compile and distribute Android application Gradle based built system was used. This is currently recomended way to maintain Android based projects[TODO ref. google]. Currently this app supports only devices with Android 4.0 and above. In order to compile this project it's recomended to install Android Studio, which already contains necessery SDK and also has built-in Gradle support. More informations about configuration, compilation and install steps can be found in README.md in main catalog of attached source code. 
+In order to compile and distribute Android application, a Gradle based built system was used. This is currently a recommended way to maintain Android based projects [TODO ref. google]. At present this app supports only devices with Android 4.0 and above. In order to compile this project it is recomended to install Android Studio, which already contains the needed SDK and also has a built-in Gradle support. More information about configuration, compilation and installation steps can be found in README.md in the main catalog of the attached source code. 
 \subsection{User Interface}
-As mentioned earlier apps allows to track all necessery external camera parameters in real-time. This is how first version of user interface look like:
+As mentioned earlier the app allows to track all necessery external camera parameters in real-time. This is how the first version of user interface looked:
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{AndroidScreenShot}
@@ -27,15 +27,15 @@ As mentioned earlier apps allows to track all necessery external camera paramete
     \label{fig:AndroidScreenShot}
 \end{figure}
 \clearpage
-In order to capture photo, user only has to click in the screen center. No additional configuration is required. To use use acquired datasets in other program smartphone has to be connected to the computer. Folders are created with actual time suffixes in main catalog of internal SD card.
+In order to capture a photo, a user only has to click on the screen center. No additional configuration is required. To use the so acquired datasets in another program, the smartphone has to be connected to the computer. Folders are created with time suffixes in the main catalog of an internal SD card.
 \subsection{Important Implementation Aspects}
-There were two important aspects of Andoid application implementation:
+There were two important aspects of an Andoid application implementation:
 \begin{enumerate}
 \item Camera rotation calculation
 \item Heuristcal movement estimation
 \end{enumerate}
 \subsubsection{Rotation calculation}
-Android SDK has already built-in API, which can be used to access sensor fusioned data. In particular for rotation measurment acquisition $Sensor.TYPE\_ROTATION\_VECTOR$ was used. It returns 9-degree quaternion in reference to geomagnetic north. In order to decompose it to euler angles helper method was used:
+Android SDK already has a built-in API, which can be used to access sensor fusioned data. In particular, for measuring the rotation, the $Sensor.TYPE\_ROTATION\_VECTOR$ was used. It returns 9-degree quaternion in reference to geomagnetic north pole. In order to decompose it to euler angles a helper method was used:
 \lstset{escapechar=@,style=customjava}
 \begin{lstlisting}
 private float[] euclidanAnglesFromQuaternion(float[] quaternion) {
@@ -49,12 +49,12 @@ private float[] euclidanAnglesFromQuaternion(float[] quaternion) {
         return orientation;
 }
 \end{lstlisting}
-\subsubsection{Custom heouristic for move estimation}
-Using currently available Android sensor data it is hard to estimate relative translation of the device. Linear accelaration measurments, which can be accessed with $Sensor.TYPE\_LINEAR\_ACCELERATION$ constant, are very noisy. Such noisy data with double intergration over time results in quite big errors after some time. First integration is required to acquire current velocity change. Second integration over velocity is required to calculate position change in particular moment.
-However using human-walking model description it can be improved with following heuristical constraints over calculated velocity:
+\subsubsection{Custom heuristics for move estimation}
+Using the currently available Android sensor data it is difficult to estimate the relative translation of the device. Linear accelaration measurments, which can be accessed with $Sensor.TYPE\_LINEAR\_ACCELERATION$ constant, are very noisy. Such noisy data with double intergration over time results in quite big errors after some time. First integration is required to acquire current velocity change. Second integration over velocity is required to calculate position change in particular moment.
+However, it can be improved using human-walking model description with the following heuristical constraints over calculated velocity:
 \begin{enumerate}
 \item When new linear acceleration sensor data is ready, first apply lowPass filtering in order to reduce some high frequency noise.
-\item Change sensor datda vector from local camera coordinates to global reference system(multiply with inverted rotation matrix)
+\item Change sensor datda vector from local camera coordinates to global reference system (multiply with inverted rotation matrix)
 \item Decide depending on current state, if deviceMovmentState has changed:
 \begin{enumerate}
 \item If device was previously IDLE and incoming Acceleration value is bigger than $0.5\frac{m}{s^2}$ change device state to MOVING and reset current velocity to $0\frac{m}{s}$
@@ -63,12 +63,12 @@ However using human-walking model description it can be improved with following 
 \item Only if device is currently moving:
 \begin{enumerate}
 \item Update device velocity
-\item Check current speed with walk constraint(People walk with avarage speed $1.5\frac{m}{s}$) and eventually scale it down to maximum value
+\item Check current speed with walk constraint (People walk with avarage speed of $1.5\frac{m}{s}$) and eventually scale it down to maximum value
 \item Update device postion
 \end{enumerate}
 \end{enumerate}
-Code snippet of described movement estimation heuristic was derived from Android application and can be found in listing \ref{lst:positionHeuristic}. Maximum walking speed can be adjusted but by default it should be around $1.5\frac{m}{s}$ TODO \url{http://en.wikipedia.org/wiki/Preferred_walking_speed}. 
-The most important factor of accurate reconstractin are correletions between movements in X,Y and Z axes. Noise in sensors is equally distributed on each axis, so it estimated transaltion should properly keep these movements correlations.
+A code snippet of the described movement estimation heuristics was derived from Android application and can be found in the following listing \ref{lst:positionHeuristic}. Maximum walking speed can be adjusted, but by default it should be set to around $1.5\frac{m}{s}$ TODO \url{http://en.wikipedia.org/wiki/Preferred_walking_speed}. 
+The most important factor of the accurate reconstruction are correletions between movements in X,Y and Z axes. Noise in sensors is equally distributed on each axis, so it estimated translation should keep these movements' correlations properly.
 
 \begin{lstlisting}[caption={Snippet from Android source code position estimation heuristic},label={lst:positionHeuristic},numbers=left,escapeinside={@}{@},float]
     public void onSensorChanged(SensorEvent event) {
@@ -112,17 +112,17 @@ The most important factor of accurate reconstractin are correletions between mov
 \end{lstlisting}
 
 \subsubsection{Custom Sensor Data File format}
-As mentiond earlier each photo sensor information are stored in separe specific file. By default following informations are stored for each captured image:
+As mentiond earlier each photo sensor information is stored in a separe file. By default the following information is stored for each captured image:
 \begin{itemize}
 \item \textbf{ID}, which indicates order of the photos
-\item \textbf{Path}, which relative path to corresponding image file
+\item \textbf{Path}, which relates the path to a corresponding image file
 \item \textbf{Euler Angles - pitch, roll, azimuth}
 \item \textbf{Relative position coordinate}
 \end{itemize} 
-All of this information are stored in a list and when the user is done with taking pictures all informations are saved into JSON file named sensor.txt. Sample file can be found in Additional Materials[TODO].\pagebreak
+All these pieces of information are stored as a list and when the user has completed taking pictures, entire information set is saved into JSON file named sensor.txt. A sample file can be found in the Additional Materials[TODO].\pagebreak
 
-\section{"Enhanced 3D Reconstructer" - OSX CMake based project}
-In order to evaluate algorithms there was a need to prepare comfortable project environment, which would allow multiple datasets numerical and visual comparisons. CMake was choosen in order to make simpler build and compilation process. Whole code architecture was developed and tested on Apple MacbookAir with OSX 10.9 Mavericks. In order to compile this project following things need to be installed first:
+\section{"Enhanced 3D Reconstructer" - OSX CMake-based project}
+In order to evaluate algorithms there was a need to prepare a comfortable project environment, which would allow for multiple datasets numerical and visual comparisons. CMake was choosen in order to simplify building and compilation process. The entire code architecture was developed and tested on Apple MacbookAir with OSX 10.9 Mavericks. In order to compile this project the following elements need to be installed first:
 \begin{itemize}
 \item CMake 2.8
 \item OpenCV 2.4.10
@@ -131,7 +131,7 @@ In order to evaluate algorithms there was a need to prepare comfortable project 
 \item cvsba \url(http://www.uco.es/investiga/grupos/ava/node/39) [TODO reference move]
 \end{itemize}
 \subsection{User Interface}
-There two targets defined in CMake file:
+There are two targets defined in CMake file:
 \begin{enumerate}
 \item \textbf{Test efficiency}, which was used to evaluate pair reconstruction methods, draw epipolar lines in images and calculate samson error distances
 \item \textbf{Test reconsturction}, which was used to evaluate proposed initialization pair reconstruction methods with different pose estimation methods
