@@ -99,29 +99,28 @@ Special refinement methods can be used to compensate for an error of mismatched 
     \label{fig:BundleAdjustment}
 \end{figure}
 \section{Mobile Sensors overview}
-There are many sensors available in nowadays smartphones such as accelerometer, gyroscope, magnetomere, barometer, GPS etc. All of them have their advanteges and disadvanteges, but their errors, different in nature, can be compansated with each other to for exmaple accuretly compute camera rotation angles.
+There are many sensors available in the nowadays smartphones, such as accelerometer, gyroscope, magnetometer, barometer, GPS, etc. All of them have their advantages and disadvanteges, and thus the errors of some might be compensated for with the strengths of the others in otrder to, for example, accuretely compute camera rotation angles.
 \subsection{Accelerometer}
-An accelerometer is a device that measures acceleration along 3 axes of the device[reference]. Generally, accelerometers alows to measure total acceleration by sensing how much mass presses on its micro strings when a force is applied. An accelerometer, which lay on a flat surface perpendicular to the Earth's surface will indicate approximately 1G upwards. This gravitation vector can be used to caculate relative camera rotation, but it's hard to tell where in which direction gravity vector points, when device is moving in not linear manner. To obtain the gravity vector and track it during unexpected movement gyroscope sensor can be used.
+An accelerometer is a device that measures acceleration along 3 axes of the device [reference]. Generally, an accelerometer allows for measuring total acceleration by sensing what force is applied to its micro strings. An accelerometer, which lies on a flat surface perpendicular to the Earth's surface will indicate approximately 1G upwards. This gravitation vector can be used to caculate the relative camera rotation, but it is difficult to define to which direction the gravity vector points when the device is moving in not a linear manner. The gravity vector is obtained from the accelerometer data and tracked during unexpected movements with the used of gyroscope sensor.
 \subsection{Gyroscope}
-A gyroscope is a device for measuring or maintaining orientation, based on the principles of conservation of angular momentum [reference]. A standard gyroscope consists of a spinning wheel mounted on two gimbal rings, which allow it to rotate in all three axes. The spinning wheel will resist changes in orientation, due to an effect of the conservation of angular momentum. A conventional gyroscope measures orientation, in contrast to MEMS (Micro Electro-Mechanical System) types, which measure
+A gyroscope is a device for measuring or maintaining orientation, based on the principles of conservation of angular momentum [reference]. A standard gyroscope consists of a spinning wheel mounted on two gimbal rings, which allows it to rotate in all three axes. The spinning wheel will resist changes in orientation, due to an effect of the conservation of angular momentum. A conventional gyroscope measures orientation, in contrast to MEMS (Micro Electro-Mechanical System) types, which measure
 angular rate, and are therefore called rate-gyros [reference]. MEMS gyroscopes contain vibrating elements to measure the Coriolis effect. In the end the angular velocity can be calculated in each axis. It is important to note that whereas the accelerometer and the magnetometer measure acceleration and angle relative to the Earth, gyroscope measures angular velocity
 relative to the body.
 \subsection{Magnetometer}
-A magnetometer is an instrument used to measure the strength and/or direction of the magnetic field in the surrounding area of the instrument. It's main idea works the same as conventional compass. With some magentometers magnetic field can be me in 3 particular directions, relative to the spatial orientation of the device [reference]. Using magnetometers allows for relative position estimation in geomagnetic north position system. 
+A magnetometer is an instrument used to measure the strength and/or direction of the magnetic field in the surrounding area of the instrument. Its main idea works in the same manner as the conventional compass'. With some magentometers magnetic field can be meeasured in 3 directions, relative to the spatial orientation of the device [reference]. Using magnetometers allows for estimating relative position in geomagnetic north position system. 
 \subsection{Sensor Fusion}
-Sensor fusion is the process of  combining sensory data derived from sensory data from disparate
-sources such that the resulting information is in some sense better than would be possible
-when these sources were used individually. The term better in this case can mean more
-accurate, more complete, or more dependable, or refer to the result of an emerging view, such
+Sensor fusion is the process of combining sensory data derived from disparate
+sources in a way that the resulting information is to some extent more valuable than it would be possible should these sources be used individually. The term "more valuble" in this case may mean "more
+accurate", "more complete", or "more dependable", or refer to the result of an emerging view, such
 as stereoscopic vision (calculation of depth information by combining two-dimensional
-images from two cameras at slightly different viewpoints) [reference]. One of the possible strategies is Kalman-filterring(\ref{fig:Kalmann})
+images from two cameras at slightly different viewpoints) [reference]. One of the strategies available is Kalman filtering(\ref{fig:Kalmann})
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{Kalmann}
     \caption{}
     \label{fig:Kalmann}
 \end{figure}
-Available in Android API SesnorFusion sensor uses this approach, where the base of orientation measurements is calculation of gravity, when device was not moving and using gyroscope data (very accurate for a short period of time), when device starts to unexpectedly moving. Magnetometer data are fusined to allow for global earth coordinate system.
+This approach is used in Sesnor Fusion available in Android API, where the gravity vector calculateion is enhanced with the accelerometer and gyroscope data. The gravity vector can be decomposed in order to estimate the camera's rotation angles. Magnetometer can be used optionally in order to acquire rotation angles referrenced to the Earth's coordinate system. However, magnetometer is sensitive to changes in the electromagnetic fields, therefore its measurement can be noisy in confined spaces filled with electronic devices. Substracting gravity from the actual acceleration measurements allows for estimating linear acceleration. The use of linear acceleration makes it possible to measure the relative change of the device's translation. However, it requires a double integration over time, which results in increasing the translation's noise. It is important to note that calculating rotation is significantly more accurate than estimating the translation. 
 
 
 % ---------------------------------------------------------------------------
