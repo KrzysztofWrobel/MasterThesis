@@ -2,51 +2,51 @@
 % content in this file will be fed into the main document
 
 \chapter{Fundamentals} % top level followed by section, subsection
-This chapter explains basic theory of 3D reconstruction and Structure from Motion. All of this informations can be found in \cite{HartleyMultipleView}. Moreover it makes brief overview of sensor fusion made using accelerometer, gyroscope and magnetometer data. 
+This chapter explains the basic theory of 3D reconstruction and Structure from Motion. All information referred to herein can be found in \cite{HartleyMultipleView}. It also includes brief overview of sensor fusion made with the use of accelerometer, gyroscope and magnetometer data. 
 
 % ----------------------- contents from here ------------------------
 \section{3-D reconstruction in general}
-There are many possibilities of reconstruction from two-view reconstruction, multiple-view reconstruction to usage of stereo calibrated cameras like the ones used in Kinect[reference]. Reconstraction can be also performed with single hand-held camera either from video or images sequence. Only two images from different angles of one object are needed to perform 3D model generation. Reconstraction process consists of following steps:
+There are many possibilities of performing reconstruction, starting from two-view reconstruction, multiple-view reconstruction and ending with the use of stereo calibrated cameras like the ones used in Kinect[reference]. Reconstruction can also be performed with a single hand-held camera either from a video or a sequence of images. As little as two pictures taken from different angles of a single object are sufficient to perform 3D model generation. Reconstruction process consists of the following steps:
 \setlist[2]{noitemsep} % sets the itemsep and parsep for all level two lists to 0
 \setenumerate{noitemsep} % sets no itemsep for enumerate lists only
 \begin{enumerate}
 \item \textbf{Image Acquistion}, where images are acquired 
-\item \textbf{Feature extraction and correspondences matching}, where interesting features are extracted and compared between images
-\item \textbf{Fundamental \& Essential Matrices} , where matrices satisfying basic epipolar geometry are calculated
-\item \textbf{Camera parameters estimation} , where external and internal camera parameters are estimated
+\item \textbf{Feature extraction and corresponding points matching}, where distinctive features are extracted from the images and compared
+\item \textbf{Fundamental \& Essential Matrices}, where matrices meeting the requirements of basic epipolar geometry are calculated
+\item \textbf{Camera parameters estimation}, where external and internal camera parameters are estimated
 \item \textbf{Triangulation}, where camera projection matrices are composed and used in order to calculate 3D cloud points
 \end{enumerate}
-\subsection{Feature extraction and correspondence matching}
-Usually each image used in reconstraction has to be analysed in order to find interesting features. Afterwards all of features in images are compared in order to acquire corresponding matches(\ref{fig:correspondingMatches}).
+\subsection{Feature extraction and corresponding points matching}
+Usually, each image used in reconstruction has to be analysed in order for the dstinctive features to be found. Afterwards all features in images are compared in order to find corresponding matches(\ref{fig:correspondingMatches}).
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{correspondingMatching}
     \caption{}
     \label{fig:correspondingMatches}
 \end{figure}
-There are multiple features detector and extractors available to use \url{$http://en.wikipedia.org/wiki/Feature_detection_%28computer_vision%29$}. Some of them are better for edge detection, where others are better for corner or blob detection. One of the most popluar and robust feature detection method are Scale-invariant feature transform SIFT\url{http://en.wikipedia.org/wiki/Scale-invariant_feature_transform}. Using this descriptors local features in images are detected and described with metrics that are scale, rotation and translation invariant.
+There are multiple features detectors and extractors available for use \url{$http://en.wikipedia.org/wiki/Feature_detection_%28computer_vision%29$}. Some of them are more suitable for edge detection, while others are best used for corner or blob detection. One of the most popluar and robust feature detection method is scale-invariant feature transform (SIFT) \url{http://en.wikipedia.org/wiki/Scale-invariant_feature_transform}. The use of these descriptors allows for detecting local features in images and describing them with metrics including scale, rotation and translation invariant.
 \subsection{Fundamental \& Essential Matrix estimations}
-Once proper matches are decided, it can be proven that there exsists Fundamental matrix F for which following equation is satisfied:
+Once proper matches are found, it can be proven that there exsists Fundamental matrix F for which the following equation is satisfied:
 \begin{equation} \label{eq:fundamntalEquation}
 {x}^{'T} * F * x = 0
 \end{equation} 
-where $x$ and ${x}_{'}$ are uncalibrated points correspondances\cite{HartletMultipleView}TODO chapter. It is known that soultuions of this equation are highly sensetive to presence of outliers. Usually to make fundamental matrix estimations more accurate some outliers removing algorithms needs to be used. One of more robost approaches is usage of RANdom SAmple Consensus (\gls{ransac}) \url{http://en.wikipedia.org/wiki/RANSAC}. Sample fitting example can be seen in \ref{fig:RANSACFitting}
+where $x$ and ${x}_{'}$ are uncalibrated notions of points correspondence \cite{HartletMultipleView}TODO chapter. It is known that soultuions of this equation are highly sensitive to the occurence of outliers. Usually, to make fundamental matrix estimations more accurate some outliers removing algorithms need to be used. One of the most robust approaches includes the use of of RANdom SAmple Consensus (\gls{ransac}) \url{http://en.wikipedia.org/wiki/RANSAC}. The example of sample fitting can be seen in \ref{fig:RANSACFitting}
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{RANSACFitting}
-    \caption{Ransac fitting for 2D image TODO reference}
+    \caption{RANSAC fitting for 2D image TODO reference}
     \label{fig:RANSACFitting}
 \end{figure}
-It basic idea relies on choosing randomly subset from whole correspondances, solving problem with reduced dataset and checking how many points from original set satisfies equation.
-Using F epipolar lines for each point can be calculated(\ref{fig:EpipolarGeometry}). These lines crosses exactly same points in both images and can be used for dense feature matching as correspondances needs to be searched only in the neighbourhood of these lines.
+Its basic idea relies on choosing a random subset from among all matches, solving a problem of reduced dataset and establishing how many points from the original set satisfy the equation.
+The use of F matrix allows for calculating epipolar lines for each point (\ref{fig:EpipolarGeometry}). These lines cross exactly the same points in both images and can be used for dense feature matching sinces matches need to be searched for exclusively in the surroundings of these lines.
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{EpipolarGeometry}
-    \caption{Epipolar lines found in vase images TODO reference}
+    \caption{Epipolar lines found in an image of a vase TODO reference}
     \label{fig:EpipolarGeometry}
 \end{figure}
-When enough inliers were found, points that didn't satisfy equation can be removed from further processing.
-Once internal camera parameters K are known calculated image points can be calibrated and expressed in camera reference position system. Such calibrated points satisfy following essential matrix E equation:
+When enough inliers are found, points that do not satisfy the equation can be removed from further processing.
+Once internal camera parameters K are known, the image points found can be calibrated and expressed in camera reference position system. Such calibrated points satisfy the following essential matrix E equation:
 \begin{equation} \label{eq:essentialEquation}
 {x}_{c}^{'T} * E * x_{c} = 0
 \end{equation} 
@@ -54,9 +54,9 @@ which is very similar to fundamental equation \ref{eq:fundamntalEquation}. This 
 \begin{equation} \label{eq:essentialFundamentalRelation}
 E = K^{T} * F * K
 \end{equation} 
-with $K$ being the internal camera parameters. Equation \ref{eq:essentialFundamentalRelation} is important in terms of decomposition of F to relative rotation and translation.
+with $K$ being the internal camera parameters. This equation \ref{eq:essentialFundamentalRelation} is important in terms of decomposition of F matrix to relative rotation and translation.
 \subsection{Camera parameters estimations}
-Internal camera parameters are expressed by following matrix:
+Internal camera parameters are expressed by the following matrix:
 \begin{equation}
 \begin{bmatrix}
 \alpha _{x} &  & x_{0} \\ 
@@ -64,8 +64,9 @@ Internal camera parameters are expressed by following matrix:
  &  & 1
 \end{bmatrix}
 \end{equation}
-where αx = fmx and αy = fmy represent the focal length of the camera in terms of pixel dimensions in the x and y direction respectively. Similarly, x ̃0 = (x0,y0) is the principal point in terms of pixel dimensions. These parameters needs to be calculated only once for each camera model. Cameras can be calibrated with special reference boards of known dimensions and chracteristics.
-In terms of propoer 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation(orientation angles of the camera) and global postition of the camera. Usually in terms of 3D reconstraction these parametrs are not known. However in Chapter 9 of Multiple View Geometry in Computer Vision(\cite{HartleyMultipleView}) shows how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to relative camera positioning system of two projections:
+where αx = fmx and αy = fmy represent the focal length of the camera expressed in pixel dimensions in the x and y direction respectively. 
+Similarly, x ̃0 = (x0,y0) is the principal point of pixel dimensions. These parameters need to be calculated only once for each camera model. Cameras can be calibrated with special reference boards of the known dimensions and chracteristics.
+For the proper 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation(orientation angles of the camera) and global postition of the camera. Usually in terms of 3D reconstraction these parametrs are not known. However in Chapter 9 of Multiple View Geometry in Computer Vision(\cite{HartleyMultipleView}) shows how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to relative camera positioning system of two projections:
 \begin{equation}
  P1 = K * \begin{bmatrix}I\mid 0\end{bmatrix}
 \end{equation}
