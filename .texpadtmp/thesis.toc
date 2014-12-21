@@ -1,7 +1,7 @@
 \select@language {english}
-\contentsline {chapter}{List of Figures}{ix}{chapter*.2}
-\contentsline {chapter}{List of Tables}{xii}{chapter*.3}
-\contentsline {chapter}{Acronyms}{xiii}{section*.4}
+\contentsline {chapter}{List of Figures}{x}{chapter*.2}
+\contentsline {chapter}{List of Tables}{xiii}{chapter*.3}
+\contentsline {chapter}{Acronyms}{xiv}{section*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Purpose of this thesis}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope}{2}{section.1.2}
@@ -26,12 +26,12 @@
 \contentsline {chapter}{\numberline {4}Concept}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}Requirements}{16}{section.4.1}
 \contentsline {section}{\numberline {4.2}Enhancing epipolar geometry equations with initial rotation matrix}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Alternative 3-point algorithm for translation finding}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Alternative 3-point algorithm for finading a translation}{18}{subsection.4.2.1}
 \contentsline {section}{\numberline {4.3}Pose estimation}{19}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Rotation enhancements}{19}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Rotation enhancements}{20}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Rotation \& translation enhancements}{20}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Known rotations \& translations}{20}{section.4.4}
-\contentsline {section}{\numberline {4.5}Reconstruction process strategy}{20}{section.4.5}
+\contentsline {section}{\numberline {4.5}Reconstruction process strategy}{21}{section.4.5}
 \contentsline {chapter}{\numberline {5}Implementation}{22}{chapter.5}
 \contentsline {section}{\numberline {5.1}Choosing Environment}{22}{section.5.1}
 \contentsline {section}{\numberline {5.2}Project Structure}{22}{section.5.2}

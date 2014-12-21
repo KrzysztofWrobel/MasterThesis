@@ -409,7 +409,7 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={TOplural={},counter={page},parent={},},%
+long={TO={},short={},shortplural={},counter={page},parent={},},%
 longplural={},%
 short={},%
 shortplural={},%

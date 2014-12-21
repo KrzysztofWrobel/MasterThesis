@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  21 DEC 2014 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  21 DEC 2014 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1272,37 +1272,46 @@ Missing character: There is no ¤ in font cmr12!
 
  (./0_frontmatter/abstract.tex [3
 
+]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¤ in font cmr10!
+ [4
+
 ])
 \openout2 = `0_frontmatter/dedication.aux'.
 
- (./0_frontmatter/dedication.tex [4
+ (./0_frontmatter/dedication.tex [5
 
 
 ])
 \openout2 = `0_frontmatter/acknowledgement.aux'.
 
- (./0_frontmatter/acknowledgement.tex [5
+ (./0_frontmatter/acknowledgement.tex [6
 
 
-]) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.toc [6
+]) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.toc [7
 \FN@pp@footnotehinttrue 
 
 
-] [7])
+] [8])
 \tf@toc=\write9
 \openout9 = `thesis.toc'.
 
- [8] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lof [9
+ [9] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lof [10
 
-] [10])
+] [11])
 \tf@lof=\write10
 \openout10 = `thesis.lof'.
 
- [11] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lot)
+ [12] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lot)
 \tf@lot=\write11
 \openout11 = `thesis.lot'.
 
- [12
+ [13
 
 ]
 \openout2 = `0_frontmatter/glossary.aux'.
@@ -1311,7 +1320,7 @@ Missing character: There is no ¤ in font cmr12!
 \@gls@deffile=\write12
 \openout12 = `thesis.glsdefs'.
 
-) (./thesis.acr) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.gls) [13
+) (./thesis.acr) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.gls) [14
 
 
 \FN@pp@footnotehinttrue 
@@ -1324,7 +1333,7 @@ Missing character: There is no ¤ in font cmr12!
  (./1_introduction/introduction.tex
 Chapter 1.
 
-Package natbib Warning: Citation `kinect' on page 1 undefined on input line 29.
+Package natbib Warning: Citation `kinect' on page 1 undefined on input line 19.
 
 [1
 
@@ -1338,7 +1347,7 @@ Chapter 2.
 
 Package natbib Warning: Citation `HartleyMultipleView' on page 3 undefined on input line 11.
 
-<figures/correspondingMatching.png, id=492, 2684.0275pt x 1100.11pt>
+<figures/correspondingMatching.png, id=497, 2684.0275pt x 1100.11pt>
 File: figures/correspondingMatching.png Graphic file (type png)
  <use figures/correspondingMatching.png>
 Package pdftex.def Info: figures/correspondingMatching.png used on input line 29.
@@ -1351,12 +1360,12 @@ Package pdftex.def Info: figures/correspondingMatching.png used on input line 29
 
 Package natbib Warning: Citation `HartletMultipleView' on page 4 undefined on input line 39.
 
-<figures/RANSACFitting.png, id=507, 609.27625pt x 592.2125pt>
+<figures/RANSACFitting.png, id=512, 609.27625pt x 592.2125pt>
 File: figures/RANSACFitting.png Graphic file (type png)
  <use figures/RANSACFitting.png>
 Package pdftex.def Info: figures/RANSACFitting.png used on input line 42.
 (pdftex.def)             Requested size: 330.05322pt x 320.82013pt.
- <figures/EpipolarGeometry.png, id=509, 911.405pt x 657.45625pt>
+ <figures/EpipolarGeometry.png, id=514, 911.405pt x 657.45625pt>
 File: figures/EpipolarGeometry.png Graphic file (type png)
  <use figures/EpipolarGeometry.png>
 Package pdftex.def Info: figures/EpipolarGeometry.png used on input line 50.
@@ -1375,17 +1384,17 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 6 undefined on in
 
 LaTeX Warning: Reference `eq:3Dreconstruction' on page 6 undefined on input line 85.
 
-<figures/3Dreconstruction.png, id=531, 604.2575pt x 351.3125pt>
+<figures/3Dreconstruction.png, id=536, 604.2575pt x 351.3125pt>
 File: figures/3Dreconstruction.png Graphic file (type png)
  <use figures/3Dreconstruction.png>
 Package pdftex.def Info: figures/3Dreconstruction.png used on input line 88.
 (pdftex.def)             Requested size: 330.05322pt x 191.89304pt.
- [6] <figures/BundleAdjustment.png, id=546, 767.86874pt x 335.2525pt>
+ [6] <figures/BundleAdjustment.png, id=550, 767.86874pt x 335.2525pt>
 File: figures/BundleAdjustment.png Graphic file (type png)
  <use figures/BundleAdjustment.png>
 Package pdftex.def Info: figures/BundleAdjustment.png used on input line 103.
 (pdftex.def)             Requested size: 330.05322pt x 144.1046pt.
- [7] [8 <./figures/EpipolarGeometry.png> <./figures/3Dreconstruction.png>] [9] <figures/Kalmann.png, id=562, 1548.78625pt x 883.3pt>
+ [7] [8 <./figures/EpipolarGeometry.png> <./figures/3Dreconstruction.png>] [9] <figures/Kalmann.png, id=566, 1548.78625pt x 883.3pt>
 File: figures/Kalmann.png Graphic file (type png)
  <use figures/Kalmann.png>
 Package pdftex.def Info: figures/Kalmann.png used on input line 125.
@@ -1477,14 +1486,14 @@ Chapter 4.
 
 
 
-]
+] [17]
 
-LaTeX Warning: Reference `:' on page 17 undefined on input line 49.
+LaTeX Warning: Reference `:' on page 18 undefined on input line 49.
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 17 undefined on input line 51.
+Package natbib Warning: Citation `HartleyMultipleView' on page 18 undefined on input line 51.
 
-[17] [18] [19] [20]) [21]
+[18] [19] [20]) [21]
 \openout2 = `6/implementation.aux'.
 
  (./6/implementation.tex
@@ -1493,7 +1502,7 @@ Chapter 5.
 
 
 
-] <figures/AndroidScreenShot.png, id=655, 1927.2pt x 1084.05pt>
+] <figures/AndroidScreenShot.png, id=659, 1927.2pt x 1084.05pt>
 File: figures/AndroidScreenShot.png Graphic file (type png)
  <use figures/AndroidScreenShot.png>
 Package pdftex.def Info: figures/AndroidScreenShot.png used on input line 25.
@@ -1552,22 +1561,22 @@ PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
-<figures/summary1Sift300.jpg, id=941, 2569.6pt x 2890.8pt>
+<figures/summary1Sift300.jpg, id=945, 2569.6pt x 2890.8pt>
 File: figures/summary1Sift300.jpg Graphic file (type jpg)
  <use figures/summary1Sift300.jpg>
 Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 103.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift300.jpg, id=942, 2569.6pt x 2890.8pt>
+ <figures/summary2Sift300.jpg, id=946, 2569.6pt x 2890.8pt>
 File: figures/summary2Sift300.jpg Graphic file (type jpg)
  <use figures/summary2Sift300.jpg>
 Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 109.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary1Sift1000.jpg, id=945, 2569.6pt x 2890.8pt>
+ <figures/summary1Sift1000.jpg, id=949, 2569.6pt x 2890.8pt>
 File: figures/summary1Sift1000.jpg Graphic file (type jpg)
  <use figures/summary1Sift1000.jpg>
 Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 117.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift1000.jpg, id=946, 2569.6pt x 2890.8pt>
+ <figures/summary2Sift1000.jpg, id=950, 2569.6pt x 2890.8pt>
 File: figures/summary2Sift1000.jpg Graphic file (type jpg)
  <use figures/summary2Sift1000.jpg>
 Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 123.
@@ -1597,7 +1606,7 @@ Overfull \hbox (25.55417pt too wide) in paragraph at lines 197--198
 
 LaTeX Warning: Float too large for page by 5.98788pt on input line 201.
 
-[46] [47] [48] <figures/bundleAdjustmentComparison.png, id=1016, 3001.2125pt x 2214.2725pt>
+[46] [47] [48] <figures/bundleAdjustmentComparison.png, id=1020, 3001.2125pt x 2214.2725pt>
 File: figures/bundleAdjustmentComparison.png Graphic file (type png)
  <use figures/bundleAdjustmentComparison.png>
 Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 209.
@@ -1630,7 +1639,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49
 
-] [50 <./figures/bundleAdjustmentComparison.png>] [51] [52] <figures/uni4000Comparison.png, id=1038, 1975.38pt x 2978.12625pt>
+] [50 <./figures/bundleAdjustmentComparison.png>] [51] [52] <figures/uni4000Comparison.png, id=1042, 1975.38pt x 2978.12625pt>
 File: figures/uni4000Comparison.png Graphic file (type png)
  <use figures/uni4000Comparison.png>
 Package pdftex.def Info: figures/uni4000Comparison.png used on input line 287.
@@ -1639,22 +1648,22 @@ Package pdftex.def Info: figures/uni4000Comparison.png used on input line 287.
 
 LaTeX Warning: Float too large for page by 34.4051pt on input line 290.
 
-<figures/uni400Comparison.png, id=1039, 1978.39125pt x 1939.245pt>
+<figures/uni400Comparison.png, id=1043, 1978.39125pt x 1939.245pt>
 File: figures/uni400Comparison.png Graphic file (type png)
  <use figures/uni400Comparison.png>
 Package pdftex.def Info: figures/uni400Comparison.png used on input line 293.
 (pdftex.def)             Requested size: 371.30594pt x 363.93304pt.
- <figures/FailCaseFundamental.png, id=1040, 1953.2975pt x 598.235pt>
+ <figures/FailCaseFundamental.png, id=1044, 1953.2975pt x 598.235pt>
 File: figures/FailCaseFundamental.png Graphic file (type png)
  <use figures/FailCaseFundamental.png>
 Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 299.
 (pdftex.def)             Requested size: 371.30594pt x 113.71147pt.
- <figures/PoseEstimationMethodComparison.png, id=1041, 1987.425pt x 1280.785pt>
+ <figures/PoseEstimationMethodComparison.png, id=1045, 1987.425pt x 1280.785pt>
 File: figures/PoseEstimationMethodComparison.png Graphic file (type png)
  <use figures/PoseEstimationMethodComparison.png>
 Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 305.
 (pdftex.def)             Requested size: 371.30594pt x 239.2867pt.
- <figures/uniNone4000.png, id=1042, 1062.97125pt x 2047.65pt>
+ <figures/uniNone4000.png, id=1046, 1062.97125pt x 2047.65pt>
 File: figures/uniNone4000.png Graphic file (type png)
  <use figures/uniNone4000.png>
 Package pdftex.def Info: figures/uniNone4000.png used on input line 311.
@@ -1737,18 +1746,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 43450 strings out of 493117
- 960348 string characters out of 6135433
- 1281861 words of memory out of 5000000
+ 43451 strings out of 493117
+ 960356 string characters out of 6135433
+ 1281895 words of memory out of 5000000
  45603 multiletter control sequences out of 15000+600000
  13847 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,20n,102p,10422b,2214s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.pdf (79 pages, 20285031 bytes).
+Output written on /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.pdf (80 pages, 20289557 bytes).
 PDF statistics:
- 1288 PDF objects out of 1440 (max. 8388607)
- 1147 compressed objects within 12 object streams
- 462 named destinations out of 1000 (max. 500000)
+ 1293 PDF objects out of 1440 (max. 8388607)
+ 1151 compressed objects within 12 object streams
+ 463 named destinations out of 1000 (max. 500000)
  655 words of extra memory for PDF output out of 10000 (max. 10000000)
 
