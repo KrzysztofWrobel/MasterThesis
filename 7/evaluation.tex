@@ -3,9 +3,9 @@
 
 % change according to folder and file names
 \ifpdf
-    \graphicspath{{figures/}}
+    \graphicspath{{figures/}{figures/comparisons}}
 \else
-    \graphicspath{{figures/}}
+    \graphicspath{{figures/}{figures/comparisons}}
 \fi
 
 
@@ -230,6 +230,13 @@ Bundle Adjustmet process allows to rearrange both estimated 3D points positions 
 %  \end{center}
 %\end{figure}
 \subsection{Execution time}
+To see how proposed algorithms improve reconstruction process execution time without Bundle Adjustment was measured in \ref{plot:ReconstructionWithoutBA}. What can be noted that in comparison to Epipolar lines estimation overall reconstruction process time was slightly improved especially with 3-point algorithms. Comparing it to Execution times in \ref{plot:ExecutionTime} one can see that most of this time is used for SIFT correspondences matching, which is bottle-neck in proposed reconstruction methodology[reference to concept pose esitmation choosing]. Also Reconstruction time was also measered with Bundle Adjustment process at the end(\ref{plot:ReconstructionWithBA}). It turns out that Bundle Adjustment works much better on with enhanced Initial Pait reconstruction and Pose Estimation. Such cloud points are much better organised than standard reconstructed ones, which results in faster convergence of BA. Sample difference between cloud points before and after BA can be seen in \ref{fig:BundleAdjustmentComparison}
+\begin{figure}[b!]
+    \centering
+    \includegraphics[width=\textwidth]{bundleAdjustmentComparison}
+    \caption{3D point clouds before Bundle Adjustment(upper) and after(bottom) for Enhanced 8-point with Enhanced Pose Estimation. Warsaw University of Technology dataset for 1000 SIFT corresponding features(left - front, right - from side)}
+    \label{fig:BundleAdjustmentComparison}
+\end{figure}
 \begin{figure}[h!]
   \begin{center}
     \begin{tikzpicture}
@@ -250,11 +257,12 @@ Bundle Adjustmet process allows to rearrange both estimated 3D points positions 
         \addplot[mark=*,orange] table[x=Number of Sift features,y=Enhanced8-point+EnhancedPoseEstim,col sep=comma] {ReconstructTotal.csv}; 
         \addplot[mark=*,pink] table[x=Number of Sift features,y=Alternative3-point+NormalPoseEstim,col sep=comma] {ReconstructTotal.csv};
         \addplot[mark=*,green] table[x=Number of Sift features,y=Alternative3-point+EnhancedPoseEstim,col sep=comma] {ReconstructTotal.csv};
-        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructTotal.csv};
-        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation, Known Rotations and Translations}
+%        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructTotal.csv};
+        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation}
       \end{axis}
     \end{tikzpicture}
-    \caption{Total reconstruction execution time (4 images with resolution 1024x768pixels) in comparison to initial Sift feature number}
+    \caption{Total reconstruction execution time (4 images with resolution 1024x768pixels) in comparison to Sift feature number}
+    \label{plot:ReconstructionWithoutBA}
   \end{center}
 \end{figure}
 
@@ -272,6 +280,8 @@ Bundle Adjustmet process allows to rearrange both estimated 3D points positions 
           log ticks with fixed point,
           ymode=normal,
           ylabel=Execution time(ms),
+          scaled ticks = false,
+          xticklabel style={/pgf/number format/.cd,fixed,precision=5},
           legend style={at={(0.5,-0.05)},anchor=north,cells={anchor=west}}, % Put the legend below the plot
         ]
         \addplot[mark=*,blue] table[x=Number of Sift features,y=8-pointInit+NormalPoseEstim,col sep=comma] {ReconstructBA.csv}; 
@@ -279,26 +289,56 @@ Bundle Adjustmet process allows to rearrange both estimated 3D points positions 
         \addplot[mark=*,orange] table[x=Number of Sift features,y=Enhanced8-point+EnhancedPoseEstim,col sep=comma] {ReconstructBA.csv}; 
         \addplot[mark=*,pink] table[x=Number of Sift features,y=Alternative3-point+NormalPoseEstim,col sep=comma] {ReconstructBA.csv};
         \addplot[mark=*,green] table[x=Number of Sift features,y=Alternative3-point+EnhancedPoseEstim,col sep=comma] {ReconstructBA.csv};
-        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructBA.csv};
-        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation, Known Rotations and Translations}
+%        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructTotal.csv};
+        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation}
       \end{axis}
     \end{tikzpicture}
-    \caption{Total execution time of reconstruction with Bundle Adjustment(4 images with resolution 1024x768pixels) in comparison to initial Sift feature number}
+    \caption{Total execution time of reconstruction with Bundle Adjustment(4 images with resolution 1024x768pixels) in comparison to Sift feature number}
+    \label{plot:ReconstructionWithBA}
   \end{center}
 \end{figure}
 \clearpage
 
 \section{Effectivness}
-%\begin{figure}[p]
-%    \centering
-%    \includegraphics[width=0.8\textwidth]{TODO}
-%    \caption{}
-%    \label{fig:TODO}
-%\end{figure}
-\subsection{3D cloud reconstructed models}
-Reconstructed models were injected into normal images
-
-
+However numerical measuerments do not always results in proper 3D model reconstructions, so some of the intresting 3D reconstraction situations are presented on next 4 pages. In \ref{fig:uni4000Comparison} different Initialization Pair methods were used to reconstruction models for 4000 SIFT features. It can be seen that standard and enhaced methods gave quite good results, which only differ in scale. 3-point algorithm produces quite good models, but slightly distorted due to noise in used rotations. Model reconstructed from known rotations and translations are very distorted, but stil readable. It could be used, when very fast reconstruction is needed. Essential Matrix estimation methods unfortunately failed in terms of relative pose estimation.
+\newline
+However situation changes a little bit for 400 points. Every algorithm managed to find solution reallt close to optimum. In some cases "Traingulation Test" used in Standard 8-point approach fails and produces unrecognizable model(\ref{fig:FailCaseFundamental}).
+\newline
+When it comes to Pose Estimations enhancments one can see in \ref{fig:PoseEstimationMethodComparison} that generally initial  rotation and translation help to find better solution, which mainly manifests in less outliers number.
+\newline
+In figure \ref{fig:UniNone4000} it can be seen, how many outliers using only noisy rotations and translations produces.
+\newline
+More reconstructed models can be found in [TODO Materials]
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.9\textwidth]{uni4000Comparison}
+    \caption{Reconstructed models for proposed Initial reconstruction methods and 4000 Sift Features. From upper left to bottom right following: 1) Standard 8-point, 2) Enhanced 8-point, 3) Alternative 3-point, 4) Known rotations and translations, 5) Standard 5-point, 6) Enhanced 5-point}
+    \label{fig:uni4000Comparison}
+\end{figure}
+\begin{figure}[t!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{uni400Comparison}
+    \caption{Reconstructed models for proposed Initial reconstruction methods and 400 Sift Features. From upper left to bottom right following: 1) Standard 8-point, 2) Enhanced 8-point, 3) Alternative 3-point, 4) Known rotations and translations, 5) Standard 5-point, 6) Enhanced 5-point}
+    \label{fig:uni400Comparison}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.9\textwidth]{FailCaseFundamental}
+    \caption{Fail test case of Standard 8-point triangulation(left) in comparison to fortunate reconstruction}
+    \label{fig:FailCaseFundamental}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.9\textwidth]{PoseEstimationMethodComparison}
+    \caption{Pose estimation methods comparison(Views from front and side). Left: Normal Pose Estimation, right: Enhanced Rotation and Translation Pose Estimation}. Less outliers are reconstructed when enhancment is used.
+    \label{fig:PoseEstimationMethodComparison}
+\end{figure}
+\begin{figure}[p]
+    \centering
+    \includegraphics[height=18cm]{uniNone4000}
+    \caption{Reconstruction results from known translations and rotations from different angles. Upper shows front face of building, other from different angles. Many outliers in reconstructed model.}
+    \label{fig:UniNone4000}
+\end{figure}
 
 % ---------------------------------------------------------------------------
 % ----------------------- end of thesis sub-document ------------------------

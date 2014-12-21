@@ -129,7 +129,7 @@
     \DeclareGraphicsExtensions{.png, .jpg, .jpeg, .pdf, .gif} %GIF doesn't work??
     \usepackage[pdftex]{graphicx}
     \pdfcompresslevel=9
-    \graphicspath{{0_frontmatter/figures/PNG/}{0_frontmatter/figures/PDF/}{0_frontmatter/figures/}{figures/}}
+    \graphicspath{{0_frontmatter/figures/PNG/}{0_frontmatter/figures/PDF/}{0_frontmatter/figures/}{figures/}{figures/comparison}}
 \else
     \usepackage[ dvips, 
                  bookmarks,
@@ -150,7 +150,7 @@
     \DeclareGraphicsExtensions{.eps, .ps}
     \usepackage{epsfig}
     \usepackage{graphicx}
-    \graphicspath{{0_frontmatter/figures/EPS/}{0_frontmatter/figures/}{8/figures/EPS/}{figures/}}
+    \graphicspath{{0_frontmatter/figures/EPS/}{0_frontmatter/figures/}{8/figures/EPS/}{figures/}{figures/comparison}}
 \fi
 
 
