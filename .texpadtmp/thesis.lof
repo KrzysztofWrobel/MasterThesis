@@ -1,31 +1,31 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{9}{figure.caption.6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ransac fitting for 2D image\relax }}{9}{figure.caption.7}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Epipolar lines found in vase images\relax }}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax }}{9}{figure.caption.9}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces \relax }}{9}{figure.caption.10}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces \relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{5}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces RANSAC fitting for 2D image TODO reference\relax }}{5}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Epipolar lines found in an image of a vase TODO reference\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax }}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces TODO reference\relax }}{11}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces \relax }}{11}{figure.caption.11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Chart showing the sum of Sampson Errors in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{31}{figure.caption.13}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Chart showing per point Sampson Error in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{33}{figure.caption.14}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{34}{figure.caption.15}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3) Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{35}{figure.caption.16}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{36}{figure.caption.17}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{37}{figure.caption.18}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Execution time of the proposed algorithms(1024x768pixels) per initial SIFT feature set size\relax }}{38}{figure.caption.19}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{41}{figure.caption.20}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces 3D point clouds before Bundle Adjustment (upper) and after (bottom) for enhanced 8-point with enhanced pose estimation. Warsaw University of Technology dataset with 1000 SIFT corresponding features (left - front, right - side)\relax }}{43}{figure.caption.21}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Total reconstruction execution time (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{44}{figure.caption.22}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{45}{figure.caption.23}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{47}{figure.caption.24}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{48}{figure.caption.25}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Fail test case of Standard 8-point triangulation(left) in comparison to fortunate reconstruction(right)\relax }}{48}{figure.caption.26}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Pose estimation methods comparison (Views from front and side). Left: Normal Pose Estimation, right: Enhanced Rotation and Translation Pose Estimation\relax }}{49}{figure.caption.27}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Reconstruction results from known translations and rotations from different angles. The upper one shows the front face of building, the others present views from side angles. In the reconstructed model many outliers are present.\relax }}{50}{figure.caption.28}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Chart showing the sum of Sampson Errors in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{35}{figure.caption.13}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Chart showing per point Sampson Error in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{37}{figure.caption.14}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{38}{figure.caption.15}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3) Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{39}{figure.caption.16}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{40}{figure.caption.17}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{41}{figure.caption.18}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Execution time of the proposed algorithms(1024x768pixels) per initial SIFT feature set size\relax }}{42}{figure.caption.19}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{45}{figure.caption.20}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces 3D point clouds before Bundle Adjustment (upper) and after (bottom) for enhanced 8-point with enhanced pose estimation. Warsaw University of Technology dataset with 1000 SIFT corresponding features (left - front, right - side)\relax }}{47}{figure.caption.21}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Total reconstruction execution time (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{48}{figure.caption.22}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{49}{figure.caption.23}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{51}{figure.caption.24}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{52}{figure.caption.25}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Fail test case of Standard 8-point triangulation(left) in comparison to fortunate reconstruction(right)\relax }}{52}{figure.caption.26}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Pose estimation methods comparison (Views from front and side). Left: Normal Pose Estimation, right: Enhanced Rotation and Translation Pose Estimation\relax }}{53}{figure.caption.27}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Reconstruction results from known translations and rotations from different angles. The upper one shows the front face of building, the others present views from side angles. In the reconstructed model many outliers are present.\relax }}{54}{figure.caption.28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

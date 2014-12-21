@@ -15,5 +15,5 @@
 (indexentry :tkey (("Epipolar lines" "\\glossentry{aa14}") ) :locref "{}{xiii}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("SIFT" "\\glossentry{aa15}") ) :locref "{}{xiii}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("RANSAC" "\\glossentry{ransac}") ) :locref "{}{4}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("SVD" "\\glossentry{svd}") ) :locref "{}{5}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("BA" "\\glossentry{ba}") ) :locref "{}{6}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("SVD" "\\glossentry{svd}") ) :locref "{}{6}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("BA" "\\glossentry{ba}") ) :locref "{}{9}" :attr "pageglsnumberformat" ) 

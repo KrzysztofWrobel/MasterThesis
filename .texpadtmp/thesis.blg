@@ -24,10 +24,29 @@ I found no database files---while reading file thesis.aux
 Warning--I didn't find a database entry for "kinect"
 Warning--I didn't find a database entry for "HartleyMultipleView"
 Warning--I didn't find a database entry for "HartletMultipleView"
+Warning--I didn't find a database entry for "objectRecAndLoc"
+Warning--I didn't find a database entry for "combinedMonoSlam"
+Warning--I didn't find a database entry for "8Point"
+Warning--I didn't find a database entry for "Batra5point"
+Warning--I didn't find a database entry for "Nister5point"
+Warning--I didn't find a database entry for "iterative5point"
+Warning--I didn't find a database entry for "RansacRefine"
+Warning--I didn't find a database entry for "HellwichEvaluation"
+Warning--I didn't find a database entry for "1point"
+Warning--I didn't find a database entry for "4point"
+Warning--I didn't find a database entry for "robustCameraImu"
+Warning--I didn't find a database entry for "lineBasedPose"
+Warning--I didn't find a database entry for "pureTransl"
 Warning--I didn't find a database entry for "ptam"
+Warning--I didn't find a database entry for "monoSlam"
+Warning--I didn't find a database entry for "simultanousRecLocMap"
+Warning--I didn't find a database entry for "distributedAR"
+Warning--I didn't find a database entry for "homographyMobile"
+Warning--I didn't find a database entry for "rotationSpaceSearch"
+Warning--I didn't find a database entry for "Enqvist10stablestructure"
 You've used 0 entries,
             2776 wiz_defined-function locations,
-            620 strings with 5320 characters,
+            655 strings with 5803 characters,
 and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0

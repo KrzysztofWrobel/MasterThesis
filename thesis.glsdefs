@@ -28,6 +28,126 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{rgb}{}%
+{%
+\gls@defglossaryentry{rgb}%
+{%
+name={RGB Camera},%
+sort={RGB Camera},%
+type={main},%
+first={RGB Camera},%
+firstplural={RGB Cameras},%
+text={RGB Camera},%
+plural={RGB Cameras},%
+description={Camera, which deliver image consting of 3 basic colors: red, green and blue},%
+descriptionplural={Camera, which deliver image consting of 3 basic colors: red, green and blue},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ir}{}%
+{%
+\gls@defglossaryentry{ir}%
+{%
+name={IR depth-finding Camera},%
+sort={IR depth-finding Camera},%
+type={main},%
+first={IR depth-finding Camera},%
+firstplural={IR depth-finding Cameras},%
+text={IR depth-finding Camera},%
+plural={IR depth-finding Cameras},%
+description={Camera, which deliver information about depth in image},%
+descriptionplural={Camera, which deliver information about depth in image},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ba}{}%
+{%
+\gls@defglossaryentry{ba}%
+{%
+name={BA},%
+sort={BA},%
+type={acronym},%
+first={Bundle Adjustment (BA)},%
+firstplural={Bundle Adjustments(BAs)},%
+text={BA},%
+plural={BAs},%
+description={Bundle Adjustment},%
+descriptionplural={Bundle Adjustment\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bundle Adjustment},%
+longplural={Bundle Adjustments},%
+short={BA},%
+shortplural={BAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ba}{}%
+{%
+\gls@defglossaryentry{ba}%
+{%
+name={BA},%
+sort={BA},%
+type={acronym},%
+first={Bundle Adjustment (BA)},%
+firstplural={Bundle Adjustments(BAs)},%
+text={BA},%
+plural={BAs},%
+description={Bundle Adjustment},%
+descriptionplural={Bundle Adjustment\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bundle Adjustment},%
+longplural={Bundle Adjustments},%
+short={BA},%
+shortplural={BAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{ba}{}%
 {%
 \gls@defglossaryentry{ba}%
