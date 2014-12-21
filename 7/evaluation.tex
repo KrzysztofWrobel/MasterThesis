@@ -316,31 +316,3 @@ More reconstructed models can be found in [TODO Materials]
 % ---------------------------------------------------------------------------
 % ----------------------- end of thesis sub-document ------------------------
 % ---------------------------------------------------------------------------
-
-%\begin{figure}[h]
-%  \begin{center}
-%    \begin{tikzpicture}
-%      \begin{axis}[
-%          width=\linewidth, % Scale the plot to \linewidth
-%          grid=major, % Display a grid
-%          grid style={dashed,gray!30}, % Set the style
-%          xtick = {100,500,1000,5000},
-%          xlabel=Sift features number, % Set the labels
-%          xmode=log,
-%          log ticks with fixed point,
-%          ymode=normal,
-%          ylabel=Execution time(ms),
-%          legend style={at={(0.5,-0.2)},anchor=north,cells={anchor=west}}, % Put the legend below the plot
-%        ]
-%        \addplot[mark=*,blue] table[x=Number of Sift features,y=8-pointInit+NormalPoseEstim,col sep=comma] {ReconstructInit.csv}; 
-%        \addplot[mark=*,red] table[x=Number of Sift features,y=Enhanced8-point+NormalPoseEstim,col sep=comma] {ReconstructInit.csv};
-%        \addplot[mark=*,orange] table[x=Number of Sift features,y=Enhanced8-point+EnhancedPoseEstim,col sep=comma] {ReconstructInit.csv}; 
-%        \addplot[mark=*,pink] table[x=Number of Sift features,y=Alternative3-point+NormalPoseEstim,col sep=comma] {ReconstructInit.csv};
-%        \addplot[mark=*,green] table[x=Number of Sift features,y=Alternative3-point+EnhancedPoseEstim,col sep=comma] {ReconstructInit.csv};
-%        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructInit.csv};
-%        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation, Known Rotations and Translations}
-%      \end{axis}
-%    \end{tikzpicture}
-%    \caption{Execution time of first pair images recontruction(1024x768pixels) in comparison to initial Sift feature number}
-%  \end{center}
-%\end{figure}
