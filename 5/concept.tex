@@ -3,31 +3,12 @@
 
 %: ----------------------- name of chapter  -------------------------
 \chapter{Concept} % top level followed by section, subsection
-Here general concept will be described without details about descriptors used and so on...
-As indicated in similar research it's very attractive to use additional data to enhance reconstruction and reduce ambiguity in finding correct solution of 3D reconstruction. It also helps to achive faster, more stable and robust algorithms. This thesis will show how prior knowledge of rotation or translation can be used to faster process 3D reconstruction of series of images. 
-However there are many algorithms, which relay on accuracy of additional rotation and translation data. In reality especially, when it comes to hand-held smartphones, collected data are very noisy. That's why this thesis also proposes enhancements of most popular algorytmic approaches, when noisy data are used.
+As indicated in similar research it's very attractive to use additional data to enhance reconstruction and reduce ambiguity in finding correct solution of 3D reconstruction. Additional camera or model information help to implement faster, more stable and robust algorithms. This thesis will show how prior knowledge of rotation or translation acquired via mobile sensor fusion can be used to enhance process of 3D reconstruction from series images. When it comes to relaying on hand-held smartphones, collected sensor data are very noisy. This thesis, how even noisy informations can be used in struction reconstraction processes. Initially only camera rotation estimation was supposed to be used in the scope of this mater thesis. However first trials of reconstruction proved to be not sufficient enough and additional rotation error matrix estimations were proposed.
+From analysis of theory and related works it seems that both epipolar equations and pose estimation techniques can be improved with additional rotation and translation information data.  Author of this thesis proposes environment, where user can decide what type of stargy to use. In terms of initialization of 3D cloud point reconstraction can be made using: 
 
 \section{Requirements}
-Proposed methodology needs as the input series of images with additional information about position of the camera - euclidan rotation and optionally translation. Usage of smartphone is actually not necessary. Any camera with SensorFusioned accelerometer and gyroscope(magnotometer is optional and as discussed in 2.5??? has its up and downsides) capable of storing pictures and sensor data can be  used. During algorithm runtime either both rotation and translation informations are used or just rotation, which as indicated in ....??? is less noisy than translation estimation. Internal camera parameters need to be calculated before reconstruction process is began. Additional sensor data can be unaccurate and noisy.
-\section{Reconstruction process strategy}
-Both Epipolar equations and Pose Estimation improvments can be used in different configurations. It's expected that some of them are more accurate and some are faster. It was necessery to evaluate this approaches both in term of speed and accuracy.   Author of this thesis proposes environment, where user can decide what type of stargy she/he wants to use. In terms of initialization of 3D cloud point reconstraction can be made using: 
-%TODO zrobic tabelke
-\begin{enumerate}
-\item Known rotatations and translations - relative poses are calculated from sensor data - euclidan reconstruction
-\item Known rotations - Alternative 3-point algorithm for translation finding or enhanced fundamental/essential
-\item Noisy rotation - enhanced fundamental/essential for dR and translation
-\item No known extrisinc parameters - standard fundamental/essential for R and Translation
-\end{enumerate}
-Later one new images are analized in comparison to previous one to enrich initial cloud point with new points. It's only necessery to keep track of each 3D cloud point corresponding 2D positions in images. In terms of Pose Estimation following methodologies can be used:
-\begin{enumerate}
-\item Known rotatation and translations - no additional calculations, just triangulation - euclidan reconstruction
-\item Known rotation - looking for relative translation by backProjection optimisations
-\item Noisy rotation - looking for dR and translation by backProjection optimisations
-\item No known extrisinc parameters - standard pose estimation
-\end{enumerate}
-Of cource in all of this steps it's really important to have as minimum outliers as possible. All of this methods are pretty good in terms of removing outliers, espiecially when connected with RANSAC algorithm.
-
-\section{Enhancing epipolar geometry equation}
+Proposed methodology needs as the input series of images with additional information about position of the camera - euclidan rotation and optionally translation. Usage of smartphone is actually not necessary. Any camera with SensorFusioned accelerometer and gyroscope(magnotometer is actually optional and as discussed in [TODO] has its advantages and disadvantages) capable of rotation and translation estimation can be used. Internal camera parameters need to be calculated before reconstruction process is started. Additional sensor data doesn't have to be very accurate. Noisy external camera parameters stil can be successfully used in order to enhance reconstruction process.
+\section{Enhancing epipolar geometry equations}
 \subsection{Rotation enhancements}
 Taking standard fundamental geometry equation and relative camera based system ($P = \begin{bmatrix}I |0\end{bmatrix}, P' = \begin{bmatrix}R|t\end{bmatrix}$) we can note that:
 \begin{equation} \label{eq:relativeFundamntal}
@@ -134,8 +115,6 @@ t_{z}
 = 0
 \end{equation}
 and solved for instance with SVD with only 3 points. This is very attractive way of reconstracting images from only 3 points especially in terms of speed. Overall accuracy strictly relies on precise measuerments of camera orientation.
-\subsection{Translation enhancements}
-It's known that without any additional informations about photographed scene or exact translation of camera scale cannot be retrived and only affine reconstruction can be done. As descriped in [ref] using SensorFusion linear acceleration of the capable camera can be calculated. Combining it with certain robust heuristic for movement estimation and low-pass filter relative/global translation of the camera can also be estimated. This information can be used to perform Euclidan reconstruction. Calculated T from G decomposition(\ref{eq:gMatrix}) can be combined with $T_{global}$ acquired by double integration of linear acceleration. Due to double integration error can be big, but in general it's almost the same in every direction. It may not be perfect, but still it can help to estimate range of euclidian reconstruction.
 \section{Pose estimation}
 Different approaches to continous multiview 3D reconstruction were discussed. This research main goal was to make it more accurate and faster. That is way it focuses on pose estimation instead of homographies merging. This is also good in terms of keeping scale in between next image analysis. For any point in image following condition is kept:
 \begin{equation} \label{eq:projectionEquation}
@@ -176,6 +155,24 @@ end in the end by Substituting $x_{n} = x - K * \begin{bmatrix}Rinit\mid Tinit\e
 x_{n} = K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X
 \end{equation}
 We can note that when initial solution is already known, the problems begins to focus on refining pose estimation instead of searching for it.
+\section{Reconstruction process strategy}
+Finally proposed reconstruction environment, where initial estimates of rotation 
+%TODO zrobić lepszy styl
+\begin{enumerate} 
+\item Known rotatations and translations - relative poses are calculated from sensor data - euclidan reconstruction
+\item Known rotations - Alternative 3-point algorithm for translation finding or enhanced fundamental/essential
+\item Noisy rotation - enhanced fundamental/essential for dR and translation
+\item No known extrisinc parameters - standard fundamental/essential for R and Translation
+\end{enumerate}
+Later one new images are analized in comparison to previous one to enrich initial cloud point with new points. It's only necessery to keep track of each 3D cloud point corresponding 2D positions in images. In terms of Pose Estimation following methodologies can be used:
+\begin{enumerate}
+\item Known rotatation and translations - no additional calculations, just triangulation - euclidan reconstruction
+\item Known rotation - looking for relative translation by backProjection optimisations
+\item Noisy rotation - looking for dR and translation by backProjection optimisations
+\item No known extrisinc parameters - standard pose estimation
+\end{enumerate}
+Of cource in all of this steps it's really important to have as minimum outliers as possible. All of this methods are pretty good in terms of removing outliers, espiecially when connected with RANSAC algorithm.
+
  
  
 %TODO
