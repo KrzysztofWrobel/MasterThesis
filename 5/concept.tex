@@ -8,13 +8,13 @@ From analysis of theory and related works it seems that both epipolar equations 
 
 \section{Requirements}
 Proposed methodology needs as the input series of images with additional information about position of the camera - euclidan rotation and optionally translation. Usage of smartphone is actually not necessary. Any camera with SensorFusioned accelerometer and gyroscope(magnotometer is actually optional and as discussed in [TODO] has its advantages and disadvantages) capable of rotation and translation estimation can be used. Internal camera parameters need to be calculated before reconstruction process is started. Additional sensor data doesn't have to be very accurate. Noisy external camera parameters stil can be successfully used in order to enhance reconstruction process.
-\section{Enhancing epipolar geometry equations}
-\subsection{Rotation enhancements}
+\section{Enhancing epipolar geometry equations - rotation enhancments}
+Initial pair reconstruction step is very important and needs to be accurate for other
 Taking standard fundamental geometry equation and relative camera based system ($P = \begin{bmatrix}I |0\end{bmatrix}, P' = \begin{bmatrix}R|t\end{bmatrix}$) we can note that:
 \begin{equation} \label{eq:relativeFundamntal}
 {x}_{'}^{T} * K^{-T} * \begin{bmatrix}T\end{bmatrix}_{x} * R * K^{-1} * x = 0
 \end{equation}
-It's also good to note that:
+It is can be written that:
 \begin{equation} \label{eq:skewTranslation}
 \begin{bmatrix}T\end{bmatrix}_{x} = 
 \begin{bmatrix*}[c]
@@ -24,7 +24,7 @@ It's also good to note that:
 \end{bmatrix*} 
 where T = \begin{bmatrix}t_{x},t_{y},t_{z}\end{bmatrix}
 \end{equation}
-As we were discussing both rotation and translation can be distorted with noise. This can be written as:
+As we were discussing both rotation can be distorted with noise. This can be written as:
 \begin{equation} \label{eq:Rerror}
 R = R_{error} * R_{init} 
 \end{equation}
