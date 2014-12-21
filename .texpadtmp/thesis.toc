@@ -1,10 +1,10 @@
 \select@language {english}
 \contentsline {chapter}{List of Figures}{ix}{chapter*.2}
-\contentsline {chapter}{List of Tables}{xi}{chapter*.3}
-\contentsline {chapter}{Acronyms}{xii}{section*.4}
+\contentsline {chapter}{List of Tables}{xii}{chapter*.3}
+\contentsline {chapter}{Acronyms}{xiii}{section*.4}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Purpose of this thesis}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Scope}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Scope}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Initial assumptions}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Thesis Outline}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}Fundamentals}{3}{chapter.2}
@@ -20,53 +20,53 @@
 \contentsline {section}{\numberline {2.3}Mobile Sensors overview}{7}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Accelerometer}{7}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Gyroscope}{7}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Magnetometer}{8}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Magnetometer}{7}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Sensor Fusion}{8}{subsection.2.3.4}
-\contentsline {chapter}{\numberline {3}Related Work}{9}{chapter.3}
-\contentsline {chapter}{\numberline {4}Concept}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Requirements}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Reconstruction process strategy}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}Enhancing epipolar geometry equation}{13}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Rotation enhancements}{13}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Alternative 3-point algorithm for translation finding}{14}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Translation enhancements}{15}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Pose estimation}{15}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Known rotations \& translations}{16}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Rotation enhancements}{16}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Rotation \& translation enhancements}{16}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Implementation}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Choosing Environment}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}Project Structure}{17}{section.5.2}
-\contentsline {section}{\numberline {5.3}"Sensor Enhanced Images Camera" - Android Gradle based project}{18}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Installation}{18}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}User Interface}{18}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Important Implementation Aspects}{18}{subsection.5.3.3}
-\contentsline {subsubsection}{\numberline {5.3.3.1}Rotation calculation}{18}{subsubsection.5.3.3.1}
-\contentsline {subsubsection}{\numberline {5.3.3.2}Custom heouristic for move estimation}{19}{subsubsection.5.3.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3.3}Custom Sensor Data File format}{20}{subsubsection.5.3.3.3}
-\contentsline {section}{\numberline {5.4}"Enhanced 3D Reconstructer" - OSX CMake based project}{22}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}User Interface}{22}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}Test Efficiency}{22}{subsubsection.5.4.1.1}
-\contentsline {subsubsection}{\numberline {5.4.1.2}Test reconstruction}{23}{subsubsection.5.4.1.2}
-\contentsline {subsection}{\numberline {5.4.2}Important Implementation Aspects}{23}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {3}Related Work}{10}{chapter.3}
+\contentsline {chapter}{\numberline {4}Concept}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requirements}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Reconstruction process strategy}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Enhancing epipolar geometry equation}{14}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Rotation enhancements}{14}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Alternative 3-point algorithm for translation finding}{15}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Translation enhancements}{16}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Pose estimation}{16}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Known rotations \& translations}{17}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Rotation enhancements}{17}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Rotation \& translation enhancements}{17}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}Implementation}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Choosing Environment}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Project Structure}{18}{section.5.2}
+\contentsline {section}{\numberline {5.3}"Sensor Enhanced Images Camera" - Android Gradle based project}{19}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Installation}{19}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}User Interface}{19}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Important Implementation Aspects}{19}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.1}Rotation calculation}{19}{subsubsection.5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.2}Custom heouristic for move estimation}{20}{subsubsection.5.3.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3.3}Custom Sensor Data File format}{21}{subsubsection.5.3.3.3}
+\contentsline {section}{\numberline {5.4}"Enhanced 3D Reconstructer" - OSX CMake based project}{23}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}User Interface}{23}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Test Efficiency}{23}{subsubsection.5.4.1.1}
+\contentsline {subsubsection}{\numberline {5.4.1.2}Test reconstruction}{24}{subsubsection.5.4.1.2}
+\contentsline {subsection}{\numberline {5.4.2}Important Implementation Aspects}{24}{subsection.5.4.2}
 \contentsline {subsubsection}{\numberline {5.4.2.1}Rotation matrix generation}{24}{subsubsection.5.4.2.1}
-\contentsline {subsubsection}{\numberline {5.4.2.2}Enhancing epipolar equations}{24}{subsubsection.5.4.2.2}
-\contentsline {subsubsection}{\numberline {5.4.2.3}3-point translation estimation, between cameras}{25}{subsubsection.5.4.2.3}
-\contentsline {subsubsection}{\numberline {5.4.2.4}Enhancing pose estimation}{27}{subsubsection.5.4.2.4}
-\contentsline {chapter}{\numberline {6}Evaluation}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}Acquiring datasets}{28}{section.6.1}
-\contentsline {section}{\numberline {6.2}Test Environment}{29}{section.6.2}
-\contentsline {section}{\numberline {6.3}Testing initial pair reconstrucion methods}{29}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Accuracy - Epipolar lines correspondence}{29}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Time comparison}{37}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Testing reconstruction strategies}{38}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Accuracy}{38}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Execution time}{40}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Effectivness}{44}{section.6.5}
-\contentsline {chapter}{\numberline {7}Conclusion}{49}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary}{49}{section.7.1}
-\contentsline {section}{\numberline {7.2}Dissemination}{50}{section.7.2}
-\contentsline {section}{\numberline {7.3}Problems Encountered}{50}{section.7.3}
-\contentsline {section}{\numberline {7.4}Future work}{50}{section.7.4}
-\contentsline {chapter}{\numberline {8}Materials \& methods}{52}{chapter.8}
-\contentsline {chapter}{References}{56}{chapter*.28}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Enhancing epipolar equations}{25}{subsubsection.5.4.2.2}
+\contentsline {subsubsection}{\numberline {5.4.2.3}3-point translation estimation, between cameras}{26}{subsubsection.5.4.2.3}
+\contentsline {subsubsection}{\numberline {5.4.2.4}Enhancing pose estimation}{28}{subsubsection.5.4.2.4}
+\contentsline {chapter}{\numberline {6}Evaluation}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Acquiring datasets}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Test Environment}{30}{section.6.2}
+\contentsline {section}{\numberline {6.3}Testing initial pair reconstrucion methods}{30}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Accuracy - Epipolar lines correspondence}{30}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Time comparison}{38}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Testing reconstruction strategies}{39}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Accuracy}{39}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Execution time}{42}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Effectivness}{46}{section.6.5}
+\contentsline {chapter}{\numberline {7}Conclusion}{51}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary}{51}{section.7.1}
+\contentsline {section}{\numberline {7.2}Dissemination}{52}{section.7.2}
+\contentsline {section}{\numberline {7.3}Problems Encountered}{53}{section.7.3}
+\contentsline {section}{\numberline {7.4}Future work}{53}{section.7.4}
+\contentsline {chapter}{\numberline {8}Materials \& methods}{54}{chapter.8}
+\contentsline {chapter}{References}{58}{chapter*.34}

@@ -2,29 +2,61 @@
 % content in this file will be fed into the main document
 
 \chapter{Fundamentals} % top level followed by section, subsection
-This chapter explains basic theory behind 3D reconstructiona and Structure from Motion. All of this informations can be found in \cite{HartleyMultipleView}. Moreover it makes brief overview of Accelerometer, Gyroscope, Gyroscope and their possible fusion[referemces]. 
+This chapter explains basic theory of 3D reconstruction and Structure from Motion. All of this informations can be found in \cite{HartleyMultipleView}. Moreover it makes brief overview of sensor fusion made using accelerometer, gyroscope and magnetometer data. 
 
 % ----------------------- contents from here ------------------------
 \section{3-D reconstruction in general}
-Today many devices are capable of 3D reconstruction. Most popular Kinect\cite{kinect} is one of them. It is able to perform real-time 3D cloud point generation. However is very special case, which uses 2 camera: \gls{rgb} and \gls{ir}. It has very high accuracy of reconstruction, but in the same time it's very expansive and not exactly mobile.
-There are possibilities of reconstruction using only single camera either from video or from still image sequence. One need only two images in order to perform 3D model generation. Such reconstraction process consists of few basic steps:
+There are many possibilities of reconstruction from two-view reconstruction, multiple-view reconstruction to usage of stereo calibrated cameras like the ones used in Kinect[reference]. Reconstraction can be also performed with single hand-held camera either from video or images sequence. Only two images from different angles of one object are needed to perform 3D model generation. Reconstraction process consists of following steps:
+\setlist[2]{noitemsep} % sets the itemsep and parsep for all level two lists to 0
+\setenumerate{noitemsep} % sets no itemsep for enumerate lists only
 \begin{enumerate}
-\item Image Acquistion
-\item Feature extraction and correspondences matching
-\item Fundamental \& Essential Matrices
-\item Camera parameters estimation
-\item Triangulation
+\item \textbf{Image Acquistion}, where images are acquired 
+\item \textbf{Feature extraction and correspondences matching}, where interesting features are extracted and compared between images
+\item \textbf{Fundamental \& Essential Matrices} , where matrices satisfying basic epipolar geometry are calculated
+\item \textbf{Camera parameters estimation} , where external and internal camera parameters are estimated
+\item \textbf{Triangulation}, where camera projection matrices are composed and used in order to calculate 3D cloud points
 \end{enumerate}
 \subsection{Feature extraction and correspondence matching}
- Each image has to be analysed, interesting features have to be extracted and later used to find correspondences. There are multiple features detector and extractors available to use \url{$http://en.wikipedia.org/wiki/Feature_detection_%28computer_vision%29$}. Some of them are better for edge detection, where others are better for corner or blob detection. One of the most and robust feature detection method is SIFT\url{http://en.wikipedia.org/wiki/Scale-invariant_feature_transform}.
-\newline 
-Once features are detected and descripted they also have to be matched. Once again there are many approaches to matching process \url{http://docs.opencv.org/trunk/doc/py_tutorials/py_feature2d/py_matcher/py_matcher.html}. Usually many of this matches are not proper. Such points are called outliers and they highly influence other reconstruction steps.
+Usually each image used in reconstraction has to be analysed in order to find interesting features. Afterwards all of features in images are compared in order to acquire corresponding matches(\ref{fig:correspondingMatches}).
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{correspondingMatching}
+    \caption{}
+    \label{fig:correspondingMatches}
+\end{figure}
+There are multiple features detector and extractors available to use \url{$http://en.wikipedia.org/wiki/Feature_detection_%28computer_vision%29$}. Some of them are better for edge detection, where others are better for corner or blob detection. One of the most popluar and robust feature detection method are Scale-invariant feature transform SIFT\url{http://en.wikipedia.org/wiki/Scale-invariant_feature_transform}. Using this descriptors local features in images are detected and described with metrics that are scale, rotation and translation invariant.
 \subsection{Fundamental \& Essential Matrix estimations}
-Once proper matches are decided, it can be proven that there exsists Fundamental matrix F for which such equation:
+Once proper matches are decided, it can be proven that there exsists Fundamental matrix F for which following equation is satisfied:
 \begin{equation} \label{eq:fundamntalEquation}
 {x}^{'T} * F * x = 0
 \end{equation} 
-$x and {x}_{'}$ are uncalibrated points in the images. The above relation which defines the fundamental matrix was published in 1992 by both Faugeras and Hartley. It is noted that solving such equation is highly sensetive to outliers. To make estimation more robost to outliers RANdom SAmple Consensus (\gls{ransac}) \url{http://en.wikipedia.org/wiki/RANSAC} can be used. It basic idea relies on choosing randomly subset of  However these points can be calibrated, when internal camera parameters, such as focal lengths and principal point are known. These parameters are expressed by internal camera matrix usually noted as K:
+where $x$ and ${x}_{'}$ are uncalibrated points correspondances\cite{HartletMultipleView}TODO chapter. It is known that soultuions of this equation are highly sensetive to presence of outliers. Usually to make fundamental matrix estimations more accurate some outliers removing algorithms needs to be used. One of more robost approaches is usage of RANdom SAmple Consensus (\gls{ransac}) \url{http://en.wikipedia.org/wiki/RANSAC}. Sample fitting example can be seen in \ref{fig:RANSACFitting}
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{RANSACFitting}
+    \caption{Ransac fitting for 2D image}
+    \label{fig:RANSACFitting}
+\end{figure}
+It basic idea relies on choosing randomly subset from whole correspondances, solving problem with reduced dataset and checking how many points from original set satisfies equation.
+Using F epipolar lines for each point can be calculated(\ref{fig:EpipolarGeometry}). These lines crosses exactly same points in both images and can be used for dense feature matching as correspondances needs to be searched only in the neighbourhood of these lines.
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{EpipolarGeometry}
+    \caption{Epipolar lines found in vase images}
+    \label{fig:EpipolarGeometry}
+\end{figure}
+When enough inliers were found, points that didn't satisfy equation can be removed from further processing.
+Once internal camera parameters K are known calculated image points can be calibrated and expressed in camera reference position system. Such calibrated points satisfy following essential matrix E equation:
+\begin{equation} \label{eq:essentialEquation}
+{x}_{c}^{'T} * E * x_{c} = 0
+\end{equation} 
+which is very similar to fundamental equation \ref{eq:fundamntalEquation}. This results in:
+\begin{equation} \label{eq:essentialFundamentalRelation}
+E = K^{T} * F * K
+\end{equation} 
+with $K$ being the internal camera parameters. Equation \ref{eq:essentialFundamentalRelation} is important in terms of decomposition of F to relative rotation and translation.
+\subsection{Camera parameters estimations}
+Internal camera parameters are expressed by following matrix:
 \begin{equation}
 \begin{bmatrix}
 \alpha _{x} &  & x_{0} \\ 
@@ -32,18 +64,8 @@ $x and {x}_{'}$ are uncalibrated points in the images. The above relation which 
  &  & 1
 \end{bmatrix}
 \end{equation}
-where αx = fmx and αy = fmy represent the focal length of the camera in terms of pixel dimensions in the x and y direction respectively. Similarly, x ̃0 = (x0,y0) is the principal point in terms of pixel dimensions. 
-Using calibrated cameras points, similar to \ref{eq:fundamntalEquation} equation for essential matrix E can be written:
-\begin{equation} \label{eq:essentialEquation}
-{x}_{c}^{'T} * E * x_{c} = 0
-\end{equation} 
-This results in another equality:
-\begin{equation} \label{eq:essentialFundamentalRelation}
-E = K^{'T} * F * K
-\end{equation} 
-$K and K^{'}$ being the internal calibration matrices of the two images involved.
-\subsection{Camera parameters estimations}
-Acquiring of internal camera parameters can be done with usage of special markers and needs to be done only once per camera model. What's left in terms of propoer 3D reconstruction is external camera parameters, such as rotation(orientation angles of the camera) and global postition. Usually in terms of 3D reconstraction these parametrs are not known. However in Chapter 9 of Multiple View Geometry in Computer Vision(\cite{HartleyMultipleView})  autors show, how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to extract proper relative camera positioning. Using SVD and assuming that one of camera projection matrices is equal to:
+where αx = fmx and αy = fmy represent the focal length of the camera in terms of pixel dimensions in the x and y direction respectively. Similarly, x ̃0 = (x0,y0) is the principal point in terms of pixel dimensions. These parameters needs to be calculated only once for each camera model. Cameras can be calibrated with special reference boards of known dimensions and chracteristics.
+In terms of propoer 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation(orientation angles of the camera) and global postition of the camera. Usually in terms of 3D reconstraction these parametrs are not known. However in Chapter 9 of Multiple View Geometry in Computer Vision(\cite{HartleyMultipleView}) shows how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to relative camera positioning system of two projections:
 \begin{equation}
  P1 = K * \begin{bmatrix}I\mid 0\end{bmatrix}
 \end{equation}
@@ -51,10 +73,16 @@ second one is equall to
 \begin{equation}
  P2 = K * \begin{bmatrix}RDiff\mid tDiff\end{bmatrix}
 \end{equation}
-Unfortunately there are 4 possible solutions in such decomposition and it's not always possible to identify correct one. For each one triangulation test can be performed and solution with most points in front of the camera is probably the correct one.
+Unfortunately there are 4 possible solutions for such decomposition and it's not always possible to identify correct one.
 \subsection{Points Triangulation}
-Once internal and external(global or relative) parameters triangulation of points can be performed in order to acquire up to affine reconstruction(only scale of model is not known) model. In [TODO hartley chapter 10] this process is described in details, but both camera projection matrices has to be calculated.
-[TODO paste figures]
+Once internal and external(global or relative) parameters triangulation can be performed in order to acquire up to affine reconstruction model (\ref{eq:3Dreconstruction}).
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{3Dreconstruction}
+    \caption{}
+    \label{fig:3Dreconstruction}
+\end{figure}
+Only scale factor cannot be determined in such relative case situation. In [TODO hartley chapter 10] this process is described in details.
 \section{Structure from Motion}
 Term of Structure from Motion(SfM) refers to structure reconstraction from consecutive sequences of moving camera. It is really popular research topic and two main different approaches called Pose Estimation and Homography Estimation can be used to make it happen.
 \subsection{3D Pose Estimation}
@@ -62,52 +90,37 @@ Assuming that some 3D cloud point is already known, correspondences between 2D f
 \subsection{Homography estimation}
 New image can be reconstructed with previous once in a standard way to recive up to scale 3D model. Later freshly acquired model can be merged to existing one using Homography estimation between coresponding 3D points. Such strategy is slowet than previous, but it is not influenced by quality of existing 3D model. It's also higly sensitive to outliers, but once made accurately produces much more new 3D points.
 \subsection{Structure Adjustment}
-After some time of SfM reconstruction some techniques, which compensate increasing error of wrong estimates propagating through images special algorithms can be used to refine reconstructed models. One of such techniques is Bundle Adjustment\gls{ba} \url{http://en.wikipedia.org/wiki/Bundle_adjustment}. Through finding point correspondances between multiple sets of images algorithm iterativly modifies either both of one camera external paramaters as well as 3D points positions. It's main disadvantages is execution times. It takes a lot of time to use it in real-time applications.
+After some time of SfM reconstruction some techniques, which compensate increasing error of wrong estimates propagating through images special algorithms can be used to refine reconstructed models. One of such techniques is Bundle Adjustment\gls{ba} \url{http://en.wikipedia.org/wiki/Bundle_adjustment}. Through finding point correspondances between multiple sets of images algorithm iterativly modifies either both of one camera external paramaters as well as 3D points positions. It's main disadvantages is execution times. It takes a lot of time to use it in real-time applications. In figure \ref{fig:BundleAdjustment} basic idea of BA is expresed.
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{BundleAdjustment}
+    \caption{}
+    \label{fig:BundleAdjustment}
+\end{figure}
 \section{Mobile Sensors overview}
+There are many sensors available in nowadays smartphones such as accelerometer, gyroscope, magnetomere, barometer, GPS etc. All of them have their advanteges and disadvanteges, but their errors, different in nature, can be compansated with each other to for exmaple accuretly compute camera rotation angles.
 \subsection{Accelerometer}
-An accelerometer is a device that measures the proper acceleration of the device. This is not
-necessarily the same as the coordinate acceleration (change of velocity of the device in space),
-but is rather associated with the phenomenon of weight experienced by a test mass that resides
-in the frame of reference of the accelerometer device.
-Generally, accelerometers measures acceleration by sensing how much a mass presses on
-something when a force acts on it.
-An accelerometer at rest relative to the Earth's surface will indicate approximately 1 G
-upwards, because any point on the Earth's surface is accelerating upwards relative to the local
-inertial frame (the frame of a freely falling object near the surface). To obtain the acceleration
-due to motion with respect to the Earth, this "gravity offset" must be subtracted [18]. 
+An accelerometer is a device that measures acceleration along 3 axes of the device[reference]. Generally, accelerometers alows to measure total acceleration by sensing how much mass presses on its micro strings when a force is applied. An accelerometer, which lay on a flat surface perpendicular to the Earth's surface will indicate approximately 1G upwards. This gravitation vector can be used to caculate relative camera rotation, but it's hard to tell where in which direction gravity vector points, when device is moving in not linear manner. To obtain the gravity vector and track it during unexpected movement gyroscope sensor can be used.
 \subsection{Gyroscope}
-Generally, a gyroscope is a device for measuring or maintaining orientation, based on the
-principles of conservation of angular momentum [17].
-A conventional (mechanical) gyroscope consists of a spinning wheel mounted on two gimbals
-which allow it to rotate in all three axes. An effect of the conservation of angular momentum
-is that the spinning wheel will resist changes in orientation. Hence when a mechanical
-gyroscope is subjected to a rotation, the wheel will remain at a constant global orientation and
-the angles between adjacent gimbals will change. A conventional gyroscope measures
-orientation, in contrast to MEMS (Micro Electro-Mechanical System) types, which measure
-angular rate, and are therefore called rate-gyros [4].
-MEMS gyroscopes contain vibrating elements to measure the Coriolis effect. A single mass is
-driven to vibrate along a drive axis, when the gyroscope is rotated a secondary vibration is
-induced along the perpendicular sense axis due to the Coriolis force. The angular velocity can
-be calculated by measuring this secondary rotation.
-The Coriolis effect states that in a frame of reference rotating at angular velocity ω, a mass m
-moving with velocity v experiences a force [4]:(2-1)
-An important note to be made is that whereas the accelerometer and the magnetometer
-measure acceleration and angle relative to the Earth, gyroscope measures angular velocity
+A gyroscope is a device for measuring or maintaining orientation, based on the principles of conservation of angular momentum [reference]. A standard gyroscope consists of a spinning wheel mounted on two gimbal rings, which allow it to rotate in all three axes. The spinning wheel will resist changes in orientation, due to an effect of the conservation of angular momentum. A conventional gyroscope measures orientation, in contrast to MEMS (Micro Electro-Mechanical System) types, which measure
+angular rate, and are therefore called rate-gyros [reference]. MEMS gyroscopes contain vibrating elements to measure the Coriolis effect. In the end the angular velocity can be calculated in each axis. It is important to note that whereas the accelerometer and the magnetometer measure acceleration and angle relative to the Earth, gyroscope measures angular velocity
 relative to the body.
 \subsection{Magnetometer}
-A magnetometer is an instrument used to measure the strength and/or direction of the
-magnetic field in the surrounding area of the instrument.
-Magnetometers can be divided into two basic types: scalar magnetometers that measure the
-total strength of the magnetic field to which they are subjected, and vector magnetometers
-(the type used in this project), which have the capability to measure the component of the
-magnetic field in a particular direction, relative to the spatial orientation of the device [19]. 
+A magnetometer is an instrument used to measure the strength and/or direction of the magnetic field in the surrounding area of the instrument. It's main idea works the same as conventional compass. With some magentometers magnetic field can be me in 3 particular directions, relative to the spatial orientation of the device [reference]. Using magnetometers allows for relative position estimation in geomagnetic north position system. 
 \subsection{Sensor Fusion}
-Sensor fusion is the combining of sensory data derived from sensory data from disparate
+Sensor fusion is the process of  combining sensory data derived from sensory data from disparate
 sources such that the resulting information is in some sense better than would be possible
 when these sources were used individually. The term better in this case can mean more
 accurate, more complete, or more dependable, or refer to the result of an emerging view, such
 as stereoscopic vision (calculation of depth information by combining two-dimensional
-images from two cameras at slightly different viewpoints) [11]. 
+images from two cameras at slightly different viewpoints) [reference]. One of the possible strategies is Kalman-filterring(\ref{fig:Kalmann})
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Kalmann}
+    \caption{}
+    \label{fig:Kalmann}
+\end{figure}
+Available in Android API SesnorFusion sensor uses this approach, where the base of orientation measurements is calculation of gravity, when device was not moving and using gyroscope data (very accurate for a short period of time), when device starts to unexpectedly moving. Magnetometer data are fusined to allow for global earth coordinate system.
 
 
 % ---------------------------------------------------------------------------

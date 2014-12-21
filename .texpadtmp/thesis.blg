@@ -21,11 +21,13 @@ I couldn't open database file 9_backmatter/references.bib.bib
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: 9_backmatter/declaration.aux
 I found no database files---while reading file thesis.aux
-Warning--I didn't find a database entry for "HartleyMultipleView"
 Warning--I didn't find a database entry for "kinect"
+Warning--I didn't find a database entry for "HartleyMultipleView"
+Warning--I didn't find a database entry for "HartletMultipleView"
+Warning--I didn't find a database entry for "ptam"
 You've used 0 entries,
             2776 wiz_defined-function locations,
-            617 strings with 5278 characters,
+            620 strings with 5320 characters,
 and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0
