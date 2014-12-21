@@ -1,0 +1,32 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{BA}]\begingroup Bundle Adjustment\nomeqref {0}\nompageref{1}
+  \item [{Base line}]\begingroup The distance between the left and the right camera in a stereo pair.\nomeqref {0}
+		\nompageref{1}
+  \item [{Epipolar lines}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{Essential Matrix}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{Extrasinc??? camera parameters }]\begingroup TODO\nomeqref {0}
+		\nompageref{1}
+  \item [{FoV}]\begingroup Field of View\nomeqref {0}\nompageref{1}
+  \item [{Fundamental Matrix}]\begingroup Todo\nomeqref {0}
+		\nompageref{1}
+  \item [{Intersinc camera parameters}]\begingroup TODO\nomeqref {0}
+		\nompageref{1}
+  \item [{Pitch}]\begingroup Rotation around the y axis.\nomeqref {0}
+		\nompageref{1}
+  \item [{Pose Estimation}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{Quaternion}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{RANSAC}]\begingroup Bundle Adjustment\nomeqref {0}
+		\nompageref{1}
+  \item [{Roll}]\begingroup Rotation around the x axis.\nomeqref {0}
+		\nompageref{1}
+  \item [{Rotation Matrix}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{SIFT}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}
+		\nompageref{1}
+  \item [{Yaw}]\begingroup Rotation around the z axis.\nomeqref {0}
+		\nompageref{1}
+
+\end{thenomenclature}

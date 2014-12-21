@@ -1,0 +1,71 @@
+\BOOKMARK [0][]{chapter*.2}{List of Figures}{}% 1
+\BOOKMARK [0][]{chapter*.3}{List of Tables}{}% 2
+\BOOKMARK [0][]{section*.4}{Acronyms}{}% 3
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 4
+\BOOKMARK [1][]{section.1.1}{1.1 Purpose of this thesis}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.2}{1.2 Scope}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.3}{1.3 Initial assumptions}{chapter.1}% 7
+\BOOKMARK [1][]{section.1.4}{1.4 Thesis Outline}{chapter.1}% 8
+\BOOKMARK [0][]{chapter.2}{2 Fundamentals}{}% 9
+\BOOKMARK [1][]{section.2.1}{2.1 3-D reconstruction in general}{chapter.2}% 10
+\BOOKMARK [2][]{subsection.2.1.1}{2.1.1 Feature extraction and correspondence matching}{section.2.1}% 11
+\BOOKMARK [2][]{subsection.2.1.2}{2.1.2 Fundamental \046 Essential Matrix estimations}{section.2.1}% 12
+\BOOKMARK [2][]{subsection.2.1.3}{2.1.3 Camera parameters estimations}{section.2.1}% 13
+\BOOKMARK [2][]{subsection.2.1.4}{2.1.4 Points Triangulation}{section.2.1}% 14
+\BOOKMARK [1][]{section.2.2}{2.2 Structure from Motion}{chapter.2}% 15
+\BOOKMARK [2][]{subsection.2.2.1}{2.2.1 3D Pose Estimation}{section.2.2}% 16
+\BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Homography estimation}{section.2.2}% 17
+\BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Structure Adjustment}{section.2.2}% 18
+\BOOKMARK [1][]{section.2.3}{2.3 Mobile Sensors overview}{chapter.2}% 19
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Accelerometer}{section.2.3}% 20
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Gyroscope}{section.2.3}% 21
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 Magnetometer}{section.2.3}% 22
+\BOOKMARK [2][]{subsection.2.3.4}{2.3.4 Sensor Fusion}{section.2.3}% 23
+\BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 24
+\BOOKMARK [0][]{chapter.4}{4 Concept}{}% 25
+\BOOKMARK [1][]{section.4.1}{4.1 Requirements}{chapter.4}% 26
+\BOOKMARK [1][]{section.4.2}{4.2 Reconstruction process strategy}{chapter.4}% 27
+\BOOKMARK [1][]{section.4.3}{4.3 Enhancing epipolar geometry equation}{chapter.4}% 28
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Rotation enhancements}{section.4.3}% 29
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Alternative 3-point algorithm for translation finding}{section.4.3}% 30
+\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Translation enhancements}{section.4.3}% 31
+\BOOKMARK [1][]{section.4.4}{4.4 Pose estimation}{chapter.4}% 32
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Known rotations \046 translations}{section.4.4}% 33
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Rotation enhancements}{section.4.4}% 34
+\BOOKMARK [2][]{subsection.4.4.3}{4.4.3 Rotation \046 translation enhancements}{section.4.4}% 35
+\BOOKMARK [0][]{chapter.5}{5 Implementation}{}% 36
+\BOOKMARK [1][]{section.5.1}{5.1 Choosing Environment}{chapter.5}% 37
+\BOOKMARK [1][]{section.5.2}{5.2 Project Structure}{chapter.5}% 38
+\BOOKMARK [1][]{section.5.3}{5.3 "Sensor Enhanced Images Camera" - Android Gradle based project}{chapter.5}% 39
+\BOOKMARK [2][]{subsection.5.3.1}{5.3.1 Installation}{section.5.3}% 40
+\BOOKMARK [2][]{subsection.5.3.2}{5.3.2 User Interface}{section.5.3}% 41
+\BOOKMARK [2][]{subsection.5.3.3}{5.3.3 Important Implementation Aspects}{section.5.3}% 42
+\BOOKMARK [3][]{subsubsection.5.3.3.1}{5.3.3.1 Rotation calculation}{subsection.5.3.3}% 43
+\BOOKMARK [3][]{subsubsection.5.3.3.2}{5.3.3.2 Custom heouristic for move estimation}{subsection.5.3.3}% 44
+\BOOKMARK [3][]{subsubsection.5.3.3.3}{5.3.3.3 Custom Sensor Data File format}{subsection.5.3.3}% 45
+\BOOKMARK [1][]{section.5.4}{5.4 "Enhanced 3D Reconstructer" - OSX CMake based project}{chapter.5}% 46
+\BOOKMARK [2][]{subsection.5.4.1}{5.4.1 User Interface}{section.5.4}% 47
+\BOOKMARK [3][]{subsubsection.5.4.1.1}{5.4.1.1 Test Efficiency}{subsection.5.4.1}% 48
+\BOOKMARK [3][]{subsubsection.5.4.1.2}{5.4.1.2 Test reconstruction}{subsection.5.4.1}% 49
+\BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Important Implementation Aspects}{section.5.4}% 50
+\BOOKMARK [3][]{subsubsection.5.4.2.1}{5.4.2.1 Rotation matrix generation}{subsection.5.4.2}% 51
+\BOOKMARK [3][]{subsubsection.5.4.2.2}{5.4.2.2 Enhancing epipolar equations}{subsection.5.4.2}% 52
+\BOOKMARK [3][]{subsubsection.5.4.2.3}{5.4.2.3 3-point translation estimation, between cameras}{subsection.5.4.2}% 53
+\BOOKMARK [3][]{subsubsection.5.4.2.4}{5.4.2.4 Enhancing pose estimation}{subsection.5.4.2}% 54
+\BOOKMARK [0][]{chapter.6}{6 Evaluation}{}% 55
+\BOOKMARK [1][]{section.6.1}{6.1 Acquiring datasets}{chapter.6}% 56
+\BOOKMARK [1][]{section.6.2}{6.2 Test Environment}{chapter.6}% 57
+\BOOKMARK [1][]{section.6.3}{6.3 Testing initial pair reconstrucion methods}{chapter.6}% 58
+\BOOKMARK [2][]{subsection.6.3.1}{6.3.1 Accuracy - Epipolar lines correspondence}{section.6.3}% 59
+\BOOKMARK [2][]{subsection.6.3.2}{6.3.2 Time comparison}{section.6.3}% 60
+\BOOKMARK [1][]{section.6.4}{6.4 Testing reconstruction strategies}{chapter.6}% 61
+\BOOKMARK [2][]{subsection.6.4.1}{6.4.1 Accuracy}{section.6.4}% 62
+\BOOKMARK [2][]{subsection.6.4.2}{6.4.2 Execution time}{section.6.4}% 63
+\BOOKMARK [1][]{section.6.5}{6.5 Effectivness}{chapter.6}% 64
+\BOOKMARK [0][]{chapter.7}{7 Conclusion}{}% 65
+\BOOKMARK [1][]{section.7.1}{7.1 Summary}{chapter.7}% 66
+\BOOKMARK [1][]{section.7.2}{7.2 Dissemination}{chapter.7}% 67
+\BOOKMARK [1][]{section.7.3}{7.3 Problems Encountered}{chapter.7}% 68
+\BOOKMARK [1][]{section.7.4}{7.4 Future work}{chapter.7}% 69
+\BOOKMARK [0][]{chapter.8}{8 Materials \046 methods}{}% 70
+\BOOKMARK [0][]{chapter*.28}{References}{}% 71
