@@ -21,7 +21,7 @@ For the purpose of analysis the following datasets were captured with implemente
 \item Warsaw Shopping Center Back???
 \item Warsaw Shopping Center Front???
 \end{enumerate}
-Since most of the algorithms proposed in the (TODOreference to Concept) Concept section require intersic camera parametrs to be known, the camera used in the course of conducting this study was calibrated and its parameters were stored in $"out_camera_data.yml"$ file. All of these datasets can be found in attached CD or Github repository.
+Since most of the algorithms proposed in the (TODOreference to Concept) Concept section require internal camera parametrs to be known, the camera used in the course of conducting this study was calibrated and its parameters were stored in $"out_camera_data.yml"$ file. All of these datasets can be found in attached CD or Github repository.
 \section{Test Environment}
 All tests were perfomed on MacBook Air with 1.7GHz dual-core Intel Core i7 processor and 8GB 1600MHz DDR3 RAM using "Enhanced 3D Reconstructer" implemented as described in Implementation section.  Numerical tests which allowed for measuring total errors and execution time were run on "Warsaw University of Technology" dataset. Initial pair reconstruction ability of each method proposed was measured as well as various reconstruction strategies.  Finally, for each dataset the most effective methods were used to reconstruct sparse models. 
 \section{Testing initial pair reconstrucion methods} \label{sec:Testin2Views}
@@ -107,10 +107,10 @@ Analysing the Per Pair Sampson Error results \ref{plot:SampsonErrorPerPoint} it 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=0.8\textwidth]{summary2Sift300}
-    \caption{The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) }
+    \caption{The results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3) Rotation Enhanced Essential 5-point algorithm (bottom pair) }
     \label{fig:SummaryEpiLines2300}
 \end{figure}
-It can be seen that both standard 8-point algorithm and the proposed rotation enhanced version return very good results in terms of epipolar lines accuracy. The alternative 3-point algorithm gives slightly worse results due to uncompansated mobile sensors noise. In this particular dataset the essential 5-point method was inefficient in producing proper essential matrix estimation, contrary to the proposed sensor enhanced 5-point algorithm, which found satisfactory corresponding epipolar lines. \newline
+It can be seen that both standard 8-point algorithm and the proposed rotation enhanced version return very good results in terms of epipolar lines accuracy. The alternative 3-point algorithm gives slightly worse results due to uncompansated mobile sensors noise. In this particular dataset the essential 5-point method was inefficient in producing proper essential matrix estimation, contrary to the proposed sensor enhanced 5-point algorithm, which found satisfactory correspondency in epipolar lines. \newline
 To verify whether the epipolar lines calculation is influenced by the number of SIFT features, the same process was applied to 1000 SIFT features set(\ref{fig:SummaryEpiLines11000} - \ref{fig:SummaryEpiLines21000}). 
 \begin{figure}[b!]
     \centering
@@ -124,11 +124,11 @@ To verify whether the epipolar lines calculation is influenced by the number of 
     \caption{Results of drawing estimated epipolar lines on Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) }
     \label{fig:SummaryEpiLines21000}
 \end{figure}
-In general, the proposed enhanced algorithms are not better in terms of accuracy due to noise in data sensors, however they are always close to optimal solutions, when standard versions can fail sometimes.
+In general, the proposed enhanced algorithms are not better than standard versions in terms of accuracy of epipolar lines estimation. Mostly because during calculation some of the noise in sensor data is propagated on Epipolar geometry estiamion. However enhanced versions are always close to optimal solutions. Standard versions for instance can fail sometimes in terms of Fundamental matrix estimation.
 \clearpage
 
 \subsection{Time comparison}
-As was mentioned in previos chapter we expect some of this methods to be faster than the others. On plot \ref{plot:ExecutionTime} avaraged  execution time for 100 attempts was presented. 
+On chart \ref{plot:ExecutionTime} avaraged  execution time for 100 estimation attempts was presented.
 \begin{figure}[hb!]
   \begin{center}
     \begin{tikzpicture}
@@ -150,17 +150,17 @@ As was mentioned in previos chapter we expect some of this methods to be faster 
         \addplot[mark=*,pink] table[x=Number of Sift features,y=Known rot and trans,col sep=comma] {ExecutionTime.csv};
         \addplot[mark=*,green] table[x=Number of Sift features,y=Essential 5-point,col sep=comma] {ExecutionTime.csv};
         \addplot[mark=*,yellow] table[x=Number of Sift features,y=5-point enhanced,col sep=comma] {ExecutionTime.csv};
-        \legend{Standard 8-point,Enhanced 8-point,Alternative 3-point,Known rotations and translations,Standard essential 5-point,Enhanced essential 5-point}
+        \legend{Standard 8-point algorithm,Enhanced 8-point algorithm,Alternative 3-point algorithm,Known rotations and translations,Standard essential 5-point algorithm,Enhanced essential 5-point algorithm}
       \end{axis}
     \end{tikzpicture}
-    \caption{Execution time of proposed algorithms(1024x768pixels) in comparison to initial Sift feature number}
+    \caption{Execution time of proposed algorithms(1024x768pixels) in comparison to initial SIFT feature set}
     \label{plot:ExecutionTime}
   \end{center}
 \end{figure}
-As expected reconstructing using known rotations and translations is few orders smaller than rest algorithms. Also 3-point algorithm execution time is few times smaller than 8-point algorithms. Execution time of 8-point versions are very similar, but 5-point versions differ much. Either finding optimal solution with initial rotation is much harder or implementation differences in memory allocation of enhanced versions takes a lot of additional time.
+Execution time of 8-point versions are very similar, which is understandable, because they implementation is pretty much the same and they differ only characteristic of analysed dataset. It can be seen that execution time of 5-point epipolar estimations versions differ much. In this situation either finding optimal solution with initial rotation is much harder or implementation of these methods are very different in terms of memory allocation. Execution time of 3-points algorithm is few times faster than 8-point algorithms. Estimation using only known rotations and translations has few times smaller order execution time than standard algorithms, but as we know from previous section gives uncorreleted epipolar lines.
 
 \section{Testing reconstruction strategies}
-As was seen in \ref{sec:Testin2Views} not every initial reconstruction gives good results. To keep clearness of this document only most promising and interesting strategies were used: TODO methods should be already described in Concept and implementation
+As was shown in \ref{sec:Testin2Views} not every initial reconstruction methods gives good results. Only the most effective techniques were used to prepare few completely different strategies:
 \begin{enumerate}
 \item \textnormal{Standard 8-point + OpenCV Pose Estimation} 
 \item \textnormal{Enhanced 8-point + OpenCV Pose Estimation} 
@@ -169,11 +169,11 @@ As was seen in \ref{sec:Testin2Views} not every initial reconstruction gives goo
 \item \textnormal{Alternative 3-point + Initial Rotation and Translation OpenCV Pose Estimation}
 %\item \textnormal{Known rotations and translations} 
 \end{enumerate}
-First method gives us basic reference to normal 3D reconstruction pipeline. 2nd and 3rd were used in order to check how Pose Estimation enhancment influence final results. 4th and 5th one were compared with 2nd-3rd strategies. Finally 6th one was proposed in order to check, how well reconstraction can be performed with only sensor data.
+First method gives us basic reference to standard 3D reconstruction strategy. Second one was choosen, because extremly consistence in 3D reconstraction. It has never failed to produce solution close to optimal. Thrid was prepared in order to check, how enhanced Pose Estimation influence final reconstruction. Forth and fifth strategies were used to see, if models can be produced faster without much impact on final accuracy. Finally sixth one was proposed in order to check, wheter whole reconstruction process can be performed with only sensor data.
 
 \subsection{Accuracy}
-Accuracy of 3D reconstraction were measured using Bundle Adjustment process from SBA library[ref]. At the beginning initial error of whole point cloud is calculated. What's more to better understand, how well models were reconstructed it's intresting to take a look at both model error reduction and BA execution time.
-For "Warsaw Univeristy" dataset performed performence tests were plotted on \ref{plot:BAError}. Big differences in Initial Error mainly lay in number of reconstructed points and scale of models, which turned out to be more very different due to differences in outlier removals. What's interesting is impact of enhancing reconstruction with initial rotations and translation on Bundle Adjustments. 
+Accuracy of 3D reconstraction were measured using Bundle Adjustment algorithm from SBA library[ref]. It allows to calculate error based on projective constratin both before and after Bundle Adjustment.
+Performed with different strategis tests for "Warsaw Univeristy" dataset were plotted on \ref{plot:BAError}. Big differences in initial error can be explained different number of reconstructed points after initial phase and inconsistent unknown scale of finally reconstracted models. Enhanced initial pair reconstruction and pose estimation methods have bigger impact on Bundle Adjustment error reduction.
 \begin{figure}[ht!]
   \begin{center}
     \begin{tikzpicture}
@@ -200,38 +200,10 @@ For "Warsaw Univeristy" dataset performed performence tests were plotted on \ref
   \end{center}
 \end{figure}
 \clearpage
-Bundle Adjustmet process allows to rearrange both estimated 3D points positions and positions of the cameras. When camera positions are close to their true,optimal positions it allows algorithms to focus on 3D points movement refinments. What's more Rotation and Translation enhanced position estimation has further influence in reduction of final BA error in comparison to Normal Pose Estimation. 
+In general, Bundle Adjustmet process allows to rearrange and modify 3D points positions and also change external paramaters of estimated cameras. However, in case of enhanced algoritms estimated camera positions are already very close to their optimal estimations.  Such situation allows Bundle Adjustment method to focus mainly on 3D points modifications. It can be seen that enhanced Pose Estimation in comparison to standard results in further reduction of BA error. 
 
-
-%\begin{figure}[h]
-%  \begin{center}
-%    \begin{tikzpicture}
-%      \begin{axis}[
-%          width=\linewidth, % Scale the plot to \linewidth
-%          grid=major, % Display a grid
-%          grid style={dashed,gray!30}, % Set the style
-%          xtick = {100,500,1000,5000},
-%          xlabel=Sift features number, % Set the labels
-%          xmode=log,
-%          log ticks with fixed point,
-%          ymode=normal,
-%          ylabel=Execution time(ms),
-%          legend style={at={(0.5,-0.2)},anchor=north,cells={anchor=west}}, % Put the legend below the plot
-%        ]
-%        \addplot[mark=*,blue] table[x=Number of Sift features,y=8-pointInit+NormalPoseEstim,col sep=comma] {ReconstructInit.csv}; 
-%        \addplot[mark=*,red] table[x=Number of Sift features,y=Enhanced8-point+NormalPoseEstim,col sep=comma] {ReconstructInit.csv};
-%        \addplot[mark=*,orange] table[x=Number of Sift features,y=Enhanced8-point+EnhancedPoseEstim,col sep=comma] {ReconstructInit.csv}; 
-%        \addplot[mark=*,pink] table[x=Number of Sift features,y=Alternative3-point+NormalPoseEstim,col sep=comma] {ReconstructInit.csv};
-%        \addplot[mark=*,green] table[x=Number of Sift features,y=Alternative3-point+EnhancedPoseEstim,col sep=comma] {ReconstructInit.csv};
-%        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructInit.csv};
-%        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation, Known Rotations and Translations}
-%      \end{axis}
-%    \end{tikzpicture}
-%    \caption{Execution time of first pair images recontruction(1024x768pixels) in comparison to initial Sift feature number}
-%  \end{center}
-%\end{figure}
 \subsection{Execution time}
-To see how proposed algorithms improve reconstruction process execution time without Bundle Adjustment was measured in \ref{plot:ReconstructionWithoutBA}. What can be noted that in comparison to Epipolar lines estimation overall reconstruction process time was slightly improved especially with 3-point algorithms. Comparing it to Execution times in \ref{plot:ExecutionTime} one can see that most of this time is used for SIFT correspondences matching, which is bottle-neck in proposed reconstruction methodology[reference to concept pose esitmation choosing]. Also Reconstruction time was also measered with Bundle Adjustment process at the end(\ref{plot:ReconstructionWithBA}). It turns out that Bundle Adjustment works much better on with enhanced Initial Pait reconstruction and Pose Estimation. Such cloud points are much better organised than standard reconstructed ones, which results in faster convergence of BA. Sample difference between cloud points before and after BA can be seen in \ref{fig:BundleAdjustmentComparison}
+In chart \ref{plot:ReconstructionWithoutBA} execution time without Bundle Adjustment was presented. Comparing it to Execution times in \ref{plot:ExecutionTime} one can see that most of this time is used for SIFT correspondences matching, which is bottle-neck in proposed reconstruction methodology[reference to concept pose esitmation choosing]. Also Reconstruction time was also measered with Bundle Adjustment process at the end(\ref{plot:ReconstructionWithBA}). It turns out that Bundle Adjustment works much better on with enhanced Initial Pait reconstruction and Pose Estimation. Such cloud points are much better organised than standard reconstructed ones, which results in faster convergence of BA. Sample difference between cloud points before and after BA can be seen in \ref{fig:BundleAdjustmentComparison}
 \begin{figure}[b!]
     \centering
     \includegraphics[width=\textwidth]{bundleAdjustmentComparison}
@@ -344,3 +316,31 @@ More reconstructed models can be found in [TODO Materials]
 % ---------------------------------------------------------------------------
 % ----------------------- end of thesis sub-document ------------------------
 % ---------------------------------------------------------------------------
+
+%\begin{figure}[h]
+%  \begin{center}
+%    \begin{tikzpicture}
+%      \begin{axis}[
+%          width=\linewidth, % Scale the plot to \linewidth
+%          grid=major, % Display a grid
+%          grid style={dashed,gray!30}, % Set the style
+%          xtick = {100,500,1000,5000},
+%          xlabel=Sift features number, % Set the labels
+%          xmode=log,
+%          log ticks with fixed point,
+%          ymode=normal,
+%          ylabel=Execution time(ms),
+%          legend style={at={(0.5,-0.2)},anchor=north,cells={anchor=west}}, % Put the legend below the plot
+%        ]
+%        \addplot[mark=*,blue] table[x=Number of Sift features,y=8-pointInit+NormalPoseEstim,col sep=comma] {ReconstructInit.csv}; 
+%        \addplot[mark=*,red] table[x=Number of Sift features,y=Enhanced8-point+NormalPoseEstim,col sep=comma] {ReconstructInit.csv};
+%        \addplot[mark=*,orange] table[x=Number of Sift features,y=Enhanced8-point+EnhancedPoseEstim,col sep=comma] {ReconstructInit.csv}; 
+%        \addplot[mark=*,pink] table[x=Number of Sift features,y=Alternative3-point+NormalPoseEstim,col sep=comma] {ReconstructInit.csv};
+%        \addplot[mark=*,green] table[x=Number of Sift features,y=Alternative3-point+EnhancedPoseEstim,col sep=comma] {ReconstructInit.csv};
+%        \addplot[mark=*,yellow] table[x=Number of Sift features,y=Known Rotations and Translations,col sep=comma] {ReconstructInit.csv};
+%        \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation, Known Rotations and Translations}
+%      \end{axis}
+%    \end{tikzpicture}
+%    \caption{Execution time of first pair images recontruction(1024x768pixels) in comparison to initial Sift feature number}
+%  \end{center}
+%\end{figure}

@@ -2,17 +2,18 @@
 % content in this file will be fed into the main document
 
 \chapter{Conclusion} % top level followed by section, subsection
-
+This chapter describes the whole work performed during master thesis, discusses encountered problems and proposes ideas for future work.
 
 % ----------------------- contents from here ------------------------
-
 \section{Summary}
+The idea of enhancing standard 3D reconstruction algorithms with usage of sensor data was concepted, implemented and verified in few different version. Reconstractiun strategy can be adapted, depending on accuracy and speed compromis. Proposed standard 8-point algorithm improvments allows to quickly determine proper Essential matrix decomposition to rotation and translation. Proposed standard 5-point algorithm improvements resulted in better accuracy than standard 5-point algorithm in terms of Sampson Error. However execution time of improved 5-point algorithm version was slightly bigger than standard version. Using initial rotation and translation estimation in Pose Estimation results in better reconstruction accuracy especially in terms of outliers removal and Bundle Adjustment convergence speed. Generally sensor enhanced algoritms resulted in bigger Bundle Adjustment error reduction in much shorter time. One of the bottle-neck in proposed reconstruction process time was correspondences matching. Using only sensor data is not enough to create accurate 3D models. However it's possible to briefly catch the outline of reconstructed models, which can be used in order to enhance object recognition in images[reference to similar papaer]. The only problem, which have to be solved is how to distuinguish inliers from outliers in such cases. TODO quick talk about proposed heuristic on rotation and movement. And general capability of reconstruction, and estimating dR instrad of R and ambiguity reduction.    
 \section{Dissemination}
-Who uses your component or who will use it? Industry projects, EU projects, open 
-source...? Is it integrated into a larger environment? Did you publish any papers? 
+Up to this point no one used implemented applications. However Android app can be interesting for people, who deals with 3D reconstruction techniques and it is planned to be published once improved and properly tested. "Enhanced 3D reconstructer" is alread open-sourced GitHub project with LGPL license.
 \section{Problems Encountered}
+Most of the problems were related to implementation of proposed algorithms. Decomposing rotation to Euclidan angles and combining angles can be tricky and should be done in the same order. Android API allows user to get rotation quaternion and a way to decompose it, but it doesn't explain how it's calculated. Some tests were made in order to figure it out. Also since it was first serious C++ and OpenCV project made by author, it was hard to deal with some memory related issues were hard to resolve. It was really hard to combine all necessery libraries together, especially Bundle Adjustment, which requires storing point visibility informations and is hard to implement.
+Preparing heuristic for movement measurments was also tricky, but after few basic tests it turned out it works at least up to relative differences in direction of X,Y and Z axis
 \section{Future work}
-
+It would be good to test reconstruction process with video sequence and optical flow estimation. This would both allow for quicker relative pose estimation correspondences matching and later could be used for dense reconstruction. All of used librieries are also available in Android versions, so it would be good to see is it possible to achieve real-time tracking and mapping(similar to PTAM). What's more interesting idea would be to store each reconstructed cloud with GPS camera position in cloud. Later first step in reconstruction could be searching the server for initially reconstracted model and whole analysis could be based on mapping, matching and improving existing model. However it would be essential to create algorithm, which would decide, which cloud points should be sent to server as reference
 
 
 

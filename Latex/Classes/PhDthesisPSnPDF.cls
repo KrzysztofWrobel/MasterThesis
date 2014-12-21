@@ -14,27 +14,27 @@
 %:-------------------------- report or book -----------------------
 
 %If you want to use a Report style document then uncomment the following 3 lines and comment the below 8 book style lines:
-%\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
-%\ProcessOptions\relax
-%%\LoadClass[a4paper]{report}
-%\ifx\pdfoutput\undefined
-%   \LoadClass[dvips, a4paper]{report}
-%\else
-%   \LoadClass[pdftex, a4paper]{report}
-%\fi
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
+\ProcessOptions\relax
+%\LoadClass[a4paper]{report}
+\ifx\pdfoutput\undefined
+   \LoadClass[dvips, a4paper]{report}
+\else
+   \LoadClass[pdftex, a4paper]{report}
+\fi
 
-%%Bibliography
-%%uncomment next line to change bibliography name to references for Report document class
+%Bibliography
+%uncomment next line to change bibliography name to references for Report document class
 %\renewcommand{\refname}{References}
 
 %If you want to use a Book style document then uncomment the following 3 lines and comment the above 8 report style lines:
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
-\ProcessOptions\relax
-\ifx\pdfoutput\undefined
-   \LoadClass[dvips, a4paper]{book}
-\else
-   \LoadClass[pdftex, a4paper]{book}
-\fi
+%\DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
+%\ProcessOptions\relax
+%\ifx\pdfoutput\undefined
+%   \LoadClass[dvips, a4paper]{book}
+%\else
+%   \LoadClass[pdftex, a4paper]{book}
+%\fi
 
 
 %:-------------------------- packages for fancy things -----------------------
@@ -59,12 +59,20 @@
 
 %:-------------------------- Glossary/Abbrev./Symbols -----------------------
 
-\usepackage[intoc]{nomencl} % load nomencl extension; include in TOC
-%\nomrefpage % to include page numbers after abbrevations
-\renewcommand{\nomname}{Glossary} % rename nomenclature
-\renewcommand{\nomlabel}[1]{\textbf{#1}} % make abbreviations bold
-\makenomenclature % used to be \makeglossary
-\newcommand{\g}{\footnote{For all abbreviations see the glossary on page \pageref{nom}.}} % type "\g" to refer to glossary
+\usepackage{makeidx}
+\makeindex
+
+\usepackage[acronym,xindy,toc]{glossaries}
+\makeglossaries
+
+
+%\usepackage[intoc]{nomencl} % load nomencl extension; include in TOC
+%%\nomrefpage % to include page numbers after abbrevations
+%\renewcommand{\nomname}{Terminology} % rename nomenclature
+%\renewcommand{\nomlabel}[1]{\textbf{#1}} % make abbreviations bold
+%\makenomenclature % used to be 
+
+%\newcommand{\g}{\footnote{For all abbreviations see the terminology on page \pageref{nom}.}} % type "\g" to refer to glossary
 
 % used to be for sorting into categories:
 %\renewcommand\nomgroup[1]{%
