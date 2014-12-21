@@ -172,7 +172,7 @@ As was shown in \ref{sec:Testin2Views} not every initial reconstruction methods 
 First method gives us basic reference to standard 3D reconstruction strategy. Second one was choosen, because extremly consistence in 3D reconstraction. It has never failed to produce solution close to optimal. Thrid was prepared in order to check, how enhanced Pose Estimation influence final reconstruction. Forth and fifth strategies were used to see, if models can be produced faster without much impact on final accuracy. Finally sixth one was proposed in order to check, wheter whole reconstruction process can be performed with only sensor data.
 
 \subsection{Accuracy}
-Accuracy of 3D reconstraction were measured using Bundle Adjustment algorithm from SBA library[ref]. It allows to calculate error based on projective constratin both before and after Bundle Adjustment.
+Accuracy of 3D reconstraction was measured using Bundle Adjustment algorithm from SBA library[ref]. It allows to calculate error based on projective constratin both before and after Bundle Adjustment.
 Performed with different strategis tests for "Warsaw Univeristy" dataset were plotted on \ref{plot:BAError}. Big differences in initial error can be explained different number of reconstructed points after initial phase and inconsistent unknown scale of finally reconstracted models. Enhanced initial pair reconstruction and pose estimation methods have bigger impact on Bundle Adjustment error reduction.
 \begin{figure}[ht!]
   \begin{center}
@@ -195,7 +195,7 @@ Performed with different strategis tests for "Warsaw Univeristy" dataset were pl
         \legend{Reconstruction Error before Bundle Adjustment,Reconstruction Error after Bundle Adjustment}
       \end{axis}
     \end{tikzpicture}
-    \caption{Comparison of different reconstruction strategies influence on Bundle Adjustment}
+    \caption{Influence of Bundle adjustment on models produced with different reconstruction strategies }
     \label{plot:BAError}
   \end{center}
 \end{figure}
