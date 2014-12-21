@@ -24,13 +24,13 @@
 \BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 24
 \BOOKMARK [0][]{chapter.4}{4 Concept}{}% 25
 \BOOKMARK [1][]{section.4.1}{4.1 Requirements}{chapter.4}% 26
-\BOOKMARK [1][]{section.4.2}{4.2 Enhancing epipolar geometry equations - rotation enhancments}{chapter.4}% 27
+\BOOKMARK [1][]{section.4.2}{4.2 Enhancing epipolar geometry equations with initial rotation matrix}{chapter.4}% 27
 \BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Alternative 3-point algorithm for translation finding}{section.4.2}% 28
 \BOOKMARK [1][]{section.4.3}{4.3 Pose estimation}{chapter.4}% 29
-\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Known rotations \046 translations}{section.4.3}% 30
-\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Rotation enhancements}{section.4.3}% 31
-\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Rotation \046 translation enhancements}{section.4.3}% 32
-\BOOKMARK [1][]{section.4.4}{4.4 Reconstruction process strategy}{chapter.4}% 33
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Rotation enhancements}{section.4.3}% 30
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Rotation \046 translation enhancements}{section.4.3}% 31
+\BOOKMARK [1][]{section.4.4}{4.4 Known rotations \046 translations}{chapter.4}% 32
+\BOOKMARK [1][]{section.4.5}{4.5 Reconstruction process strategy}{chapter.4}% 33
 \BOOKMARK [0][]{chapter.5}{5 Implementation}{}% 34
 \BOOKMARK [1][]{section.5.1}{5.1 Choosing Environment}{chapter.5}% 35
 \BOOKMARK [1][]{section.5.2}{5.2 Project Structure}{chapter.5}% 36
@@ -48,7 +48,7 @@
 \BOOKMARK [2][]{subsection.5.4.2}{5.4.2 Important Implementation Aspects}{section.5.4}% 48
 \BOOKMARK [3][]{subsubsection.5.4.2.1}{5.4.2.1 Rotation matrix generation}{subsection.5.4.2}% 49
 \BOOKMARK [3][]{subsubsection.5.4.2.2}{5.4.2.2 Enhancing epipolar equations}{subsection.5.4.2}% 50
-\BOOKMARK [3][]{subsubsection.5.4.2.3}{5.4.2.3 3-point translation estimation, between cameras}{subsection.5.4.2}% 51
+\BOOKMARK [3][]{subsubsection.5.4.2.3}{5.4.2.3 Alternative 3-point translation estimation}{subsection.5.4.2}% 51
 \BOOKMARK [3][]{subsubsection.5.4.2.4}{5.4.2.4 Enhancing pose estimation}{subsection.5.4.2}% 52
 \BOOKMARK [0][]{chapter.6}{6 Evaluation}{}% 53
 \BOOKMARK [1][]{section.6.1}{6.1 Acquiring datasets}{chapter.6}% 54
@@ -66,4 +66,4 @@
 \BOOKMARK [1][]{section.7.3}{7.3 Problems Encountered}{chapter.7}% 66
 \BOOKMARK [1][]{section.7.4}{7.4 Future work}{chapter.7}% 67
 \BOOKMARK [0][]{chapter.8}{8 Materials \046 methods}{}% 68
-\BOOKMARK [0][]{chapter*.34}{References}{}% 69
+\BOOKMARK [0][]{chapter*.35}{References}{}% 69
