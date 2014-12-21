@@ -50,4 +50,20 @@
 \BOOKMARK [3][]{subsubsection.5.4.2.2}{5.4.2.2 Enhancing epipolar equations}{subsection.5.4.2}% 50
 \BOOKMARK [3][]{subsubsection.5.4.2.3}{5.4.2.3 Alternative 3-point translation estimation}{subsection.5.4.2}% 51
 \BOOKMARK [3][]{subsubsection.5.4.2.4}{5.4.2.4 Enhancing pose estimation}{subsection.5.4.2}% 52
-\BO
+\BOOKMARK [0][]{chapter.6}{6 Evaluation}{}% 53
+\BOOKMARK [1][]{section.6.1}{6.1 Acquiring datasets}{chapter.6}% 54
+\BOOKMARK [1][]{section.6.2}{6.2 Test Environment}{chapter.6}% 55
+\BOOKMARK [1][]{section.6.3}{6.3 Testing initial pair reconstrucion methods}{chapter.6}% 56
+\BOOKMARK [2][]{subsection.6.3.1}{6.3.1 Accuracy - Epipolar lines correspondence}{section.6.3}% 57
+\BOOKMARK [2][]{subsection.6.3.2}{6.3.2 Time comparison}{section.6.3}% 58
+\BOOKMARK [1][]{section.6.4}{6.4 Testing reconstruction strategies}{chapter.6}% 59
+\BOOKMARK [2][]{subsection.6.4.1}{6.4.1 Accuracy}{section.6.4}% 60
+\BOOKMARK [2][]{subsection.6.4.2}{6.4.2 Execution time}{section.6.4}% 61
+\BOOKMARK [1][]{section.6.5}{6.5 Effectivness}{chapter.6}% 62
+\BOOKMARK [0][]{chapter.7}{7 Conclusion}{}% 63
+\BOOKMARK [1][]{section.7.1}{7.1 Summary}{chapter.7}% 64
+\BOOKMARK [1][]{section.7.2}{7.2 Dissemination}{chapter.7}% 65
+\BOOKMARK [1][]{section.7.3}{7.3 Problems Encountered}{chapter.7}% 66
+\BOOKMARK [1][]{section.7.4}{7.4 Future work}{chapter.7}% 67
+\BOOKMARK [0][]{chapter.8}{8 Materials \046 methods}{}% 68
+\BOOKMARK [0][]{chapter*.35}{References}{}% 69
