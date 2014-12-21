@@ -1,4 +1,0 @@
-(indexentry :tkey (("API" "\\glossentry{api}") ) :locref "{}{xiv}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("Fundamental Matrix" "\\glossentry{fundamentalMatrix}") ) :locref "{}{xiv}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("RGB Camera" "\\glossentry{rgb}") ) :locref "{}{xiv}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("IR Camera" "\\glossentry{ir}") ) :locref "{}{xiv}" :attr "pageglsnumberformat" ) 

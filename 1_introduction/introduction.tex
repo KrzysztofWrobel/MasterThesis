@@ -14,31 +14,27 @@
 %: ----------------------- introduction content ----------------------- 
 % ----------------------------------------------------------------------
 
-Mobile and wearable devices are becoming more and more popular. Modern smartphones despite having extremely good camera's also use advanced sensor's, like Accelerometers, Gyroscope, Magnetometer, Barometer etc.. There is also a big need and growing market of Augmented Reality (AR) and Virtual Reality(VR). That's why image analysis and recognition, as well as 3-D reconstruction techniques are really hot topic. Unfortunately algorithms that support these techniques are very time and memory consuming, that's why it's really hard to run them on mobile devices, which have many limitations in terms of CPU speed and RAM memory capacity.
-
-Today many devices are capable of 3D reconstruction. One of them is very popular Kinect\cite{kinect}. It has ability of performing real-time 3D cloud point generation, but it has very high accuracy of reconstruction, but in the same time it's very expansive and not exactly mobile.
+Mobile and wearable devices are becoming more and more popular. Modern smartphones despite having extremely good camera's also use advanced sensor's, like accelerometers, gyroscope, magnetometer, barometer etc.. There is also a big need and growing market of Augmented Reality (AR) and Virtual Reality(VR). That is why image analysis and recognition, as well as 3-D reconstruction techniques are really hot topic. Unfortunately algorithms that support these techniques are very time and memory consuming, that is why it is really hard to run them on mobile devices, which have many limitations in terms of CPU speed and RAM memory capacity.
 
 \section{Purpose of this thesis} % section headings are printed smaller than chapter names
-Author of this document will present the reader with an overview of the idea of 3D reconstruction. This thesis also inculdes brief description of related research in this area. After short analysis of efficiency, accuracy and common problems of few chosen algorithms this thesis will propose their enhacment with data acquired with sensors, which can be found in smartphones. At the end author presents evaluation and discuss test results. TODO finish
-
+Author of this document will present the reader with an overview of the idea of 3D reconstruction techniques. This thesis also inculdes brief description of related research conducted in this area. After short analysis of efficiency, accuracy and common problems of few chosen algorithms this thesis will propose their enhacment using data acquired from Android sensor fusion. Two application was created in order to verify and test proposed algorithms and reconstruction strategies. Both Android and Desktop applications will be discussed in important implementation asspects. This thesis also explains the reader meaning of testing results. At the end conclusions and encountered errors are discussed. Finally futur plans for conducted research is presented.
 \section{Scope}
-The author researched, how Accelerometer, Gyroscope and Magnetometer can be used in order to improve Fundamental, Essential matrix and also relative Pose Estimation. Unfortunately raw data sensors are really noisy and it's really hard to use them individually to enhance reconstruction. However there is a way to combine these data together in order to compensate error of each individual sensor. The term describing this process is called "Sensor Fusion". This data fusion allows to estimates in real time a relative or global(in term of earth magnetic field) rotation and translation of the device. TODO finish
+The author researched, how fusion of accelerometer, gyroscope and magnetometer can be used in order to improve fundamental, essential matrix calculations and also relative pose estimation. Unfortunately raw data sensors are really noisy and therefore not reliable enough to relay solely on them to enhance reconstruction. Heuristic measurment of translation used for enhancment using linear-acceleration was also concepted and implemented by author. In this research introduced are  initial rotation enhanced 8-point and 5-point reconstruction algorithms. Also alternative 3-point algorithm for translation estimation is also discussed and implemented.
+This thesis deals only with initial pair images reconstruction and relative pose estimation for Structure from Motion computation. It is not researched, what are the best methodology for corresponding feature computation, but other possibilities of point matching are discussed. Finally it is reserched, how improved versions of standard 8-point and 5-point algorithms influence convergence speed and error reduction of Bundle Adjustment.
 \section{Initial assumptions}
-The general process of 3-D reconstruction is quite broad, that's why the author of the thesis focus only on certain aspects of this topic. That's why author didn't write algorithms from the scratch, but built his algorithms on top of OpenCV library and "Relative Pose Esitmation" Open-source project setuped by ....... . In terms of sensor fusion, currently state of art approach is used by most of big Mobile Operating Systems(Android, iOS, Windows Phone). That's why author used Sensor Fusion API from API and only wrote what's needed it terms of getting rotation and translation of the smartphone camera, when acquiring images for his research. TODO finish
+The general process of 3-D reconstruction is quite broad, that's why the author of the thesis focus only on certain aspects of this topic. That is why author did not write all algorithms from the scratch, but built his versions on top of OpenCV library and open-source project called "Relative Pose Esitmation" created by TODO . In terms of sensor fusion, currently state of art approach can be found on Android platform. 3D reconstruction process will be processed in seperate desktop application.
 \section{Thesis Outline}
-In Chapter 2 something something and so on
+In Chapter 2 fundamental technology behind 3D reconstruction and Structure from Motion was discussed. Also sensors used to perform sensor fusion on Android platform were briefly introduced.
 \\*
-In Chapter 3
+In Chapter 3 brief overview of related research was made. Most interesting discoveries, which lead to conception of proposed methods were also described. 
 \\*
-In Chapter 4
+In Chapter 4 teoretical concept of proposed 8-point and 5-point rotation enhanced algorithms were presented. Also alternative approach to 3-point translation estimation was made. Finally author proposed few most promising Structure from motion reconstruction strategies.
 \\*
-In Chapter 5
+In Chapter 5 most important implementation asspects of rotation and translation measurements were discussed. Also enhancements modifications to standard 8-point and 5-point algorithms were discussed. Also 3-point translation estimation approach and relative pose ehancements implementation was discussed.
 \\*
-In Chapter 6
+In Chapter 6 evaluation of proposed initial pair reconstruction methods and strategies was presented and discussed.
 \\*
-In Chapter 7
-\\*
-In Chapter 8
+In Chapter 7 conslusions observed during master thesis project period, as well as encounterd problems were discussed. Thesis ends with further development plans establishment.
 
 % ----------------------------------------------------------------------
 

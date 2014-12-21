@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  21 DEC 2014 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  22 DEC 2014 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1332,45 +1332,42 @@ Missing character: There is no ¤ in font cmr10!
 
  (./1_introduction/introduction.tex
 Chapter 1.
-
-Package natbib Warning: Citation `kinect' on page 1 undefined on input line 19.
-
 [1
 
 
 
-]) [2]
+] [2]) [3]
 \openout2 = `2/fundamentals.aux'.
 
  (./2/fundamentals.tex
 Chapter 2.
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 3 undefined on input line 11.
+Package natbib Warning: Citation `HartleyMultipleView' on page 4 undefined on input line 11.
 
-<figures/correspondingMatching.png, id=497, 2684.0275pt x 1100.11pt>
+<figures/correspondingMatching.png, id=501, 2684.0275pt x 1100.11pt>
 File: figures/correspondingMatching.png Graphic file (type png)
  <use figures/correspondingMatching.png>
 Package pdftex.def Info: figures/correspondingMatching.png used on input line 29.
 (pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
- [3
+ [4
 
 
 
 ]
 
-Package natbib Warning: Citation `HartletMultipleView' on page 4 undefined on input line 39.
+Package natbib Warning: Citation `HartletMultipleView' on page 5 undefined on input line 39.
 
-<figures/RANSACFitting.png, id=512, 609.27625pt x 592.2125pt>
+<figures/RANSACFitting.png, id=516, 609.27625pt x 592.2125pt>
 File: figures/RANSACFitting.png Graphic file (type png)
  <use figures/RANSACFitting.png>
 Package pdftex.def Info: figures/RANSACFitting.png used on input line 42.
 (pdftex.def)             Requested size: 330.05322pt x 320.82013pt.
- <figures/EpipolarGeometry.png, id=514, 911.405pt x 657.45625pt>
+ <figures/EpipolarGeometry.png, id=518, 911.405pt x 657.45625pt>
 File: figures/EpipolarGeometry.png Graphic file (type png)
  <use figures/EpipolarGeometry.png>
 Package pdftex.def Info: figures/EpipolarGeometry.png used on input line 50.
 (pdftex.def)             Requested size: 330.05322pt x 238.08855pt.
- [4] [5 <./figures/correspondingMatching.png> <./figures/RANSACFitting.png>]
+ [5] [6 <./figures/correspondingMatching.png> <./figures/RANSACFitting.png>]
 Missing character: There is no Î in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Î in font cmr10!
@@ -1379,385 +1376,100 @@ Missing character: There is no Ì in font cmr10!
 Missing character: There is no ƒ in font cmr10!
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 6 undefined on input line 75.
+Package natbib Warning: Citation `HartleyMultipleView' on page 7 undefined on input line 75.
 
 
-LaTeX Warning: Reference `eq:3Dreconstruction' on page 6 undefined on input line 85.
+LaTeX Warning: Reference `eq:3Dreconstruction' on page 7 undefined on input line 85.
 
-<figures/3Dreconstruction.png, id=536, 604.2575pt x 351.3125pt>
+<figures/3Dreconstruction.png, id=540, 604.2575pt x 351.3125pt>
 File: figures/3Dreconstruction.png Graphic file (type png)
  <use figures/3Dreconstruction.png>
 Package pdftex.def Info: figures/3Dreconstruction.png used on input line 88.
 (pdftex.def)             Requested size: 330.05322pt x 191.89304pt.
- [6] <figures/BundleAdjustment.png, id=550, 767.86874pt x 335.2525pt>
+ [7] <figures/BundleAdjustment.png, id=554, 767.86874pt x 335.2525pt>
 File: figures/BundleAdjustment.png Graphic file (type png)
  <use figures/BundleAdjustment.png>
 Package pdftex.def Info: figures/BundleAdjustment.png used on input line 103.
 (pdftex.def)             Requested size: 330.05322pt x 144.1046pt.
- [7] [8 <./figures/EpipolarGeometry.png> <./figures/3Dreconstruction.png>] [9] <figures/Kalmann.png, id=566, 1548.78625pt x 883.3pt>
+ [8] [9 <./figures/EpipolarGeometry.png> <./figures/3Dreconstruction.png>] [10] <figures/Kalmann.png, id=570, 1548.78625pt x 883.3pt>
 File: figures/Kalmann.png Graphic file (type png)
  <use figures/Kalmann.png>
 Package pdftex.def Info: figures/Kalmann.png used on input line 125.
 (pdftex.def)             Requested size: 330.05322pt x 188.23451pt.
- [10] [11 <./figures/BundleAdjustment.png> <./figures/Kalmann.png>]) [12]
+ [11] [12 <./figures/BundleAdjustment.png> <./figures/Kalmann.png>]) [13]
 \openout2 = `3/related_work.aux'.
 
  (./3/related_work.tex
 Chapter 3.
 
-Package natbib Warning: Citation `objectRecAndLoc' on page 13 undefined on input line 6.
+Package natbib Warning: Citation `objectRecAndLoc' on page 14 undefined on input line 6.
 
 
-Package natbib Warning: Citation `combinedMonoSlam' on page 13 undefined on input line 6.
+Package natbib Warning: Citation `combinedMonoSlam' on page 14 undefined on input line 6.
 
 
-Package natbib Warning: Citation `8Point' on page 13 undefined on input line 8.
+Package natbib Warning: Citation `8Point' on page 14 undefined on input line 8.
 
 
-Package natbib Warning: Citation `Batra5point' on page 13 undefined on input line 8.
+Package natbib Warning: Citation `Batra5point' on page 14 undefined on input line 8.
 
 
-Package natbib Warning: Citation `Nister5point' on page 13 undefined on input line 8.
+Package natbib Warning: Citation `Nister5point' on page 14 undefined on input line 8.
 
 
-Package natbib Warning: Citation `iterative5point' on page 13 undefined on input line 8.
+Package natbib Warning: Citation `iterative5point' on page 14 undefined on input line 8.
 
 
-Package natbib Warning: Citation `RansacRefine' on page 13 undefined on input line 10.
+Package natbib Warning: Citation `RansacRefine' on page 14 undefined on input line 10.
 
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 
-Package natbib Warning: Citation `HellwichEvaluation' on page 13 undefined on input line 12.
+Package natbib Warning: Citation `HellwichEvaluation' on page 14 undefined on input line 12.
 
-[13
-
-
-
-]
-
-Package natbib Warning: Citation `1point' on page 14 undefined on input line 14.
-
-
-Package natbib Warning: Citation `4point' on page 14 undefined on input line 14.
-
-
-Package natbib Warning: Citation `robustCameraImu' on page 14 undefined on input line 14.
-
-
-Package natbib Warning: Citation `lineBasedPose' on page 14 undefined on input line 16.
-
-
-Package natbib Warning: Citation `pureTransl' on page 14 undefined on input line 16.
-
-
-Package natbib Warning: Citation `ptam' on page 14 undefined on input line 18.
-
-
-Package natbib Warning: Citation `monoSlam' on page 14 undefined on input line 18.
-
-
-Package natbib Warning: Citation `simultanousRecLocMap' on page 14 undefined on input line 18.
-
-
-Package natbib Warning: Citation `distributedAR' on page 14 undefined on input line 18.
-
-
-Package natbib Warning: Citation `combinedMonoSlam' on page 14 undefined on input line 18.
-
-
-Package natbib Warning: Citation `homographyMobile' on page 14 undefined on input line 18.
-
-
-Package natbib Warning: Citation `rotationSpaceSearch' on page 14 undefined on input line 20.
-
-
-Package natbib Warning: Citation `Enqvist10stablestructure' on page 14 undefined on input line 20.
-
-
-Package natbib Warning: Citation `robustCameraImu' on page 14 undefined on input line 20.
-
-[14]) [15]
-\openout2 = `5/concept.aux'.
-
- (./5/concept.tex
-Chapter 4.
-[16
-
-
-
-] [17]
-
-LaTeX Warning: Reference `:' on page 18 undefined on input line 49.
-
-
-Package natbib Warning: Citation `HartleyMultipleView' on page 18 undefined on input line 51.
-
-[18] [19] [20]) [21]
-\openout2 = `6/implementation.aux'.
-
- (./6/implementation.tex
-Chapter 5.
-[22
-
-
-
-] <figures/AndroidScreenShot.png, id=659, 1927.2pt x 1084.05pt>
-File: figures/AndroidScreenShot.png Graphic file (type png)
- <use figures/AndroidScreenShot.png>
-Package pdftex.def Info: figures/AndroidScreenShot.png used on input line 25.
-(pdftex.def)             Requested size: 330.05322pt x 185.64244pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[23] [24 <./figures/AndroidScreenShot.png>] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/03/04 1.5c listings language file
-) [25
-
-]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 73.
-
-
-LaTeX Warning: Float too large for page by 47.48244pt on input line 112.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
- [26] [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28] [29] [30]
-
-LaTeX Warning: Reference `sec:EpipolarEquation' on page 31 undefined on input line 195.
-
-[31] [32] [33] [34]) [35]
-\openout2 = `7/evaluation.aux'.
-
- (./7/evaluation.tex
-Chapter 6.
-[36
+[14
 
 
 
 ]
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
 
-Overfull \hbox (17.03592pt too wide) in paragraph at lines 64--65
- [] 
- []
-
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-<figures/summary1Sift300.jpg, id=945, 2569.6pt x 2890.8pt>
-File: figures/summary1Sift300.jpg Graphic file (type jpg)
- <use figures/summary1Sift300.jpg>
-Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 103.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift300.jpg, id=946, 2569.6pt x 2890.8pt>
-File: figures/summary2Sift300.jpg Graphic file (type jpg)
- <use figures/summary2Sift300.jpg>
-Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 109.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary1Sift1000.jpg, id=949, 2569.6pt x 2890.8pt>
-File: figures/summary1Sift1000.jpg Graphic file (type jpg)
- <use figures/summary1Sift1000.jpg>
-Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 117.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift1000.jpg, id=950, 2569.6pt x 2890.8pt>
-File: figures/summary2Sift1000.jpg Graphic file (type jpg)
- <use figures/summary2Sift1000.jpg>
-Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 123.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- [37] [38] [39] [40] [41 <./figures/summary1Sift300.jpg>] [42 <./figures/summary2Sift300.jpg>] [43 <./figures/summary1Sift1000.jpg>] [44 <./figures/summary2Sift1000.jpg>]
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-
-Overfull \hbox (11.56091pt too wide) in paragraph at lines 155--156
- [] 
- []
-
-[45
-
-]
-PGFPlots: reading {BAerror2.csv}
-PGFPlots: reading {BAerror2.csv}
-
-Overfull \hbox (25.55417pt too wide) in paragraph at lines 197--198
- [] 
- []
+Package natbib Warning: Citation `1point' on page 15 undefined on input line 14.
 
 
-LaTeX Warning: Float too large for page by 5.98788pt on input line 201.
-
-[46] [47] [48] <figures/bundleAdjustmentComparison.png, id=1020, 3001.2125pt x 2214.2725pt>
-File: figures/bundleAdjustmentComparison.png Graphic file (type png)
- <use figures/bundleAdjustmentComparison.png>
-Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 209.
-(pdftex.def)             Requested size: 412.56496pt x 304.38739pt.
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-
-Overfull \hbox (6.0859pt too wide) in paragraph at lines 236--237
- [] 
- []
+Package natbib Warning: Citation `4point' on page 15 undefined on input line 14.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-
-Overfull \hbox (11.56091pt too wide) in paragraph at lines 268--269
- [] 
- []
+Package natbib Warning: Citation `robustCameraImu' on page 15 undefined on input line 14.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[49
-
-] [50 <./figures/bundleAdjustmentComparison.png>] [51] [52] <figures/uni4000Comparison.png, id=1042, 1975.38pt x 2978.12625pt>
-File: figures/uni4000Comparison.png Graphic file (type png)
- <use figures/uni4000Comparison.png>
-Package pdftex.def Info: figures/uni4000Comparison.png used on input line 287.
-(pdftex.def)             Requested size: 371.30594pt x 559.76059pt.
+Package natbib Warning: Citation `lineBasedPose' on page 15 undefined on input line 16.
 
 
-LaTeX Warning: Float too large for page by 34.4051pt on input line 290.
-
-<figures/uni400Comparison.png, id=1043, 1978.39125pt x 1939.245pt>
-File: figures/uni400Comparison.png Graphic file (type png)
- <use figures/uni400Comparison.png>
-Package pdftex.def Info: figures/uni400Comparison.png used on input line 293.
-(pdftex.def)             Requested size: 371.30594pt x 363.93304pt.
- <figures/FailCaseFundamental.png, id=1044, 1953.2975pt x 598.235pt>
-File: figures/FailCaseFundamental.png Graphic file (type png)
- <use figures/FailCaseFundamental.png>
-Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 299.
-(pdftex.def)             Requested size: 371.30594pt x 113.71147pt.
- <figures/PoseEstimationMethodComparison.png, id=1045, 1987.425pt x 1280.785pt>
-File: figures/PoseEstimationMethodComparison.png Graphic file (type png)
- <use figures/PoseEstimationMethodComparison.png>
-Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 305.
-(pdftex.def)             Requested size: 371.30594pt x 239.2867pt.
- <figures/uniNone4000.png, id=1046, 1062.97125pt x 2047.65pt>
-File: figures/uniNone4000.png Graphic file (type png)
- <use figures/uniNone4000.png>
-Package pdftex.def Info: figures/uniNone4000.png used on input line 311.
-(pdftex.def)             Requested size: 265.8557pt x 512.1496pt.
-) [53
-
-] [54 <./figures/uni4000Comparison.png>] [55 <./figures/uni400Comparison.png> <./figures/FailCaseFundamental.png>] [56 <./figures/PoseEstimationMethodComparison.png>] [57 <./figures/uniNone4000.png>]
-\openout2 = `8/conclusion.aux'.
-
- (./8/conclusion.tex
-Chapter 7.
-[58
+Package natbib Warning: Citation `pureTransl' on page 15 undefined on input line 16.
 
 
-
-] [59]
-
-Package natbib Warning: Citation `ptam' on page 60 undefined on input line 24.
-
-) [60]
-\openout2 = `9/materials_methods.aux'.
-
- (./9/materials_methods.tex
-Chapter 8.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 8.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 8.
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 8.
-
-[61
+Package natbib Warning: Citation `ptam' on page 15 undefined on input line 18.
 
 
-
-] [62]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [63
-
-] [64] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.bbl (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.brf)
-\tf@brf=\write13
-\openout13 = `thesis.brf'.
+Package natbib Warning: Citation `monoSlam' on page 15 undefined on input line 18.
 
 
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-) [65
+Package natbib Warning: Citation `simultanousRecLocMap' on page 15 undefined on input line 18.
 
 
-]
-\openout2 = `9_backmatter/declaration.aux'.
-
- (./9_backmatter/declaration.tex [66
-
-])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 340.
-(/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/dedication.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/acknowledgement.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9/materials_methods.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9_backmatter/declaration.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5BAC6E8167B5A08662583C06846681D1;489.
-Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package natbib Warning: Citation `distributedAR' on page 15 undefined on input line 18.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+Package natbib Warning: Citation `combinedMonoSlam' on page 15 undefined on input line 18.
 
 
-LaTeX Warning: There were undefined references.
+Package natbib Warning: Citation `homographyMobile' on page 15 undefined on input line 18.
 
 
-LaTeX Warning: There were multiply-defined labels.
+Package natbib Warning: Citation `rotationSpaceSearch' on page 15 undefined on input line 20.
 
- ) 
-Here is how much of TeX's memory you used:
- 43451 strings out of 493117
- 960356 string characters out of 6135433
- 1281895 words of memory out of 5000000
- 45603 multiletter control sequences out of 15000+600000
- 13847 words of font info for 52 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 57i,20n,102p,10422b,2214s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.pdf (80 pages, 20289557 bytes).
-PDF statistics:
- 1293 PDF objects out of 1440 (max. 8388607)
- 1151 compressed objects within 12 object streams
- 463 named destinations out of 1000 (max. 500000)
- 655 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Package natbib Warning: Citation `Enqvist10stablestructure' on page 15 undefined on input line 20.
+
+
+Package natbib Warning: Citation `robustCameraImu' on page 15 unde
