@@ -10,10 +10,10 @@
 
 
 \chapter{Evaluation} % top level followed by section, subsection
-All implemented algorithms were tested in terms speed, accuracy and effectiveness. For speed test normal processor execution time were measured. For accuracy Sampson Error was used(point distance to corresponding epipolar line in image). For effectivness visual comparison of reconstructed 3D cloud points was used.
+All implemented algorithms were tested in terms of speed, accuracy and effectiveness. As regards the speed test, it included the measurement of the reconstruction execution time. In the accuracy testing Sampson Error measurement was used (this variable measures the distance between all points and their corresponding epipolar lines in an image). Effectiveness was tested using visual comparison of reconstructed 3D cloud points.
 % ----------------------- contents from here ------------------------
-\section{Acquiering datasets}
-Following datasets were captured with implemented "Sensor Enhanced Images Camera" and Nexsus 5 camera:
+\section{Acquiring datasets}
+For the purpose of analysis the following datasets were captured with implemented "Sensor Enhanced Images Camera" and Nexsus 5 camera:
 \begin{enumerate}
 \item Warsaw University of technology main building(4 images 1024x768pixels)
 \item Advertisment Pole ??? 
@@ -21,12 +21,12 @@ Following datasets were captured with implemented "Sensor Enhanced Images Camera
 \item Warsaw Shopping Center Back???
 \item Warsaw Shopping Center Front???
 \end{enumerate}
-As most of proposed algorithms require that Intersic Camera Parametrs are known, also used camera was calibrated and its parameters stored in $"out_camera_data.yml"$ file. All of these datasets can be found on attached CD or Github repository.
+Since most of the algorithms proposed in the (TODOreference to Concept) Concept section require intersic camera parametrs to be known, the camera used in the course of conducting this study was calibrated and its parameters were stored in $"out_camera_data.yml"$ file. All of these datasets can be found in attached CD or Github repository.
 \section{Test Environment}
-All test were perfomed on MacBook Air with 1.7GHz dual-core Intel Core i7 processor and 8GB 1600MHz DDR3 RAM using implemented "Enhanced 3D Reconstructer".  Numerical tests, which allowed to measure Total Errors and execution time were run on "Waraw University of Technology" dataset. Also  reconstruction ability of each proposed methods was measured and different reconstruction strategies as well.  Finally for each dataset most promising Enhanced 8-point method was used to reconstruct sparse models. 
-\section{Testing two-view reconstrucion methods} \label{sec:Testin2Views}
-The most important thing to determine was to evaluate, wether proposed sensor enhanced improvements scored better than normal algorithms.
-Following methods were tested: TODO methods should be already described in Concept and implementation
+All tests were perfomed on MacBook Air with 1.7GHz dual-core Intel Core i7 processor and 8GB 1600MHz DDR3 RAM using "Enhanced 3D Reconstructer" implemented as described in Implementation section.  Numerical tests which allowed for measuring total errors and execution time were run on "Warsaw University of Technology" dataset. Initial pair reconstruction ability of each method proposed was measured as well as various reconstruction strategies.  Finally, for each dataset the most effective methods were used to reconstruct sparse models. 
+\section{Testing initial pair reconstrucion methods} \label{sec:Testin2Views}
+The key question to be answered at this point was whether the proposed sensor enhancement gave better results than standard algorithms.
+The following methods were tested: TODO methods should be already described in Concept and implementation
 \begin{enumerate}
 \item \textbf{Standard 8-point} - based on [] Fundamental matrix decomposition, implemented in OpenCV
 \item \textbf{Enhanced 8-point} - proposed camera rotation enhanced version of above 8-point algorithm
@@ -36,7 +36,7 @@ Following methods were tested: TODO methods should be already described in Conce
 \item \textbf{Enhanced essential 5-point} - similar to 2. improvements rotation enhanced version of above 5-point algorithm
 \end{enumerate}
 \subsection{Accuracy - Epipolar lines correspondence}
-In terms of two pair images one of the most imporant factors is the epipolar constraint. With properly estimated Fundamental matrix we can draw in both images corresponding epipolar lines. What's more points that lie on two matching epipolars line can be easily matched. Simply speaking epipolar line crosses exactly the same points in both images. The more accurate it it the more corresponding pairs can be later found for instance to perform dense reconstraction. Sampson Error[reference]is one of metrics, that can be used in order to estimate, how accurate epipolars line are. 
+In the case of initial pair images one of the most imporant factors include the epipolar constraint. Using a properly estimated fundamental matrix drawing corresponding epipolar lines in both images is possible. Furthermore, points lying on two matching epipolars lines in different images can be easily matched. In other words, epipolar lines cross exactly the same points in both images. The more accurate they are the more corresponding pairs can be found, e.g. for th epurposes of performing dense reconstruction. Sampson Error is one of metrics that can be used in order to estimate the accuracy of epipolars lines; the smaller the error's value the more accurate the lines. 
 \begin{figure}[b!]
   \begin{center}
     \begin{tikzpicture}
@@ -66,7 +66,7 @@ In terms of two pair images one of the most imporant factors is the epipolar con
     \label{plot:TotalSampsonError}
   \end{center}
 \end{figure}
-It basicly measures sum of all points distances to theirs corresponding epipolar lines. However each of proposed methods has different outliers removal capabilities. That's why also Samson Error Per Corresponding Pair was used.
+Its primary function is to measure the sum of distance between all points and their corresponding epipolar lines. However, each of proposed methods has different outliers removal capabilities, therefore in order to compare their efficiency the average of Samson Error per a corresponding pair was calculated.
 On plot \ref{plot:TotalSampsonError} were visualized calculated total sampson errors for different initial SIFT features sets. Knowing that Total Sampson Error were calculated for different number of final inliers the only thing that can be noted here that most of the algoritms properly filter out outliers. Obviously drawing epipolar lines from heuristicaly estimated movement and noisy rotation gives extremly large error in comparison to others.
 \begin{figure}[hb!]
   \begin{center}
