@@ -200,7 +200,7 @@ Performed with different strategis tests for "Warsaw Univeristy" dataset were pl
   \end{center}
 \end{figure}
 \clearpage
-In general, Bundle Adjustmet process allows to rearrange and modify 3D points positions and also change external paramaters of estimated cameras. However, in case of enhanced algoritms estimated camera positions are already very close to their optimal estimations.  Such situation allows Bundle Adjustment method to focus mainly on 3D points modifications. It can be seen that enhanced Pose Estimation in comparison to standard results in further reduction of BA error. 
+In general, Bundle Adjustmet process allows to rearrange and modify 3D points positions and also change external paramaters of estimated cameras. However, in case of enhanced algoritms estimated camera positions are already very close to their optimal estimations. Such situation allows Bundle Adjustment method to focus mainly on 3D points modifications. It can be seen that enhanced Pose Estimation in comparison to standard results in further reduction of BA error. 
 
 \subsection{Execution time}
 In chart \ref{plot:ReconstructionWithoutBA} execution time without Bundle Adjustment was presented. Comparing it to Execution times in \ref{plot:ExecutionTime} one can see that most of this time is used for SIFT correspondences matching, which is bottle-neck in proposed reconstruction methodology[reference to concept pose esitmation choosing]. Also Reconstruction time was also measered with Bundle Adjustment process at the end(\ref{plot:ReconstructionWithBA}). It turns out that Bundle Adjustment works much better on with enhanced Initial Pait reconstruction and Pose Estimation. Such cloud points are much better organised than standard reconstructed ones, which results in faster convergence of BA. Sample difference between cloud points before and after BA can be seen in \ref{fig:BundleAdjustmentComparison}
@@ -266,20 +266,20 @@ In chart \ref{plot:ReconstructionWithoutBA} execution time without Bundle Adjust
         \legend{Standard 8-point initialization + Normal OpenCV Pose Estimation,Enhanced 8-point initialization + Normal Pose Estimation,Enhanced 8-point initiazliation + Enhanced Pose Estim, Alternative 3-point initiazliation + Normal Pose Estimation, Alternative 3-point initialization + Enhanced Pose Estimation}
       \end{axis}
     \end{tikzpicture}
-    \caption{Total execution time of reconstruction with Bundle Adjustment(4 images with resolution 1024x768pixels) in comparison to Sift feature number}
+    \caption{Total execution time of reconstruction with Bundle Adjustment(4 images with resolution 1024x768pixels) in comparison to SIFT feature number}
     \label{plot:ReconstructionWithBA}
   \end{center}
 \end{figure}
 \clearpage
 
 \section{Effectivness}
-However numerical measuerments do not always results in proper 3D model reconstructions, so some of the intresting 3D reconstraction situations are presented on next 4 pages. In \ref{fig:uni4000Comparison} different Initialization Pair methods were used to reconstruction models for 4000 SIFT features. It can be seen that standard and enhaced methods gave quite good results, which only differ in scale. 3-point algorithm produces quite good models, but slightly distorted due to noise in used rotations. Model reconstructed from known rotations and translations are very distorted, but stil readable. It could be used, when very fast reconstruction is needed. Essential Matrix estimation methods unfortunately failed in terms of relative pose estimation.
+Used numerical measuerments do not always correspond to proper 3D model reconstructions. On following 4 pages reconstruction effects of proposed strategies were presented. In figure \ref{fig:uni4000Comparison} reconstrated effects for different initialization pair methods and 4000 SIFT features set were presented. It can be seen that both standard and enhaced 8-point methods produces very good results, which only differ in final reconstruction scale. Alternative 3-point algorithm produces sligthly worse distorted models due to uncompenstaed noise in used camera rotations. Model reconstructed from known rotations and translations are very distorted, but stil is recognizable. It could be used, when very fast reconstruction is needed.
 \newline
-However situation changes a little bit for 400 points. Every algorithm managed to find solution reallt close to optimum. In some cases "Traingulation Test" used in Standard 8-point approach fails and produces unrecognizable model(\ref{fig:FailCaseFundamental}).
+Situation is slightly different when 400 SIFT feature points are used. All algorithms managed to find solution close to optimal. But situation can be different and "Traingulation Test" used in standard 8-point approach can fail and produce unrecognizable model(\ref{fig:FailCaseFundamental}).
 \newline
-When it comes to Pose Estimations enhancments one can see in \ref{fig:PoseEstimationMethodComparison} that generally initial  rotation and translation help to find better solution, which mainly manifests in less outliers number.
+One can see that Pose Estimations enhancments results especiially in reduction of outliers(\ref{fig:PoseEstimationMethodComparison}).
 \newline
-In figure \ref{fig:UniNone4000} it can be seen, how many outliers using only noisy rotations and translations produces.
+Figure \ref{fig:UniNone4000} shows, that reconstruction from known rotations and translations, produces many outliers.
 \newline
 More reconstructed models can be found in [TODO Materials]
 \begin{figure}[p]
