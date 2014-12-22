@@ -2,31 +2,37 @@
 
  \nomgroup{A}
 
+  \item [{1G}]\begingroup 1 gravity constant value\nomeqref {0}
+		\nompageref{1}
+  \item [{3D}]\begingroup 3 dimension\nomeqref {0}\nompageref{1}
+  \item [{API}]\begingroup Applicatioan Programming interface\nomeqref {0}
+		\nompageref{1}
+  \item [{AR}]\begingroup Augmented Reality\nomeqref {0}\nompageref{1}
   \item [{BA}]\begingroup Bundle Adjustment\nomeqref {0}\nompageref{1}
-  \item [{Base line}]\begingroup The distance between the left and the right camera in a stereo pair.\nomeqref {0}
+  \item [{DOF}]\begingroup Degree of freedom\nomeqref {0}\nompageref{1}
+  \item [{IMU}]\begingroup Inertial Measurement Unit\nomeqref {0}
 		\nompageref{1}
-  \item [{Epipolar lines}]\begingroup TODO\nomeqref {0}\nompageref{1}
-  \item [{Essential Matrix}]\begingroup TODO\nomeqref {0}\nompageref{1}
-  \item [{Extrasinc??? camera parameters }]\begingroup TODO\nomeqref {0}
+  \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}
 		\nompageref{1}
-  \item [{FoV}]\begingroup Field of View\nomeqref {0}\nompageref{1}
-  \item [{Fundamental Matrix}]\begingroup Todo\nomeqref {0}
+  \item [{LGPL}]\begingroup The GNU Lesser General Public License\nomeqref {0}
 		\nompageref{1}
-  \item [{Intersinc camera parameters}]\begingroup TODO\nomeqref {0}
+  \item [{MEMS}]\begingroup Micro Electro-Mechanical System\nomeqref {0}
 		\nompageref{1}
-  \item [{Pitch}]\begingroup Rotation around the y axis.\nomeqref {0}
+  \item [{PCL}]\begingroup Point Cloud Library\nomeqref {0}
 		\nompageref{1}
-  \item [{Pose Estimation}]\begingroup TODO\nomeqref {0}\nompageref{1}
-  \item [{Quaternion}]\begingroup TODO\nomeqref {0}\nompageref{1}
-  \item [{RANSAC}]\begingroup Bundle Adjustment\nomeqref {0}
+  \item [{PNP}]\begingroup Perspective-n-Point\nomeqref {0}
 		\nompageref{1}
-  \item [{Roll}]\begingroup Rotation around the x axis.\nomeqref {0}
+  \item [{RANSAC}]\begingroup RANdom SAmple Consensus\nomeqref {0}
 		\nompageref{1}
-  \item [{Rotation Matrix}]\begingroup TODO\nomeqref {0}\nompageref{1}
-  \item [{SIFT}]\begingroup TODO\nomeqref {0}\nompageref{1}
+  \item [{SD}]\begingroup Secure Digital\nomeqref {0}\nompageref{1}
+  \item [{SDK}]\begingroup Software Development Kit\nomeqref {0}
+		\nompageref{1}
+  \item [{SfM}]\begingroup Structure from motion\nomeqref {0}
+		\nompageref{1}
+  \item [{SIFT}]\begingroup Scale-invariant feature transform\nomeqref {0}
+		\nompageref{1}
   \item [{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}
 		\nompageref{1}
-  \item [{Yaw}]\begingroup Rotation around the z axis.\nomeqref {0}
-		\nompageref{1}
+  \item [{VR}]\begingroup Virtual Reality\nomeqref {0}\nompageref{1}
 
 \end{thenomenclature}
