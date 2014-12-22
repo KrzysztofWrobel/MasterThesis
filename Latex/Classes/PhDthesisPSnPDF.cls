@@ -57,6 +57,7 @@
 \setlength{\columnsep}{20pt} % space between columns; default 10pt quite narrow
 \usepackage[nottoc]{tocbibind} % correct page numbers for bib in TOC, nottoc suppresses an entry for TOC itself
 %\usepackage{nextpage}
+\renewcommand{\thefigure}{\arabic{figure}}
 
 %:-------------------------- Glossary/Abbrev./Symbols -----------------------
 

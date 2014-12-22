@@ -11,13 +11,13 @@ This chapter describes the chosen implementation environment. It also describes 
 Currently, Android has one of the best APIs which allows programmers to acquire sensor fusioned data of rotation and linear acceleration.
 In order to avoid creating anew all epipolar geometry algorithms, C++ version of OpenCV library was used. Image acquiring process was seperated from the model reconstruction. This allowed to save a lot of time in debugging which is highly difficult in native C++ development on Android. In order to enrich images with sensor data an Android app and a standalone C++ desktop app to perform processing and evaluation were created.
 \section{Project Structure} \label{sec:ProjectStructure}
-Source codes of both applications can be found on an attached CD and in the Github repository at the following web address: TODO \url{https://github.com/KrzysztofWrobel/MasterThesisSource.git}. In general, the project was split into two subprojects: Android and Desktop. In addition, some of the sample datasets were added to the dataset folder in order to perform evaluations similar to the ones described in the next chapter.
+Source codes of both applications can be found on an attached CD and in the Github repository at the following web address: \url{https://github.com/KrzysztofWrobel/MasterThesisSource.git}. In general, the project was split into two subprojects: Android and Desktop. In addition, some of the sample datasets were added to the dataset folder in order to perform evaluations similar to the ones described in the next chapter.
 \section{"Sensor Enhanced Images Camera" - Android Gradle based project}
 In order to capture images and associate them with sensor data, a custom photo capture app called "Sensor Enhanced Images Camera" was created.
 Using this application, the camera orientation angles can be tracked in real-time in reference to the Earth's coordinate system. Also linear acceleration, current velocity and relative translation from the location of the last picture taken can be tracked. 
 Upon the photo capture the current camera rotation and relative translation are saved in a custom JSON file. A corresponding image is saved along with this JSON file in a folder, which is created upon every app start-up. It allows for taking different dataset captures without them being mixed up.
 \subsection{Installation}
-In order to compile and distribute Android application, a Gradle based built system was used. This is currently a recommended way to maintain Android-based projects [TODO ref. google]. At present this app supports the devices with Android 4.0 and above only. In order to compile this project it is recomended to install Android Studio, which already contains the required SDK and also has a built-in Gradle support. More information about configuration, compilation and installation steps can be found in README.md in the main catalog of the attached source code. 
+In order to compile and distribute Android application, a Gradle based built system was used. This is currently a recommended way to maintain Android-based projects \cite{website:gradle}. At present this app supports the devices with Android 4.0 and above only. In order to compile this project it is recomended to install Android Studio, which already contains the required SDK and also has a built-in Gradle support. More information about configuration, compilation and installation steps can be found in README.md in the main catalog of the attached source code. 
 \subsection{User Interface}
 As mentioned earlier the app allows to track all necessery external camera parameters in real-time. This is how the first version of user interface looked:
 \begin{figure}[h!]
@@ -67,7 +67,7 @@ However, it can be improved using human-walking model description with the follo
 \item Update device postion
 \end{enumerate}
 \end{enumerate}
-A code snippet of the described movement estimation heuristics was derived from Android application and can be found in  listing \ref{lst:positionHeuristic}. Maximum walking speed can be adjusted, but by default it should be set to around $1.5\frac{m}{s}$ TODO \url{http://en.wikipedia.org/wiki/Preferred_walking_speed}. 
+A code snippet of the described movement estimation heuristics was derived from Android application and can be found in  listing \ref{lst:positionHeuristic}. Maximum walking speed can be adjusted, but by default it should be set to around $1.5\frac{m}{s}$ \cite{website:walkingSpeed}. 
 The most important factor of the accurate reconstruction are correletions between movements in X,Y and Z axes. Noise in sensors is equally distributed on each axis, so its estimated translation should keep these movements' correlations properly.
 
 \begin{lstlisting}[caption={Snippet from Android source code position estimation heuristic},label={lst:positionHeuristic},numbers=left,escapeinside={@}{@},float]
@@ -119,7 +119,7 @@ As mentiond earlier each photo sensor information is stored in a separe file. By
 \item \textbf{Euler Angles - pitch, roll, azimuth}
 \item \textbf{Relative position coordinate}
 \end{itemize} 
-All these pieces of information are stored as a list and when the user has completed taking pictures, entire information set is saved into JSON file named sensor.txt. A sample file can be found in the Additional Materials[TODO].\pagebreak
+All these pieces of information are stored as a list and when the user has completed taking pictures, entire information set is saved into JSON file named sensor.txt. A sample file can be found in the Additional Materials.
 
 \section{"Enhanced 3D Reconstructer" - OSX CMake-based project}
 In order to evaluate algorithms there was a need to prepare a comfortable project environment which would allow for numerical and visual comparison of multiple datasets. CMake was chosen in order to simplify building and compilation process. The entire code architecture was developed and tested on Apple MacbookAir with OSX 10.9 Mavericks. In order to compile this project the following elements need to be installed first:
@@ -169,9 +169,9 @@ There is no graphical interface for reconstruction parameters configuration eith
 \end{enumerate}
 The output received by the user is a reconstructed model in a file with *.asc extension. The reconstructed model is also visible in PCL Visualizer integrated into the code. The user can navigate through the model with mouse and 'F' key, which centers the camera view on a selected point.
 \subsection{Important Implementation Aspects}
-Most of the necessary algorithms were already implemented in OpenCV. In addition an opensource project with the 5-point algorithm implementation was used. Its source code can be found here: [TODO reference].
+Most of the necessary algorithms were already implemented in OpenCV. In addition an opensource project with the 5-point algorithm implementation was used. Its source code can be found in \cite{website:relativePoseLibrary}.
 \subsubsection{Rotation matrix generation}
-To parse Android generated sensor data file Boost::JsonParser was used. As mentioned earlier, Android saves decomposed Euler angles. In order to properly multiply this angles to acquire a proper rotation matrix the following code inspired by MathWorld Wolfram's definition of Euler angles [TODO \url{http://mathworld.wolfram.com/EulerAngles.html}].
+To parse Android generated sensor data file Boost::JsonParser was used. As mentioned earlier, Android saves decomposed Euler angles. In order to properly multiply this angles to acquire a proper rotation matrix the following code inspired by MathWorld Wolfram's definition of Euler angles \cite{website:eulerAngles}.
 \begin{lstlisting}
 Mat getRotation3DMatrix(double pitch, double azimuth, double roll) {
     Mat D = (Mat_<T>(3, 3) <<

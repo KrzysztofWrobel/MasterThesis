@@ -15,24 +15,24 @@ All implemented algorithms were tested in terms of speed, accuracy and effective
 \section{Acquiring datasets}
 For the purpose of analysis the following datasets were captured with the implemented "Sensor Enhanced Images Camera" application and Nexus 5 camera:
 \begin{enumerate}
-\item Warsaw University of technology main building(4 images 1024x768pixels)
-\item Advertisment Pole ??? 
-\item Warsaw Buisness School Gate and Entrance ??
-\item Warsaw Shopping Center Back???
-\item Warsaw Shopping Center Front???
+\item Warsaw University of technology main building
+\item Advertisment Pole 
+\item Warsaw Buisness School Gate and Entrance
+\item Warsaw Shopping Center Back
+\item Warsaw Shopping Center Front
 \end{enumerate}
-Since most of the algorithms proposed in the (TODOreference to Concept) section require internal camera parametrs to be known, the camera used in the course of conducting this study was calibrated and its parameters were stored in $"out_camera_data.yml"$ file. All of these datasets can be found on attached CD or in Github repository.
+Since most of the algorithms proposed in the Chapter 4 require internal camera parametrs to be known, the camera used in the course of conducting this study was calibrated and its parameters were stored in "outcameradata.yml" file. All of these datasets can be found on attached CD or in Github repository.
 \section{Test Environment}
 All tests were perfomed on MacBook Air with 1.7GHz dual-core Intel Core i7 processor and 8GB 1600MHz DDR3 RAM using "Enhanced 3D Reconstructer" implemented as described in the Implementation chapter.  Numerical tests which allowed for measuring total errors and execution time were run on the "Warsaw University of Technology" dataset. Initial pair reconstruction ability of each method proposed was measured as well as various reconstruction strategies.  Finally, for each dataset the most effective methods were used to reconstruct sparse models. 
 \section{Testing initial pair reconstrucion methods} \label{sec:Testin2Views}
 The key question to be answered at this point was whether the proposed sensor enhancement gave better results than the standard algorithms.
-The following methods were tested: TODO methods should be already described in Concept and implementation
+The following methods were tested:
 \begin{enumerate}
-\item \textbf{Standard 8-point} - based on [] the fundamental matrix decomposition, implemented in OpenCV
+\item \textbf{Standard 8-point} - based on the 8-point fundamental matrix decomposition, implemented in OpenCV
 \item \textbf{Enhanced 8-point} - the proposed camera rotation enhanced version of the above 8-point algorithm
 \item \textbf{Alternative 3-point} - the proposed 3-point algorithm for translation estimation.
 \item \textbf{Known rotations and translations} - calculation from known cameras rotations and translations
-\item \textbf{Standard essential 5-point} - based on [] the  essential matrix decomposition, implemented in []
+\item \textbf{Standard essential 5-point} - based on the 5-point essential matrix decomposition, implemented in \cite{website:relativePoseLibrary}
 \item \textbf{Enhanced essential 5-point} - similar to 2. rotation-enhanced version of the above 5-point algorithm
 \end{enumerate}
 \subsection{Accuracy - Epipolar lines correspondence}
@@ -203,7 +203,7 @@ The tests performed with different strategies  for the "Warsaw Univeristy" datas
 In general, Bundle Adjustmet process allows to rearrange and modify 3D points positions and change external parameters of estimated cameras. However, in the case of the enhanced algorithms the estimated camera positions are already very close to their optimal orientations. This allows Bundle Adjustment method to focus mainly on 3D points modifications. It can be observed that the enhanced pose estimation results in further reduction of BA error when compared to the standard strategies. 
 
 \subsection{Execution time}
-The chart \ref{plot:ReconstructionWithoutBA} presentes the execution time without Bundle Adjustment. Comparing it to the execution times in \ref{plot:ExecutionTime} one can notice that most of the time is allocated for SIFT correspondences matching, which constitutes a bottleneck in the proposed reconstruction methodology [reference to concept pose esitmation choosing]. Furthermore, the reconstruction time was also measured with Bundle Adjustment process at the end(\ref{plot:ReconstructionWithBA}). It was found that Bundle Adjustment works significantly better with enhanced initial pair reconstruction and pose estimation. In that case the cloud points are better organised than in the standard reconstruction, which results in faster convergence of BA. Sample difference between the cloud points before and after BA can be seen in \ref{fig:BundleAdjustmentComparison}
+The chart \ref{plot:ReconstructionWithoutBA} presentes the execution time without Bundle Adjustment. Comparing it to the execution times in \ref{plot:ExecutionTime} one can notice that most of the time is allocated for SIFT correspondences matching, which constitutes a bottleneck in the proposed reconstruction methodology. Furthermore, the reconstruction time was also measured with Bundle Adjustment process at the end(\ref{plot:ReconstructionWithBA}). It was found that Bundle Adjustment works significantly better with enhanced initial pair reconstruction and pose estimation. In that case the cloud points are better organised than in the standard reconstruction, which results in faster convergence of BA. Sample difference between the cloud points before and after BA can be seen in \ref{fig:BundleAdjustmentComparison}
 \begin{figure}[b!]
     \centering
     \includegraphics[width=\textwidth]{bundleAdjustmentComparison}
@@ -239,7 +239,6 @@ The chart \ref{plot:ReconstructionWithoutBA} presentes the execution time withou
   \end{center}
 \end{figure}
 
-%TODO At this point an interesting observation was made that pose estimation time is relatively short as for correspondence matching. Similarily triangulation also proved to be fast.\newline
 \begin{figure}[h!]
   \begin{center}
     \begin{tikzpicture}
@@ -275,7 +274,7 @@ The chart \ref{plot:ReconstructionWithoutBA} presentes the execution time withou
 \section{Effectivness}
 The numerical measuerments used do not always correspond to the proper 3D model reconstructions. The following pages present the reconstruction effects of the proposed strategies. Figure \ref{fig:uni4000Comparison} shows the reconstructed effects for different initialization pair methods and 4000 SIFT features set. It can be observed that both standard and enhaced 8-point methods produces very good results, which differ only in terms of final reconstruction scale. Alternative 3-point algorithm produces sligthly worse and distorted models due to uncompenstaed noise in the rotations of the camera used. A model reconstructed from the known rotations and translations is very distorted, but nonetheless stil recognizable. It could prove useful should a very fast reconstruction be needed.
 \newline
-The matter is slightly different when 400 SIFT feature points are used. [reference] In the first case all algorithms were able to find solutions close to optimal. However, in the second attempt the traingulation test, which is used to identify proper deconmposition in standard 8-point approach, failed and produced an unrecognizable model (\ref{fig:FailCaseFundamental}).
+The matter is slightly different when 400 SIFT feature points are used. In the first case all algorithms were able to find solutions close to optimal. However, in the second attempt the traingulation test, which is used to identify proper deconmposition in standard 8-point approach, failed and produced an unrecognizable model (\ref{fig:FailCaseFundamental}).
 \newline
 It can be seen that pose estimations enhancments result primarily in the reduction of outliers (\ref{fig:PoseEstimationMethodComparison}).
 \newline

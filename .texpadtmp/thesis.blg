@@ -15,13 +15,18 @@ A level-1 auxiliary file: 8/conclusion.aux
 A level-1 auxiliary file: 9/materials_methods.aux
 The style file: ../Latex/Classes/PhDbiblio-url2.bst
 I couldn't open database file 9_backmatter/references.bib.bib
----line 60 of file thesis.aux
+---line 57 of file thesis.aux
  : \bibdata{9_backmatter/references.bib
  :                                     }
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: 9_backmatter/declaration.aux
 I found no database files---while reading file thesis.aux
+Warning--I didn't find a database entry for "website:ransac"
+Warning--I didn't find a database entry for "website:relativePoseLibrary"
 Warning--I didn't find a database entry for "HartleyMultipleView"
+Warning--I didn't find a database entry for "website:kinect"
+Warning--I didn't find a database entry for "website:featureDetection"
+Warning--I didn't find a database entry for "website:SIFT"
 Warning--I didn't find a database entry for "HartletMultipleView"
 Warning--I didn't find a database entry for "objectRecAndLoc"
 Warning--I didn't find a database entry for "combinedMonoSlam"
@@ -43,9 +48,17 @@ Warning--I didn't find a database entry for "distributedAR"
 Warning--I didn't find a database entry for "homographyMobile"
 Warning--I didn't find a database entry for "rotationSpaceSearch"
 Warning--I didn't find a database entry for "Enqvist10stablestructure"
+Warning--I didn't find a database entry for "website:androidSensorOverview"
+Warning--I didn't find a database entry for "website:poseEstimation"
+Warning--I didn't find a database entry for "website:gradle"
+Warning--I didn't find a database entry for "website:walkingSpeed"
+Warning--I didn't find a database entry for "website:pcl"
+Warning--I didn't find a database entry for "website:cvsba"
+Warning--I didn't find a database entry for "website:eulerAngles"
+Warning--I didn't find a database entry for "website:3dReconstructerMasterThesis"
 You've used 0 entries,
             2776 wiz_defined-function locations,
-            654 strings with 5797 characters,
+            675 strings with 6239 characters,
 and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0

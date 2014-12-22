@@ -16,16 +16,16 @@
 \BOOKMARK [2][]{subsection.2.2.1}{2.2.1 3D Pose Estimation}{section.2.2}% 16
 \BOOKMARK [2][]{subsection.2.2.2}{2.2.2 Homography estimation}{section.2.2}% 17
 \BOOKMARK [2][]{subsection.2.2.3}{2.2.3 Structure Adjustment}{section.2.2}% 18
-\BOOKMARK [1][]{section.2.3}{2.3 Mobile Sensors overview}{chapter.2}% 19
-\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Accelerometer}{section.2.3}% 20
-\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Gyroscope}{section.2.3}% 21
-\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 Magnetometer}{section.2.3}% 22
-\BOOKMARK [2][]{subsection.2.3.4}{2.3.4 Sensor Fusion}{section.2.3}% 23
+\BOOKMARK [1][]{section.2.3}{2.3 Mobile Sensors overviewwebsite:androidSensorOverview}{chapter.2}% 19
+\BOOKMARK [2][]{subsection.2.3.1}{2.3.1 Accelerometerwebsite:accelerometer}{section.2.3}% 20
+\BOOKMARK [2][]{subsection.2.3.2}{2.3.2 Gyroscopewebsite:gyroscope}{section.2.3}% 21
+\BOOKMARK [2][]{subsection.2.3.3}{2.3.3 Magnetometerwebsite:magnetometer}{section.2.3}% 22
+\BOOKMARK [2][]{subsection.2.3.4}{2.3.4 Sensor Fusionwebsite:sensorFustion}{section.2.3}% 23
 \BOOKMARK [0][]{chapter.3}{3 Related Work}{}% 24
 \BOOKMARK [0][]{chapter.4}{4 Concept}{}% 25
 \BOOKMARK [1][]{section.4.1}{4.1 Requirements}{chapter.4}% 26
 \BOOKMARK [1][]{section.4.2}{4.2 Enhancing epipolar geometry equations with initial rotation matrix}{chapter.4}% 27
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Alternative 3-point algorithm for finading a translation}{section.4.2}% 28
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Alternative 3-point algorithm for finding the translation}{section.4.2}% 28
 \BOOKMARK [1][]{section.4.3}{4.3 Pose estimation}{chapter.4}% 29
 \BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Rotation enhancements}{section.4.3}% 30
 \BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Rotation \046 translation enhancements}{section.4.3}% 31
@@ -39,7 +39,7 @@
 \BOOKMARK [2][]{subsection.5.3.2}{5.3.2 User Interface}{section.5.3}% 39
 \BOOKMARK [2][]{subsection.5.3.3}{5.3.3 Important Implementation Aspects}{section.5.3}% 40
 \BOOKMARK [3][]{subsubsection.5.3.3.1}{5.3.3.1 Rotation calculation}{subsection.5.3.3}% 41
-\BOOKMARK [3][]{subsubsection.5.3.3.2}{5.3.3.2 Custom heuristics for move estimation}{subsection.5.3.3}% 42
+\BOOKMARK [3][]{subsubsection.5.3.3.2}{5.3.3.2 Custom heuristics for movement estimation}{subsection.5.3.3}% 42
 \BOOKMARK [3][]{subsubsection.5.3.3.3}{5.3.3.3 Custom Sensor Data File format}{subsection.5.3.3}% 43
 \BOOKMARK [1][]{section.5.4}{5.4 "Enhanced 3D Reconstructer" - OSX CMake-based project}{chapter.5}% 44
 \BOOKMARK [2][]{subsection.5.4.1}{5.4.1 User Interface}{section.5.4}% 45
