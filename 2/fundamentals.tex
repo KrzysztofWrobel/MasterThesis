@@ -36,7 +36,7 @@ Once proper matches are found, it can be proven that there exsists Fundamental m
 \begin{equation} \label{eq:fundamntalEquation}
 {x}^{'T} * F * x = 0
 \end{equation} 
-where $x$ and ${x}_{'}$ are uncalibrated notions of points correspondence \cite{HartletMultipleView}TODO chapter. It is known that soultuions of this equation are highly sensitive to the occurence of outliers. Usually, to make fundamental matrix estimations more accurate some outliers removing algorithms need to be used. One of the most robust approaches includes the use of of RANdom SAmple Consensus (\gls{ransac}) \url{http://en.wikipedia.org/wiki/RANSAC}. The example of sample fitting can be seen in \ref{fig:RANSACFitting}
+where $x$ and ${x}_{'}$ are uncalibrated notions of points correspondence \cite{HartletMultipleView}TODO chapter. It is known that soultuions of this equation are highly sensitive to the occurence of outliers. Usually, to make fundamental matrix estimations more accurate some outliers removing algorithms need to be used. One of the most robust approaches includes the use of of RANdom SAmple Consensus (RANSAC) \url{http://en.wikipedia.org/wiki/RANSAC}. The example of sample fitting can be seen in \ref{fig:RANSACFitting}
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{RANSACFitting}
@@ -72,7 +72,7 @@ Internal camera parameters are expressed by the following matrix:
 \end{equation}
 where αx = fmx and αy = fmy represent the focal length of the camera expressed in pixel dimensions in the x and y direction respectively. 
 Similarly, x ̃0 = (x0,y0) is the principal point of pixel dimensions. These parameters need to be calculated only once for each camera model. Cameras can be calibrated with special reference boards of the known dimensions and chracteristics.
-For the proper 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation (orientation angles of the camera) and global postition of the camera. It is often the case in 3D reconstruction that these parameters are not known. However, it is shown in Chapter 9 of Multiple View Geometry in Computer Vision (\cite{HartleyMultipleView}), how essential matrix can be decomposed using Singular Value Decomposition \gls{svd} to relative camera positioning system of two projections:
+For the proper 3D reconstruction it is essential to properly estimate external camera parameters, such as rotation (orientation angles of the camera) and global postition of the camera. It is often the case in 3D reconstruction that these parameters are not known. However, it is shown in Chapter 9 of Multiple View Geometry in Computer Vision (\cite{HartleyMultipleView}), how essential matrix can be decomposed using Singular Value Decomposition (SVD) to relative camera positioning system of two projections:
 \begin{equation}
  P1 = K * \begin{bmatrix}I\mid 0\end{bmatrix}
 \end{equation},
@@ -97,7 +97,7 @@ Assuming that some of the 3D cloud points are already known, the matches between
 \subsection{Homography estimation}
 A new image can be reconstructed with a previous one in a standard way in order to recive an up-to-scale 3D model. Afterwards, a newly acquired model can be merged into an existing one using homography estimation between the coresponding 3D points. Such a strategy is slower than the previous one, but it is not influenced by the quality of the existing 3D model. Although it is highly sensitive to outliers as well, if used properly it can produce more new 3D points.
 \subsection{Structure Adjustment}
-Special refinement methods can be used to compensate for an error of mismatched points propagating through images. They include. among others, Bundle Adjustment \gls{ba} \url{http://en.wikipedia.org/wiki/Bundle_adjustment}. The algorithm, using the information concerning the corresponding matches between multiple sets of images, iteratively modifies either both the camera external paramaters and 3D points positions or one of them. The main disadvantage of the method is its execution time. It is too time-consuming to be used in real-time applications. The basic idea of BA is expresed in figure \ref{fig:BundleAdjustment}.
+Special refinement methods can be used to compensate for an error of mismatched points propagating through images. They include. among others, Bundle Adjustment (BA) \url{http://en.wikipedia.org/wiki/Bundle_adjustment}. The algorithm, using the information concerning the corresponding matches between multiple sets of images, iteratively modifies either both the camera external paramaters and 3D points positions or one of them. The main disadvantage of the method is its execution time. It is too time-consuming to be used in real-time applications. The basic idea of BA is expresed in figure \ref{fig:BundleAdjustment}.
 \begin{figure}[p]
     \centering
     \includegraphics[width=0.8\textwidth]{BundleAdjustment}

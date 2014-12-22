@@ -10,7 +10,10 @@ The idea of enhancing standard 3D reconstruction algorithms with Android sensor 
 In order to acquire datasets for algorithm, an evaluation Android application named "Sensor Enhanced Images Camera" was developed. Upon capturing the picture it automaticaly stores the current device's rotation information and the proposed heuristcally estimated translation. 
 To evaluate the proposed methods and collected datasets a desktop application named "Enhanced 3D reconstructor" was implemented.
 It can be used in two different modes:
-1) Efficiency testing - for comparing  Samson Error and visual estimation of calculated epipolar lines.   
+\begin{enumerate}
+\item Efficiency testing - for comparing  Samson Error and visual estimation of calculated epipolar lines.
+\item Reconstruction testing - for different reconstruction strategy testing and BA influence    
+\end{enumerate}
 The proposed enhancements to the standard 8-point algorithm allow to unambiguously calculate the proper rotation and translation. Application of the enhanced 5-point algorithm resulted in better accuracy than in the case of the standard 5-point algorithm in terms of Sampson Error. Execution time of the enhanced reconstruction methods is generally longer than of the standard ones. 
 The use of initial rotation and translation estimation in pose estimation results in a greater reconstruction accuracy, particularly in terms of outliers removal and Bundle Adjustment convergence speed. 
 In general, applying Bundle Adjustment of sensor enhanced reconstruction results in greater error reduction and shorter execution time in comparison to the refining standard ones. The major problem, a bottleneck of some sort, of the proposed reconstruction process was the time needed for matching corresponding items. 

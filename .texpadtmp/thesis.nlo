@@ -1,16 +1,19 @@
-\nomenclatureentry{aBA@[{BA}]\begingroup Bundle Adjustment\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aRANSAC@[{RANSAC}]\begingroup Bundle Adjustment\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aRoll@[{Roll}]\begingroup Rotation around the x axis.\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aPitch@[{Pitch}]\begingroup Rotation around the y axis.\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aYaw@[{Yaw}]\begingroup Rotation around the z axis.\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aSVD@[{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aFoV@[{FoV}]\begingroup Field of View\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aFundamental Matrix@[{Fundamental Matrix}]\begingroup Todo\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aEssential Matrix@[{Essential Matrix}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aPose Estimation@[{Pose Estimation}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aIntersinc camera parameters@[{Intersinc camera parameters}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aExtrasinc??? camera parameters @[{Extrasinc??? camera parameters }]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aRotation Matrix@[{Rotation Matrix}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aQuaternion@[{Quaternion}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aEpipolar lines@[{Epipolar lines}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
-\nomenclatureentry{aSIFT@[{SIFT}]\begingroup TODO\nomeqref {0}|nompageref}{xii}
+\nomenclatureentry{aBA@[{BA}]\begingroup Bundle Adjustment\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aRANSAC@[{RANSAC}]\begingroup RANdom SAmple Consensus\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSVD@[{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSfM@[{SfM}]\begingroup Structure from motion\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSIFT@[{SIFT}]\begingroup Scale-invariant feature transform\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aAR@[{AR}]\begingroup Augmented Reality\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aVR@[{VR}]\begingroup Virtual Reality\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a3D@[{3D}]\begingroup 3 dimension\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{a1G@[{1G}]\begingroup 1 gravity constant value\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aMEMS@[{MEMS}]\begingroup Micro Electro-Mechanical System\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aAPI@[{API}]\begingroup Applicatioan Programming interface\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSDK@[{SDK}]\begingroup Software Development Kit\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aIMU@[{IMU}]\begingroup Inertial Measurement Unit\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aDOF@[{DOF}]\begingroup Degree of freedom\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aPNP@[{PNP}]\begingroup Perspective-n-Point\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aSD@[{SD}]\begingroup Secure Digital\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aPCL@[{PCL}]\begingroup Point Cloud Library\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aLGPL@[{LGPL}]\begingroup The GNU Lesser General Public License\nomeqref {0}|nompageref}{1}

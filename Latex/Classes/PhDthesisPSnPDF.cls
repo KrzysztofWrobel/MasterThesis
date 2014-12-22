@@ -60,20 +60,13 @@
 
 %:-------------------------- Glossary/Abbrev./Symbols -----------------------
 
-\usepackage{makeidx}
-\makeindex
+\usepackage[intoc]{nomencl} % load nomencl extension; include in TOC
+%\nomrefpage % to include page numbers after abbrevations
+\renewcommand{\nomname}{Glossary} % rename nomenclature
+\renewcommand{\nomlabel}[1]{\textbf{#1}} % make abbreviations bold
+\makenomenclature % used to be \makeglossary
+\newcommand{\g}{\footnote{For all abbreviations see the glossary on page \pageref{nom}.}} % type "\g" to refer to glossary
 
-\usepackage[acronym,xindy,toc]{glossaries}
-\makeglossaries
-
-
-%\usepackage[intoc]{nomencl} % load nomencl extension; include in TOC
-%%\nomrefpage % to include page numbers after abbrevations
-%\renewcommand{\nomname}{Terminology} % rename nomenclature
-%\renewcommand{\nomlabel}[1]{\textbf{#1}} % make abbreviations bold
-%\makenomenclature % used to be 
-
-%\newcommand{\g}{\footnote{For all abbreviations see the terminology on page \pageref{nom}.}} % type "\g" to refer to glossary
 
 % used to be for sorting into categories:
 %\renewcommand\nomgroup[1]{%

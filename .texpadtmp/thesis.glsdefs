@@ -1,183 +1,3 @@
-\ifglsentryexists{fundamentalMatrix}{}%
-{%
-\gls@defglossaryentry{fundamentalMatrix}%
-{%
-name={Fundamental Matrix},%
-sort={Fundamental Matrix},%
-type={main},%
-first={Fundamental Matrix},%
-firstplural={Fundamental Matrixs},%
-text={Fundamental Matrix},%
-plural={Fundamental Matrixs},%
-description={Todo},%
-descriptionplural={Todo},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{rgb}{}%
-{%
-\gls@defglossaryentry{rgb}%
-{%
-name={RGB Camera},%
-sort={RGB Camera},%
-type={main},%
-first={RGB Camera},%
-firstplural={RGB Cameras},%
-text={RGB Camera},%
-plural={RGB Cameras},%
-description={Camera, which deliver image consting of 3 basic colors: red, green and blue},%
-descriptionplural={Camera, which deliver image consting of 3 basic colors: red, green and blue},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ir}{}%
-{%
-\gls@defglossaryentry{ir}%
-{%
-name={IR Camera},%
-sort={IR Camera},%
-type={main},%
-first={IR Camera},%
-firstplural={IR Cameras},%
-text={IR Camera},%
-plural={IR Cameras},%
-description={Camera, which deliver information about depth in image},%
-descriptionplural={Camera, which deliver information about depth in image},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ba}{}%
-{%
-\gls@defglossaryentry{ba}%
-{%
-name={BA},%
-sort={BA},%
-type={acronym},%
-first={Bundle Adjustment (BA)},%
-firstplural={Bundle Adjustments(BAs)},%
-text={BA},%
-plural={BAs},%
-description={Bundle Adjustment},%
-descriptionplural={Bundle Adjustment\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Bundle Adjustment},%
-longplural={Bundle Adjustments},%
-short={BA},%
-shortplural={BAs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ba}{}%
-{%
-\gls@defglossaryentry{ba}%
-{%
-name={BA},%
-sort={BA},%
-type={acronym},%
-first={Bundle Adjustment (BA)},%
-firstplural={Bundle Adjustments(BAs)},%
-text={BA},%
-plural={BAs},%
-description={Bundle Adjustment},%
-descriptionplural={Bundle Adjustment\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Bundle Adjustment},%
-longplural={Bundle Adjustments},%
-short={BA},%
-shortplural={BAs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{ba}{}%
-{%
-\gls@defglossaryentry{ba}%
-{%
-name={BA},%
-sort={BA},%
-type={acronym},%
-first={Bundle Adjustment (BA)},%
-firstplural={Bundle Adjustments(BAs)},%
-text={BA},%
-plural={BAs},%
-description={Bundle Adjustment},%
-descriptionplural={Bundle Adjustment\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Bundle Adjustment},%
-longplural={Bundle Adjustments},%
-short={BA},%
-shortplural={BAs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
 \ifglsentryexists{ransac}{}%
 {%
 \gls@defglossaryentry{ransac}%
@@ -203,96 +23,6 @@ long={Bundle Adjustment},%
 longplural={Bundle Adjustments},%
 short={RANSAC},%
 shortplural={RANSACs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{roll}{}%
-{%
-\gls@defglossaryentry{roll}%
-{%
-name={Roll},%
-sort={Roll},%
-type={acronym},%
-first={Rotation around the x axis. (Roll)},%
-firstplural={Rotation around the x axis.s(Rolls)},%
-text={Roll},%
-plural={Rolls},%
-description={Rotation around the x axis.},%
-descriptionplural={Rotation around the x axis.\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Rotation around the x axis.},%
-longplural={Rotation around the x axis.s},%
-short={Roll},%
-shortplural={Rolls},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{pitch}{}%
-{%
-\gls@defglossaryentry{pitch}%
-{%
-name={Pitch},%
-sort={Pitch},%
-type={acronym},%
-first={Rotation around the y axis. (Pitch)},%
-firstplural={Rotation around the y axis.s(Pitchs)},%
-text={Pitch},%
-plural={Pitchs},%
-description={Rotation around the y axis.},%
-descriptionplural={Rotation around the y axis.\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Rotation around the y axis.},%
-longplural={Rotation around the y axis.s},%
-short={Pitch},%
-shortplural={Pitchs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{yaw}{}%
-{%
-\gls@defglossaryentry{yaw}%
-{%
-name={Yaw},%
-sort={Yaw},%
-type={acronym},%
-first={Rotation around the z axis. (Yaw)},%
-firstplural={Rotation around the z axis.s(Yaws)},%
-text={Yaw},%
-plural={Yaws},%
-description={Rotation around the z axis.},%
-descriptionplural={Rotation around the z axis.\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Rotation around the z axis.},%
-longplural={Rotation around the z axis.s},%
-short={Yaw},%
-shortplural={Yaws},%
 counter={page},%
 parent={},%
 %
@@ -328,19 +58,19 @@ parent={},%
 %
 }%
 }%
-\ifglsentryexists{fov}{}%
+\ifglsentryexists{sfm}{}%
 {%
-\gls@defglossaryentry{fov}%
+\gls@defglossaryentry{sfm}%
 {%
-name={FoV},%
-sort={FoV},%
+name={SfM},%
+sort={SfM},%
 type={acronym},%
-first={Field of View (FoV)},%
-firstplural={Field of Views(FoVs)},%
-text={FoV},%
-plural={FoVs},%
-description={Field of View},%
-descriptionplural={Field of View\acrpluralsuffix },%
+first={Structure from motion (SfM)},%
+firstplural={Structure from motions(SfMs)},%
+text={SfM},%
+plural={SfMs},%
+description={Structure from motion},%
+descriptionplural={Structure from motion\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -349,268 +79,28 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Field of View},%
-longplural={Field of Views},%
-short={FoV},%
-shortplural={FoVs},%
+long={Structure from motion},%
+longplural={Structure from motions},%
+short={SfM},%
+shortplural={SfMs},%
 counter={page},%
 parent={},%
 %
 }%
 }%
-\ifglsentryexists{baseLine}{}%
+\ifglsentryexists{sift}{}%
 {%
-\gls@defglossaryentry{baseLine}%
-{%
-name={Base line},%
-sort={Base line},%
-type={acronym},%
-first={The distance between the left and the right camera in a stereo pair. (Base line)},%
-firstplural={The distance between the left and the right camera in a stereo pair.s(Base lines)},%
-text={Base line},%
-plural={Base lines},%
-description={The distance between the left and the right camera in a stereo pair.},%
-descriptionplural={The distance between the left and the right camera in a stereo pair.\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={The distance between the left and the right camera in a stereo pair.},%
-longplural={The distance between the left and the right camera in a stereo pair.s},%
-short={Base line},%
-shortplural={Base lines},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa9}{}%
-{%
-\gls@defglossaryentry{aa9}%
-{%
-name={Essential Matrix},%
-sort={Essential Matrix},%
-type={acronym},%
-first={TODO (Essential Matrix)},%
-firstplural={TODOs(Essential Matrixs)},%
-text={Essential Matrix},%
-plural={Essential Matrixs},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TO={},short={},shortplural={},counter={page},parent={},},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{a9a}{}%
-{%
-\gls@defglossaryentry{a9a}%
-{%
-name={Pose Estimation},%
-sort={Pose Estimation},%
-type={acronym},%
-first={TODO (Pose Estimation)},%
-firstplural={TODOs(Pose Estimations)},%
-text={Pose Estimation},%
-plural={Pose Estimations},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TODO},%
-longplural={TODOs},%
-short={Pose Estimation},%
-shortplural={Pose Estimations},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa99}{}%
-{%
-\gls@defglossaryentry{aa99}%
-{%
-name={Intersinc camera parameters},%
-sort={Intersinc camera parameters},%
-type={acronym},%
-first={TODO (Intersinc camera parameters)},%
-firstplural={TODOs(Intersinc camera parameterss)},%
-text={Intersinc camera parameters},%
-plural={Intersinc camera parameterss},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TODO},%
-longplural={TODOs},%
-short={Intersinc camera parameters},%
-shortplural={Intersinc camera parameterss},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa11}{}%
-{%
-\gls@defglossaryentry{aa11}%
-{%
-name={Extrasinc??? camera parameters},%
-sort={Extrasinc??? camera parameters},%
-type={acronym},%
-first={TODO (Extrasinc??? camera parameters )},%
-firstplural={TODOs(Extrasinc??? camera parameters s)},%
-text={Extrasinc??? camera parameters},%
-plural={Extrasinc??? camera parameters s},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TODO},%
-longplural={TODOs},%
-short={Extrasinc??? camera parameters},%
-shortplural={Extrasinc??? camera parameters s},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa12}{}%
-{%
-\gls@defglossaryentry{aa12}%
-{%
-name={Rotation Matrix},%
-sort={Rotation Matrix},%
-type={acronym},%
-first={TODO (Rotation Matrix)},%
-firstplural={TODOs(Rotation Matrixs)},%
-text={Rotation Matrix},%
-plural={Rotation Matrixs},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TODO},%
-longplural={TODOs},%
-short={Rotation Matrix},%
-shortplural={Rotation Matrixs},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa13}{}%
-{%
-\gls@defglossaryentry{aa13}%
-{%
-name={Quaternion},%
-sort={Quaternion},%
-type={acronym},%
-first={TODO (Quaternion)},%
-firstplural={TODOs(Quaternions)},%
-text={Quaternion},%
-plural={Quaternions},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TODO},%
-longplural={TODOs},%
-short={Quaternion},%
-shortplural={Quaternions},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa14}{}%
-{%
-\gls@defglossaryentry{aa14}%
-{%
-name={Epipolar lines},%
-sort={Epipolar lines},%
-type={acronym},%
-first={TODO (Epipolar lines)},%
-firstplural={TODOs(Epipolar liness)},%
-text={Epipolar lines},%
-plural={Epipolar liness},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={TODO},%
-longplural={TODOs},%
-short={Epipolar lines},%
-shortplural={Epipolar liness},%
-counter={page},%
-parent={},%
-%
-}%
-}%
-\ifglsentryexists{aa15}{}%
-{%
-\gls@defglossaryentry{aa15}%
+\gls@defglossaryentry{sift}%
 {%
 name={SIFT},%
 sort={SIFT},%
 type={acronym},%
-first={TODO (SIFT)},%
-firstplural={TODOs(SIFTs)},%
+first={Scale-invariant feature transform (SIFT)},%
+firstplural={Scale-invariant feature transforms(SIFTs)},%
 text={SIFT},%
 plural={SIFTs},%
-description={TODO},%
-descriptionplural={TODO\acrpluralsuffix },%
+description={Scale-invariant feature transform},%
+descriptionplural={Scale-invariant feature transform\acrpluralsuffix },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -619,10 +109,430 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={TODO},%
-longplural={TODOs},%
+long={Scale-invariant feature transform},%
+longplural={Scale-invariant feature transforms},%
 short={SIFT},%
 shortplural={SIFTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ar}{}%
+{%
+\gls@defglossaryentry{ar}%
+{%
+name={AR},%
+sort={AR},%
+type={acronym},%
+first={Augmented Reality (AR)},%
+firstplural={Augmented Realitys(ARs)},%
+text={AR},%
+plural={ARs},%
+description={Augmented Reality},%
+descriptionplural={Augmented Reality\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Augmented Reality},%
+longplural={Augmented Realitys},%
+short={AR},%
+shortplural={ARs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vr}{}%
+{%
+\gls@defglossaryentry{vr}%
+{%
+name={VR},%
+sort={VR},%
+type={acronym},%
+first={Virtual Reality (VR)},%
+firstplural={Virtual Realitys(VRs)},%
+text={VR},%
+plural={VRs},%
+description={Virtual Reality},%
+descriptionplural={Virtual Reality\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Reality},%
+longplural={Virtual Realitys},%
+short={VR},%
+shortplural={VRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{3d}{}%
+{%
+\gls@defglossaryentry{3d}%
+{%
+name={3D},%
+sort={3D},%
+type={acronym},%
+first={3 dimension (3D)},%
+firstplural={3 dimensions(3Ds)},%
+text={3D},%
+plural={3Ds},%
+description={3 dimension},%
+descriptionplural={3 dimension\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={3 dimension},%
+longplural={3 dimensions},%
+short={3D},%
+shortplural={3Ds},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{1g}{}%
+{%
+\gls@defglossaryentry{1g}%
+{%
+name={1G},%
+sort={1G},%
+type={acronym},%
+first={1 gravity constant value (1G)},%
+firstplural={1 gravity constant values(1Gs)},%
+text={1G},%
+plural={1Gs},%
+description={1 gravity constant value},%
+descriptionplural={1 gravity constant value\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={1 gravity constant value},%
+longplural={1 gravity constant values},%
+short={1G},%
+shortplural={1Gs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mems}{}%
+{%
+\gls@defglossaryentry{mems}%
+{%
+name={MEMS},%
+sort={MEMS},%
+type={acronym},%
+first={Micro Electro-Mechanical System (MEMS)},%
+firstplural={Micro Electro-Mechanical Systems(MEMSs)},%
+text={MEMS},%
+plural={MEMSs},%
+description={Micro Electro-Mechanical System},%
+descriptionplural={Micro Electro-Mechanical System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Micro Electro-Mechanical System},%
+longplural={Micro Electro-Mechanical Systems},%
+short={MEMS},%
+shortplural={MEMSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={acronym},%
+first={Applicatioan Programming interface (API)},%
+firstplural={Applicatioan Programming interfaces(APIs)},%
+text={API},%
+plural={APIs},%
+description={Applicatioan Programming interface},%
+descriptionplural={Applicatioan Programming interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Applicatioan Programming interface},%
+longplural={Applicatioan Programming interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sdk}{}%
+{%
+\gls@defglossaryentry{sdk}%
+{%
+name={SDK},%
+sort={SDK},%
+type={acronym},%
+first={Software Development Kit (SDK)},%
+firstplural={Software Development Kits(SDKs)},%
+text={SDK},%
+plural={SDKs},%
+description={Software Development Kit},%
+descriptionplural={Software Development Kit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Software Development Kit},%
+longplural={Software Development Kits},%
+short={SDK},%
+shortplural={SDKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{imu}{}%
+{%
+\gls@defglossaryentry{imu}%
+{%
+name={IMU},%
+sort={IMU},%
+type={acronym},%
+first={Inertial Measurement Unit (IMU)},%
+firstplural={Inertial Measurement Units(IMUs)},%
+text={IMU},%
+plural={IMUs},%
+description={Inertial Measurement Unit},%
+descriptionplural={Inertial Measurement Unit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inertial Measurement Unit},%
+longplural={Inertial Measurement Units},%
+short={IMU},%
+shortplural={IMUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dof}{}%
+{%
+\gls@defglossaryentry{dof}%
+{%
+name={DOF},%
+sort={DOF},%
+type={acronym},%
+first={Degree of freedom (DOF)},%
+firstplural={Degree of freedoms(DOFs)},%
+text={DOF},%
+plural={DOFs},%
+description={Degree of freedom},%
+descriptionplural={Degree of freedom\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Degree of freedom},%
+longplural={Degree of freedoms},%
+short={DOF},%
+shortplural={DOFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pnp}{}%
+{%
+\gls@defglossaryentry{pnp}%
+{%
+name={PNP},%
+sort={PNP},%
+type={acronym},%
+first={Perspective-n-Point (PNP)},%
+firstplural={Perspective-n-Points(PNPs)},%
+text={PNP},%
+plural={PNPs},%
+description={Perspective-n-Point},%
+descriptionplural={Perspective-n-Point\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Perspective-n-Point},%
+longplural={Perspective-n-Points},%
+short={PNP},%
+shortplural={PNPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{json}{}%
+{%
+\gls@defglossaryentry{json}%
+{%
+name={JSON},%
+sort={JSON},%
+type={acronym},%
+first={JavaScript Object Notation (JSON)},%
+firstplural={JavaScript Object Notations(JSONs)},%
+text={JSON},%
+plural={JSONs},%
+description={JavaScript Object Notation},%
+descriptionplural={JavaScript Object Notation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={JavaScript Object Notation},%
+longplural={JavaScript Object Notations},%
+short={JSON},%
+shortplural={JSONs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sd}{}%
+{%
+\gls@defglossaryentry{sd}%
+{%
+name={SD},%
+sort={SD},%
+type={acronym},%
+first={Secure Digital (SD)},%
+firstplural={Secure Digitals(SDs)},%
+text={SD},%
+plural={SDs},%
+description={Secure Digital},%
+descriptionplural={Secure Digital\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Secure Digital},%
+longplural={Secure Digitals},%
+short={SD},%
+shortplural={SDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pcl}{}%
+{%
+\gls@defglossaryentry{pcl}%
+{%
+name={PCL},%
+sort={PCL},%
+type={acronym},%
+first={Point Cloud Library (PCL)},%
+firstplural={Point Cloud Librarys(PCLs)},%
+text={PCL},%
+plural={PCLs},%
+description={Point Cloud Library},%
+descriptionplural={Point Cloud Library\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Point Cloud Library},%
+longplural={Point Cloud Librarys},%
+short={PCL},%
+shortplural={PCLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{lgpl}{}%
+{%
+\gls@defglossaryentry{lgpl}%
+{%
+name={LGPL},%
+sort={LGPL},%
+type={acronym},%
+first={The GNU Lesser General Public License (LGPL)},%
+firstplural={The GNU Lesser General Public Licenses(LGPLs)},%
+text={LGPL},%
+plural={LGPLs},%
+description={The GNU Lesser General Public License},%
+descriptionplural={The GNU Lesser General Public License\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The GNU Lesser General Public License},%
+longplural={The GNU Lesser General Public Licenses},%
+short={LGPL},%
+shortplural={LGPLs},%
 counter={page},%
 parent={},%
 %
