@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  22 DEC 2014 02:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  22 DEC 2014 04:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -26,6 +26,10 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -124,9 +128,15 @@ Package footmisc Info: Declaring symbol style lamport* on input line 903.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
+
+
+Package natbib Warning: The `cite' package should not be used
+(natbib)                with natbib. Use option `sort' instead.
+
 \bibhang=\skip52
 \bibsep=\skip53
 LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citenum on input line 708.
 \c@NAT@ctr=\count93
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -1023,7 +1033,7 @@ Package: listings 2014/03/04 1.5c (Carsten Heinz)
 \@input{Latex/Macros/MacroFile1.aux}
 \openout2 = `Latex/Macros/MacroFile1.aux'.
 
-(./Latex/Macros/MacroFile1.tex) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/dedication.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/acknowledgement.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux
+(./Latex/Macros/MacroFile1.tex) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux
 
 LaTeX Warning: Label `eq:leftRelative' multiply defined.
 
@@ -1039,20 +1049,20 @@ LaTeX Warning: Label `eq:projectionEquation' multiply defined.
 ) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9/materials_methods.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9_backmatter/declaration.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
-LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 177.
+LaTeX Font Info:    ... okay on input line 177.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count289
@@ -1082,8 +1092,8 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box94
-Package backref Info: ** backref set up for natbib ** on input line 165.
-Package hyperref Info: Link coloring OFF on input line 165.
+Package backref Info: ** backref set up for natbib ** on input line 177.
+Package hyperref Info: Link coloring OFF on input line 177.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1091,9 +1101,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count295
 )
-LaTeX Info: Redefining \ref on input line 165.
-LaTeX Info: Redefining \pageref on input line 165.
-LaTeX Info: Redefining \nameref on input line 165.
+LaTeX Info: Redefining \ref on input line 177.
+LaTeX Info: Redefining \pageref on input line 177.
+LaTeX Info: Redefining \nameref on input line 177.
  (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.out) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
@@ -1107,11 +1117,11 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 \c@lstlisting=\count296
 \c__siunitx_mathsf_int=\count297
-LaTeX Font Info:    Try loading font information for U+msa on input line 165.
+LaTeX Font Info:    Try loading font information for U+msa on input line 177.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 165.
+LaTeX Font Info:    Try loading font information for U+msb on input line 177.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -1119,19 +1129,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  <figures/tub.pdf, id=284, 469.755pt x 352.31625pt>
 File: figures/tub.pdf Graphic file (type pdf)
  <use figures/tub.pdf>
-Package pdftex.def Info: figures/tub.pdf used on input line 176.
-(pdftex.def)             Requested size: 113.81102pt x 85.35863pt.
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ³ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ¤ in font cmr12!
+Package pdftex.def Info: figures/tub.pdf used on input line 188.
+(pdftex.def)             Requested size: 56.9055pt x 42.6793pt.
+Missing character: There is no Ì in font cmr12!
+Missing character: There is no ˆ in font cmr12!
+
+Underfull \vbox (badness 1248) has occurred while \output is active []
+
  [1
 
 
 
 \FN@pp@footnotehinttrue 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/tub.pdf>] [2]
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/tub.pdf>] [2] [3] [4
+
+]
 \openout2 = `0_frontmatter/abstract.aux'.
 
  (./0_frontmatter/abstract.texpdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
@@ -1140,13 +1153,15 @@ Missing character: There is no ¤ in font cmr12!
 l.8 \end{abstract}
                    [1
 
+]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 \cleardoublepage
+                      [2
+
 ]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
-
-
-LaTeX Warning: Command \SS invalid in math mode on input line 13.
-
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -1163,66 +1178,98 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
 <to be read again> 
                    \relax 
 l.15 \end{abstract}
-                    [1
+                    [1]) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.toc
 
-])
-\openout2 = `0_frontmatter/dedication.aux'.
+Package natbib Warning: Citation `website:androidSensorOverview' on page ii undefined on input line 22.
 
- (./0_frontmatter/dedication.texpdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
+
+Package natbib Warning: Citation `website:accelerometer' on page ii undefined on input line 23.
+
+
+Package natbib Warning: Citation `website:gyroscope' on page ii undefined on input line 24.
+
+
+Package natbib Warning: Citation `website:magnetometer' on page ii undefined on input line 25.
+
+
+Package natbib Warning: Citation `website:sensorFustion' on page ii undefined on input line 26.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 27.
+pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7 \end{dedication}
-                     [2
-
-
-])
-\openout2 = `0_frontmatter/acknowledgement.aux'.
-
- (./0_frontmatter/acknowledgement.tex [3
-
-
-]) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.toc
-
-Package natbib Warning: Citation `website:androidSensorOverview' on page iv undefined on input line 23.
-
-
-Package natbib Warning: Citation `website:accelerometer' on page iv undefined on input line 24.
-
-
-Package natbib Warning: Citation `website:gyroscope' on page iv undefined on input line 25.
-
-
-Package natbib Warning: Citation `website:magnetometer' on page iv undefined on input line 26.
-
-
-Package natbib Warning: Citation `website:sensorFustion' on page iv undefined on input line 27.
-
-[4
+l.27 ...numberline {3}Related Work}{14}{chapter.3}
+                                                   [2
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
 \FN@pp@footnotehinttrue 
 
 
-] [5])
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 58.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 58.
+pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 ...ne {6.2}Test Environment}{37}{section.6.2}
+                                                   [3])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [6] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lof
+pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.238 \listoffigures
+                    	% print list of figures [4] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lof
 
-Package natbib Warning: Citation `website:ransac' on page vii undefined on input line 8.
+Package natbib Warning: Citation `website:ransac' on page v undefined on input line 7.
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page vii undefined on input line 9.
+Package natbib Warning: Citation `HartleyMultipleView' on page v undefined on input line 8.
 
-[7
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 22.
+[5
 
-] [8])
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 32.
+ [6])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [9] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lot)
+ [7] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lot)
 \tf@lot=\write8
 \openout8 = `thesis.lot'.
 
- [10
+ [8
 
 ]
 \openout2 = `0_frontmatter/glossary.aux'.
@@ -1256,7 +1303,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 5 undefined on in
 
 Package natbib Warning: Citation `website:kinect' on page 5 undefined on input line 15.
 
-<figures/correspondingMatching.png, id=499, 2684.0275pt x 1100.11pt>
+<figures/correspondingMatching.png, id=502, 2684.0275pt x 1100.11pt>
 File: figures/correspondingMatching.png Graphic file (type png)
  <use figures/correspondingMatching.png>
 Package pdftex.def Info: figures/correspondingMatching.png used on input line 29.
@@ -1274,12 +1321,12 @@ Package natbib Warning: Citation `website:SIFT' on page 5 undefined on input lin
 
 ]
 
-Package natbib Warning: Citation `HartletMultipleView' on page 6 undefined on input line 39.
+Package natbib Warning: Citation `HartleyMultipleView' on page 6 undefined on input line 39.
 
 
 Package natbib Warning: Citation `website:ransac' on page 6 undefined on input line 39.
 
-<figures/RANSACFitting.png, id=511, 609.27625pt x 592.2125pt>
+<figures/RANSACFitting.png, id=515, 609.27625pt x 592.2125pt>
 File: figures/RANSACFitting.png Graphic file (type png)
  <use figures/RANSACFitting.png>
 Package pdftex.def Info: figures/RANSACFitting.png used on input line 42.
@@ -1291,7 +1338,7 @@ Package natbib Warning: Citation `website:ransac' on page 6 undefined on input l
 
 Package natbib Warning: Citation `website:ransac' on page 6 undefined on input line 43.
 
-<figures/EpipolarGeometry.png, id=513, 911.405pt x 657.45625pt>
+<figures/EpipolarGeometry.png, id=517, 911.405pt x 657.45625pt>
 File: figures/EpipolarGeometry.png Graphic file (type png)
  <use figures/EpipolarGeometry.png>
 Package pdftex.def Info: figures/EpipolarGeometry.png used on input line 50.
@@ -1317,7 +1364,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 8 undefined on in
 
 LaTeX Warning: Reference `eq:3Dreconstruction' on page 8 undefined on input line 85.
 
-<figures/3Dreconstruction.png, id=532, 604.2575pt x 351.3125pt>
+<figures/3Dreconstruction.png, id=535, 604.2575pt x 351.3125pt>
 File: figures/3Dreconstruction.png Graphic file (type png)
  <use figures/3Dreconstruction.png>
 Package pdftex.def Info: figures/3Dreconstruction.png used on input line 88.
@@ -1330,7 +1377,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 8 undefined on in
 
 Package natbib Warning: Citation `website:bundle-adjustment' on page 10 undefined on input line 100.
 
-<figures/BundleAdjustment.png, id=550, 767.86874pt x 335.2525pt>
+<figures/BundleAdjustment.png, id=553, 767.86874pt x 335.2525pt>
 File: figures/BundleAdjustment.png Graphic file (type png)
  <use figures/BundleAdjustment.png>
 Package pdftex.def Info: figures/BundleAdjustment.png used on input line 103.
@@ -1496,14 +1543,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\new@ifnextchar' on input line 117.
 
-<figures/Kalmann.png, id=560, 1548.78625pt x 883.3pt>
+<figures/Kalmann.png, id=564, 1548.78625pt x 883.3pt>
 File: figures/Kalmann.png Graphic file (type png)
  <use figures/Kalmann.png>
 Package pdftex.def Info: figures/Kalmann.png used on input line 125.
 (pdftex.def)             Requested size: 330.05322pt x 188.23451pt.
 ) [12]
 
-Package natbib Warning: Citation `website:androidSensorOverview' on page 13 undefined on input line 264.
+Package natbib Warning: Citation `website:androidSensorOverview' on page 13 undefined on input line 275.
 
 [13 <./figures/BundleAdjustment.png> <./figures/Kalmann.png>]
 \openout2 = `3/related_work.aux'.
@@ -1619,7 +1666,7 @@ Chapter 5.
 
 Package natbib Warning: Citation `website:gradle' on page 24 undefined on input line 20.
 
-<figures/AndroidScreenShot.png, id=651, 1927.2pt x 1084.05pt>
+<figures/AndroidScreenShot.png, id=655, 1927.2pt x 1084.05pt>
 File: figures/AndroidScreenShot.png Graphic file (type png)
  <use figures/AndroidScreenShot.png>
 Package pdftex.def Info: figures/AndroidScreenShot.png used on input line 25.
@@ -1696,22 +1743,22 @@ PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
-<figures/summary1Sift300.jpg, id=928, 2569.6pt x 2890.8pt>
+<figures/summary1Sift300.jpg, id=931, 2569.6pt x 2890.8pt>
 File: figures/summary1Sift300.jpg Graphic file (type jpg)
  <use figures/summary1Sift300.jpg>
 Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 103.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift300.jpg, id=929, 2569.6pt x 2890.8pt>
+ <figures/summary2Sift300.jpg, id=932, 2569.6pt x 2890.8pt>
 File: figures/summary2Sift300.jpg Graphic file (type jpg)
  <use figures/summary2Sift300.jpg>
 Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 109.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary1Sift1000.jpg, id=932, 2569.6pt x 2890.8pt>
+ <figures/summary1Sift1000.jpg, id=935, 2569.6pt x 2890.8pt>
 File: figures/summary1Sift1000.jpg Graphic file (type jpg)
  <use figures/summary1Sift1000.jpg>
 Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 117.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift1000.jpg, id=933, 2569.6pt x 2890.8pt>
+ <figures/summary2Sift1000.jpg, id=936, 2569.6pt x 2890.8pt>
 File: figures/summary2Sift1000.jpg Graphic file (type jpg)
  <use figures/summary2Sift1000.jpg>
 Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 123.
@@ -1741,7 +1788,7 @@ Overfull \hbox (25.55417pt too wide) in paragraph at lines 197--198
 
 LaTeX Warning: Float too large for page by 5.98788pt on input line 201.
 
-[46] [47] [48] <figures/bundleAdjustmentComparison.png, id=1002, 3001.2125pt x 2214.2725pt>
+[46] [47] [48] <figures/bundleAdjustmentComparison.png, id=1005, 3001.2125pt x 2214.2725pt>
 File: figures/bundleAdjustmentComparison.png Graphic file (type png)
  <use figures/bundleAdjustmentComparison.png>
 Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 209.
@@ -1774,7 +1821,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [49
 
-] [50 <./figures/bundleAdjustmentComparison.png>] [51] [52] <figures/uni4000Comparison.png, id=1025, 1975.38pt x 2978.12625pt>
+] [50 <./figures/bundleAdjustmentComparison.png>] [51] [52] <figures/uni4000Comparison.png, id=1028, 1975.38pt x 2978.12625pt>
 File: figures/uni4000Comparison.png Graphic file (type png)
  <use figures/uni4000Comparison.png>
 Package pdftex.def Info: figures/uni4000Comparison.png used on input line 286.
@@ -1783,22 +1830,22 @@ Package pdftex.def Info: figures/uni4000Comparison.png used on input line 286.
 
 LaTeX Warning: Float too large for page by 34.4051pt on input line 289.
 
-<figures/uni400Comparison.png, id=1026, 1978.39125pt x 1939.245pt>
+<figures/uni400Comparison.png, id=1029, 1978.39125pt x 1939.245pt>
 File: figures/uni400Comparison.png Graphic file (type png)
  <use figures/uni400Comparison.png>
 Package pdftex.def Info: figures/uni400Comparison.png used on input line 292.
 (pdftex.def)             Requested size: 371.30594pt x 363.93304pt.
- <figures/FailCaseFundamental.png, id=1027, 1953.2975pt x 598.235pt>
+ <figures/FailCaseFundamental.png, id=1030, 1953.2975pt x 598.235pt>
 File: figures/FailCaseFundamental.png Graphic file (type png)
  <use figures/FailCaseFundamental.png>
 Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 298.
 (pdftex.def)             Requested size: 371.30594pt x 113.71147pt.
- <figures/PoseEstimationMethodComparison.png, id=1028, 1987.425pt x 1280.785pt>
+ <figures/PoseEstimationMethodComparison.png, id=1031, 1987.425pt x 1280.785pt>
 File: figures/PoseEstimationMethodComparison.png Graphic file (type png)
  <use figures/PoseEstimationMethodComparison.png>
 Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 304.
 (pdftex.def)             Requested size: 371.30594pt x 239.2867pt.
- <figures/uniNone4000.png, id=1029, 1062.97125pt x 2047.65pt>
+ <figures/uniNone4000.png, id=1032, 1062.97125pt x 2047.65pt>
 File: figures/uniNone4000.png Graphic file (type png)
  <use figures/uniNone4000.png>
 Package pdftex.def Info: figures/uniNone4000.png used on input line 310.
@@ -1864,15 +1911,15 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 326.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 326.
-(/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/dedication.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/acknowledgement.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9/materials_methods.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9_backmatter/declaration.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 326.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 326.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
+(/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9/materials_methods.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9_backmatter/declaration.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: DC335B794A16BBA6A13F65BA1EFFF26C;5297.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: <no file>.
+(rerunfilecheck)             Checksum: 9D54BAAEF8A648035C329E8AF49C188D;3265.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1883,21 +1930,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 326.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 337.
  ) 
 Here is how much of TeX's memory you used:
- 39496 strings out of 493117
- 899651 string characters out of 6135433
- 1204543 words of memory out of 5000000
- 41749 multiletter control sequences out of 15000+600000
- 17263 words of font info for 67 fonts, out of 8000000 for 9000
+ 39570 strings out of 493117
+ 899917 string characters out of 6135433
+ 1204992 words of memory out of 5000000
+ 41831 multiletter control sequences out of 15000+600000
+ 18687 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,20n,102p,10422b,2234s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.pdf (79 pages, 20308933 bytes).
+Output written on /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.pdf (80 pages, 20312630 bytes).
 PDF statistics:
- 1280 PDF objects out of 1440 (max. 8388607)
- 1138 compressed objects within 12 object streams
- 460 named destinations out of 1000 (max. 500000)
+ 1283 PDF objects out of 1440 (max. 8388607)
+ 1140 compressed objects within 12 object streams
+ 459 named destinations out of 1000 (max. 500000)
  655 words of extra memory for PDF output out of 10000 (max. 10000000)
 

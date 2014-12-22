@@ -26,6 +26,7 @@
 %Bibliography
 %uncomment next line to change bibliography name to references for Report document class
 %\renewcommand{\refname}{References}
+\usepackage{cite}
 
 %If you want to use a Book style document then uncomment the following 3 lines and comment the above 8 report style lines:
 %\DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}

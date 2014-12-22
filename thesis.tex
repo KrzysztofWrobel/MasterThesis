@@ -109,7 +109,7 @@
     \pdfinfo { /Title  (Enhancing 3D reconstruction with Android Sensor Fusion data)
                /Creator (TeX)
                /Producer (pdfTeX)
-               /Author (Krzysztof Wróbel krzysztof@velocicaptor.com)
+               /Author (Krzysztof Wr{\'o}bel krzysztof@velocicaptor.com)
                /CreationDate (D:YYYYMMDDhhmmss)  %format D:YYYYMMDDhhmmss
                /ModDate (D:YYYYMMDDhhmm)
                /Subject (xyz)
@@ -126,30 +126,42 @@
 % The section below defines www links/email for author and institutions
 % They will appear on the title page of the PDF and can be clicked
 \ifpdf
-  \author{\href{mailto:krzysztof@velocicaptor.com}{Krzysztof Wróbel}}
+  \author{\begin{tabular}{r@{ }l} 
+Author:      & \href{mailto:krzysztof@velocicaptor.com}{Krzysztof Wr{\'o}bel} \\[1ex] 
+Supervisors: & Prof. Dr.-Ing. Olaf Hellwich \\
+             & from Technische Universit{\"a}t Berlin\\
+             & Prof. Dr.-Ing. Jan Zabrodzki \\ 
+             & from Warsaw University of Technology \\
+\end{tabular}}
 %  \cityofbirth{born in XYZ} % uncomment this if your university requires this
 %  % If city of birth is required, also uncomment 2 sections in PhDthesisPSnPDF
 %  % Just search for the "city" and you'll find them. TODO
-  \collegeordept{\href{http://www.something.net}{CollegeOrDepartment}}
-  \university{\href{http://www.something.net}{Technishe Universität Berlin}}
+  \collegeordept{\href{https://www.isti.tu-berlin.de/menue/institut_fuer_softwaretechnik_und_theoretische_informatik/}{Fakultät IV \\ Institut f{\"u}r Softwaretechnik und Theoretische Informatik}}
+  \university{\href{http://www.tu-berlin.de/}{Technishe Universit{\"a}t Berlin}}
 
   % The crest is a graphics file of the logo of your research institution.
   % Place it in ./0_frontmatter/figures and specify the width
-  \crest{\includegraphics[width=4cm]{tub}}
+  \crest{\includegraphics[width=2cm]{tub}}
   
 % If you are not creating a PDF then use the following. The default is PDF.
 \else
-  \author{Krzysztof Wróbel}
+  \author{
+  \\
+  \begin{tabular}{r@{ }l} 
+Author:      & Krzysztof Wr{\'o}bel \\[1ex] 
+Supervisors: & Prof. Dr.-Ing. Olaf Hellwich\\
+             & Prof. Dr.-Ing. Jan Zabrodzki (Warsaw University of Technology)\\[1ex]
+\end{tabular}}
+
 %  \cityofbirth{born in XYZ}
-  \collegeordept{CollegeOrDept}
-  \university{University}
-  \crest{\includegraphics[width=4cm]{logo}}
+  \collegeordept{Fakultät IV Institut f{\"u}r Softwaretechnik und Theoretische Informatik}
+  \university{Technische Universit{\"a}t Berlin}
+  \crest{\includegraphics[width=2cm]{logo}}
 \fi
 
 %\renewcommand{\submittedtext}{change the default text here if needed}
 \degree{Master of Science}
-\degreedate{December 2014}
-
+\degreedate{December 22, 2014}
 
 % ----------------------------------------------------------------------
        
@@ -180,18 +192,17 @@
 % Your research institution may require reviewer names, etc.
 % This cover back side is required by Dresden Med Fac; uncomment if needed.
 
-\newpage
-\vspace{10mm}
-1. Reviewer: Name
+\section*{\vfill{} \thispagestyle{empty}
+Erkl{\"a}rung}
 
-\vspace{10mm}
-2. Reviewer: 
+Hiermit erkl{\"a}re ich, dass ich diese Arbeit selbstst{\"a}ndig erstellt
+und keine anderen als die angegebenen Hilfsmittel benutzt habe.
+\bigskip{}
 
-\vspace{20mm}
-Day of the defense:
+\noindent Berlin, den \today{}
+\vspace{2.5cm}
 
-\vspace{20mm}
-\hspace{70mm}Signature from head of diploma defense committee:
+\noindent Krzysztof Wr{\'o}bel \cleardoublepage{}
 
 
 
@@ -210,8 +221,8 @@ Day of the defense:
 %: ----------------------- tie in front matter ------------------------
 
 %\frontmatter
-\include{0_frontmatter/dedication}
-\include{0_frontmatter/acknowledgement}
+%%\include{0_frontmatter/dedication}
+%\include{0_frontmatter/acknowledgement}
 
 
 %: ----------------------- contents ------------------------
