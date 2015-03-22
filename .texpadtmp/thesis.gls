@@ -1,0 +1,10 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{areaofneedle}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
+\glossentry{numofangels}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
+\glossentry{angelsperarea}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
+\end{theglossary}\glossarypostamble

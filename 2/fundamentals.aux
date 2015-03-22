@@ -1,80 +1,96 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
 \citation{HartleyMultipleView}
-\citation{website:kinect}
-\citation{website:featureDetection}
-\citation{website:SIFT}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Fundamentals}{4}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Fundamentals}{5}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{brf}{\backcite{HartleyMultipleView}{{4}{2}{chapter.2}}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}3-D reconstruction in general}{4}{section.2.1}}
-\@writefile{brf}{\backcite{website:kinect}{{4}{2.1}{section.2.1}}}
-\citation{HartleyMultipleView}
-\citation{website:ransac}
-\citation{website:ransac}
-\citation{website:ransac}
-\citation{HartleyMultipleView}
-\citation{HartleyMultipleView}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Feature extraction and corresponding points matching}{5}{subsection.2.1.1}}
-\@writefile{brf}{\backcite{website:featureDetection}{{5}{2.1.1}{figure.caption.5}}}
-\@writefile{brf}{\backcite{website:SIFT}{{5}{2.1.1}{figure.caption.5}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Fundamental \& Essential Matrix estimations}{5}{subsection.2.1.2}}
-\newlabel{eq:fundamntalEquation}{{2.1}{5}{Fundamental \& Essential Matrix estimations}{equation.2.1.1}{}}
-\@writefile{brf}{\backcite{HartleyMultipleView}{{5}{2.1.2}{equation.2.1.1}}}
-\@writefile{brf}{\backcite{website:ransac}{{5}{2.1.2}{equation.2.1.1}}}
-\newlabel{eq:essentialEquation}{{2.2}{5}{Fundamental \& Essential Matrix estimations}{equation.2.1.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Corresponding matches in attached CD's $"Warsaw Gallery Dataset"$\relax }}{6}{figure.caption.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}3D reconstruction}{5}{section.2.1}}
+\citation{Cyganek3dVision}
+\citation{Cyganek3dVision}
+\citation{website:cameraCalibration}
+\citation{website:cameraCalibration}
+\citation{website:cameraCalibration}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Camera model}{6}{subsection.2.1.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Model of the perspective camera with two coordinate systems: external W and internal K. Image taken from \cite  {Cyganek3dVision}.\relax }}{6}{figure.caption.10}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:correspondingMatches}{{1}{6}{Corresponding matches in attached CD's $"Warsaw Gallery Dataset"$\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces RANSAC fitting for 2D image\cite  {website:ransac}\relax }}{6}{figure.caption.6}}
-\@writefile{brf}{\backcite{website:ransac}{{6}{2}{figure.caption.6}}}
-\newlabel{fig:RANSACFitting}{{2}{6}{RANSAC fitting for 2D image\cite {website:ransac}\relax }{figure.caption.6}{}}
+\newlabel{fig:camera_model}{{2.1}{6}{Model of the perspective camera with two coordinate systems: external W and internal K. Image taken from \cite {Cyganek3dVision}.\relax }{figure.caption.10}{}}
+\citation{website:featureDetection}
+\citation{website:SIFT}
+\citation{website:failMatching}
+\citation{website:failMatching}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces OpenCV camera calibration board. Image taken from \cite  {website:cameraCalibration}.\relax }}{7}{figure.caption.11}}
+\newlabel{fig:camera_model}{{2.2}{7}{OpenCV camera calibration board. Image taken from \cite {website:cameraCalibration}.\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Feature extraction and corresponding points matching}{7}{subsection.2.1.2}}
+\citation{Cyganek3dVision}
+\citation{Cyganek3dVision}
 \citation{HartleyMultipleView}
 \citation{HartleyMultipleView}
-\newlabel{eq:essentialFundamentalRelation}{{2.3}{7}{Fundamental \& Essential Matrix estimations}{equation.2.1.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Camera parameters estimations}{7}{subsection.2.1.3}}
-\@writefile{brf}{\backcite{HartleyMultipleView}{{7}{2.1.3}{equation.2.1.4}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Points Triangulation}{7}{subsection.2.1.4}}
-\@writefile{brf}{\backcite{HartleyMultipleView}{{7}{2.1.4}{figure.caption.8}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Epipolar lines found in an image of a vase \cite  {HartleyMultipleView}\relax }}{8}{figure.caption.7}}
-\@writefile{brf}{\backcite{HartleyMultipleView}{{8}{3}{figure.caption.7}}}
-\newlabel{fig:EpipolarGeometry}{{3}{8}{Epipolar lines found in an image of a vase \cite {HartleyMultipleView}\relax }{figure.caption.7}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Slide from Photogrammetric Computer Vision from 2013/2014 winter semester at TU Berlin\relax }}{8}{figure.caption.8}}
-\newlabel{fig:3Dreconstruction}{{4}{8}{Slide from Photogrammetric Computer Vision from 2013/2014 winter semester at TU Berlin\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Corresponding matches in ''Warsaw Gallery Dataset'' found for SIFT features and brute-force matcher using written by author desktop application\relax }}{8}{figure.caption.12}}
+\newlabel{fig:correspondingMatches}{{2.3}{8}{Corresponding matches in ''Warsaw Gallery Dataset'' found for SIFT features and brute-force matcher using written by author desktop application\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Outliers found during matching correspondences in two architecture pictures}}{8}{figure.caption.13}}
+\newlabel{fig:failMatching}{{2.4}{8}{Outliers found during matching correspondences in two architecture pictures}{figure.caption.13}{}}
+\citation{HartleyMultipleView}
+\citation{website:ransac}
+\citation{website:ransac}
+\citation{website:ransac}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Epipolar geometry}{9}{subsection.2.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Epipolar geometry schematic. Picture from \cite  {Cyganek3dVision}. \relax }}{9}{figure.caption.14}}
+\newlabel{fig:epipolar_geometry}{{2.5}{9}{Epipolar geometry schematic. Picture from \cite {Cyganek3dVision}. \relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}Fundamental \& Essential Matrix estimations}{9}{subsection.2.1.4}}
+\newlabel{eq:fundamntalEquation}{{2.2}{9}{Fundamental \& Essential Matrix estimations}{equation.2.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Epipolar lines found in an image of a vase}}{10}{figure.caption.15}}
+\newlabel{fig:EpipolarGeometry}{{2.6}{10}{Epipolar lines found in an image of a vase}{figure.caption.15}{}}
+\newlabel{eq:essentialEquation}{{2.3}{10}{Fundamental \& Essential Matrix estimations}{equation.2.1.3}{}}
+\citation{8Point}
+\citation{iterative5point}
+\citation{Batra5point}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces RANSAC fitting for 2D image}}{11}{figure.caption.16}}
+\newlabel{fig:RANSACFitting}{{2.7}{11}{RANSAC fitting for 2D image}{figure.caption.16}{}}
+\newlabel{eq:essentialFundamentalRelation}{{2.4}{11}{Fundamental \& Essential Matrix estimations}{equation.2.1.4}{}}
+\citation{HartleyMultipleView}
+\citation{HartleyMultipleView}
+\citation{HartleyMultipleView}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}Essential matrix decomposition}{12}{subsection.2.1.5}}
+\citation{HartleyMultipleView}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces The four possible decompositions of \textbf  {E}}}{13}{figure.caption.17}}
+\newlabel{fig:fourAmbig}{{2.8}{13}{The four possible decompositions of \textbf {E}}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Points Triangulation}{13}{subsection.2.1.6}}
+\newlabel{sec:points_triangulation}{{2.1.6}{13}{Points Triangulation}{subsection.2.1.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces 3D reconstruction from 2 images}}{14}{figure.caption.18}}
+\newlabel{fig:3Dreconstruction}{{2.9}{14}{3D reconstruction from 2 images}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Structure from Motion}{14}{section.2.2}}
 \citation{website:bundle-adjustment}
 \citation{website:androidSensorOverview}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Structure from Motion}{9}{section.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}3D Pose Estimation}{9}{subsection.2.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Homography estimation}{9}{subsection.2.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Structure Adjustment}{9}{subsection.2.2.3}}
-\@writefile{brf}{\backcite{website:bundle-adjustment}{{9}{2.2.3}{subsection.2.2.3}}}
+\citation{website:androidSensorFusion}
 \citation{website:accelerometer}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}3D Pose Estimation}{15}{subsection.2.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Structure Adjustment}{15}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Mobile Sensors overview}{15}{section.2.3}}
 \citation{website:gyroscope}
-\citation{website:magnetometer}
-\@writefile{brf}{\backcite{website:androidSensorOverview}{{10}{2.3}{section.2.3}}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Mobile Sensors overview\cite  {website:androidSensorOverview}}{10}{section.2.3}}
-\@writefile{brf}{\backcite{website:accelerometer}{{10}{2.3.1}{subsection.2.3.1}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Accelerometer\cite  {website:accelerometer}}{10}{subsection.2.3.1}}
-\@writefile{brf}{\backcite{website:gyroscope}{{10}{2.3.2}{subsection.2.3.2}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Gyroscope\cite  {website:gyroscope}}{10}{subsection.2.3.2}}
-\@writefile{brf}{\backcite{website:magnetometer}{{10}{2.3.3}{subsection.2.3.3}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Magnetometer\cite  {website:magnetometer}}{10}{subsection.2.3.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Bundle Adjustment process overview}}{16}{figure.caption.19}}
+\newlabel{fig:BundleAdjustment}{{2.10}{16}{Bundle Adjustment process overview}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Accelerometer}{16}{subsection.2.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Gyroscope}{16}{subsection.2.3.2}}
 \citation{website:sensorFustion}
-\citation{website:androidSensorOverview}
-\@writefile{brf}{\backcite{website:androidSensorOverview}{{11}{2.3.4}{figure.caption.10}}}
-\@writefile{brf}{\backcite{website:sensorFustion}{{11}{2.3.4}{subsection.2.3.4}}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.4}Sensor Fusion\cite  {website:sensorFustion}}{11}{subsection.2.3.4}}
+\citation{website:gravity_orientation}
+\citation{website:gravity_orientation}
+\citation{sensorFusionSmartphones}
+\citation{website:extendedSensorFusion}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Sensor Fusion}{17}{subsection.2.3.3}}
+\newlabel{eq:trans_from_accel}{{2.9}{17}{Sensor Fusion}{equation.2.3.9}{}}
+\citation{website:androidSensorFusion}
+\citation{indoorPosition}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces Getting rotation angles from gravity vector}}{18}{figure.caption.20}}
+\newlabel{fig:angles_from_gravity}{{2.11}{18}{Getting rotation angles from gravity vector}{figure.caption.20}{}}
+\newlabel{eq:velo_accel}{{2.10}{18}{Sensor Fusion}{equation.2.3.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.12}{\ignorespaces Difference in readings of Android's acceleration and linear acceleration}}{19}{figure.caption.21}}
+\newlabel{fig:linear_acceleration}{{2.12}{19}{Difference in readings of Android's acceleration and linear acceleration}{figure.caption.21}{}}
 \FN@pp@footnotehinttrue 
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Slide from Photogrammetric Computer Vision 2013/2014 winter semester at TU Berlin\relax }}{12}{figure.caption.9}}
-\newlabel{fig:BundleAdjustment}{{5}{12}{Slide from Photogrammetric Computer Vision 2013/2014 winter semester at TU Berlin\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Kalmann algorithm overview\relax }}{12}{figure.caption.10}}
-\newlabel{fig:Kalmann}{{6}{12}{Kalmann algorithm overview\relax }{figure.caption.10}{}}
 \@setckpt{2/fundamentals}{
-\setcounter{page}{13}
-\setcounter{equation}{6}
-\setcounter{enumi}{5}
+\setcounter{page}{20}
+\setcounter{equation}{10}
+\setcounter{enumi}{2}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
@@ -83,20 +99,23 @@
 \setcounter{part}{0}
 \setcounter{chapter}{2}
 \setcounter{section}{3}
-\setcounter{subsection}{4}
+\setcounter{subsection}{3}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{6}
+\setcounter{figure}{12}
 \setcounter{table}{0}
 \setcounter{ContinuedFloat}{0}
 \setcounter{pp@next@reset}{1}
 \setcounter{@fnserial}{0}
 \setcounter{NAT@ctr}{0}
-\setcounter{Item}{5}
-\setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{22}
 \setcounter{parentequation}{0}
+\setcounter{su@anzahl}{0}
+\setcounter{LT@tables}{1}
+\setcounter{LT@chunks}{1}
+\setcounter{Item}{9}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{25}
 \setcounter{lstnumber}{1}
 \setcounter{section@level}{2}
 \setcounter{lstlisting}{0}

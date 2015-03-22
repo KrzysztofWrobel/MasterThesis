@@ -1,19 +1,19 @@
-\nomenclatureentry{aBA@[{BA}]\begingroup Bundle Adjustment\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aRANSAC@[{RANSAC}]\begingroup RANdom SAmple Consensus\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aSVD@[{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aSfM@[{SfM}]\begingroup Structure from motion\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aSIFT@[{SIFT}]\begingroup Scale-invariant feature transform\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aAR@[{AR}]\begingroup Augmented Reality\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aVR@[{VR}]\begingroup Virtual Reality\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{a3D@[{3D}]\begingroup 3 dimension\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{a1G@[{1G}]\begingroup 1 gravity constant value\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aMEMS@[{MEMS}]\begingroup Micro Electro-Mechanical System\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aAPI@[{API}]\begingroup Applicatioan Programming interface\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aSDK@[{SDK}]\begingroup Software Development Kit\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aIMU@[{IMU}]\begingroup Inertial Measurement Unit\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aDOF@[{DOF}]\begingroup Degree of freedom\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aPNP@[{PNP}]\begingroup Perspective-n-Point\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aSD@[{SD}]\begingroup Secure Digital\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aPCL@[{PCL}]\begingroup Point Cloud Library\nomeqref {0}|nompageref}{1}
-\nomenclatureentry{aLGPL@[{LGPL}]\begingroup The GNU Lesser General Public License\nomeqref {0}|nompageref}{1}
+\nomenclatureentry{aBA@[{BA}]\begingroup Bundle Adjustment\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aRANSAC@[{RANSAC}]\begingroup RANdom SAmple Consensus\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aSVD@[{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aSfM@[{SfM}]\begingroup Structure from motion\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aSIFT@[{SIFT}]\begingroup Scale-invariant feature transform\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aAR@[{AR}]\begingroup Augmented Reality\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aVR@[{VR}]\begingroup Virtual Reality\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{a3D@[{3D}]\begingroup 3 dimension\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{a1G@[{1G}]\begingroup 1 gravity constant value\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aMEMS@[{MEMS}]\begingroup Micro Electro-Mechanical System\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aAPI@[{API}]\begingroup Application Programming interface\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aSDK@[{SDK}]\begingroup Software Development Kit\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aIMU@[{IMU}]\begingroup Inertial Measurement Unit\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aDOF@[{DOF}]\begingroup Degree of freedom\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aPNP@[{PNP}]\begingroup Perspective-n-Point\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aSD@[{SD}]\begingroup Secure Digital\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aPCL@[{PCL}]\begingroup Point Cloud Library\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{aLGPL@[{LGPL}]\begingroup The GNU Lesser General Public License\nomeqref {0}|nompageref}{ix}

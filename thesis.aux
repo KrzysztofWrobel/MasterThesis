@@ -17,8 +17,16 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand\@newglossary[4]{}
+\@newglossary{main}{glg}{gls}{glo}
+\@newglossary{acronym}{alg}{acr}{acn}
 \providecommand \oddpage@label [2]{}
 \FN@pp@footnotehinttrue 
+\@newglossary{symbols}{slg}{syi}{syg}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
+\@istfilename{thesis.ist}
+\@glsorder{word}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
@@ -26,39 +34,35 @@
 \providecommand {\FN@pp@footnotehinttrue }{}
 \providecommand {\FN@pp@footnote@aux }[2]{}
 \FN@pp@footnotehinttrue 
-\@input{0_frontmatter/abstract.aux}
 \FN@pp@footnotehinttrue 
-\citation{website:androidSensorOverview}
-\citation{website:accelerometer}
-\citation{website:gyroscope}
-\citation{website:magnetometer}
-\citation{website:sensorFustion}
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{ii}{chapter*.2}}
 \FN@pp@footnotehinttrue 
-\@writefile{brf}{\backcite{website:androidSensorOverview}{{ii}{(document)}{Doc-Start}}}
-\@writefile{brf}{\backcite{website:accelerometer}{{ii}{(document)}{Doc-Start}}}
-\@writefile{brf}{\backcite{website:gyroscope}{{ii}{(document)}{Doc-Start}}}
-\@writefile{brf}{\backcite{website:magnetometer}{{ii}{(document)}{Doc-Start}}}
-\@writefile{brf}{\backcite{website:sensorFustion}{{ii}{(document)}{Doc-Start}}}
+\@writefile{toc}{\contentsline {chapter}{List of Tables}{iii}{chapter*.3}}
 \FN@pp@footnotehinttrue 
-\citation{website:ransac}
-\citation{HartleyMultipleView}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{v}{chapter*.3}}
-\@writefile{brf}{\backcite{website:ransac}{{v}{(document)}{Doc-Start}}}
-\@writefile{brf}{\backcite{HartleyMultipleView}{{v}{(document)}{Doc-Start}}}
+\@writefile{toc}{\contentsline {section}{Abbreviations}{iv}{section*.4}}
+\newlabel{nom}{{}{iv}{\listtablename }{section*.5}{}}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{List of Tables}{viii}{chapter*.4}}
+\gdef \LT@i {\LT@entry 
+    {1}{42.06314pt}\LT@entry 
+    {1}{108.26883pt}\LT@entry 
+    {1}{26.60005pt}\LT@entry 
+    {1}{12.0pt}}
+\@writefile{toc}{\contentsline {section}{Nomenclature}{v}{section*.6}}
+\@writefile{toc}{\contentsline {section}{List of symbols}{v}{section*.8}}
 \FN@pp@footnotehinttrue 
-\@input{0_frontmatter/glossary.aux}
 \@input{1_introduction/introduction.aux}
-\newlabel{nom}{{}{1}{\listtablename }{chapter*.4}{}}
 \FN@pp@footnotehinttrue 
 \@input{2/fundamentals.aux}
 \FN@pp@footnotehinttrue 
 \@input{3/related_work.aux}
 \FN@pp@footnotehinttrue 
-\@input{5/concept.aux}
-\FN@pp@footnotehinttrue 
 \@input{6/implementation.aux}
+\FN@pp@footnotehinttrue 
+\@input{5/reconstruction_only_sensors.aux}
+\FN@pp@footnotehinttrue 
+\@input{6/reconstruction_3_point.aux}
+\FN@pp@footnotehinttrue 
+\@input{7/reconstruction_5_8point_enhanced.aux}
 \FN@pp@footnotehinttrue 
 \@input{7/evaluation.aux}
 \FN@pp@footnotehinttrue 
@@ -66,56 +70,58 @@
 \FN@pp@footnotehinttrue 
 \@input{9/materials_methods.aux}
 \FN@pp@footnotehinttrue 
-\bibstyle{Latex/Classes/PhDbiblio-url2}
+\bibstyle{Latex/Classes/PhDbiblio-url}
 \citation{*}
 \bibdata{9_backmatter/references.bib}
-\bibcite{website:androidSensorOverview}{{1}{}{{}}{{}}}
-\bibcite{website:accelerometer}{{2}{}{{}}{{}}}
-\bibcite{website:gyroscope}{{3}{}{{}}{{}}}
-\bibcite{website:magnetometer}{{4}{}{{}}{{}}}
-\bibcite{website:sensorFustion}{{5}{}{{}}{{}}}
-\bibcite{website:ransac}{{6}{}{{}}{{}}}
-\bibcite{HartleyMultipleView}{{7}{}{{}}{{}}}
-\bibcite{website:relativePoseLibrary}{{8}{}{{}}{{}}}
-\bibcite{website:kinect}{{9}{}{{}}{{}}}
-\bibcite{website:featureDetection}{{10}{}{{}}{{}}}
-\bibcite{website:SIFT}{{11}{}{{}}{{}}}
-\bibcite{website:bundle-adjustment}{{12}{}{{}}{{}}}
-\bibcite{objectRecAndLoc}{{13}{}{{}}{{}}}
-\bibcite{combinedMonoSlam}{{14}{}{{}}{{}}}
-\bibcite{8Point}{{15}{}{{}}{{}}}
-\bibcite{Batra5point}{{16}{}{{}}{{}}}
-\bibcite{Nister5point}{{17}{}{{}}{{}}}
+\bibcite{website:androidSensorFusion}{{1}{}{{}}{{}}}
+\bibcite{website:relativePoseLibrary}{{2}{}{{}}{{}}}
+\bibcite{HartleyMultipleView}{{3}{}{{}}{{}}}
+\bibcite{website:featureDetection}{{4}{}{{}}{{}}}
+\bibcite{website:SIFT}{{5}{}{{}}{{}}}
+\bibcite{website:failMatching}{{6}{}{{}}{{}}}
+\bibcite{website:ransac}{{7}{}{{}}{{}}}
+\bibcite{website:bundle-adjustment}{{8}{}{{}}{{}}}
+\bibcite{website:androidSensorOverview}{{9}{}{{}}{{}}}
+\bibcite{website:accelerometer}{{10}{}{{}}{{}}}
+\bibcite{website:gyroscope}{{11}{}{{}}{{}}}
+\bibcite{website:magnetometer}{{12}{}{{}}{{}}}
+\bibcite{website:sensorFustion}{{13}{}{{}}{{}}}
+\bibcite{website:kalmann}{{14}{}{{}}{{}}}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{References}{64}{chapter*.34}}
-\bibcite{iterative5point}{{18}{}{{}}{{}}}
-\bibcite{RansacRefine}{{19}{}{{}}{{}}}
-\bibcite{HellwichEvaluation}{{20}{}{{}}{{}}}
-\bibcite{1point}{{21}{}{{}}{{}}}
-\bibcite{4point}{{22}{}{{}}{{}}}
-\bibcite{robustCameraImu}{{23}{}{{}}{{}}}
-\bibcite{lineBasedPose}{{24}{}{{}}{{}}}
-\bibcite{pureTransl}{{25}{}{{}}{{}}}
-\bibcite{ptam}{{26}{}{{}}{{}}}
-\bibcite{monoSlam}{{27}{}{{}}{{}}}
-\bibcite{simultanousRecLocMap}{{28}{}{{}}{{}}}
-\bibcite{distributedAR}{{29}{}{{}}{{}}}
-\bibcite{homographyMobile}{{30}{}{{}}{{}}}
-\bibcite{rotationSpaceSearch}{{31}{}{{}}{{}}}
-\bibcite{Enqvist10stablestructure}{{32}{}{{}}{{}}}
-\bibcite{website:poseEstimation}{{33}{}{{}}{{}}}
-\bibcite{website:gradle}{{34}{}{{}}{{}}}
-\bibcite{website:walkingSpeed}{{35}{}{{}}{{}}}
-\bibcite{website:pcl}{{36}{}{{}}{{}}}
-\bibcite{website:cvsba}{{37}{}{{}}{{}}}
-\bibcite{website:eulerAngles}{{38}{}{{}}{{}}}
-\bibcite{website:3dReconstructerMasterThesis}{{39}{}{{}}{{}}}
-\bibcite{handHeldCamera}{{40}{}{{}}{{}}}
-\bibcite{2point}{{41}{}{{}}{{}}}
-\bibcite{indoorPosition}{{42}{}{{}}{{}}}
-\bibcite{autoGait}{{43}{}{{}}{{}}}
-\bibcite{website:sfm}{{44}{}{{}}{{}}}
-\bibcite{website:sba}{{45}{}{{}}{{}}}
-\FN@pp@footnotehinttrue 
-\@input{9_backmatter/declaration.aux}
+\@writefile{toc}{\contentsline {chapter}{References}{92}{chapter*.77}}
+\bibcite{sensorFusionSmartphones}{{15}{}{{}}{{}}}
+\bibcite{website:extendedSensorFusion}{{16}{}{{}}{{}}}
+\bibcite{objectRecAndLoc}{{17}{}{{}}{{}}}
+\bibcite{combinedMonoSlam}{{18}{}{{}}{{}}}
+\bibcite{8Point}{{19}{}{{}}{{}}}
+\bibcite{Batra5point}{{20}{}{{}}{{}}}
+\bibcite{Nister5point}{{21}{}{{}}{{}}}
+\bibcite{iterative5point}{{22}{}{{}}{{}}}
+\bibcite{RansacRefine}{{23}{}{{}}{{}}}
+\bibcite{HellwichEvaluation}{{24}{}{{}}{{}}}
+\bibcite{1point}{{25}{}{{}}{{}}}
+\bibcite{4point}{{26}{}{{}}{{}}}
+\bibcite{robustCameraImu}{{27}{}{{}}{{}}}
+\bibcite{lineBasedPose}{{28}{}{{}}{{}}}
+\bibcite{pureTransl}{{29}{}{{}}{{}}}
+\bibcite{ptam}{{30}{}{{}}{{}}}
+\bibcite{monoSlam}{{31}{}{{}}{{}}}
+\bibcite{simultanousRecLocMap}{{32}{}{{}}{{}}}
+\bibcite{distributedAR}{{33}{}{{}}{{}}}
+\bibcite{homographyMobile}{{34}{}{{}}{{}}}
+\bibcite{rotationSpaceSearch}{{35}{}{{}}{{}}}
+\bibcite{Enqvist10stablestructure}{{36}{}{{}}{{}}}
+\bibcite{website:poseEstimation}{{37}{}{{}}{{}}}
+\bibcite{website:gradle}{{38}{}{{}}{{}}}
+\bibcite{website:walkingSpeed}{{39}{}{{}}{{}}}
+\bibcite{website:pcl}{{40}{}{{}}{{}}}
+\bibcite{website:cvsba}{{41}{}{{}}{{}}}
+\bibcite{website:eulerAngles}{{42}{}{{}}{{}}}
+\bibcite{website:3dReconstructerMasterThesis}{{43}{}{{}}{{}}}
+\bibcite{handHeldCamera}{{44}{}{{}}{{}}}
+\bibcite{2point}{{45}{}{{}}{{}}}
+\bibcite{indoorPosition}{{46}{}{{}}{{}}}
+\bibcite{autoGait}{{47}{}{{}}{{}}}
+\bibcite{website:sfm}{{48}{}{{}}{{}}}
+\bibcite{website:sba}{{49}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers

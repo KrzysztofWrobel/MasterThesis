@@ -43,7 +43,6 @@
 \usepackage{amssymb}
 \usepackage{graphics} % for improved inclusion of graphics
 
-
 %\usepackage{wrapfig} % to include figure with text wrapping around it
 \usepackage[margin=10pt,font=small,labelfont=bf]{caption} % for improved layout of figure captions with extra margin, smaller font than text
 \usepackage{fancyhdr} % for better header layout
@@ -61,13 +60,20 @@
 \renewcommand{\thefigure}{\arabic{figure}}
 
 %:-------------------------- Glossary/Abbrev./Symbols -----------------------
+\usepackage[
+nonumberlist, %do not show page numbers
+acronym,      %generate acronym listing   -> Not used in this example (see line with %%% )
+toc,          %show listings as entries in table of contents
+section]      %use section level for toc entries
+{glossaries}
 
-\usepackage[intoc]{nomencl} % load nomencl extension; include in TOC
-%\nomrefpage % to include page numbers after abbrevations
-\renewcommand{\nomname}{Glossary} % rename nomenclature
-\renewcommand{\nomlabel}[1]{\textbf{#1}} % make abbreviations bold
-\makenomenclature % used to be \makeglossary
-\newcommand{\g}{\footnote{For all abbreviations see the glossary on page \pageref{nom}.}} % type "\g" to refer to glossary
+%\usepackage[intoc]{nomencl} % load nomencl extension; include in TOC
+%%\nomrefpage % to include page numbers after abbrevations
+%\renewcommand{\nomname}{Glossary} % rename nomenclature
+%\renewcommand{\nomlabel}[1]{\textbf{#1}} % make abbreviations bold
+%\makenomenclature % used to be \makeglossary
+%\newcommand{\g}{\footnote{For all abbreviations see the glossary on page \pageref{nom}.}} % type "\g" to refer to glossary
+
 
 
 % used to be for sorting into categories:

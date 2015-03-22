@@ -1,67 +1,95 @@
 \begin{thebibliography}{10}
 
-\bibitem{website:androidSensorOverview}
-{\sc Google}.
-\newblock
-  \href{http://developer.android.com/guide/topics/sensors/sensors_overview.html}{{\bf
-  Sensor overview in Android}}, December 2014.
+\bibitem{website:androidSensorFusion}
+{\sc Google~Tech Talks}.
+\newblock {\bf Sensor Fusion on Android Devices: A Revolution in Motion
+  Processing}, August 2010.
+\newblock Available from:
+  \url{https://www.youtube.com/watch?v=C7JQ7Rpwn2k&feature=youtu.be}.
 
-\bibitem{website:accelerometer}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Accelerometer}{{\bf
-  Accelerometer}}, December 2014.
-
-\bibitem{website:gyroscope}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Gyroscope}{{\bf Gyroscope}},
-  December 2014.
-
-\bibitem{website:magnetometer}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Magnetometer}{{\bf Magnetometer}},
-  December 2014.
-
-\bibitem{website:sensorFustion}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Sensor_fusion}{{\bf Sensor
-  fusion}}, December 2014.
-
-\bibitem{website:ransac}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/RANSAC}{{\bf RANSAC}}, December
-  2014.
+\bibitem{website:relativePoseLibrary}
+{\sc Bo~Li}.
+\newblock {\bf Relative Pose Estimation}, December 2014.
+\newblock Available from:
+  \url{https://github.com/prclibo/relative-pose-estimation}.
 
 \bibitem{HartleyMultipleView}
 {\sc Hartley R. and Zisserman A.}
 \newblock {\em Multiple view geometry in computer vision}.
 \newblock Cambridge University Press, 2. edition edition, 2004.
 
-\bibitem{website:relativePoseLibrary}
-{\sc Bo~Li}.
-\newblock \href{https://github.com/prclibo/relative-pose-estimation}{{\bf
-  Relative Pose Estimation}}, December 2014.
-
-\bibitem{website:kinect}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Kinect}{{\bf Kinect}}, December
-  2014.
-
 \bibitem{website:featureDetection}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock
-  \href{http://en.wikipedia.org/wiki/Feature_detection_computer_vision}{{\bf
-  Feature detection computer vision}}, December 2014.
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Feature detection computer vision}, December 2014.
+\newblock Available from:
+  \url{http://en.wikipedia.org/wiki/Feature_detection_computer_vision}.
 
 \bibitem{website:SIFT}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock
-  \href{http://en.wikipedia.org/wiki/Scale-invariant_feature_transform}{{\bf
-  Scale-invariant feature transform}}, December 2014.
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Scale-invariant feature transform}, December 2014.
+\newblock Available from:
+  \url{http://en.wikipedia.org/wiki/Scale-invariant_feature_transform}.
+
+\bibitem{website:failMatching}
+{\sc G.~Tolias and Y.~Avrithis}.
+\newblock {\bf Speeded-up, Relaxed Spatial Matching}, March 2015.
+\newblock Available from:
+  \url{http://image.ntua.gr/iva/research/relaxed_spatial_matching/}.
+
+\bibitem{website:ransac}
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf RANSAC}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/RANSAC}.
 
 \bibitem{website:bundle-adjustment}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Bundle_adjustment}{{\bf Bundle
-  Adjustment}}, December 2014.
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Bundle Adjustment}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/Bundle_adjustment}.
+
+\bibitem{website:androidSensorOverview}
+{\sc Google}.
+\newblock {\bf Sensor overview in Android}, December 2014.
+\newblock Available from:
+  \url{http://developer.android.com/guide/topics/sensors/sensors_overview.html}.
+
+\bibitem{website:accelerometer}
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Accelerometer}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/Accelerometer}.
+
+\bibitem{website:gyroscope}
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Gyroscope}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/Gyroscope}.
+
+\bibitem{website:magnetometer}
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Magnetometer}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/Magnetometer}.
+
+\bibitem{website:sensorFustion}
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Sensor fusion}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/Sensor_fusion}.
+
+\bibitem{website:kalmann}
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Kalman filter}, December 2014.
+\newblock Available from: \url{http://en.wikipedia.org/wiki/Kalman_filter}.
+
+\bibitem{sensorFusionSmartphones}
+{\sc Shahid Ayub, Alireza Bahraminisaab, and Bahram Honary}.
+\newblock {\bf A Sensor Fusion Method for Smart phone Orientation Estimation}.
+\newblock {\em 13th Annual Post Graduate Symposium on the Convergence of
+  Telecommunications, Networking and Broadcasting}, 2012.
+
+\bibitem{website:extendedSensorFusion}
+{\sc Gabriele Ligorio* and Angelo~Maria Sabatini}.
+\newblock {\bf Extended Kalman Filter-Based Methods for Pose Estimation Using
+  Visual, Inertial and Magnetic Sensors: Comparative Analysis and Performance
+  Evaluation}, February 2013.
+\newblock Available from:
+  \url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3649364/}.
 
 \bibitem{objectRecAndLoc}
 {\sc Robert~O. Castle and David~W. Murra}.
@@ -187,46 +215,49 @@
 
 \bibitem{website:poseEstimation}
 {\sc Multiple contributors~to OpenCV}.
-\newblock
-  \href{http://docs.opencv.org/trunk/doc/tutorials/calib3d/real_time_pose/real_time_pose.html}{{\bf
-  Real time pose estimation}}, December 2014.
+\newblock {\bf Real time pose estimation}, December 2014.
+\newblock Available from:
+  \url{http://docs.opencv.org/trunk/doc/tutorials/calib3d/real_time_pose/real_time_pose.html}.
 
 \bibitem{website:gradle}
 {\sc Google}.
-\newblock
-  \href{http://developer.android.com/sdk/installing/studio-build.html}{{\bf
-  Android Build System Overview}}, December 2014.
+\newblock {\bf Android Build System Overview}, December 2014.
+\newblock Available from:
+  \url{http://developer.android.com/sdk/installing/studio-build.html}.
 
 \bibitem{website:walkingSpeed}
-{\sc Unknown contributors~to Wikipedia}.
-\newblock \href{http://en.wikipedia.org/wiki/Preferred_walking_speed}{{\bf
-  Preferred Walking speed}}, December 2014.
+{\sc Wikipedia~(Unknown contributors)}.
+\newblock {\bf Preferred Walking speed}, December 2014.
+\newblock Available from:
+  \url{http://en.wikipedia.org/wiki/Preferred_walking_speed}.
 
 \bibitem{website:pcl}
 {\sc Multiple contributors}.
-\newblock \href{http://pointclouds.org/}{{\bf Point Cloud Library}}, December
-  2014.
+\newblock {\bf Point Cloud Library}, December 2014.
+\newblock Available from: \url{http://pointclouds.org/}.
 
 \bibitem{website:cvsba}
 {\sc Aplicaciones de~la Visión Artificial (A.V.A) de la Universidad~de
   Córdoba}.
-\newblock \href{http://www.uco.es/investiga/grupos/ava/node/39}{{\bf cvsba: an
-  OpenCV wrapper for sba library}}, December 2014.
+\newblock {\bf cvsba: an OpenCV wrapper for sba library}, December 2014.
+\newblock Available from: \url{http://www.uco.es/investiga/grupos/ava/node/39}.
 
 \bibitem{website:eulerAngles}
 {\sc MathWorld}.
-\newblock \href{http://mathworld.wolfram.com/EulerAngles.html}{{\bf Euler
-  Angles}}, December 2014.
+\newblock {\bf Euler Angles}, December 2014.
+\newblock Available from: \url{http://mathworld.wolfram.com/EulerAngles.html}.
 
 \bibitem{website:3dReconstructerMasterThesis}
 {\sc Krzysztof Wrobel}.
-\newblock \href{https://github.com/KrzysztofWrobel/MasterThesisSource}{{\bf
-  Enhancing 3D reconstruction with Sensor Fusion Data}}, December 2014.
+\newblock {\bf Enhancing 3D reconstruction with Sensor Fusion Data}, December
+  2014.
+\newblock Available from:
+  \url{https://github.com/KrzysztofWrobel/MasterThesisSource}.
 
 \bibitem{handHeldCamera}
 {\sc Marc Pollefeys, Luc Van Gooland Maarten Vergauwenand~Frank Verbiest, Kurt
   Cornelis, Jan Tops, and Reinhard Koch}.
-\newblock {\bf Visual modeling with a hand-held camera}.
+\newblock {\bf Visual modelling with a hand-held camera}.
 \newblock {\em International Journal of Computer Vision}, {\bf 59}:207--232,
   2004.
 
@@ -251,13 +282,14 @@
 
 \bibitem{website:sfm}
 {\sc Roy Shil}.
-\newblock \href{https://github.com/royshil/SfM-Toy-Library}{{\bf A toy library
-  for Structure from Motion using OpenCV 2.3+}}, December 2014.
+\newblock {\bf A toy library for Structure from Motion using OpenCV 2.3+},
+  December 2014.
+\newblock Available from: \url{https://github.com/royshil/SfM-Toy-Library}.
 
 \bibitem{website:sba}
 {\sc Manolis Lourakis}.
-\newblock \href{http://users.ics.forth.gr/~lourakis/sba/}{{\bf sba : A Generic
-  Sparse Bundle Adjustment C/C++ Package Based on the Levenberg-Marquardt
-  Algorithm}}, December 2014.
+\newblock {\bf sba : A Generic Sparse Bundle Adjustment C/C++ Package Based on
+  the Levenberg-Marquardt Algorithm}, December 2014.
+\newblock Available from: \url{http://users.ics.forth.gr/~lourakis/sba/}.
 
 \end{thebibliography}

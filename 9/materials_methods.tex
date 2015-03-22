@@ -1,9 +1,13 @@
-
+\ifpdf
+    \graphicspath{{figures/}{figures/comparisons}}
+\else
+    \graphicspath{{figures/}{figures/comparisons}}
+\fi
 % this file is called up by thesis.tex
 % content in this file will be fed into the main document
 
-\chapter{Materials \& methods} % top level followed by section, subsection
-\begin{lstlisting}[language=json,firstnumber=1, float]
+\chapter{Additional materials} % top level followed by section, subsection
+\begin{lstlisting}[language=json,firstnumber=1, float, label={lst:json_file} caption=Sample ''sensor.txt'' file from ''Sensor Enhanced Images Camera'' application]
 [
    {
       "photoPath":"20141210_145643/0.jpg",
@@ -30,10 +34,10 @@
    }
    ...
 ]
-\end{lstlisting}
+\end{lstlisting} %TODO opis i caption z referencją do implementation
 \clearpage
 
-\begin{table}[h]
+\begin{table}[p]
 \centering
 \begin{adjustbox}{width=1\linewidth}
 \begin{tabular}{l|l|l|l|l}
@@ -46,11 +50,11 @@
 \textbf{5-point enhanced}    & 1863.66             & 45.4552                 & 41          & 13.4643            \\
 \end{tabular}
 \end{adjustbox}
-\caption{Efficeincy table of proposed methods for 100 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time}
+\caption[Efficiency table of proposed methods for 100 SIFT features in Warsaw University of technology dataset]{Efficiency table of proposed methods for 100 SIFT features in Warsaw University of technology dataset. Columns: Total Sampson Error, Average Sampson error per point, Amount of points left after outliers removal, Execution time}
 \label{table:Efficiency100Sift}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[p]
 \centering
 \begin{adjustbox}{width=1\linewidth}
 \begin{tabular}{l|l|l|l|l}
@@ -63,11 +67,11 @@
 \textbf{5-point enhanced}    & 501.987             & 2.8522                  & 176         & 47.0683            \\
 \end{tabular}
 \end{adjustbox}
-\caption{Efficeincy table of proposed methods for 500 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time}
+\caption[Efficiency table of proposed methods for 500 SIFT features in Warsaw University of technology dataset]{Efficiency table of proposed methods for 500 SIFT features in Warsaw University of technology dataset. Columns: Total Sampson Error, Average Sampson error per point, Amount of points left after outliers removal, Execution time}
 \label{table:Efficiency500Sift}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[p]
 \centering
 \begin{adjustbox}{width=1\linewidth}
 \begin{tabular}{l|l|l|l|l}
@@ -80,11 +84,11 @@
 \textbf{5-point enhanced}    & 349.393             & 1.2523                  & 279         & 204.2998           \\
 \end{tabular}
 \end{adjustbox}
-\caption{Efficeincy table of proposed methods for 1000 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time}
+\caption[Efficiency table of proposed methods for 1000 SIFT features in Warsaw University of technology dataset]{Efficiency table of proposed methods for 1000 SIFT features in Warsaw University of technology dataset. Columns: Total Sampson Error, Average Sampson error per point, Amount of points left after outliers removal, Execution time}
 \label{table:Efficiency1000Sift}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[p]
 \centering
 \begin{adjustbox}{width=1\linewidth}
 \begin{tabular}{l|l|l|l|l}
@@ -97,22 +101,34 @@
 \textbf{5-point enhanced}        & 19966.6             & 20.0468                 & 996         & 355.464            \\ 
 \end{tabular}
 \end{adjustbox}
-\caption{Efficeincy table of proposed methods for 5000 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time}
+\caption[Efficiency table of proposed methods for 5000 SIFT features in Warsaw University of technology dataset.]{Efficiency table of proposed methods for 5000 SIFT features in Warsaw University of technology dataset. Columns: Total Sampson Error, Average Sampson error per point, Amount of points left after outliers removal, Execution time}
 \label{table:Efficiency5000Sift}
 \end{table}
 
+\begin{figure}[p]
+    \centering
+    \includegraphics[height=18cm]{Gate4000Comparison}
+    \caption[Reconstruction results of ''Gate'' dataset]{Reconstruction results of ''Gate'' dataset. Upper pair - standard OpenCV 8-point algorithm (left - front view, right - above view). Bottom pair - rotation enhanced 8-point algorithm.}
+\end{figure}
 
+\begin{figure}[p]
+    \centering
+    \includegraphics[height=18cm]{Pole4000Comparison}
+    \caption[Reconstruction results of ''Pole'' dataset]{Reconstruction results of ''Pole'' dataset. Upper pair - standard OpenCV 8-point algorithm (left - front view, right - above view). Middle pair - rotation enhanced 8-point algorithm. Bottom pair - reconstruction from known rotations and translations.}
+\end{figure}
 
-% ----------------------- paths to graphics ------------------------
+\begin{figure}[p]
+    \centering
+    \includegraphics[height=18cm]{GalleryBack4000Comparison}
+    \caption[Reconstruction results of ''Gallery Back'' dataset]{Reconstruction results of ''Gallery Back'' dataset. Upper pair - standard OpenCV 8-point algorithm (left - front view, right - above view). Bottom pair - rotation enhanced 8-point algorithm.}
+\end{figure}
 
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=\linewidth]{GallerFrontReconstruction}
+    \caption[Reconstruction results of ''Gallery Front'' dataset]{Reconstruction results of ''Gallery Front'' dataset using rotation enhanced 8-point algorithm (left - front view, right - above view).}
+\end{figure}
 
-
-% ----------------------- contents from here ------------------------
-
-
-
-
- 
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  22 DEC 2014 04:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  22 MAR 2015 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -195,18 +195,201 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/nomencl/nomencl.sty
-Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen121
-\nom@tempdim=\dimen122
-\nomitemsep=\skip56
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2014/04/04 v4.07 (NLCT)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
+ (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+\XKV@depth=\count103
+File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/base/mfirstuc.sty
+Package: mfirstuc 2013/11/04 v1.08 (NLCT)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count104
 )
-\@nomenclaturefile=\write3
-\openout3 = `thesis.nlo'.
+\etb@tempcnta=\count105
+)
+\@glsmfirst=\toks19
+\@glsmrest=\toks20
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2013/09/06 v2.18 (NLCT)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip56
 
-
-Writing nomenclature file thesis.nlo
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen121
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen122
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count106
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count107
+\leftroot@=\count108
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count109
+\DOTSCASE@=\count110
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen123
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
+\dotsspace@=\muskip10
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks22
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks23
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks24
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count118
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2013/08/29 v2.17 (NLCT)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count119
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count120
+\FP@xia=\count121
+\FP@xib=\count122
+\FP@xfa=\count123
+\FP@xfb=\count124
+\FP@rega=\count125
+\FP@regb=\count126
+\FP@regs=\count127
+\FP@times=\count128
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count129
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks26
+\@dtl@tmpcount=\count130
+\dtl@tmplength=\skip59
+\dtl@sortresult=\count131
+\@dtl@numgrpsepcount=\count132
+\@dtl@datatype=\count133
+\dtl@codeA=\count134
+\dtl@codeB=\count135
+\@dtl@foreach@level=\count136
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2013/11/14 v4.0 (NLCT)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
+Package: translator 2010/06/12 ver 1.10
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))
+\gls@level=\count137
+\@gls@tmpb=\toks27
+\gls@tmplen=\skip60
+\glskeylisttok=\toks28
+\glslabeltok=\toks29
+\glsshorttok=\toks30
+\glslongtok=\toks31
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2013/11/14 v4.0 (NLCT)
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2013/11/14 v4.0 (NLCT)
+\glslistdottedwidth=\skip61
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2013/11/14 v4.0 (NLCT)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count138
+\LTcapwidth=\dimen130
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@cols=\count139
+\LT@rows=\count140
+\c@LT@tables=\count141
+\c@LT@chunks=\count142
+\LT@p@ftn=\toks32
+)
+\glsdescwidth=\skip66
+\glspagelistwidth=\skip67
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2013/11/14 v4.0 (NLCT)
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count143
+\ST@wd=\dimen131
+\ST@rightskip=\skip68
+\ST@leftskip=\skip69
+\ST@parfillskip=\skip70
+\ST@pageleft=\dimen132
+\ST@headht=\dimen133
+\ST@tailht=\dimen134
+\ST@pagesofar=\dimen135
+\ST@pboxht=\dimen136
+\ST@lineht=\dimen137
+\ST@stretchht=\dimen138
+\ST@prevht=\dimen139
+\ST@toadd=\dimen140
+\ST@dimen=\dimen141
+\ST@pbox=\box58
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2014/03/06 v4.04 (NLCT)
+\glstreeindent=\skip71
+)) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -246,7 +429,6 @@ Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
 Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
@@ -257,13 +439,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen123
-\Hy@linkcounter=\count103
-\Hy@pagecounter=\count104
+\@linkdim=\dimen142
+\Hy@linkcounter=\count144
+\Hy@pagecounter=\count145
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count105
+\Hy@SavedSpaceFactor=\count146
  (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -302,16 +484,16 @@ Package: backref 2012/07/25 v1.38 Bibliographical back referencing
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 ))
-\c@Hy@tempcnt=\count106
+\c@Hy@tempcnt=\count147
  (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
+\Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen124
-\Fld@menulength=\count107
-\Field@Width=\dimen125
-\Fld@charsize=\dimen126
+\XeTeXLinkMargin=\dimen143
+\Fld@menulength=\count148
+\Field@Width=\dimen144
+\Fld@charsize=\dimen145
 Package hyperref Info: Hyper figures ON on input line 6293.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -321,150 +503,92 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count108
-\c@Item=\count109
-\c@Hfootnote=\count110
+\Hy@abspage=\count149
+\c@Item=\count150
+\c@Hfootnote=\count151
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count111
-\c@bookmark@seq@number=\count112
-\Hy@SectionHShift=\skip57
+\Fld@listcount=\count152
+\c@bookmark@seq@number=\count153
+\Hy@SectionHShift=\skip72
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen127
-\Gin@req@width=\dimen128
+\Gin@req@height=\dimen146
+\Gin@req@width=\dimen147
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/mh/mathtools.sty
 Package: mathtools 2014/05/21 v1.14 mathematical typesetting tools
  (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count113
-\calc@Bcount=\count114
-\calc@Adimen=\dimen129
-\calc@Bdimen=\dimen130
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
+\calc@Acount=\count154
+\calc@Bcount=\count155
+\calc@Adimen=\dimen148
+\calc@Bdimen=\dimen149
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count115
-\calc@Cskip=\skip60
+\calc@Ccount=\count156
+\calc@Cskip=\skip75
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip61
-
-For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks17
-\ex@=\dimen131
-)) (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen132
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
-)
-\inf@bad=\count116
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count117
-\leftroot@=\count118
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count119
-\DOTSCASE@=\count120
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen133
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count121
-\c@MaxMatrixCols=\count122
-\dotsspace@=\muskip11
-\c@parentequation=\count123
-\dspbrk@lvl=\count124
-\tag@help=\toks18
-\row@=\count125
-\column@=\count126
-\maxfields@=\count127
-\andhelp@=\toks19
-\eqnshift@=\dimen134
-\alignsep@=\dimen135
-\tagshift@=\dimen136
-\tagwidth@=\dimen137
-\totwidth@=\dimen138
-\lineht@=\dimen139
-\@envbody=\toks20
-\multlinegap=\skip62
-\multlinetaggap=\skip63
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count128
-\l_MT_multwidth_dim=\dimen140
-\origjot=\skip64
-\l_MT_shortvdotswithinadjustabove_dim=\dimen141
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen142
-\l_MT_above_intertext_sep=\dimen143
-\l_MT_below_intertext_sep=\dimen144
-\l_MT_above_shortintertext_sep=\dimen145
-\l_MT_below_shortintertext_sep=\dimen146
+\g_MT_multlinerow_int=\count157
+\l_MT_multwidth_dim=\dimen150
+\origjot=\skip76
+\l_MT_shortvdotswithinadjustabove_dim=\dimen151
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
+\l_MT_above_intertext_sep=\dimen153
+\l_MT_below_intertext_sep=\dimen154
+\l_MT_above_shortintertext_sep=\dimen155
+\l_MT_below_shortintertext_sep=\dimen156
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2014/05/20 v4814 L3 programming layer (loader) 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2014/05/20 v4814 L3 programming layer (code) 
 L3 Module: l3bootstrap 2014/05/16 v4782 L3 Bootstrap code
- (/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
-Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count129
-)
 L3 Module: l3names 2014/05/04 v4728 L3 Namespace for primitives
 L3 Module: l3basics 2014/05/04 v4728 L3 Basic definitions
 L3 Module: l3expan 2014/04/30 v4712 L3 Argument expansion
 L3 Module: l3tl 2014/05/04 v4728 L3 Token lists
 L3 Module: l3seq 2014/04/30 v4712 L3 Sequences and stacks
 L3 Module: l3int 2014/05/16 v4776 L3 Integers
-\c_max_int=\count130
-\l_tmpa_int=\count131
-\l_tmpb_int=\count132
-\g_tmpa_int=\count133
-\g_tmpb_int=\count134
+\c_max_int=\count158
+\l_tmpa_int=\count159
+\l_tmpb_int=\count160
+\g_tmpa_int=\count161
+\g_tmpb_int=\count162
 L3 Module: l3quark 2014/05/04 v4728 L3 Quarks
 L3 Module: l3prg 2014/05/04 v4728 L3 Control structures
-\g__prg_map_int=\count135
+\g__prg_map_int=\count163
 L3 Module: l3clist 2014/05/04 v4728 L3 Comma separated lists
 L3 Module: l3token 2014/05/04 v4728 L3 Experimental token manipulation
 L3 Module: l3prop 2014/04/30 v4712 L3 Property lists
 L3 Module: l3msg 2014/05/04 v4728 L3 Messages
 L3 Module: l3file 2014/05/05 v4737 L3 File and I/O operations
-\l_iow_line_count_int=\count136
-\l__iow_target_count_int=\count137
-\l__iow_current_line_int=\count138
-\l__iow_current_word_int=\count139
-\l__iow_current_indentation_int=\count140
+\l_iow_line_count_int=\count164
+\l__iow_target_count_int=\count165
+\l__iow_current_line_int=\count166
+\l__iow_current_word_int=\count167
+\l__iow_current_indentation_int=\count168
 L3 Module: l3skip 2014/05/05 v4738 L3 Dimensions and skips
-\c_zero_dim=\dimen147
-\c_max_dim=\dimen148
-\l_tmpa_dim=\dimen149
-\l_tmpb_dim=\dimen150
-\g_tmpa_dim=\dimen151
-\g_tmpb_dim=\dimen152
-\c_zero_skip=\skip65
-\c_max_skip=\skip66
-\l_tmpa_skip=\skip67
-\l_tmpb_skip=\skip68
-\g_tmpa_skip=\skip69
-\g_tmpb_skip=\skip70
+\c_zero_dim=\dimen157
+\c_max_dim=\dimen158
+\l_tmpa_dim=\dimen159
+\l_tmpb_dim=\dimen160
+\g_tmpa_dim=\dimen161
+\g_tmpb_dim=\dimen162
+\c_zero_skip=\skip77
+\c_max_skip=\skip78
+\l_tmpa_skip=\skip79
+\l_tmpb_skip=\skip80
+\g_tmpa_skip=\skip81
+\g_tmpb_skip=\skip82
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
@@ -472,128 +596,129 @@ L3 Module: l3skip 2014/05/05 v4738 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2014/05/08 v4753 L3 Key-value interfaces
-\g__keyval_level_int=\count141
-\l_keys_choice_int=\count142
+\g__keyval_level_int=\count169
+\l_keys_choice_int=\count170
 L3 Module: l3fp 2014/04/30 v4712 L3 Floating points
-\c__fp_leading_shift_int=\count143
-\c__fp_middle_shift_int=\count144
-\c__fp_trailing_shift_int=\count145
-\c__fp_big_leading_shift_int=\count146
-\c__fp_big_middle_shift_int=\count147
-\c__fp_big_trailing_shift_int=\count148
-\c__fp_Bigg_leading_shift_int=\count149
-\c__fp_Bigg_middle_shift_int=\count150
-\c__fp_Bigg_trailing_shift_int=\count151
+\c__fp_leading_shift_int=\count171
+\c__fp_middle_shift_int=\count172
+\c__fp_trailing_shift_int=\count173
+\c__fp_big_leading_shift_int=\count174
+\c__fp_big_middle_shift_int=\count175
+\c__fp_big_trailing_shift_int=\count176
+\c__fp_Bigg_leading_shift_int=\count177
+\c__fp_Bigg_middle_shift_int=\count178
+\c__fp_Bigg_trailing_shift_int=\count179
 L3 Module: l3box 2014/05/04 v4728 L3 Experimental boxes
-\c_empty_box=\box54
-\l_tmpa_box=\box55
-\l_tmpb_box=\box56
-\g_tmpa_box=\box57
-\g_tmpb_box=\box58
+\c_empty_box=\box59
+\l_tmpa_box=\box60
+\l_tmpb_box=\box61
+\g_tmpa_box=\box62
+\g_tmpb_box=\box63
 L3 Module: l3coffins 2014/05/04 v4728 L3 Coffin code layer
-\l__coffin_internal_box=\box59
-\l__coffin_internal_dim=\dimen153
-\l__coffin_offset_x_dim=\dimen154
-\l__coffin_offset_y_dim=\dimen155
-\l__coffin_x_dim=\dimen156
-\l__coffin_y_dim=\dimen157
-\l__coffin_x_prime_dim=\dimen158
-\l__coffin_y_prime_dim=\dimen159
-\c_empty_coffin=\box60
-\l__coffin_aligned_coffin=\box61
-\l__coffin_aligned_internal_coffin=\box62
-\l_tmpa_coffin=\box63
-\l_tmpb_coffin=\box64
-\l__coffin_display_coffin=\box65
-\l__coffin_display_coord_coffin=\box66
-\l__coffin_display_pole_coffin=\box67
-\l__coffin_display_offset_dim=\dimen160
-\l__coffin_display_x_dim=\dimen161
-\l__coffin_display_y_dim=\dimen162
+\l__coffin_internal_box=\box64
+\l__coffin_internal_dim=\dimen163
+\l__coffin_offset_x_dim=\dimen164
+\l__coffin_offset_y_dim=\dimen165
+\l__coffin_x_dim=\dimen166
+\l__coffin_y_dim=\dimen167
+\l__coffin_x_prime_dim=\dimen168
+\l__coffin_y_prime_dim=\dimen169
+\c_empty_coffin=\box65
+\l__coffin_aligned_coffin=\box66
+\l__coffin_aligned_internal_coffin=\box67
+\l_tmpa_coffin=\box68
+\l_tmpb_coffin=\box69
+\l__coffin_display_coffin=\box70
+\l__coffin_display_coord_coffin=\box71
+\l__coffin_display_pole_coffin=\box72
+\l__coffin_display_offset_dim=\dimen170
+\l__coffin_display_x_dim=\dimen171
+\l__coffin_display_y_dim=\dimen172
 L3 Module: l3color 2014/04/30 v4712 L3 Experimental color support
 L3 Module: l3luatex 2014/04/30 v4712 L3 Experimental LuaTeX-specific functions
-\g__cctab_allocate_int=\count152
-\g__cctab_stack_int=\count153
+\g__cctab_allocate_int=\count180
+\g__cctab_stack_int=\count181
 L3 Module: l3candidates 2014/05/04 v4734 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen163
-\l__box_bottom_dim=\dimen164
-\l__box_left_dim=\dimen165
-\l__box_right_dim=\dimen166
-\l__box_top_new_dim=\dimen167
-\l__box_bottom_new_dim=\dimen168
-\l__box_left_new_dim=\dimen169
-\l__box_right_new_dim=\dimen170
-\l__box_internal_box=\box68
-\l__coffin_bounding_shift_dim=\dimen171
-\l__coffin_left_corner_dim=\dimen172
-\l__coffin_right_corner_dim=\dimen173
-\l__coffin_bottom_corner_dim=\dimen174
-\l__coffin_top_corner_dim=\dimen175
-\l__coffin_scaled_total_height_dim=\dimen176
-\l__coffin_scaled_width_dim=\dimen177
+\l__box_top_dim=\dimen173
+\l__box_bottom_dim=\dimen174
+\l__box_left_dim=\dimen175
+\l__box_right_dim=\dimen176
+\l__box_top_new_dim=\dimen177
+\l__box_bottom_new_dim=\dimen178
+\l__box_left_new_dim=\dimen179
+\l__box_right_new_dim=\dimen180
+\l__box_internal_box=\box73
+\l__coffin_bounding_shift_dim=\dimen181
+\l__coffin_left_corner_dim=\dimen182
+\l__coffin_right_corner_dim=\dimen183
+\l__coffin_bottom_corner_dim=\dimen184
+\l__coffin_top_corner_dim=\dimen185
+\l__coffin_scaled_total_height_dim=\dimen186
+\l__coffin_scaled_width_dim=\dimen187
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2014/05/05 v4740 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count154
-\l__xparse_m_args_int=\count155
-\l__xparse_mandatory_args_int=\count156
-\l__xparse_processor_int=\count157
-\l__xparse_v_nesting_int=\count158
+\l__xparse_current_arg_int=\count182
+\l__xparse_m_args_int=\count183
+\l__xparse_mandatory_args_int=\count184
+\l__xparse_processor_int=\count185
+\l__xparse_v_nesting_int=\count186
 )
 Package: siunitx 2013/07/31 v2.5s A comprehensive (SI) units package
  (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen178
-\extrarowheight=\dimen179
-\NC@list=\toks22
-\extratabsurround=\skip71
-\backup@length=\skip72
+\col@sep=\dimen188
+\extrarowheight=\dimen189
+\NC@list=\toks33
+\extratabsurround=\skip83
+\backup@length=\skip84
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2014/05/05 v4740 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
-\l__siunitx_tmp_box=\box69
-\l__siunitx_tmp_dim=\dimen180
-\l__siunitx_tmp_int=\count159
+\l__siunitx_tmp_box=\box74
+\l__siunitx_tmp_dim=\dimen190
+\l__siunitx_tmp_int=\count187
 Variant \prop_get:NVNT already defined; not changing it on line 371
 Variant \prop_get:NVNF already defined; not changing it on line 372
 Variant \prop_get:NVNTF already defined; not changing it on line 373
-\l__siunitx_number_mantissa_length_int=\count160
-\l__siunitx_number_uncert_length_int=\count161
-\l__siunitx_round_int=\count162
-\l__siunitx_process_decimal_int=\count163
-\l__siunitx_process_uncertainty_int=\count164
-\l__siunitx_process_fixed_int=\count165
-\l__siunitx_process_integer_min_int=\count166
-\l__siunitx_process_precision_int=\count167
-\l__siunitx_group_min_int=\count168
-\l__siunitx_angle_marker_box=\box70
-\l__siunitx_angle_unit_box=\box71
-\l__siunitx_angle_marker_dim=\dimen181
-\l__siunitx_angle_unit_dim=\dimen182
-\l__siunitx_unit_int=\count169
-\l__siunitx_unit_denominator_int=\count170
-\l__siunitx_unit_numerator_int=\count171
-\l__siunitx_unit_prefix_int=\count172
-\l__siunitx_unit_prefix_base_int=\count173
-\l__siunitx_unit_prefix_gram_int=\count174
-\l__siunitx_number_product_int=\count175
-\c__siunitx_one_fill_skip=\skip73
-\l__siunitx_table_unit_align_skip=\skip74
-\l__siunitx_table_exponent_dim=\dimen183
-\l__siunitx_table_integer_dim=\dimen184
-\l__siunitx_table_mantissa_dim=\dimen185
-\l__siunitx_table_marker_dim=\dimen186
-\l__siunitx_table_result_dim=\dimen187
-\l__siunitx_table_uncert_dim=\dimen188
-\l__siunitx_table_fill_pre_dim=\dimen189
-\l__siunitx_table_fill_post_dim=\dimen190
-\l__siunitx_table_fill_mid_dim=\dimen191
-\l__siunitx_table_pre_box=\box72
-\l__siunitx_table_post_box=\box73
-\l__siunitx_table_mantissa_box=\box74
-\l__siunitx_table_result_box=\box75
-\l__siunitx_table_number_align_skip=\skip75
-\l__siunitx_table_text_align_skip=\skip76
+\l__siunitx_number_mantissa_length_int=\count188
+\l__siunitx_number_uncert_length_int=\count189
+\l__siunitx_round_int=\count190
+\l__siunitx_process_decimal_int=\count191
+\l__siunitx_process_uncertainty_int=\count192
+\l__siunitx_process_fixed_int=\count193
+\l__siunitx_process_integer_min_int=\count194
+\l__siunitx_process_precision_int=\count195
+\l__siunitx_group_min_int=\count196
+\l__siunitx_angle_marker_box=\box75
+\l__siunitx_angle_unit_box=\box76
+\l__siunitx_angle_marker_dim=\dimen191
+\l__siunitx_angle_unit_dim=\dimen192
+\l__siunitx_unit_int=\count197
+\l__siunitx_unit_denominator_int=\count198
+\l__siunitx_unit_numerator_int=\count199
+\l__siunitx_unit_prefix_int=\count200
+\l__siunitx_unit_prefix_base_int=\count201
+Normal \count register pool exhausted, switching to extended pool.
+\l__siunitx_unit_prefix_gram_int=\count277
+\l__siunitx_number_product_int=\count278
+\c__siunitx_one_fill_skip=\skip85
+\l__siunitx_table_unit_align_skip=\skip86
+\l__siunitx_table_exponent_dim=\dimen193
+\l__siunitx_table_integer_dim=\dimen194
+\l__siunitx_table_mantissa_dim=\dimen195
+\l__siunitx_table_marker_dim=\dimen196
+\l__siunitx_table_result_dim=\dimen197
+\l__siunitx_table_uncert_dim=\dimen198
+\l__siunitx_table_fill_pre_dim=\dimen199
+\l__siunitx_table_fill_post_dim=\dimen200
+\l__siunitx_table_fill_mid_dim=\dimen201
+\l__siunitx_table_pre_box=\box77
+\l__siunitx_table_post_box=\box78
+\l__siunitx_table_mantissa_box=\box79
+\l__siunitx_table_result_box=\box80
+\l__siunitx_table_number_align_skip=\skip87
+\l__siunitx_table_text_align_skip=\skip88
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -726,14 +851,13 @@ Variant \prop_get:NVNTF already defined; not changing it on line 373
 . line 7271.
 .................................................
 \g__file_internal_ior=\read1
- (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
-Package: translator 2010/06/12 ver 1.10
- (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks23
-\pgfutil@tempdima=\dimen192
-\pgfutil@tempdimb=\dimen193
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgfutil@tempdima=\dimen256
+\pgfutil@tempdimb=\dimen257
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box76
+\pgfutil@abb=\box81
  (/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
@@ -743,41 +867,41 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
  (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks24
-\pgfkeys@temptoks=\toks25
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks26
+\pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen194
-\pgf@y=\dimen195
-\pgf@xa=\dimen196
-\pgf@ya=\dimen197
-\pgf@xb=\dimen198
-\pgf@yb=\dimen199
-\pgf@xc=\dimen200
-\pgf@yc=\dimen201
-\w@pgf@writea=\write4
+\pgf@x=\dimen258
+\pgf@y=\dimen259
+\pgf@xa=\dimen260
+\pgf@ya=\dimen261
+\pgf@xb=\dimen262
+\pgf@yb=\dimen263
+\pgf@xc=\dimen264
+\pgf@yc=\dimen265
+\w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count176
-\c@pgf@countb=\count177
-\c@pgf@countc=\count178
-\c@pgf@countd=\count179
-\t@pgf@toka=\toks27
-\t@pgf@tokb=\toks28
-\t@pgf@tokc=\toks29
+\c@pgf@counta=\count279
+\c@pgf@countb=\count280
+\c@pgf@countc=\count281
+\c@pgf@countd=\count282
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
-
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-))) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)))
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count180
-\pgfsyssoftpath@bigbuffer@items=\count181
+\pgfsyssoftpath@smallbuffer@items=\count283
+\pgfsyssoftpath@bigbuffer@items=\count284
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -799,54 +923,53 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-Normal \dimen register pool exhausted, switching to extended pool.
-\pgfmath@dimen=\dimen256
-\pgfmath@count=\count182
-\pgfmath@box=\box77
-\pgfmath@toks=\toks30
-\pgfmath@stack@operand=\toks31
-\pgfmath@stack@operation=\toks32
+\pgfmath@dimen=\dimen266
+\pgfmath@count=\count285
+\pgfmath@box=\box82
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count183
+\c@pgfmathroundto@lastzeros=\count286
 )) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen257
-\pgf@picmaxx=\dimen258
-\pgf@picminy=\dimen259
-\pgf@picmaxy=\dimen260
-\pgf@pathminx=\dimen261
-\pgf@pathmaxx=\dimen262
-\pgf@pathminy=\dimen263
-\pgf@pathmaxy=\dimen264
-\pgf@xx=\dimen265
-\pgf@xy=\dimen266
-\pgf@yx=\dimen267
-\pgf@yy=\dimen268
-\pgf@zx=\dimen269
-\pgf@zy=\dimen270
+\pgf@picminx=\dimen267
+\pgf@picmaxx=\dimen268
+\pgf@picminy=\dimen269
+\pgf@picmaxy=\dimen270
+\pgf@pathminx=\dimen271
+\pgf@pathmaxx=\dimen272
+\pgf@pathminy=\dimen273
+\pgf@pathmaxy=\dimen274
+\pgf@xx=\dimen275
+\pgf@xy=\dimen276
+\pgf@yx=\dimen277
+\pgf@yy=\dimen278
+\pgf@zx=\dimen279
+\pgf@zy=\dimen280
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen271
-\pgf@path@lasty=\dimen272
-)
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen281
+\pgf@path@lasty=\dimen282
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen273
-\pgf@shorten@start@additional=\dimen274
+\pgf@shorten@end@additional=\dimen283
+\pgf@shorten@start@additional=\dimen284
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box78
-\pgf@hbox=\box79
-\pgf@layerbox@main=\box80
-\pgf@picture@serial@count=\count184
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgfpic=\box83
+\pgf@hbox=\box84
+\pgf@layerbox@main=\box85
+\pgf@picture@serial@count=\count287
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen275
+\pgflinewidth=\dimen285
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen276
-\pgf@pt@y=\dimen277
-\pgf@pt@temp=\dimen278
+\pgf@pt@x=\dimen286
+\pgf@pt@y=\dimen287
+\pgf@pt@temp=\dimen288
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -855,16 +978,16 @@ File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen279
+\pgfarrowsep=\dimen289
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen280
-\pgf@sys@shading@range@num=\count185
+\pgf@max=\dimen290
+\pgf@sys@shading@range@num=\count288
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box81
+\pgfexternal@startupbox=\box86
 )) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -873,158 +996,150 @@ File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ))) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box82
+\pgfnodeparttextbox=\box87
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen281
-\pgf@nodesepend=\dimen282
+\pgf@nodesepstart=\dimen291
+\pgf@nodesepend=\dimen292
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
-)) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen283
-\pgffor@skip=\dimen284
-\pgffor@stack=\toks33
-\pgffor@toks=\toks34
+\pgffor@iter=\dimen293
+\pgffor@skip=\dimen294
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
 )) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
- (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count186
-\pgfplotmarksize=\dimen285
+\pgf@plot@mark@count=\count289
+\pgfplotmarksize=\dimen295
 )
-\tikz@lastx=\dimen286
-\tikz@lasty=\dimen287
-\tikz@lastxsaved=\dimen288
-\tikz@lastysaved=\dimen289
-\tikzleveldistance=\dimen290
-\tikzsiblingdistance=\dimen291
-\tikz@figbox=\box83
-\tikz@figbox@bg=\box84
-\tikz@tempbox=\box85
-\tikz@tempbox@bg=\box86
-\tikztreelevel=\count187
-\tikznumberofchildren=\count188
-\tikznumberofcurrentchild=\count189
-\tikz@fig@count=\count190
+\tikz@lastx=\dimen296
+\tikz@lasty=\dimen297
+\tikz@lastxsaved=\dimen298
+\tikz@lastysaved=\dimen299
+\tikzleveldistance=\dimen300
+\tikzsiblingdistance=\dimen301
+\tikz@figbox=\box88
+\tikz@figbox@bg=\box89
+\tikz@tempbox=\box90
+\tikz@tempbox@bg=\box91
+\tikztreelevel=\count290
+\tikznumberofchildren=\count291
+\tikznumberofcurrentchild=\count292
+\tikz@fig@count=\count293
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count191
-\pgfmatrixcurrentcolumn=\count192
-\pgf@matrix@numberofcolumns=\count193
+\pgfmatrixcurrentrow=\count294
+\pgfmatrixcurrentcolumn=\count295
+\pgf@matrix@numberofcolumns=\count296
 )
-\tikz@expandcount=\count194
+\tikz@expandcount=\count297
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 ))) (/usr/local/texlive/2014/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2014/02/28 v1.10 Data Visualization (1.10-2-gb39fe75)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks35
-\t@pgfplots@tokb=\toks36
-\t@pgfplots@tokc=\toks37
-\pgfplots@tmpa=\dimen292
-\c@pgfplots@coordindex=\count195
-\c@pgfplots@scanlineindex=\count196
+\t@pgfplots@toka=\toks46
+\t@pgfplots@tokb=\toks47
+\t@pgfplots@tokc=\toks48
+\pgfplots@tmpa=\dimen302
+\c@pgfplots@coordindex=\count298
+\c@pgfplots@scanlineindex=\count299
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count197
+\c@pgfplotsarray@tmp=\count300
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count198
-\t@pgfplotstable@a=\toks38
-) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count199
- (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen293
-\pgfdecoratedremainingdistance=\dimen294
-\pgfdecoratedinputsegmentcompleteddistance=\dimen295
-\pgfdecoratedinputsegmentremainingdistance=\dimen296
-\pgf@decorate@distancetomove=\dimen297
-\pgf@decorate@repeatstate=\count200
-\pgfdecorationsegmentamplitude=\dimen298
-\pgfdecorationsegmentlength=\dimen299
+\c@pgfplotstable@counta=\count301
+\t@pgfplotstable@a=\toks49
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count302
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen303
+\pgfdecoratedremainingdistance=\dimen304
+\pgfdecoratedinputsegmentcompleteddistance=\dimen305
+\pgfdecoratedinputsegmentremainingdistance=\dimen306
+\pgf@decorate@distancetomove=\dimen307
+\pgf@decorate@repeatstate=\count303
+\pgfdecorationsegmentamplitude=\dimen308
+\pgfdecorationsegmentlength=\dimen309
 )
-\tikz@lib@dec@box=\box87
+\tikz@lib@dec@box=\box92
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count201
-\pgfplots@xmin@reg=\dimen300
-\pgfplots@xmax@reg=\dimen301
-\pgfplots@ymin@reg=\dimen302
-\pgfplots@ymax@reg=\dimen303
-\pgfplots@zmin@reg=\dimen304
-\pgfplots@zmax@reg=\dimen305
-)
-(/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+\pgfplots@numplots=\count304
+\pgfplots@xmin@reg=\dimen310
+\pgfplots@xmax@reg=\dimen311
+\pgfplots@ymin@reg=\dimen312
+\pgfplots@ymax@reg=\dimen313
+\pgfplots@zmin@reg=\dimen314
+\pgfplots@zmax@reg=\dimen315
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
  (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
 ))) (/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
- (/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
- (/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks39
-\XKV@tempa@toks=\toks40
-Normal \count register pool exhausted, switching to extended pool.
-\XKV@depth=\count277
-File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
-)) (/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
  (/usr/local/texlive/2014/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box88
+\collectedbox=\box93
 )
-\tc@llx=\dimen306
-\tc@lly=\dimen307
-\tc@urx=\dimen308
-\tc@ury=\dimen309
+\tc@llx=\dimen316
+\tc@lly=\dimen317
+\tc@urx=\dimen318
+\tc@ury=\dimen319
 Package trimclip Info: Using driver 'tc-pdftex.def'.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen310
-\adjbox@Height=\dimen311
-\adjbox@Depth=\dimen312
-\adjbox@Totalheight=\dimen313
+\adjbox@Width=\dimen320
+\adjbox@Height=\dimen321
+\adjbox@Depth=\dimen322
+\adjbox@Totalheight=\dimen323
  (/usr/local/texlive/2014/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count278
+\c@checkoddpage=\count305
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box89
-\sift@deathcycles=\count279
-\@vwid@loff=\dimen314
-\@vwid@roff=\dimen315
+\@vwid@box=\box94
+\sift@deathcycles=\count306
+\@vwid@loff=\dimen324
+\@vwid@roff=\dimen325
 )) (/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip77
-\enit@outerparindent=\dimen316
-\enit@toks=\toks41
-\enit@inbox=\box90
-\enitdp@description=\count280
+\labelindent=\skip89
+\enit@outerparindent=\dimen326
+\enit@toks=\toks50
+\enit@inbox=\box95
+\enitdp@description=\count307
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.units.code.tex) (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count281
-\lst@gtempboxa=\box91
-\lst@token=\toks42
-\lst@length=\count282
-\lst@currlwidth=\dimen317
-\lst@column=\count283
-\lst@pos=\count284
-\lst@lostspace=\dimen318
-\lst@width=\dimen319
-\lst@newlines=\count285
-\lst@lineno=\count286
-\lst@maxwidth=\dimen320
+\lst@mode=\count308
+\lst@gtempboxa=\box96
+\lst@token=\toks51
+\lst@length=\count309
+\lst@currlwidth=\dimen327
+\lst@column=\count310
+\lst@pos=\count311
+\lst@lostspace=\dimen328
+\lst@width=\dimen329
+\lst@newlines=\count312
+\lst@lineno=\count313
+\lst@maxwidth=\dimen330
  (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-\c@lstnumber=\count287
-\lst@skipnumbers=\count288
-\lst@framebox=\box92
+\c@lstnumber=\count314
+\lst@skipnumbers=\count315
+\lst@framebox=\box97
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
@@ -1033,49 +1148,80 @@ Package: listings 2014/03/04 1.5c (Carsten Heinz)
 \@input{Latex/Macros/MacroFile1.aux}
 \openout2 = `Latex/Macros/MacroFile1.aux'.
 
-(./Latex/Macros/MacroFile1.tex) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux
+(./Latex/Macros/MacroFile1.tex)
+\@indexfile=\write4
+\openout4 = `thesis.idx'.
+
+
+Writing index file thesis.idx
+\glswrite=\write5
+\glo@main@file=\write6
+\openout6 = `thesis.glo'.
+
+Package glossaries Info: Writing glossary file thesis.glo on input line 181.
+\glo@acronym@file=\write7
+\openout7 = `thesis.acn'.
+
+Package glossaries Info: Writing glossary file thesis.acn on input line 181.
+\glo@symbols@file=\write8
+\openout8 = `thesis.syg'.
+
+Package glossaries Info: Writing glossary file thesis.syg on input line 181.
+(./0_frontmatter/notation.tex) (./0_frontmatter/glossary.tex) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/2/fundamentals.aux
+
+LaTeX Warning: Label `fig:camera_model' multiply defined.
+
+) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/5/reconstruction_only_sensors.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/6/reconstruction_3_point.aux
+
+LaTeX Warning: Label `eq:relativeFundamntal' multiply defined.
+
+
+LaTeX Warning: Label `eq:relativeFundamntal' multiply defined.
+
+
+LaTeX Warning: Label `eq:alternative3point' multiply defined.
+
+
+LaTeX Warning: Label `eq:alternative3point' multiply defined.
+
+) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/7/reconstruction_5_8point_enhanced.aux
 
 LaTeX Warning: Label `eq:leftRelative' multiply defined.
 
-
-LaTeX Warning: Label `eq:alternative3point' multiply defined.
-
-
-LaTeX Warning: Label `eq:alternative3point' multiply defined.
-
+) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/7/evaluation.aux
 
 LaTeX Warning: Label `eq:projectionEquation' multiply defined.
 
-) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9/materials_methods.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9_backmatter/declaration.aux))
+) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/9/materials_methods.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 177.
-LaTeX Font Info:    ... okay on input line 177.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen321
-\scratchbox=\box93
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen322
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count316
+\scratchdimen=\dimen331
+\scratchbox=\box98
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen332
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
  (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1090,194 +1236,86 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box94
-Package backref Info: ** backref set up for natbib ** on input line 177.
-Package hyperref Info: Link coloring OFF on input line 177.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/glossaries/dict/glossaries-dictionary-English.dict
+Dictionary: glossaries-dictionary, Language: English 
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.glsdefs)
+\AtBeginShipoutBox=\box99
+Package backref Info: ** backref set up for natbib ** on input line 185.
+Package hyperref Info: Link coloring OFF on input line 185.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count295
+\c@section@level=\count322
 )
-LaTeX Info: Redefining \ref on input line 177.
-LaTeX Info: Redefining \pageref on input line 177.
-LaTeX Info: Redefining \nameref on input line 177.
- (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.out) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.out)
-\@outlinefile=\write5
-\openout5 = `thesis.out'.
+LaTeX Info: Redefining \ref on input line 185.
+LaTeX Info: Redefining \pageref on input line 185.
+LaTeX Info: Redefining \nameref on input line 185.
+ (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.out) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.out)
+\@outlinefile=\write9
+\openout9 = `thesis.out'.
 
- (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
-Dictionary: translator-basic-dictionary, Language: English 
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviations.cfg
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2013/07/31 v2.5s siunitx: Abbreviated units
 ) ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.10}).
 
-\c@lstlisting=\count296
-\c__siunitx_mathsf_int=\count297
-LaTeX Font Info:    Try loading font information for U+msa on input line 177.
+\c@lstlisting=\count323
+\c__siunitx_mathsf_int=\count324
+LaTeX Font Info:    Try loading font information for U+msa on input line 185.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 177.
+LaTeX Font Info:    Try loading font information for U+msb on input line 185.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-\c__siunitx_mathtt_int=\count298
- <figures/tub.pdf, id=284, 469.755pt x 352.31625pt>
-File: figures/tub.pdf Graphic file (type pdf)
- <use figures/tub.pdf>
-Package pdftex.def Info: figures/tub.pdf used on input line 188.
-(pdftex.def)             Requested size: 56.9055pt x 42.6793pt.
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no à in font cmr12!
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
- [1
+\c__siunitx_mathtt_int=\count325
+ (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.toc [1
 
 
 
 \FN@pp@footnotehinttrue 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures/tub.pdf>] [2] [3] [4
-
-]
-\openout2 = `0_frontmatter/abstract.aux'.
-
- (./0_frontmatter/abstract.texpdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 \end{abstract}
-                   [1
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 \cleardoublepage
-                      [2
-
-]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 \end{abstract}
-                    [1]) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.toc
-
-Package natbib Warning: Citation `website:androidSensorOverview' on page ii undefined on input line 22.
+\openout5 = `thesis.ist'.
 
 
-Package natbib Warning: Citation `website:accelerometer' on page ii undefined on input line 23.
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3])
+\tf@toc=\write10
+\openout10 = `thesis.toc'.
+
+ [4] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.lof
+
+Package natbib Warning: Citation `Cyganek3dVision' on page v undefined on input line 4.
 
 
-Package natbib Warning: Citation `website:gyroscope' on page ii undefined on input line 24.
+Package natbib Warning: Citation `website:cameraCalibration' on page v undefined on input line 5.
 
 
-Package natbib Warning: Citation `website:magnetometer' on page ii undefined on input line 25.
+Package natbib Warning: Citation `Cyganek3dVision' on page v undefined on input line 8.
 
-
-Package natbib Warning: Citation `website:sensorFustion' on page ii undefined on input line 26.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 27.
-pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.27 ...numberline {3}Related Work}{14}{chapter.3}
-                                                   [2
-\select@language{english}
-\@writefile{toc}{\select@language{english}}
-\@writefile{lof}{\select@language{english}}
-\@writefile{lot}{\select@language{english}}
-\FN@pp@footnotehinttrue 
-
-
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 58.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 58.
-pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.58 ...ne {6.2}Test Environment}{37}{section.6.2}
-                                                   [3])
-\tf@toc=\write6
-\openout6 = `thesis.toc'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.iv}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.238 \listoffigures
-                    	% print list of figures [4] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lof
-
-Package natbib Warning: Citation `website:ransac' on page v undefined on input line 7.
-
-
-Package natbib Warning: Citation `HartleyMultipleView' on page v undefined on input line 8.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 22.
 [5
 
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 32.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 32.
- [6])
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
+] [6] [7])
+\tf@lof=\write11
+\openout11 = `thesis.lof'.
 
- [7] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.lot)
-\tf@lot=\write8
-\openout8 = `thesis.lot'.
+ [8] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.lot)
+\tf@lot=\write12
+\openout12 = `thesis.lot'.
 
- [8
+ [9
 
-]
-\openout2 = `0_frontmatter/glossary.aux'.
-
- (./0_frontmatter/glossary.tex) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.nls) [1
-
-
-\FN@pp@footnotehinttrue 
+] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.acr) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.gls) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.syi) [10
 
 
 ]
@@ -1285,12 +1323,17 @@ Package babel Info: Redefining ngerman shorthand "~
 
  (./1_introduction/introduction.tex
 Chapter 1.
-[2
+[1
+
 
 
 ]
 
-Package natbib Warning: Citation `website:relativePoseLibrary' on page 3 undefined on input line 25.
+Package natbib Warning: Citation `website:androidSensorFusion' on page 2 undefined on input line 25.
+
+[2]
+
+Package natbib Warning: Citation `website:relativePoseLibrary' on page 3 undefined on input line 29.
 
 [3]) [4]
 \openout2 = `2/fundamentals.aux'.
@@ -1300,431 +1343,667 @@ Chapter 2.
 
 Package natbib Warning: Citation `HartleyMultipleView' on page 5 undefined on input line 11.
 
-
-Package natbib Warning: Citation `website:kinect' on page 5 undefined on input line 15.
-
-<figures/correspondingMatching.png, id=502, 2684.0275pt x 1100.11pt>
-File: figures/correspondingMatching.png Graphic file (type png)
- <use figures/correspondingMatching.png>
-Package pdftex.def Info: figures/correspondingMatching.png used on input line 29.
-(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
-
-
-Package natbib Warning: Citation `website:featureDetection' on page 5 undefined on input line 33.
-
-
-Package natbib Warning: Citation `website:SIFT' on page 5 undefined on input line 33.
-
 [5
 
 
 
-]
-
-Package natbib Warning: Citation `HartleyMultipleView' on page 6 undefined on input line 39.
-
-
-Package natbib Warning: Citation `website:ransac' on page 6 undefined on input line 39.
-
-<figures/RANSACFitting.png, id=515, 609.27625pt x 592.2125pt>
-File: figures/RANSACFitting.png Graphic file (type png)
- <use figures/RANSACFitting.png>
-Package pdftex.def Info: figures/RANSACFitting.png used on input line 42.
-(pdftex.def)             Requested size: 330.05322pt x 320.82013pt.
+] <figures/camera_model.png, id=651, 796.9775pt x 475.7775pt>
+File: figures/camera_model.png Graphic file (type png)
+ <use figures/camera_model.png>
+Package pdftex.def Info: figures/camera_model.png used on input line 34.
+(pdftex.def)             Requested size: 330.05322pt x 197.03017pt.
 
 
-Package natbib Warning: Citation `website:ransac' on page 6 undefined on input line 43.
+Package natbib Warning: Citation `Cyganek3dVision' on page 6 undefined on input line 36.
 
 
-Package natbib Warning: Citation `website:ransac' on page 6 undefined on input line 43.
+Package natbib Warning: Citation `Cyganek3dVision' on page 6 undefined on input line 36.
 
-<figures/EpipolarGeometry.png, id=517, 911.405pt x 657.45625pt>
+
+Package natbib Warning: Citation `website:cameraCalibration' on page 6 undefined on input line 51.
+
+<figures/opencv_camera_calib.png, id=652, 1836.8625pt x 1334.9875pt>
+File: figures/opencv_camera_calib.png Graphic file (type png)
+ <use figures/opencv_camera_calib.png>
+Package pdftex.def Info: figures/opencv_camera_calib.png used on input line 54.
+(pdftex.def)             Requested size: 330.05322pt x 239.8596pt.
+
+
+Package natbib Warning: Citation `website:cameraCalibration' on page 6 undefined on input line 55.
+
+
+Package natbib Warning: Citation `website:cameraCalibration' on page 6 undefined on input line 55.
+
+[6 <./figures/camera_model.png>] <figures/correspondingMatching.png, id=667, 2684.0275pt x 1100.11pt>
+File: figures/correspondingMatching.png Graphic file (type png)
+ <use figures/correspondingMatching.png>
+Package pdftex.def Info: figures/correspondingMatching.png used on input line 63.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+Package natbib Warning: Citation `website:featureDetection' on page 7 undefined on input line 67.
+
+
+Package natbib Warning: Citation `website:SIFT' on page 7 undefined on input line 67.
+
+<figures/failMatching.png, id=669, 1085.05376pt x 441.65pt>
+File: figures/failMatching.png Graphic file (type png)
+ <use figures/failMatching.png>
+Package pdftex.def Info: figures/failMatching.png used on input line 70.
+(pdftex.def)             Requested size: 330.05322pt x 134.34251pt.
+
+
+Package natbib Warning: Citation `website:failMatching' on page 7 undefined on input line 71.
+
+
+Package natbib Warning: Citation `website:failMatching' on page 7 undefined on input line 71.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./figures/opencv_camera_calib.png>] <figures/epipolar_geometry.png, id=676, 765.86125pt x 541.02126pt>
+File: figures/epipolar_geometry.png Graphic file (type png)
+ <use figures/epipolar_geometry.png>
+Package pdftex.def Info: figures/epipolar_geometry.png used on input line 78.
+(pdftex.def)             Requested size: 330.05322pt x 233.15468pt.
+
+
+Package natbib Warning: Citation `Cyganek3dVision' on page 8 undefined on input line 79.
+
+
+Package natbib Warning: Citation `Cyganek3dVision' on page 8 undefined on input line 79.
+
+<figures/EpipolarGeometry.png, id=678, 911.405pt x 657.45625pt>
 File: figures/EpipolarGeometry.png Graphic file (type png)
  <use figures/EpipolarGeometry.png>
-Package pdftex.def Info: figures/EpipolarGeometry.png used on input line 50.
+Package pdftex.def Info: figures/EpipolarGeometry.png used on input line 85.
 (pdftex.def)             Requested size: 330.05322pt x 238.08855pt.
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 6 undefined on input line 51.
+Package natbib Warning: Citation `HartleyMultipleView' on page 8 undefined on input line 86.
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 6 undefined on input line 51.
-
-[6] [7 <./figures/correspondingMatching.png> <./figures/RANSACFitting.png>]
-Missing character: There is no Œ in font cmr10!
-Missing character: There is no ± in font cmr10!
-Missing character: There is no Œ in font cmr10!
-Missing character: There is no ± in font cmr10!
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no É in font cmr10!
+Package natbib Warning: Citation `HartleyMultipleView' on page 8 undefined on input line 86.
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 8 undefined on input line 75.
+Underfull \vbox (badness 3229) has occurred while \output is active []
+
+ [8 <./figures/correspondingMatching.png> <./figures/failMatching.png (PNG copy)>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `eq:3Dreconstruction' on page 8 undefined on input line 85.
+Package natbib Warning: Citation `HartleyMultipleView' on page 9 undefined on input line 94.
 
-<figures/3Dreconstruction.png, id=535, 604.2575pt x 351.3125pt>
+
+Package natbib Warning: Citation `website:ransac' on page 9 undefined on input line 94.
+
+<figures/RANSACFitting.png, id=685, 609.27625pt x 592.2125pt>
+File: figures/RANSACFitting.png Graphic file (type png)
+ <use figures/RANSACFitting.png>
+Package pdftex.def Info: figures/RANSACFitting.png used on input line 97.
+(pdftex.def)             Requested size: 330.05322pt x 320.82013pt.
+
+
+Package natbib Warning: Citation `website:ransac' on page 9 undefined on input line 98.
+
+
+Package natbib Warning: Citation `website:ransac' on page 9 undefined on input line 98.
+
+[9 <./figures/epipolar_geometry.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./figures/EpipolarGeometry.png>]
+
+Package natbib Warning: Citation `8Point' on page 11 undefined on input line 115.
+
+
+Package natbib Warning: Citation `iterative5point' on page 11 undefined on input line 116.
+
+
+Package natbib Warning: Citation `Batra5point' on page 11 undefined on input line 116.
+
+[11 <./figures/RANSACFitting.png>]
+
+Package natbib Warning: Citation `HartleyMultipleView' on page 12 undefined on input line 120.
+
+<figures/fourAmbig.png, id=710, 824.07875pt x 583.17876pt>
+File: figures/fourAmbig.png Graphic file (type png)
+ <use figures/fourAmbig.png>
+Package pdftex.def Info: figures/fourAmbig.png used on input line 124.
+(pdftex.def)             Requested size: 330.05322pt x 233.56992pt.
+
+
+Package natbib Warning: Citation `HartleyMultipleView' on page 12 undefined on input line 125.
+
+
+Package natbib Warning: Citation `HartleyMultipleView' on page 12 undefined on input line 125.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/3Dreconstruction.png, id=713, 604.2575pt x 351.3125pt>
 File: figures/3Dreconstruction.png Graphic file (type png)
  <use figures/3Dreconstruction.png>
-Package pdftex.def Info: figures/3Dreconstruction.png used on input line 88.
+Package pdftex.def Info: figures/3Dreconstruction.png used on input line 135.
 (pdftex.def)             Requested size: 330.05322pt x 191.89304pt.
+ [12]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 8 undefined on input line 92.
+Package natbib Warning: Citation `HartleyMultipleView' on page 13 undefined on input line 156.
 
-[8] [9 <./figures/EpipolarGeometry.png> <./figures/3Dreconstruction.png>]
+[13 <./figures/fourAmbig.png>] [14 <./figures/3Dreconstruction.png>]
 
-Package natbib Warning: Citation `website:bundle-adjustment' on page 10 undefined on input line 100.
+Package natbib Warning: Citation `website:bundle-adjustment' on page 15 undefined on input line 163.
 
-<figures/BundleAdjustment.png, id=553, 767.86874pt x 335.2525pt>
+<figures/BundleAdjustment.png, id=735, 767.86874pt x 335.2525pt>
 File: figures/BundleAdjustment.png Graphic file (type png)
  <use figures/BundleAdjustment.png>
-Package pdftex.def Info: figures/BundleAdjustment.png used on input line 103.
+Package pdftex.def Info: figures/BundleAdjustment.png used on input line 166.
 (pdftex.def)             Requested size: 330.05322pt x 144.1046pt.
 
 
-Package natbib Warning: Citation `website:androidSensorOverview' on page 10 undefined on input line 107.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 107.
+Package natbib Warning: Citation `website:androidSensorOverview' on page 15 undefined on input line 171.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 107.
+Package natbib Warning: Citation `website:androidSensorFusion' on page 15 undefined on input line 172.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 107.
+Package natbib Warning: Citation `website:accelerometer' on page 15 undefined on input line 173.
 
+[15]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 107.
+Package natbib Warning: Citation `website:gyroscope' on page 16 undefined on input line 176.
 
+[16 <./figures/BundleAdjustment.png>]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 107.
+Package natbib Warning: Citation `website:sensorFustion' on page 17 undefined on input line 179.
 
+<figures/angles_from_gravity.png, id=748, 385.44pt x 333.245pt>
+File: figures/angles_from_gravity.png Graphic file (type png)
+ <use figures/angles_from_gravity.png>
+Package pdftex.def Info: figures/angles_from_gravity.png used on input line 184.
+(pdftex.def)             Requested size: 330.05322pt x 285.35963pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 107.
 
+Package natbib Warning: Citation `website:gravity_orientation' on page 17 undefined on input line 185.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 107.
 
-[10]
+Package natbib Warning: Citation `website:gravity_orientation' on page 17 undefined on input line 185.
 
-Package natbib Warning: Citation `website:accelerometer' on page 11 undefined on input line 109.
 
+Package natbib Warning: Citation `sensorFusionSmartphones' on page 17 undefined on input line 188.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 109.
 
+Package natbib Warning: Citation `website:extendedSensorFusion' on page 17 undefined on input line 188.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 109.
+<figures/linear_acceleration.png, id=750, 595.22375pt x 597.23125pt>
+File: figures/linear_acceleration.png Graphic file (type png)
+ <use figures/linear_acceleration.png>
+Package pdftex.def Info: figures/linear_acceleration.png used on input line 193.
+(pdftex.def)             Requested size: 330.05322pt x 331.16653pt.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 109.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 109.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[17]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 109.
+Package natbib Warning: Citation `website:androidSensorFusion' on page 18 undefined on input line 209.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 109.
+Package natbib Warning: Citation `indoorPosition' on page 18 undefined on input line 210.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 109.
-
-
-Package natbib Warning: Citation `website:gyroscope' on page 11 undefined on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 111.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 111.
-
-
-Package natbib Warning: Citation `website:magnetometer' on page 11 undefined on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 115.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 115.
-
-
-Package natbib Warning: Citation `website:androidSensorOverview' on page 11 undefined on input line 117.
-
-[11]
-
-Package natbib Warning: Citation `website:sensorFustion' on page 12 undefined on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\NAT@ctype' on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\let' on input line 117.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\new@ifnextchar' on input line 117.
-
-<figures/Kalmann.png, id=564, 1548.78625pt x 883.3pt>
-File: figures/Kalmann.png Graphic file (type png)
- <use figures/Kalmann.png>
-Package pdftex.def Info: figures/Kalmann.png used on input line 125.
-(pdftex.def)             Requested size: 330.05322pt x 188.23451pt.
-) [12]
-
-Package natbib Warning: Citation `website:androidSensorOverview' on page 13 undefined on input line 275.
-
-[13 <./figures/BundleAdjustment.png> <./figures/Kalmann.png>]
+) [18 <./figures/angles_from_gravity.png>] [19 <./figures/linear_acceleration.png>]
 \openout2 = `3/related_work.aux'.
 
  (./3/related_work.tex
 Chapter 3.
 
-Package natbib Warning: Citation `objectRecAndLoc' on page 14 undefined on input line 6.
+Package natbib Warning: Citation `objectRecAndLoc' on page 20 undefined on input line 6.
 
 
-Package natbib Warning: Citation `combinedMonoSlam' on page 14 undefined on input line 6.
+Package natbib Warning: Citation `combinedMonoSlam' on page 20 undefined on input line 6.
 
 
-Package natbib Warning: Citation `8Point' on page 14 undefined on input line 8.
+Package natbib Warning: Citation `8Point' on page 20 undefined on input line 8.
 
 
-Package natbib Warning: Citation `Batra5point' on page 14 undefined on input line 8.
+Package natbib Warning: Citation `Batra5point' on page 20 undefined on input line 8.
 
 
-Package natbib Warning: Citation `Nister5point' on page 14 undefined on input line 8.
+Package natbib Warning: Citation `Nister5point' on page 20 undefined on input line 8.
 
 
-Package natbib Warning: Citation `iterative5point' on page 14 undefined on input line 8.
+Package natbib Warning: Citation `iterative5point' on page 20 undefined on input line 8.
 
 
-Package natbib Warning: Citation `RansacRefine' on page 14 undefined on input line 10.
+Package natbib Warning: Citation `RansacRefine' on page 20 undefined on input line 10.
 
 Missing character: There is no √ in font cmr10!
 Missing character: There is no § in font cmr10!
 
-Package natbib Warning: Citation `HellwichEvaluation' on page 14 undefined on input line 12.
+Package natbib Warning: Citation `HellwichEvaluation' on page 20 undefined on input line 12.
 
-[14
+[20
 
 
 
 ]
 
-Package natbib Warning: Citation `1point' on page 15 undefined on input line 14.
+Package natbib Warning: Citation `1point' on page 21 undefined on input line 14.
 
 
-Package natbib Warning: Citation `4point' on page 15 undefined on input line 14.
+Package natbib Warning: Citation `4point' on page 21 undefined on input line 14.
 
 
-Package natbib Warning: Citation `robustCameraImu' on page 15 undefined on input line 14.
+Package natbib Warning: Citation `robustCameraImu' on page 21 undefined on input line 14.
 
 
-Package natbib Warning: Citation `lineBasedPose' on page 15 undefined on input line 16.
+Package natbib Warning: Citation `lineBasedPose' on page 21 undefined on input line 16.
 
 
-Package natbib Warning: Citation `pureTransl' on page 15 undefined on input line 16.
+Package natbib Warning: Citation `pureTransl' on page 21 undefined on input line 16.
 
 
-Package natbib Warning: Citation `ptam' on page 15 undefined on input line 18.
+Package natbib Warning: Citation `rotationSpaceSearch' on page 21 undefined on input line 18.
 
 
-Package natbib Warning: Citation `monoSlam' on page 15 undefined on input line 18.
+Package natbib Warning: Citation `Enqvist10stablestructure' on page 21 undefined on input line 18.
 
 
-Package natbib Warning: Citation `simultanousRecLocMap' on page 15 undefined on input line 18.
+Package natbib Warning: Citation `robustCameraImu' on page 21 undefined on input line 18.
 
-
-Package natbib Warning: Citation `distributedAR' on page 15 undefined on input line 18.
-
-
-Package natbib Warning: Citation `combinedMonoSlam' on page 15 undefined on input line 18.
-
-
-Package natbib Warning: Citation `homographyMobile' on page 15 undefined on input line 18.
-
-
-Package natbib Warning: Citation `rotationSpaceSearch' on page 15 undefined on input line 20.
-
-
-Package natbib Warning: Citation `Enqvist10stablestructure' on page 15 undefined on input line 20.
-
-
-Package natbib Warning: Citation `robustCameraImu' on page 15 undefined on input line 20.
-
-[15]) [16]
-\openout2 = `5/concept.aux'.
-
- (./5/concept.tex
-Chapter 4.
-
-Package natbib Warning: Citation `website:androidSensorOverview' on page 17 undefined on input line 9.
-
-[17
-
-
-
-] [18]
-
-LaTeX Warning: Reference `:' on page 19 undefined on input line 49.
-
-
-Package natbib Warning: Citation `HartleyMultipleView' on page 19 undefined on input line 51.
-
-[19] [20]
-
-Package natbib Warning: Citation `website:poseEstimation' on page 21 undefined on input line 155.
-
-[21]) [22]
+) [21]
 \openout2 = `6/implementation.aux'.
 
  (./6/implementation.tex
-Chapter 5.
-[23
+Chapter 4.
+
+Underfull \vbox (badness 3260) has occurred while \output is active []
+
+ [22
 
 
 
-]
+] [23]
 
-Package natbib Warning: Citation `website:gradle' on page 24 undefined on input line 20.
+Package natbib Warning: Citation `website:gradle' on page 24 undefined on input line 26.
 
-<figures/AndroidScreenShot.png, id=655, 1927.2pt x 1084.05pt>
+<figures/AndroidScreenShot.png, id=791, 1927.2pt x 1084.05pt>
 File: figures/AndroidScreenShot.png Graphic file (type png)
  <use figures/AndroidScreenShot.png>
-Package pdftex.def Info: figures/AndroidScreenShot.png used on input line 25.
+Package pdftex.def Info: figures/AndroidScreenShot.png used on input line 39.
 (pdftex.def)             Requested size: 330.05322pt x 185.64244pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25 <./figures/AndroidScreenShot.png>] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+[24] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-) [26
-
-]
-
-Package natbib Warning: Citation `website:walkingSpeed' on page 27 undefined on input line 70.
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 73.
-
-LaTeX Warning: Float too large for page by 47.48244pt on input line 112.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+) [25 <./figures/AndroidScreenShot.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 65.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
- [27] [28]
-
-Package natbib Warning: Citation `website:pcl' on page 29 undefined on input line 129.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
 
 
-Package natbib Warning: Citation `website:cvsba' on page 29 undefined on input line 131.
+LaTeX Warning: Reference `lst:json_file' on page 26 undefined on input line 70.
 
-[29] [30]
+[26]
 
-Package natbib Warning: Citation `website:relativePoseLibrary' on page 31 undefined on input line 172.
-
-
-Package natbib Warning: Citation `website:eulerAngles' on page 31 undefined on input line 174.
+Package natbib Warning: Citation `website:pcl' on page 27 undefined on input line 79.
 
 
-LaTeX Warning: Reference `sec:EpipolarEquation' on page 31 undefined on input line 195.
+Package natbib Warning: Citation `website:cvsba' on page 27 undefined on input line 81.
 
-[31] [32] [33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+[27
 
- [34]) [35]
+] [28]
+
+Package natbib Warning: Citation `website:eulerAngles' on page 29 undefined on input line 131.
+
+) [29]
+\openout2 = `5/reconstruction_only_sensors.aux'.
+
+ (./5/reconstruction_only_sensors.tex
+Chapter 5.
+
+Package natbib Warning: Citation `indoorPosition' on page 30 undefined on input line 16.
+
+[30
+
+
+
+]
+
+Package natbib Warning: Citation `website:walkingSpeed' on page 31 undefined on input line 33.
+
+[31]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 36.
+
+
+LaTeX Warning: Float too large for page by 47.48244pt on input line 75.
+
+<figures/setup_schematic.png, id=890, 653.44125pt x 582.175pt>
+File: figures/setup_schematic.png Graphic file (type png)
+ <use figures/setup_schematic.png>
+Package pdftex.def Info: figures/setup_schematic.png used on input line 89.
+(pdftex.def)             Requested size: 330.05322pt x 294.05379pt.
+ <figures/setup_env_rot_test.jpg, id=892, 3276.24pt x 2457.18pt>
+File: figures/setup_env_rot_test.jpg Graphic file (type jpg)
+ <use figures/setup_env_rot_test.jpg>
+Package pdftex.def Info: figures/setup_env_rot_test.jpg used on input line 96.
+(pdftex.def)             Requested size: 330.05322pt x 247.53207pt.
+ <figures/marker_env.jpg, id=894, 959.585pt x 774.895pt>
+File: figures/marker_env.jpg Graphic file (type jpg)
+ <use figures/marker_env.jpg>
+Package pdftex.def Info: figures/marker_env.jpg used on input line 103.
+(pdftex.def)             Requested size: 165.02345pt x 133.25569pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32] [33] [34 <./figures/setup_schematic.png>] <figures/01_matching.png, id=964, 2798.455pt x 1100.11pt>
+File: figures/01_matching.png Graphic file (type png)
+ <use figures/01_matching.png>
+Package pdftex.def Info: figures/01_matching.png used on input line 120.
+(pdftex.def)             Requested size: 330.05322pt x 129.74135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/01_matching_outliers.png, id=965, 2798.455pt x 1100.11pt>
+File: figures/01_matching_outliers.png Graphic file (type png)
+ <use figures/01_matching_outliers.png>
+Package pdftex.def Info: figures/01_matching_outliers.png used on input line 126.
+(pdftex.def)             Requested size: 330.05322pt x 129.74135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_01_auto_sift.png, id=966, 2684.0275pt x 1100.11pt>
+File: figures/f_01_auto_sift.png Graphic file (type png)
+ <use figures/f_01_auto_sift.png>
+Package pdftex.def Info: figures/f_01_auto_sift.png used on input line 132.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/02_matching.png, id=967, 2798.455pt x 1100.11pt>
+File: figures/02_matching.png Graphic file (type png)
+ <use figures/02_matching.png>
+Package pdftex.def Info: figures/02_matching.png used on input line 139.
+(pdftex.def)             Requested size: 330.05322pt x 129.74135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/02_matching_outliers.png, id=968, 2798.455pt x 1100.11pt>
+File: figures/02_matching_outliers.png Graphic file (type png)
+ <use figures/02_matching_outliers.png>
+Package pdftex.def Info: figures/02_matching_outliers.png used on input line 145.
+(pdftex.def)             Requested size: 330.05322pt x 129.74135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_02_auto_sift.png, id=969, 2684.0275pt x 1100.11pt>
+File: figures/f_02_auto_sift.png Graphic file (type png)
+ <use figures/f_02_auto_sift.png>
+Package pdftex.def Info: figures/f_02_auto_sift.png used on input line 152.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/rot_tests_01.png, id=973, 792.561pt x 137.313pt>
+File: figures/rot_tests_01.png Graphic file (type png)
+ <use figures/rot_tests_01.png>
+Package pdftex.def Info: figures/rot_tests_01.png used on input line 163.
+(pdftex.def)             Requested size: 391.93544pt x 67.90413pt.
+ <figures/rot_tests_02.png, id=974, 792.561pt x 137.313pt>
+File: figures/rot_tests_02.png Graphic file (type png)
+ <use figures/rot_tests_02.png>
+Package pdftex.def Info: figures/rot_tests_02.png used on input line 169.
+(pdftex.def)             Requested size: 391.93544pt x 67.90413pt.
+ [35 <./figures/setup_env_rot_test.jpg> <./figures/marker_env.jpg>] [36 <./figures/01_matching.png> <./figures/01_matching_outliers.png> <./figures/f_01_auto_sift.png>] [37 <./figures/02_matching.png> <./figures/02_matching_outliers.png> <./figures/f_02_auto_sift.png>]
+
+Package natbib Warning: Citation `indoorPosition' on page 38 undefined on input line 174.
+
+<figures/distance_tests.pdf, id=995, 583.47797pt x 347.46414pt>
+File: figures/distance_tests.pdf Graphic file (type pdf)
+ <use figures/distance_tests.pdf>
+Package pdftex.def Info: figures/distance_tests.pdf used on input line 177.
+(pdftex.def)             Requested size: 330.05322pt x 196.55087pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[38 <./figures/rot_tests_01.png> <./figures/rot_tests_02.png>] <figures/f_01.png, id=1009, 2595.6975pt x 967.615pt>
+File: figures/f_01.png Graphic file (type png)
+ <use figures/f_01.png>
+Package pdftex.def Info: figures/f_01.png used on input line 188.
+(pdftex.def)             Requested size: 330.05322pt x 123.03339pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/01_matching_outliers_epi.png, id=1010, 2798.455pt x 1100.11pt>
+File: figures/01_matching_outliers_epi.png Graphic file (type png)
+ <use figures/01_matching_outliers_epi.png>
+Package pdftex.def Info: figures/01_matching_outliers_epi.png used on input line 195.
+(pdftex.def)             Requested size: 330.05322pt x 129.74135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_01_8point.png, id=1011, 2684.0275pt x 1100.11pt>
+File: figures/f_01_8point.png Graphic file (type png)
+ <use figures/f_01_8point.png>
+Package pdftex.def Info: figures/f_01_8point.png used on input line 202.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_01_sensor.png, id=1012, 2684.0275pt x 1100.11pt>
+File: figures/f_01_sensor.png Graphic file (type png)
+ <use figures/f_01_sensor.png>
+Package pdftex.def Info: figures/f_01_sensor.png used on input line 209.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_02.png, id=1013, 2587.6675pt x 1043.9pt>
+File: figures/f_02.png Graphic file (type png)
+ <use figures/f_02.png>
+Package pdftex.def Info: figures/f_02.png used on input line 216.
+(pdftex.def)             Requested size: 330.05322pt x 133.14725pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/02_matching_outliers_epi.png, id=1014, 2798.455pt x 1100.11pt>
+File: figures/02_matching_outliers_epi.png Graphic file (type png)
+ <use figures/02_matching_outliers_epi.png>
+Package pdftex.def Info: figures/02_matching_outliers_epi.png used on input line 223.
+(pdftex.def)             Requested size: 330.05322pt x 129.74135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_02_8point.png, id=1015, 2684.0275pt x 1100.11pt>
+File: figures/f_02_8point.png Graphic file (type png)
+ <use figures/f_02_8point.png>
+Package pdftex.def Info: figures/f_02_8point.png used on input line 230.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_02_sensor.png, id=1016, 2684.0275pt x 1100.11pt>
+File: figures/f_02_sensor.png Graphic file (type png)
+ <use figures/f_02_sensor.png>
+Package pdftex.def Info: figures/f_02_sensor.png used on input line 237.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[39 <./figures/distance_tests.pdf>]
+
+LaTeX Warning: Text page 40 contains only floats.
+
+
+Overfull \vbox (1.69986pt too high) has occurred while \output is active []
+
+ [40 <./figures/f_01.png> <./figures/01_matching_outliers_epi.png> <./figures/f_01_8point.png>] [41 <./figures/f_01_sensor.png> <./figures/f_02.png> <./figures/02_matching_outliers_epi.png>] [42 <./figures/f_02_8point.png> <./figures/f_02_sensor.png>])
+\openout2 = `6/reconstruction_3_point.aux'.
+
+ (./6/reconstruction_3_point.tex
+Chapter 6.
+
+Package natbib Warning: Citation `HartleyMultipleView' on page 43 undefined on input line 13.
+
+[43
+
+
+
+
+] [44] [45] <figures/f_01_3point.png, id=1127, 2684.0275pt x 1100.11pt>
+File: figures/f_01_3point.png Graphic file (type png)
+ <use figures/f_01_3point.png>
+Package pdftex.def Info: figures/f_01_3point.png used on input line 151.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+ [46] <figures/f_02_3point.png, id=1155, 2684.0275pt x 1100.11pt>
+File: figures/f_02_3point.png Graphic file (type png)
+ <use figures/f_02_3point.png>
+Package pdftex.def Info: figures/f_02_3point.png used on input line 158.
+(pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
+) [47 <./figures/f_01_3point.png> <./figures/f_02_3point.png>]
+\openout2 = `7/reconstruction_5_8point_enhanced.aux'.
+
+ (./7/reconstruction_5_8point_enhanced.tex
+Chapter 7.
+
+Package natbib Warning: Citation `website:androidSensorOverview' on page 48 undefined on input line 6.
+
+
+Underfull \vbox (badness 3872) has occurred while \output is active []
+
+ [48
+
+
+
+] [49]
+
+Package natbib Warning: Citation `HartleyMultipleView' on page 50 undefined on input line 35.
+
+
+Package natbib Warning: Citation `website:relativePoseLibrary' on page 50 undefined on input line 53.
+
+[50]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 55.
+
+[51] <figures/rotation_tests_enh_01.png, id=1217, 585.8688pt x 237.0456pt>
+File: figures/rotation_tests_enh_01.png Graphic file (type png)
+ <use figures/rotation_tests_enh_01.png>
+Package pdftex.def Info: figures/rotation_tests_enh_01.png used on input line 106.
+(pdftex.def)             Requested size: 330.05322pt x 133.54398pt.
+ [52] <figures/rotation_tests_enh_02.png, id=1241, 583.9416pt x 235.1184pt>
+File: figures/rotation_tests_enh_02.png Graphic file (type png)
+ <use figures/rotation_tests_enh_02.png>
+Package pdftex.def Info: figures/rotation_tests_enh_02.png used on input line 113.
+(pdftex.def)             Requested size: 330.05322pt x 132.89235pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_01_8point_comp.png, id=1247, 2684.0275pt x 2200.22pt>
+File: figures/f_01_8point_comp.png Graphic file (type png)
+ <use figures/f_01_8point_comp.png>
+Package pdftex.def Info: figures/f_01_8point_comp.png used on input line 122.
+(pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
+ [53 <./figures/rotation_tests_enh_01.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_01_5point_comp.png, id=1253, 2684.0275pt x 2200.22pt>
+File: figures/f_01_5point_comp.png Graphic file (type png)
+ <use figures/f_01_5point_comp.png>
+Package pdftex.def Info: figures/f_01_5point_comp.png used on input line 129.
+(pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_02_8point_comp.png, id=1254, 2684.0275pt x 2200.22pt>
+File: figures/f_02_8point_comp.png Graphic file (type png)
+ <use figures/f_02_8point_comp.png>
+Package pdftex.def Info: figures/f_02_8point_comp.png used on input line 136.
+(pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/f_02_5point_comp.png, id=1255, 2684.0275pt x 2200.22pt>
+File: figures/f_02_5point_comp.png Graphic file (type png)
+ <use figures/f_02_5point_comp.png>
+Package pdftex.def Info: figures/f_02_5point_comp.png used on input line 143.
+(pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [54 <./figures/rotation_tests_enh_02.png>] [55 <./figures/f_01_8point_comp.png>] [56 <./figures/f_01_5point_comp.png>] [57 <./figures/f_02_8point_comp.png>] [58 <./figures/f_02_5point_comp.png>]
 \openout2 = `7/evaluation.aux'.
 
  (./7/evaluation.tex
-Chapter 6.
-[36
+Chapter 8.
+[59
 
 
 
-]
+] [60]
 
-Package natbib Warning: Citation `website:relativePoseLibrary' on page 37 undefined on input line 35.
+Package natbib Warning: Citation `website:poseEstimation' on page 61 undefined on input line 68.
+
+[61] [62]
+
+Package natbib Warning: Citation `website:relativePoseLibrary' on page 63 undefined on input line 129.
 
 PGFPlots: reading {SampsonTotal.csv}
 PGFPlots: reading {SampsonTotal.csv}
@@ -1733,7 +2012,7 @@ PGFPlots: reading {SampsonTotal.csv}
 PGFPlots: reading {SampsonTotal.csv}
 PGFPlots: reading {SampsonTotal.csv}
 
-Overfull \hbox (17.03592pt too wide) in paragraph at lines 64--65
+Overfull \hbox (17.03592pt too wide) in paragraph at lines 158--159
  [] 
  []
 
@@ -1743,27 +2022,30 @@ PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
 PGFPlots: reading {SampsonPerPoint.csv}
-<figures/summary1Sift300.jpg, id=931, 2569.6pt x 2890.8pt>
+<figures/summary1Sift300.jpg, id=1345, 2569.6pt x 2890.8pt>
 File: figures/summary1Sift300.jpg Graphic file (type jpg)
  <use figures/summary1Sift300.jpg>
-Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 103.
+Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 197.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift300.jpg, id=932, 2569.6pt x 2890.8pt>
+ <figures/summary2Sift300.jpg, id=1346, 2569.6pt x 2890.8pt>
 File: figures/summary2Sift300.jpg Graphic file (type jpg)
  <use figures/summary2Sift300.jpg>
-Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 109.
+Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 203.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary1Sift1000.jpg, id=935, 2569.6pt x 2890.8pt>
+ <figures/summary1Sift1000.jpg, id=1349, 2569.6pt x 2890.8pt>
 File: figures/summary1Sift1000.jpg Graphic file (type jpg)
  <use figures/summary1Sift1000.jpg>
-Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 117.
+Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 211.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift1000.jpg, id=936, 2569.6pt x 2890.8pt>
+ <figures/summary2Sift1000.jpg, id=1350, 2569.6pt x 2890.8pt>
 File: figures/summary2Sift1000.jpg Graphic file (type jpg)
  <use figures/summary2Sift1000.jpg>
-Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 123.
+Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 217.
 (pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- [37] [38] [39] [40] [41 <./figures/summary1Sift300.jpg>] [42 <./figures/summary2Sift300.jpg>] [43 <./figures/summary1Sift1000.jpg>] [44 <./figures/summary2Sift1000.jpg>]
+ [63] [64]
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [65] [66 <./figures/summary1Sift300.jpg>] [67 <./figures/summary2Sift300.jpg>] [68 <./figures/summary1Sift1000.jpg>] [69 <./figures/summary2Sift1000.jpg>]
 PGFPlots: reading {ExecutionTime.csv}
 PGFPlots: reading {ExecutionTime.csv}
 PGFPlots: reading {ExecutionTime.csv}
@@ -1771,155 +2053,174 @@ PGFPlots: reading {ExecutionTime.csv}
 PGFPlots: reading {ExecutionTime.csv}
 PGFPlots: reading {ExecutionTime.csv}
 
-Overfull \hbox (11.56091pt too wide) in paragraph at lines 155--156
+Overfull \hbox (11.56091pt too wide) in paragraph at lines 249--250
  [] 
  []
 
-[45
+[70
 
 ]
 PGFPlots: reading {BAerror2.csv}
 PGFPlots: reading {BAerror2.csv}
+ [71] [72]
+PGFPlots: reading {ReconstructTotal.csv}
+PGFPlots: reading {ReconstructTotal.csv}
+PGFPlots: reading {ReconstructTotal.csv}
+PGFPlots: reading {ReconstructTotal.csv}
+PGFPlots: reading {ReconstructTotal.csv}
 
-Overfull \hbox (25.55417pt too wide) in paragraph at lines 197--198
+Overfull \hbox (6.0859pt too wide) in paragraph at lines 325--326
  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 5.98788pt on input line 201.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46] [47] [48] <figures/bundleAdjustmentComparison.png, id=1005, 3001.2125pt x 2214.2725pt>
+PGFPlots: reading {ReconstructBA.csv}
+PGFPlots: reading {ReconstructBA.csv}
+PGFPlots: reading {ReconstructBA.csv}
+PGFPlots: reading {ReconstructBA.csv}
+PGFPlots: reading {ReconstructBA.csv}
+
+Overfull \hbox (11.56091pt too wide) in paragraph at lines 356--357
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/bundleAdjustmentComparison.png, id=1411, 3001.2125pt x 2214.2725pt>
 File: figures/bundleAdjustmentComparison.png Graphic file (type png)
  <use figures/bundleAdjustmentComparison.png>
-Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 209.
+Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 363.
 (pdftex.def)             Requested size: 412.56496pt x 304.38739pt.
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-PGFPlots: reading {ReconstructTotal.csv}
-
-Overfull \hbox (6.0859pt too wide) in paragraph at lines 236--237
- [] 
- []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
-PGFPlots: reading {ReconstructBA.csv}
+[73
 
-Overfull \hbox (11.56091pt too wide) in paragraph at lines 267--268
- [] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[49
-
-] [50 <./figures/bundleAdjustmentComparison.png>] [51] [52] <figures/uni4000Comparison.png, id=1028, 1975.38pt x 2978.12625pt>
+] [74] [75] [76 <./figures/bundleAdjustmentComparison.png>] <figures/uni4000Comparison.png, id=1435, 1975.38pt x 2978.12625pt>
 File: figures/uni4000Comparison.png Graphic file (type png)
  <use figures/uni4000Comparison.png>
-Package pdftex.def Info: figures/uni4000Comparison.png used on input line 286.
+Package pdftex.def Info: figures/uni4000Comparison.png used on input line 379.
 (pdftex.def)             Requested size: 371.30594pt x 559.76059pt.
 
 
-LaTeX Warning: Float too large for page by 34.4051pt on input line 289.
+LaTeX Warning: Float too large for page by 34.4051pt on input line 382.
 
-<figures/uni400Comparison.png, id=1029, 1978.39125pt x 1939.245pt>
+<figures/uni400Comparison.png, id=1436, 1978.39125pt x 1939.245pt>
 File: figures/uni400Comparison.png Graphic file (type png)
  <use figures/uni400Comparison.png>
-Package pdftex.def Info: figures/uni400Comparison.png used on input line 292.
+Package pdftex.def Info: figures/uni400Comparison.png used on input line 385.
 (pdftex.def)             Requested size: 371.30594pt x 363.93304pt.
- <figures/FailCaseFundamental.png, id=1030, 1953.2975pt x 598.235pt>
+ <figures/FailCaseFundamental.png, id=1437, 1953.2975pt x 598.235pt>
 File: figures/FailCaseFundamental.png Graphic file (type png)
  <use figures/FailCaseFundamental.png>
-Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 298.
+Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 391.
 (pdftex.def)             Requested size: 371.30594pt x 113.71147pt.
- <figures/PoseEstimationMethodComparison.png, id=1031, 1987.425pt x 1280.785pt>
+ <figures/PoseEstimationMethodComparison.png, id=1438, 1987.425pt x 1280.785pt>
 File: figures/PoseEstimationMethodComparison.png Graphic file (type png)
  <use figures/PoseEstimationMethodComparison.png>
-Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 304.
+Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 397.
 (pdftex.def)             Requested size: 371.30594pt x 239.2867pt.
- <figures/uniNone4000.png, id=1032, 1062.97125pt x 2047.65pt>
+ <figures/uniNone4000.png, id=1439, 1062.97125pt x 2047.65pt>
 File: figures/uniNone4000.png Graphic file (type png)
  <use figures/uniNone4000.png>
-Package pdftex.def Info: figures/uniNone4000.png used on input line 310.
+Package pdftex.def Info: figures/uniNone4000.png used on input line 403.
 (pdftex.def)             Requested size: 265.8557pt x 512.1496pt.
-) [53
+) [77
 
-] [54 <./figures/uni4000Comparison.png>] [55 <./figures/uni400Comparison.png> <./figures/FailCaseFundamental.png>] [56 <./figures/PoseEstimationMethodComparison.png>] [57 <./figures/uniNone4000.png>]
+] [78 <./figures/uni4000Comparison.png>] [79 <./figures/uni400Comparison.png> <./figures/FailCaseFundamental.png>] [80 <./figures/PoseEstimationMethodComparison.png>] [81 <./figures/uniNone4000.png>]
 \openout2 = `8/conclusion.aux'.
 
  (./8/conclusion.tex
-Chapter 7.
-[58
+Chapter 9.
+[82
 
 
 
-]
+] [83]
 
-Package natbib Warning: Citation `website:3dReconstructerMasterThesis' on page 59 undefined on input line 22.
+Package natbib Warning: Citation `website:3dReconstructerMasterThesis' on page 84 undefined on input line 25.
 
-[59]
 
-Package natbib Warning: Citation `ptam' on page 60 undefined on input line 27.
+Package natbib Warning: Citation `ptam' on page 84 undefined on input line 30.
 
-) [60]
+[84]) [85]
 \openout2 = `9/materials_methods.aux'.
 
  (./9/materials_methods.tex
-Chapter 8.
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 8.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 8.
+Chapter 10.
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 12.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 12.
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 8.
+(Font)              for symbol `textbraceleft' on input line 12.
 
-[61
+[86
 
 
 
-] [62]
+] [87] <figures/Gate4000Comparison.png, id=1522, 1971.365pt x 2309.62875pt>
+File: figures/Gate4000Comparison.png Graphic file (type png)
+ <use figures/Gate4000Comparison.png>
+Package pdftex.def Info: figures/Gate4000Comparison.png used on input line 110.
+(pdftex.def)             Requested size: 437.13083pt x 512.1496pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (24.56587pt too wide) in paragraph at lines 110--111
+ [][] 
+ []
 
-) [63
+<figures/Pole4000Comparison.png, id=1523, 1958.31625pt x 2943.99875pt>
+File: figures/Pole4000Comparison.png Graphic file (type png)
+ <use figures/Pole4000Comparison.png>
+Package pdftex.def Info: figures/Pole4000Comparison.png used on input line 116.
+(pdftex.def)             Requested size: 340.67854pt x 512.1496pt.
+ <figures/GalleryBack4000Comparison.png, id=1524, 1970.36125pt x 2323.68124pt>
+File: figures/GalleryBack4000Comparison.png Graphic file (type png)
+ <use figures/GalleryBack4000Comparison.png>
+Package pdftex.def Info: figures/GalleryBack4000Comparison.png used on input line 122.
+(pdftex.def)             Requested size: 434.26251pt x 512.1496pt.
 
-] [64] (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.bbl (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.brf)
-\tf@brf=\write9
-\openout9 = `thesis.brf'.
+Overfull \hbox (21.69756pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+<figures/GallerFrontReconstruction.png, id=1525, 1955.305pt x 1599.9775pt>
+File: figures/GallerFrontReconstruction.png Graphic file (type png)
+ <use figures/GallerFrontReconstruction.png>
+Package pdftex.def Info: figures/GallerFrontReconstruction.png used on input line 128.
+(pdftex.def)             Requested size: 412.56496pt x 337.59207pt.
+) [88] [89 <./figures/Gate4000Comparison.png>] [90 <./figures/Pole4000Comparison.png>] [91 <./figures/GalleryBack4000Comparison.png>] [92 <./figures/GallerFrontReconstruction.png>] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.bbl (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.brf)
+\tf@brf=\write13
+\openout13 = `thesis.brf'.
 
 
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [65
-
-
-]
-\openout2 = `9_backmatter/declaration.aux'.
-
- (./9_backmatter/declaration.tex [66
-
-])
+)
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 337.
-(/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/abstract.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/0_frontmatter/glossary.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/5/concept.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9/materials_methods.aux) (/Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/9_backmatter/declaration.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 337.
+[93
+
+
+\FN@pp@footnotehinttrue 
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+ (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.aux (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/1_introduction/introduction.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/2/fundamentals.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/3/related_work.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/6/implementation.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/5/reconstruction_only_sensors.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/6/reconstruction_3_point.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/7/reconstruction_5_8point_enhanced.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/7/evaluation.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/8/conclusion.aux) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/9/materials_methods.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DC335B794A16BBA6A13F65BA1EFFF26C;5297.
+(rerunfilecheck)             Checksum: B81FD1CE852DB575CA620BD46B909403;6617.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 9D54BAAEF8A648035C329E8AF49C188D;3265.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1930,21 +2231,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 337.
  ) 
 Here is how much of TeX's memory you used:
- 39570 strings out of 493117
- 899917 string characters out of 6135433
- 1204992 words of memory out of 5000000
- 41831 multiletter control sequences out of 15000+600000
- 18687 words of font info for 73 fonts, out of 8000000 for 9000
+ 44429 strings out of 493117
+ 976878 string characters out of 6135433
+ 1279709 words of memory out of 5000000
+ 46441 multiletter control sequences out of 15000+600000
+ 17276 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,102p,10422b,2234s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.pdf (80 pages, 20312630 bytes).
+ 57i,20n,102p,10422b,2214s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.pdf (103 pages, 79262250 bytes).
 PDF statistics:
- 1283 PDF objects out of 1440 (max. 8388607)
- 1140 compressed objects within 12 object streams
- 459 named destinations out of 1000 (max. 500000)
- 655 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1729 PDF objects out of 2073 (max. 8388607)
+ 1487 compressed objects within 15 object streams
+ 566 named destinations out of 1000 (max. 500000)
+ 984 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,11 +3,11 @@
 
 %: ----------------------- name of chapter  -------------------------
 \chapter{Concept} % top level followed by section, subsection
-As indicated in a similar research(Chapter 3), it is very attractive to use additional data to enhance reconstruction and reduce ambiguity in finding correct solution for 3D reconstruction. Additional camera or model information help to implement faster, more stable and robust algorithms. This thesis will show how the prior knowledge of rotation or translation acquired via mobile sensor fusion can be used to enhance process of 3D reconstruction from a series of images. When it comes to relying on hand-held smartphones, the collected sensor data are very noisy. This thesis shows how even noisy information can be used in the reconstruction processes. Initially, only the camera rotation estimation was supposed to be used within the scope of this thesis. However, the first attempts to perform reconstruction proved it to be not sufficient and additional rotation error matrix estimations were developed.
+As indicated in a similar research (Chapter 3), it is very attractive to use additional data to enhance reconstruction and reduce ambiguity in finding correct solution for 3D reconstruction. Additional camera or model information help to implement faster, more stable and robust algorithms. This thesis will show how the prior knowledge of rotation or translation acquired via mobile sensor fusion can be used to enhance process of 3D reconstruction from a series of images. When it comes to relying on hand-held smartphones, the collected sensor data are very noisy. This thesis shows how even noisy information can be used in the reconstruction processes. Initially, only the camera rotation estimation was supposed to be used within the scope of this thesis. However, the first attempts to perform reconstruction proved it to be not sufficient and additional rotation error matrix estimations were developed.
 It follows from the analysis of the theory and related works that both epipolar equations and pose estimation techniques can be improved by additional rotation and translation information data.  Author of this thesis proposes the use of an environment, where a user can decide what type of strategy to use.
 \section{Requirements}
-The proposed methodology needs an input in the form of a series of images with additional information about the position of the camera - the euclidan rotation and, optionally, translation. The use of smartphone is not necessary; any camera with sensor-fusioned accelerometer and gyroscope (magnotometer and the use thereof is optional, as discussed in \cite{website:androidSensorOverview}, has both advantages and disadvantages), capable of performing the rotation and translation estimation, can be used.The internal camera parameters need to be calculated before the reconstruction process commences. Additional sensor data need not be fully accurate. Noisy external camera parameters can still be successfully used for enhancing the reconstruction process.
-\section{Enhancing epipolar geometry equations with initial rotation matrix}
+The proposed methodology needs an input in the form of a series of images with additional information about the position of the camera - the euclidean rotation and, optionally, translation. The use of smartphone is not necessary; any camera with sensor-fusioned accelerometer and gyroscope (magnetometer and the use thereof is optional, as discussed in \cite{website:androidSensorOverview}, has both advantages and disadvantages), capable of performing the rotation and translation estimation, can be used.The internal camera parameters need to be calculated before the reconstruction process commences. Additional sensor data need not be fully accurate. Noisy external camera parameters can still be successfully used for enhancing the reconstruction process.
+\section{Enhancing epipolar geometry equations with initial rotation matrix} \label{sec:EpipolarEquation}
 The initial pair reconstruction step is of utmost importance and needs to be accurate in order to let the other images calculate relative position based on the initially reconstructed 3D cloud points.
 Analysis of the standard fundamental geometry equation and the relative camera based system ($P = \begin{bmatrix}I |0\end{bmatrix}, P' = \begin{bmatrix}R|t\end{bmatrix}$) results in the following:
 \begin{equation} \label{eq:relativeFundamntal}
@@ -28,9 +28,9 @@ As already discussed, rotation can be distorted with noise. This can be written 
 R = R_{error} * R_{init} 
 \end{equation}
 where $R_{init}$ is initial rotation matrix constructed from the measured angles and $R_{error}$ is rotation error matrix.
-Looking at this from a different point of view \ref{eq:Rerror} one can interpret it as the multiplication of the two rotation matrices: 
-nne estimated, but close to local optimum initial rotation matrix and the second one responsible for correction of noise error. 
-Instead of on the relative rotation matrix calculation, the primary idea of the algorithm proposed in this thesis is based on the entire rotation matrix calculation, which can be acquired from the essential matrix SVD decomposition, where only the rotation $R_{error}$ can be estimated. Eventually, \ref{eq:relativeFundamntal} can be rewritten as:
+Looking at this from a different point of view equation \ref{eq:Rerror} one can interpret it as the multiplication of the two rotation matrices: 
+one estimated initial rotation matrix (but close to local optimum) and the second one responsible for correction of noise error. 
+Instead of on the relative rotation matrix calculation, the primary idea of the algorithm proposed in this thesis is based on the entire rotation matrix calculation, which can be acquired from the essential matrix SVD decomposition, where only the rotation $R_{error}$ can be estimated. Eventually, equation \ref{eq:relativeFundamntal} can be rewritten as:
 \begin{equation} \label{eq:relativeFundamntalEnhanced}
 {x}_{'}^{T} * K^{-T} * \begin{bmatrix}T\end{bmatrix}_{x} * R_{error} * R_{init} * K^{-1} * x = 0
 \end{equation}
@@ -46,9 +46,9 @@ With such notation one can notice that:
 \begin{equation} \label{eq:alternativeEnhancedEquation}
 {h}_{'}^{T} * G * h = 0
 \end{equation}
-which resembles the already known fundamental(\ref:{eq:fundamntalEquation}) and essential equations (\ref{eq:essentialEquation}). Naturally, $h_{'}$ and h both are expressed in homogenous coordinates. Tt follows from the analysis that G has 6DOF: 3 due to an unknown translation and another 3 due to an unknown correction angles (created by rotation error matrx decomposition). Theoretically, such matrix can be resolved for instance by both 5 and 8-point algorithms. Therefore the standard fundamental and essential equation solvers can be used in order to retrieve both $\begin{bmatrix}T\end{bmatrix}_{x}$ and $R_{error}$.
-The finally estimated $R_{error}$ and calculated $R_{init}$ has to be multiplied in order for the new rotation estimation of R (\ref{eq:Rerror}) to be retrieved.
-Pursuant to Appendix 6 "Multiple View Geometry in Computer Vision"(A6.9.1 \cite{HartleyMultipleView}), the use of Rodigues parametrization for small angles (and noise in initial rotation matrices estimations can be expresed by small angles) the rotation matrix, and thus $R_{error}$, equals approximately to:
+which resembles the already known fundamental (Equation \ref{eq:fundamntalEquation}) and essential equations (\ref{eq:essentialEquation}). Naturally, $h_{'}$ and h both are expressed in homogenous coordinates. Tt follows from the analysis that G has 6DOF: 3 due to an unknown translation and another 3 due to an unknown correction angles (created by rotation error matrix decomposition). Theoretically, such matrix can be resolved for instance by both 5 and 8-point algorithms. Therefore the standard fundamental and essential equation solvers can be used in order to retrieve both $\begin{bmatrix}T\end{bmatrix}_{x}$ and $R_{error}$.
+The finally estimated $R_{error}$ and calculated $R_{init}$ has to be multiplied in order for the new rotation estimation of R (Equation \ref{eq:Rerror}) to be retrieved.
+Pursuant to Appendix 6 ''Multiple View Geometry in Computer Vision''(A6.9.1 \cite{HartleyMultipleView}), the use of Rodrigues parametrisation for small angles (and noise in initial rotation matrices estimations can be expressed by small angles) the rotation matrix, and thus $R_{error}$, equals approximately to:
 \begin{equation} \label{eq:rodiguesError}
 R_{error} \cong 
 \begin{bmatrix*}[c]
@@ -60,7 +60,7 @@ R_{error} \cong
 Such a criterion with a special matrix design can be used when decomposing G to resolve some ambiguity in choosing the proper solution. The standard four solution ambiguity with two possible rotations and translations can be reduced to two possible translation calculations. The concept described constitutes a basis of the implemented, enhanced 8-point and 5-point algorithms.
 
 \subsection{Alternative 3-point algorithm for finding the translation}
-Following the \ref{eq:alternativeEnhancedEquation} it can be stated that:
+Following the equation \ref{eq:alternativeEnhancedEquation} it can be stated that:
 \begin{equation} \label{eq:alternative3point}
 {x}_{'}^{T} * K^{-T} * \begin{bmatrix*}[c]
  0 & -t_{z} & t_{y}\\
@@ -114,63 +114,11 @@ t_{z}
 \end{bmatrix*} 
 = 0
 \end{equation}
-then solved for instance with SVD with only three points. This is a truly fast way of estimating translation for the reconstructed images. However, in such situation the overall accuracy strictly depends on the precise measuerments of camera orientation.
-\section{Pose estimation}
-One of the main goal was to develop a more accurate and faster version of the reconstruction algorithm. That is why the relative pose estimation techniques were used to enrich models with additional points. In general, this approach produces less outliers than the homography merging techniques. This also allows to maintain the scale of the reconstructed images. For any point of the image, which has a corresponding 3D point the following condition is met:
-\begin{equation} \label{eq:projectionEquation}
- x = P * X
-\end{equation}
-where x is image point expressed in homogenous coordinates (x , y , 1) and X homogenous 3D point (X , Y , Z , 1). 
-The projection matrix of the camera design is as follows: 
-\begin{equation} \label{eq:projectionEquation}
- P = K * \begin{bmatrix}R\mid t\end{bmatrix}
-\end{equation}
-\subsection{Rotation enhancements}
-Applying the similar approach to initial pair reconstruction enhancements, it can be noted that:
-\begin{equation} \label{eq:projectionRotError1}
-\begin{array}{rcl}
- x & = & K * \begin{bmatrix}Rinit + dR\mid t\end{bmatrix} * X \\
- x & = & K * \begin{bmatrix}Rinit\mid 0\end{bmatrix} * X + K * \begin{bmatrix}dR\mid t\end{bmatrix} * X \\
- x - K * \begin{bmatrix}Rinit\mid 0\end{bmatrix} & = & K * \begin{bmatrix}dR\mid t\end{bmatrix} * X
-\end{array}
-\end{equation}
-Substituting $x_{m} = x - K * \begin{bmatrix}Rinit\mid 0\end{bmatrix}$ the following is received: 
-\begin{equation} \label{eq:projectionRotError2}
-x_{m} = K * \begin{bmatrix}dR\mid t\end{bmatrix} * X
-\end{equation}
-This can be solved using a standard PNP calculating algorithms. Rotation can be used as an initial solution for the pose estimation in order to focus solely on the rotation error and translation estimation.
-\subsection{Rotation \& translation enhancements}
-Similar to \ref{eq:projectionRotError1}:
-\begin{equation} \label{eq:projectionRotError3}
-\begin{array}{rcl}
- x & = & K * \begin{bmatrix}Rinit + dR\mid Tinit + dt\end{bmatrix} * X \\
- x & = & K * \begin{bmatrix}Rinit\mid Tinit\end{bmatrix} * X + K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X \\
- x - K * \begin{bmatrix}Rinit\mid Tinit\end{bmatrix} & = & K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X
-\end{array}
-\end{equation}
-end in the end by substituting $x_{n} = x - K * \begin{bmatrix}Rinit\mid Tinit\end{bmatrix}$ the following is receivedt: 
-\begin{equation} \label{eq:projectionRotError4}
-x_{n} = K * \begin{bmatrix}dR\mid dt\end{bmatrix} * X
-\end{equation}
-This can also be solved using a standard PNP\cite{website:poseEstimation} calculation algorithm. Rotation and translation can be used as an initial solution for the pose estimation in order to focus solely on the rotation error and translation error estimation.
+then solved for instance with SVD with only three points. This is a truly fast way of estimating translation for the reconstructed images. However, in such situation the overall accuracy strictly depends on the precise measurements of camera orientation.
+
 \section{Known rotations \& translations}
-Where accurate rotations and translations of cameras are known, no aditional pose calculations are needed. Such a situation is interesting, since everything needed for corresponding points triangulation is already known. However, mobile sensor data  measurements are very noisy. In that case Bundle Adjustment can be used in order to refine the measured calculated camera positions and the final 3D cloud reconstruction.
-\section{Reconstruction process strategy}
-Finally, all methods described herein can be combined in different reconstruction strategies. For the initialization of 3D cloud point the following strategies can be used: 
-%TODO zrobić lepszy styl
-\begin{enumerate} 
-\item \textbf{Known rotations and translations}, which theoritcally allows for an up-to-metrical reconstruction
-\item \textbf{Known rotations}, where translation is estimated with an alternative 3-point algorithm
-\item \textbf{Noisy rotations}, where enhanced 8-point fundamental or 5-point essential algorithms are used in order to calculate rotation error and relative translation 
-\item \textbf{Unknown external camera parameters}, where standard 8-point fundamental or 5-point essential algorithms are used in order to calculate rotation and relative translation
-\end{enumerate}
-For the pose estimation the following methodologies can be used:
-\begin{enumerate}
-\item \textbf{Known rotations and translations}, where no additional calculations are required and an up-to-metrical model can be acquired
-\item \textbf{Initial rotation}, where relative translation needs to be calculated
-\item \textbf{Noisy rotation and translation}, where both rotation and translation errors need to be calculated
-\item \textbf{Unknown external camera parameters}, where standard pose estimation has to be used
-\end{enumerate}
+Where accurate rotations and translations of cameras are known, no additional pose calculations are needed. Such a situation is interesting, since everything needed for corresponding points triangulation is already known. However, mobile sensor data  measurements are very noisy. In that case Bundle Adjustment can be used in order to refine the measured calculated camera positions and the final 3D cloud reconstruction.
+
 
 % ---------------------------------------------------------------------------
 %: ----------------------- end of thesis sub-document ------------------------

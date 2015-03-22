@@ -1,0 +1,9 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{H}\relax \glsresetentrylist %
+\glossentry{h}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{nslats}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\end{theglossary}\glossarypostamble

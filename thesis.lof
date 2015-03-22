@@ -1,34 +1,72 @@
 \select@language {english}
-\select@language {english}
-\select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Corresponding matches in attached CD's $"Warsaw Gallery Dataset"$\relax }}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {2}{\ignorespaces RANSAC fitting for 2D image\cite {website:ransac}\relax }}{6}{figure.caption.6}
-\contentsline {figure}{\numberline {3}{\ignorespaces Epipolar lines found in an image of a vase \cite {HartleyMultipleView}\relax }}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {4}{\ignorespaces Slide from Photogrammetric Computer Vision from 2013/2014 winter semester at TU Berlin\relax }}{8}{figure.caption.8}
-\contentsline {figure}{\numberline {5}{\ignorespaces Slide from Photogrammetric Computer Vision 2013/2014 winter semester at TU Berlin\relax }}{12}{figure.caption.9}
-\contentsline {figure}{\numberline {6}{\ignorespaces Kalmann algorithm overview\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Model of the perspective camera with two coordinate systems: external W and internal K. Image taken from \cite {Cyganek3dVision}.\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces OpenCV camera calibration board. Image taken from \cite {website:cameraCalibration}.\relax }}{7}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Corresponding matches in ''Warsaw Gallery Dataset'' found for SIFT features and brute-force matcher using written by author desktop application\relax }}{8}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Outliers found during matching correspondences in two architecture pictures}}{8}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Epipolar geometry schematic. Picture from \cite {Cyganek3dVision}. \relax }}{9}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Epipolar lines found in an image of a vase}}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces RANSAC fitting for 2D image}}{11}{figure.caption.16}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The four possible decompositions of \textbf {E}}}{13}{figure.caption.17}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces 3D reconstruction from 2 images}}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Bundle Adjustment process overview}}{16}{figure.caption.19}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Getting rotation angles from gravity vector}}{18}{figure.caption.20}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Difference in readings of Android's acceleration and linear acceleration}}{19}{figure.caption.21}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Android ''Sensor Enhanced Image Camera'' User Interface overview\relax }}{25}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Android "Sensor Enhanced Image Camera" User Interface overview\relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Schematic of test environment for capturing images along Sensor Fusion data}}{34}{figure.caption.24}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Image of testing environment for capturing images along Sensor Fusion data}}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Image of marker used to indicate position for test capturing.\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Points matches selected by the author (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Points matches selected by the author with additional outliers (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Automatically matched points with usage of Sift descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.29}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Points matches selected by the author (Images 0.jpg and 2.jpg).\relax }}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Points matches selected by the author with additional outliers (Images 0.jpg and 2.jpg).\relax }}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Automatically matched points with usage of Sift descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).\relax }}{37}{figure.caption.32}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Rotation tests comparison in Sensor only based approach - 1st example}}{38}{figure.caption.33}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Rotation tests comparison in Sensor only based approach -2nd example}}{38}{figure.caption.34}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Screenshot from table of results conducted on Sensor Fusion data based translation estimation during walking with smartphone. In red are indicated values, which were highly unexpected, especially in Y axis, which is perpendicular to earth surface\relax }}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Visualisation of epipolar lines for 8-point Fundamental matrix estimation - 1st example}}{40}{figure.caption.36}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Visualisation of epipolar lines for 8-point Fundamental matrix estimation with outliers - 1st example}}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Visualisation of epipolar lines for 8-point Fundamental matrix estimation with outliers from automiatically matched correspondences - 1st example}}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Visualisation of epipolar lines calculated from rotation and translation estimated from Sensor Fusion readings - 1st example}}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Visualisation of epipolar lines for 8-point Fundamental matrix estimation - 1st example}}{41}{figure.caption.40}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Visualisation of epipolar lines for 8-point Fundamental matrix estimation with outliers - 1st example}}{41}{figure.caption.41}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Visualisation of epipolar lines for 8-point Fundamental matrix estimation with outliers from automiatically matched correspondences - 1st example}}{42}{figure.caption.42}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Visualisation of epipolar lines calculated from rotation and translation estimated from Sensor Fusion readings - 2nd example}}{42}{figure.caption.43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Chart showing the sum of Sampson Errors in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{37}{figure.caption.13}
-\contentsline {figure}{\numberline {2}{\ignorespaces Chart showing per point Sampson Error in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{39}{figure.caption.14}
-\contentsline {figure}{\numberline {3}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 300 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{40}{figure.caption.15}
-\contentsline {figure}{\numberline {4}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3) Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{41}{figure.caption.16}
-\contentsline {figure}{\numberline {5}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 1000 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{42}{figure.caption.17}
-\contentsline {figure}{\numberline {6}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{43}{figure.caption.18}
-\contentsline {figure}{\numberline {7}{\ignorespaces Execution time of the proposed algorithms(1024x768pixels) per initial SIFT feature set size\relax }}{44}{figure.caption.19}
-\contentsline {figure}{\numberline {8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{47}{figure.caption.20}
-\contentsline {figure}{\numberline {9}{\ignorespaces 3D point clouds before Bundle Adjustment (upper) and after (bottom) for enhanced 8-point with enhanced pose estimation. Warsaw University of Technology dataset with 1000 SIFT corresponding features (left - front, right - side)\relax }}{49}{figure.caption.21}
-\contentsline {figure}{\numberline {10}{\ignorespaces Total reconstruction execution time (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{50}{figure.caption.22}
-\contentsline {figure}{\numberline {11}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{51}{figure.caption.23}
-\contentsline {figure}{\numberline {12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{53}{figure.caption.24}
-\contentsline {figure}{\numberline {13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{54}{figure.caption.25}
-\contentsline {figure}{\numberline {14}{\ignorespaces Fail test case of Standard 8-point triangulation(left) in comparison to fortunate reconstruction(right)\relax }}{54}{figure.caption.26}
-\contentsline {figure}{\numberline {15}{\ignorespaces Pose estimation methods comparison (Views from front and side). Left: Normal Pose Estimation, right: Enhanced Rotation and Translation Pose Estimation\relax }}{55}{figure.caption.27}
-\contentsline {figure}{\numberline {16}{\ignorespaces Reconstruction results from known translations and rotations from different angles. The upper one shows the front face of building, the others present views from side angles. In the reconstructed model many outliers are present.\relax }}{56}{figure.caption.28}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Visualisation of epipolar lines for 3-point translation estimation and Sensor Fusion rotation approach - 1st example}}{46}{figure.caption.44}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Visualisation of epipolar lines for 3-point translation estimation and Sensor Fusion rotation approach - 2nd example}}{47}{figure.caption.45}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Rotation tests comparison for all proposed approaches - 1st example}}{53}{figure.caption.46}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Rotation tests comparison for all proposed approaches - 2nd example}}{54}{figure.caption.47}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparison of epipolar lines for 8-point standard and enhanced versions - 1st example}}{54}{figure.caption.48}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Comparison of epipolar lines for 5-point standard and enhanced versions - 1st example}}{55}{figure.caption.49}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Comparison of epipolar lines for 8-point standard and enhanced versions - 2nd example}}{56}{figure.caption.50}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Comparison of epipolar lines for 5-point standard and enhanced versions - 2nd example}}{57}{figure.caption.51}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Sum of Sampson Error depending on evaluated method}}{63}{figure.caption.52}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Sampson Error per corresponding point depending on evaluated method}}{64}{figure.caption.53}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (1st group)}}{65}{figure.caption.54}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (2nd group)}}{66}{figure.caption.55}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (1st group)}}{67}{figure.caption.56}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (2nd group)}}{68}{figure.caption.57}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Execution time of the proposed algorithms depending on initial SIFT feature set size}}{69}{figure.caption.58}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{71}{figure.caption.59}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Total reconstruction execution time per SIFT features set size}}{73}{figure.caption.60}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment per SIFT features set size}}{74}{figure.caption.61}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces 3D point clouds before and after Bundle Adjustment for enhanced 8-point with enhanced pose estimation}}{75}{figure.caption.62}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features}}{77}{figure.caption.63}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features}}{78}{figure.caption.64}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Fail test case of Standard 8-point triangulation in comparison to fortunate reconstruction}}{78}{figure.caption.65}
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Pose estimation methods comparison}}{79}{figure.caption.66}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Reconstruction results from known translations and rotations from different angles}}{80}{figure.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Reconstruction results of ''Gate'' dataset}}{88}{figure.caption.73}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Reconstruction results of ''Pole'' dataset}}{89}{figure.caption.74}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Reconstruction results of ''Gallery Back'' dataset}}{90}{figure.caption.75}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Reconstruction results of ''Gallery Front'' dataset}}{91}{figure.caption.76}

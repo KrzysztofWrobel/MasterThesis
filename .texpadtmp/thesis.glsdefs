@@ -1,0 +1,660 @@
+\ifglsentryexists{ba}{}%
+{%
+\gls@defglossaryentry{ba}%
+{%
+name={BA},%
+sort={BA},%
+type={main},%
+first={Bundle Adjustment (BA)},%
+firstplural={Bundle Adjustments(BAs)},%
+text={BA},%
+plural={BAs},%
+description={Bundle Adjustment},%
+descriptionplural={Bundle Adjustment\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bundle Adjustment},%
+longplural={Bundle Adjustments},%
+short={BA},%
+shortplural={BAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ransac}{}%
+{%
+\gls@defglossaryentry{ransac}%
+{%
+name={RANSAC},%
+sort={RANSAC},%
+type={main},%
+first={RANdom SAmple Consensus (RANSAC)},%
+firstplural={RANdom SAmple Consensuss(RANSACs)},%
+text={RANSAC},%
+plural={RANSACs},%
+description={RANdom SAmple Consensus},%
+descriptionplural={RANdom SAmple Consensus\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={RANdom SAmple Consensus},%
+longplural={RANdom SAmple Consensuss},%
+short={RANSAC},%
+shortplural={RANSACs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{svd}{}%
+{%
+\gls@defglossaryentry{svd}%
+{%
+name={SVD},%
+sort={SVD},%
+type={main},%
+first={Singular Value Decomposition (SVD)},%
+firstplural={Singular Value Decompositions(SVDs)},%
+text={SVD},%
+plural={SVDs},%
+description={Singular Value Decomposition},%
+descriptionplural={Singular Value Decomposition\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Singular Value Decomposition},%
+longplural={Singular Value Decompositions},%
+short={SVD},%
+shortplural={SVDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sfm}{}%
+{%
+\gls@defglossaryentry{sfm}%
+{%
+name={SfM},%
+sort={SfM},%
+type={main},%
+first={Structure from motion (SfM)},%
+firstplural={Structure from motions(SfMs)},%
+text={SfM},%
+plural={SfMs},%
+description={Structure from motion},%
+descriptionplural={Structure from motion\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Structure from motion},%
+longplural={Structure from motions},%
+short={SfM},%
+shortplural={SfMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sift}{}%
+{%
+\gls@defglossaryentry{sift}%
+{%
+name={SIFT},%
+sort={SIFT},%
+type={main},%
+first={Scale-invariant feature transform (SIFT)},%
+firstplural={Scale-invariant feature transforms(SIFTs)},%
+text={SIFT},%
+plural={SIFTs},%
+description={Scale-invariant feature transform},%
+descriptionplural={Scale-invariant feature transform\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Scale-invariant feature transform},%
+longplural={Scale-invariant feature transforms},%
+short={SIFT},%
+shortplural={SIFTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ar}{}%
+{%
+\gls@defglossaryentry{ar}%
+{%
+name={AR},%
+sort={AR},%
+type={main},%
+first={Augmented Reality (AR)},%
+firstplural={Augmented Realitys(ARs)},%
+text={AR},%
+plural={ARs},%
+description={Augmented Reality},%
+descriptionplural={Augmented Reality\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Augmented Reality},%
+longplural={Augmented Realitys},%
+short={AR},%
+shortplural={ARs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vr}{}%
+{%
+\gls@defglossaryentry{vr}%
+{%
+name={VR},%
+sort={VR},%
+type={main},%
+first={Virtual Reality (VR)},%
+firstplural={Virtual Realitys(VRs)},%
+text={VR},%
+plural={VRs},%
+description={Virtual Reality},%
+descriptionplural={Virtual Reality\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Reality},%
+longplural={Virtual Realitys},%
+short={VR},%
+shortplural={VRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{3d}{}%
+{%
+\gls@defglossaryentry{3d}%
+{%
+name={3D},%
+sort={3D},%
+type={main},%
+first={3 dimension (3D)},%
+firstplural={3 dimensions(3Ds)},%
+text={3D},%
+plural={3Ds},%
+description={3 dimension},%
+descriptionplural={3 dimension\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={3 dimension},%
+longplural={3 dimensions},%
+short={3D},%
+shortplural={3Ds},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{1g}{}%
+{%
+\gls@defglossaryentry{1g}%
+{%
+name={1G},%
+sort={1G},%
+type={main},%
+first={1 gravity constant value (1G)},%
+firstplural={1 gravity constant values(1Gs)},%
+text={1G},%
+plural={1Gs},%
+description={1 gravity constant value},%
+descriptionplural={1 gravity constant value\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={1 gravity constant value},%
+longplural={1 gravity constant values},%
+short={1G},%
+shortplural={1Gs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mems}{}%
+{%
+\gls@defglossaryentry{mems}%
+{%
+name={MEMS},%
+sort={MEMS},%
+type={main},%
+first={Micro Electro-Mechanical System (MEMS)},%
+firstplural={Micro Electro-Mechanical Systems(MEMSs)},%
+text={MEMS},%
+plural={MEMSs},%
+description={Micro Electro-Mechanical System},%
+descriptionplural={Micro Electro-Mechanical System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Micro Electro-Mechanical System},%
+longplural={Micro Electro-Mechanical Systems},%
+short={MEMS},%
+shortplural={MEMSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={main},%
+first={Application Programming interface (API)},%
+firstplural={Application Programming interfaces(APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming interface},%
+descriptionplural={Application Programming interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming interface},%
+longplural={Application Programming interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sdk}{}%
+{%
+\gls@defglossaryentry{sdk}%
+{%
+name={SDK},%
+sort={SDK},%
+type={main},%
+first={Software Development Kit (SDK)},%
+firstplural={Software Development Kits(SDKs)},%
+text={SDK},%
+plural={SDKs},%
+description={Software Development Kit},%
+descriptionplural={Software Development Kit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Software Development Kit},%
+longplural={Software Development Kits},%
+short={SDK},%
+shortplural={SDKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{imu}{}%
+{%
+\gls@defglossaryentry{imu}%
+{%
+name={IMU},%
+sort={IMU},%
+type={main},%
+first={Inertial Measurement Unit (IMU)},%
+firstplural={Inertial Measurement Units(IMUs)},%
+text={IMU},%
+plural={IMUs},%
+description={Inertial Measurement Unit},%
+descriptionplural={Inertial Measurement Unit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Inertial Measurement Unit},%
+longplural={Inertial Measurement Units},%
+short={IMU},%
+shortplural={IMUs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dof}{}%
+{%
+\gls@defglossaryentry{dof}%
+{%
+name={DOF},%
+sort={DOF},%
+type={main},%
+first={Degree of freedom (DOF)},%
+firstplural={Degree of freedoms(DOFs)},%
+text={DOF},%
+plural={DOFs},%
+description={Degree of freedom},%
+descriptionplural={Degree of freedom\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Degree of freedom},%
+longplural={Degree of freedoms},%
+short={DOF},%
+shortplural={DOFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pnp}{}%
+{%
+\gls@defglossaryentry{pnp}%
+{%
+name={PNP},%
+sort={PNP},%
+type={main},%
+first={Perspective-n-Point (PNP)},%
+firstplural={Perspective-n-Points(PNPs)},%
+text={PNP},%
+plural={PNPs},%
+description={Perspective-n-Point},%
+descriptionplural={Perspective-n-Point\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Perspective-n-Point},%
+longplural={Perspective-n-Points},%
+short={PNP},%
+shortplural={PNPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{json}{}%
+{%
+\gls@defglossaryentry{json}%
+{%
+name={JSON},%
+sort={JSON},%
+type={main},%
+first={JavaScript Object Notation (JSON)},%
+firstplural={JavaScript Object Notations(JSONs)},%
+text={JSON},%
+plural={JSONs},%
+description={JavaScript Object Notation},%
+descriptionplural={JavaScript Object Notation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={JavaScript Object Notation},%
+longplural={JavaScript Object Notations},%
+short={JSON},%
+shortplural={JSONs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sd}{}%
+{%
+\gls@defglossaryentry{sd}%
+{%
+name={SD},%
+sort={SD},%
+type={main},%
+first={Secure Digital (SD)},%
+firstplural={Secure Digitals(SDs)},%
+text={SD},%
+plural={SDs},%
+description={Secure Digital},%
+descriptionplural={Secure Digital\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Secure Digital},%
+longplural={Secure Digitals},%
+short={SD},%
+shortplural={SDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pcl}{}%
+{%
+\gls@defglossaryentry{pcl}%
+{%
+name={PCL},%
+sort={PCL},%
+type={main},%
+first={Point Cloud Library (PCL)},%
+firstplural={Point Cloud Librarys(PCLs)},%
+text={PCL},%
+plural={PCLs},%
+description={Point Cloud Library},%
+descriptionplural={Point Cloud Library\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Point Cloud Library},%
+longplural={Point Cloud Librarys},%
+short={PCL},%
+shortplural={PCLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{lgpl}{}%
+{%
+\gls@defglossaryentry{lgpl}%
+{%
+name={LGPL},%
+sort={LGPL},%
+type={main},%
+first={The GNU Lesser General Public License (LGPL)},%
+firstplural={The GNU Lesser General Public Licenses(LGPLs)},%
+text={LGPL},%
+plural={LGPLs},%
+description={The GNU Lesser General Public License},%
+descriptionplural={The GNU Lesser General Public License\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The GNU Lesser General Public License},%
+longplural={The GNU Lesser General Public Licenses},%
+short={LGPL},%
+shortplural={LGPLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{angelsperarea}{}%
+{%
+\gls@defglossaryentry{angelsperarea}%
+{%
+name={$a$},%
+sort={$a$},%
+type={main},%
+first={$a$},%
+firstplural={$a$s},%
+text={$a$},%
+plural={$a$s},%
+description={The number of angels per unit area},%
+descriptionplural={The number of angels per unit area},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{numofangels}{}%
+{%
+\gls@defglossaryentry{numofangels}%
+{%
+name={$N$},%
+sort={$N$},%
+type={main},%
+first={$N$},%
+firstplural={$N$s},%
+text={$N$},%
+plural={$N$s},%
+description={The number of angels per needle point},%
+descriptionplural={The number of angels per needle point},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{areaofneedle}{}%
+{%
+\gls@defglossaryentry{areaofneedle}%
+{%
+name={$A$},%
+sort={$A$},%
+type={main},%
+first={$A$},%
+firstplural={$A$s},%
+text={$A$},%
+plural={$A$s},%
+description={The area of the needle point},%
+descriptionplural={The area of the needle point},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

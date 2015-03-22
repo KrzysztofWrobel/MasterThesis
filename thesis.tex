@@ -12,8 +12,8 @@
 %: Style file for Latex
 % Most style definitions are in the external file PhDthesisPSnPDF.
 % In this template package, it can be found in ./Latex/Classes/
-\documentclass[twoside,11pt]{Latex/Classes/PhDthesisPSnPDF}
-
+\documentclass[twoside,11pt, notitlepage]{Latex/Classes/PhDthesisPSnPDF}
+\setcitestyle{square}
 
 %: Macro file for Latex
 % Macros help you summarise frequently repeated Latex commands.
@@ -25,6 +25,8 @@
 \usepackage{pgfplots}
 \usepackage{adjustbox}
 \usepackage{enumitem}
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
 
 \pgfplotsset{compat=newest} % Allows to place the legend below plot
 \usepgfplotslibrary{units} % Allows to enter the units nicely
@@ -128,10 +130,8 @@
 \ifpdf
   \author{\begin{tabular}{r@{ }l} 
 Author:      & \href{mailto:krzysztof@velocicaptor.com}{Krzysztof Wr{\'o}bel} \\[1ex] 
-Supervisors: & Prof. Dr.-Ing. Olaf Hellwich \\
+Supervisor: & Prof. Dr.-Ing. Olaf Hellwich \\
              & from Technische Universit{\"a}t Berlin\\
-             & Prof. Dr.-Ing. Jan Zabrodzki \\ 
-             & from Warsaw University of Technology \\
 \end{tabular}}
 %  \cityofbirth{born in XYZ} % uncomment this if your university requires this
 %  % If city of birth is required, also uncomment 2 sections in PhDthesisPSnPDF
@@ -149,8 +149,7 @@ Supervisors: & Prof. Dr.-Ing. Olaf Hellwich \\
   \\
   \begin{tabular}{r@{ }l} 
 Author:      & Krzysztof Wr{\'o}bel \\[1ex] 
-Supervisors: & Prof. Dr.-Ing. Olaf Hellwich\\
-             & Prof. Dr.-Ing. Jan Zabrodzki (Warsaw University of Technology)\\[1ex]
+Supervisor: & Prof. Dr.-Ing. Olaf Hellwich\\ [1ex]
 \end{tabular}}
 
 %  \cityofbirth{born in XYZ}
@@ -173,56 +172,24 @@ Supervisors: & Prof. Dr.-Ing. Olaf Hellwich\\
 %: --------------------------------------------------------------
 %:                  FRONT MATTER: dedications, abstract,..
 % --------------------------------------------------------------
+%: ----------------------- glossary ------------------------
+%\include{0_frontmatter/glossary} 
+%\include{0_frontmatter/notation} 
+\makeindex
+\newglossary[slg]{symbols}{syi}{syg}{List of symbols}
+
+\makeglossaries
+\loadglsentries{0_frontmatter/notation}
+\loadglsentries{0_frontmatter/glossary}
 
 \begin{document}
+
 
 %\language{english}
 
 % sets line spacing
 \renewcommand\baselinestretch{1.2}
 \baselineskip=18pt plus1pt
-
-
-%: ----------------------- generate cover page ------------------------
-
-\maketitle  % command to print the title page with above variables
-
-
-%: ----------------------- cover page back side ------------------------
-% Your research institution may require reviewer names, etc.
-% This cover back side is required by Dresden Med Fac; uncomment if needed.
-
-\section*{\vfill{} \thispagestyle{empty}
-Erkl{\"a}rung}
-
-Hiermit erkl{\"a}re ich, dass ich diese Arbeit selbstst{\"a}ndig erstellt
-und keine anderen als die angegebenen Hilfsmittel benutzt habe.
-\bigskip{}
-
-\noindent Berlin, den \today{}
-\vspace{2.5cm}
-
-\noindent Krzysztof Wr{\'o}bel \cleardoublepage{}
-
-
-
-%: ----------------------- abstract ------------------------
-
-% Your institution may have specific regulations if you need an abstract and where it is to be placed in the document. The default here is just after title.
-
-\include{0_frontmatter/abstract}
-
-% The original template provides and abstractseparate environment, if your institution requires them to be separate. I think it's easier to print the abstract from the complete thesis by restricting printing to the relevant page.
-% \begin{abstractseparate}
-%   \input{Abstract/abstract}
-% \end{abstractseparate}
-
-
-%: ----------------------- tie in front matter ------------------------
-
-%\frontmatter
-%%\include{0_frontmatter/dedication}
-%\include{0_frontmatter/acknowledgement}
 
 
 %: ----------------------- contents ------------------------
@@ -238,17 +205,17 @@ und keine anderen als die angegebenen Hilfsmittel benutzt habe.
 \listoffigures	% print list of figures
 \listoftables  % print list of tables
 
-
-%: ----------------------- glossary ------------------------
-\include{0_frontmatter/glossary} 
-
-%\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
-\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
-
-\printnomenclature[1.5cm] % [] = distance between entry and 
+\clearpage
+\glsaddall
+\printglossary[type=\acronymtype,title=Abbreviations]
 \label{nom} % target name for links to glossary
+\clearpage
 
-\end{footnotesize}
+\printglossary[title=Nomenclature]
+%Print list of symbols
+\printglossary[type=symbols,style=long4col]
+\clearpage
+
 %\end{multicols}
 
 %\end{multicols}
@@ -274,8 +241,11 @@ und keine anderen als die angegebenen Hilfsmittel benutzt habe.
 \include{1_introduction/introduction}	% background information
 \include{2/fundamentals}						% aims of the project
 \include{3/related_work}			
-\include{5/concept}
+%\include{5/concept}
 \include{6/implementation}
+\include{5/reconstruction_only_sensors}
+\include{6/reconstruction_3_point}
+\include{7/reconstruction_5_8point_enhanced}
 \include{7/evaluation}
 \include{8/conclusion}              
 \include{9/materials_methods}        % description of lab methods
@@ -298,7 +268,7 @@ und keine anderen als die angegebenen Hilfsmittel benutzt habe.
 %\begin{multicols}{2} % \begin{multicols}{ # columns}[ header text][ space]
 \begin{footnotesize} % tiny(5) < scriptsize(7) < footnotesize(8) < small (9)
 
-\bibliographystyle{Latex/Classes/PhDbiblio-url2} % Title is link if provided
+\bibliographystyle{Latex/Classes/PhDbiblio-url} % Title is link if provided
 \renewcommand{\bibname}{References} % changes the header; default: Bibliography
 \nocite{*}
 
@@ -331,7 +301,7 @@ und keine anderen als die angegebenen Hilfsmittel benutzt habe.
 %\include{0_frontmatter/abstract}
 
 %: Declaration of originality
-\include{9_backmatter/declaration}
+%\include{9_backmatter/declaration}
 
 
 \end{document}

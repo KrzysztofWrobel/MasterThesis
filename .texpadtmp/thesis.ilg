@@ -7,8 +7,8 @@ Scanning style file /usr/local/texlive/2014/texmf-dist/makeindex/nomencl/nomencl
 ** Input style error (file = /usr/local/texlive/2014/texmf-dist/makeindex/nomencl/nomencl.ist, line = 72):
    -- Unknown specifier lethead_flag.
 ...done (10 attributes redefined, 3 ignored).
-Scanning input file /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.nlo....done (19 entries accepted, 0 rejected).
-Sorting entries....done (82 comparisons).
-Generating output file /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.nls....done (38 lines written, 0 warnings).
-Output written in /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.nls.
-Transcript written in /Users/krzysztofwrobel/Documents/MasterThesis/.texpadtmp/thesis.ilg.
+Scanning input file /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.nlo....done (24 entries accepted, 0 rejected).
+Sorting entries....done (110 comparisons).
+Generating output file /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.nls....done (49 lines written, 0 warnings).
+Output written in /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.nls.
+Transcript written in /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.ilg.

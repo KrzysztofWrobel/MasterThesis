@@ -2,37 +2,48 @@
 
  \nomgroup{A}
 
+  \item [{$\sigma$}]\begingroup The total mass of angels per unit area\nomeqref {1}
+		\nompageref{ix}
+  \item [{$A$}]\begingroup The area of the needle point\nomeqref {1}
+		\nompageref{ix}
+  \item [{$a$}]\begingroup The number of angels per unit area\nomeqref {1}
+		\nompageref{ix}
+  \item [{$m$}]\begingroup The mass of one angel\nomeqref {1}
+		\nompageref{ix}
+  \item [{$N$}]\begingroup The number of angels per needle point\nomeqref {1}
+		\nompageref{ix}
   \item [{1G}]\begingroup 1 gravity constant value\nomeqref {0}
-		\nompageref{1}
-  \item [{3D}]\begingroup 3 dimension\nomeqref {0}\nompageref{1}
-  \item [{API}]\begingroup Applicatioan Programming interface\nomeqref {0}
-		\nompageref{1}
-  \item [{AR}]\begingroup Augmented Reality\nomeqref {0}\nompageref{1}
-  \item [{BA}]\begingroup Bundle Adjustment\nomeqref {0}\nompageref{1}
-  \item [{DOF}]\begingroup Degree of freedom\nomeqref {0}\nompageref{1}
+		\nompageref{ix}
+  \item [{3D}]\begingroup 3 dimension\nomeqref {0}\nompageref{ix}
+  \item [{API}]\begingroup Application Programming interface\nomeqref {0}
+		\nompageref{ix}
+  \item [{AR}]\begingroup Augmented Reality\nomeqref {0}\nompageref{ix}
+  \item [{BA}]\begingroup Bundle Adjustment\nomeqref {0}\nompageref{ix}
+  \item [{DOF}]\begingroup Degree of freedom\nomeqref {0}
+		\nompageref{ix}
   \item [{IMU}]\begingroup Inertial Measurement Unit\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{LGPL}]\begingroup The GNU Lesser General Public License\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{MEMS}]\begingroup Micro Electro-Mechanical System\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{PCL}]\begingroup Point Cloud Library\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{PNP}]\begingroup Perspective-n-Point\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{RANSAC}]\begingroup RANdom SAmple Consensus\nomeqref {0}
-		\nompageref{1}
-  \item [{SD}]\begingroup Secure Digital\nomeqref {0}\nompageref{1}
+		\nompageref{ix}
+  \item [{SD}]\begingroup Secure Digital\nomeqref {0}\nompageref{ix}
   \item [{SDK}]\begingroup Software Development Kit\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{SfM}]\begingroup Structure from motion\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{SIFT}]\begingroup Scale-invariant feature transform\nomeqref {0}
-		\nompageref{1}
+		\nompageref{ix}
   \item [{SVD}]\begingroup Singular Value Decomposition\nomeqref {0}
-		\nompageref{1}
-  \item [{VR}]\begingroup Virtual Reality\nomeqref {0}\nompageref{1}
+		\nompageref{ix}
+  \item [{VR}]\begingroup Virtual Reality\nomeqref {0}\nompageref{ix}
 
 \end{thenomenclature}

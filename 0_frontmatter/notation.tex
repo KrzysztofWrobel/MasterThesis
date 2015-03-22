@@ -1,0 +1,71 @@
+% this file is called up by thesis.tex
+% content in this file will be fed into the main document
+
+% Glossary entries are defined with the command \nomenclature{1}{2}
+% 1 = Entry name, e.g. abbreviation; 2 = Explanation
+% You can place all explanations in this separate file or declare them in the middle of the text. Either way they will be collected in the glossary.
+\markboth{\MakeUppercase{Notation}}{\MakeUppercase{Notation}}
+
+% nomenclature:
+\newglossaryentry{angelsperarea}{
+  name = $a$ ,
+  description = The number of angels per unit area,
+}
+\newglossaryentry{numofangels}{
+  name = $N$ ,
+  description = The number of angels per needle point
+}
+\newglossaryentry{areaofneedle}{
+  name = $A$ ,
+  description = The area of the needle point
+}
+
+\newglossaryentry{nslats}{
+name=$nslats$,
+description={The number of slats},
+sort=S, type=symbols, symbol=[$-$]}
+
+%\newglossaryentry{mat_mot}{
+%    name = $\begin{bmatrix}R\mid t\end{bmatrix}$ ,
+%    description = Short notation for concatenation of matrices
+%}
+
+%\newglossaryentry{mat_mot}{
+%    name = ${A}^{T}$ ,
+%    description = Short notation for concatenation of matrices
+%}
+
+\newacronym{a}{\textbf{A}}{Matrix}
+\newacronym{ab}{\textbf{AB}}{Matrices multiplication}
+\newacronym{f_mat}{F}{Fundamental matrix}
+\newacronym{e_mat}{E}{Essential matrix}
+\newacronym{k_mat}{K}{Internal camera matrix}
+\newacronym{convol}{*}{Convolution operator}
+\newacronym{r}{R}{rotation matrix}
+\newacronym{t}{T}{translation matrix}
+\newacronym{p}{P}{perspective camera matrix}
+\newacronym{m}{M}{Camera matrix}
+\newacronym{mi}{Mi}{Intrinsic parameters of a camera}
+\newacronym{me}{Me}{Extrinsic parameters of a camera}
+\newacronym{i}{I}{Identity matrix; image treated as a matrix}
+\newacronym{0}{0}{zero matrix}
+
+
+
+
+%% required to print nomenclature name to page header
+%\begin{center}% used the environment to augment the vertical space
+%% between the caption and the table
+%\begin{tabular}{r c p{10cm} }
+%$R_{i}$ & $\triangleq$ & Revenue at store $i$\\
+%$i$ & $\triangleq$ & index value for store locations\\
+%${T}_{c}$ & $\triangleq$ & A very long description of this specific variable and is needed in the research and looks good when wrapped and aligned to the left.\\
+%$TC$ & $\triangleq$ & Total overall cost(\$)\\  
+%\multicolumn{3}{c}{}\\
+%\multicolumn{3}{c}{\underline{Decision Variables}}\\
+%\multicolumn{3}{c}{}\\
+%$y_f$ & $=$ & \(\left\{\begin{array}{rl}
+%1,  & \text{if Supplier located at site $f$ is open} \\
+%0,  & \text{otherwise} \end{array} \right.\)\\
+%\end{tabular}
+%\end{center}

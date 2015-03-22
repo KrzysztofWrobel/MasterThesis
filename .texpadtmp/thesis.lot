@@ -1,6 +1,4 @@
 \select@language {english}
-\select@language {english}
-\select@language {ngerman}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -9,7 +7,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Efficeincy table of proposed methods for 100 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time\relax }}{63}{table.caption.31}
-\contentsline {table}{\numberline {8.2}{\ignorespaces Efficeincy table of proposed methods for 500 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time\relax }}{63}{table.caption.32}
-\contentsline {table}{\numberline {8.3}{\ignorespaces Efficeincy table of proposed methods for 1000 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time\relax }}{63}{table.caption.33}
-\contentsline {table}{\numberline {8.4}{\ignorespaces Efficeincy table of proposed methods for 5000 SIFT features in Warsaw Univeristy of technology dataset. Colums: Total Sampson Error, Avarage Sampson error per point, Amount of points left after outliers removal, Execution time\relax }}{64}{table.caption.34}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {10.1}{\ignorespaces Efficiency table of proposed methods for 100 SIFT features in Warsaw University of technology dataset}}{88}{table.caption.67}
+\contentsline {table}{\numberline {10.2}{\ignorespaces Efficiency table of proposed methods for 500 SIFT features in Warsaw University of technology dataset}}{88}{table.caption.68}
+\contentsline {table}{\numberline {10.3}{\ignorespaces Efficiency table of proposed methods for 1000 SIFT features in Warsaw University of technology dataset}}{88}{table.caption.69}
+\contentsline {table}{\numberline {10.4}{\ignorespaces Efficiency table of proposed methods for 5000 SIFT features in Warsaw University of technology dataset.}}{88}{table.caption.70}

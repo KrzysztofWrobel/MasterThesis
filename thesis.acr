@@ -1,0 +1,53 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{glssymbols}\relax \glsresetentrylist %
+\glossentry{1g}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{3d}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{A}\relax \glsresetentrylist %
+\glossentry{api}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{ar}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{B}\relax \glsresetentrylist %
+\glossentry{ba}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{dof}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{I}\relax \glsresetentrylist %
+\glossentry{imu}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{J}\relax \glsresetentrylist %
+\glossentry{json}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{L}\relax \glsresetentrylist %
+\glossentry{lgpl}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{mems}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{pcl}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{pnp}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{R}\relax \glsresetentrylist %
+\glossentry{ransac}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{sd}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{sdk}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{sfm}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{sift}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\glossentry{svd}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
+\glsgroupheading{V}\relax \glsresetentrylist %
+\glossentry{vr}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{viii}}}%
+\end{theglossary}\glossarypostamble

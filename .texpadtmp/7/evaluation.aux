@@ -1,59 +1,75 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
 \FN@pp@footnotehinttrue 
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Evaluation}{36}{chapter.6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Structure From Motion with Sensor Fusion}{59}{chapter.8}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Acquiring datasets}{36}{section.6.1}}
+\newlabel{chap:structure_from_motion}{{8}{59}{Structure From Motion with Sensor Fusion}{chapter.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Concept}{59}{section.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}Reconstruction process strategy}{59}{subsection.8.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Pose estimation}{60}{subsection.8.1.2}}
+\newlabel{eq:projectionEquation}{{8.1}{60}{Pose estimation}{equation.8.1.1}{}}
+\newlabel{eq:projectionEquation}{{8.2}{60}{Pose estimation}{equation.8.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2.1}Rotation enhancements}{60}{subsubsection.8.1.2.1}}
+\newlabel{eq:projectionRotError1}{{8.3}{60}{Rotation enhancements}{equation.8.1.3}{}}
+\citation{website:poseEstimation}
+\newlabel{eq:projectionRotError2}{{8.4}{61}{Rotation enhancements}{equation.8.1.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.1.2.2}Rotation \& translation enhancements}{61}{subsubsection.8.1.2.2}}
+\newlabel{eq:projectionRotError3}{{8.5}{61}{Rotation \& translation enhancements}{equation.8.1.5}{}}
+\newlabel{eq:projectionRotError4}{{8.6}{61}{Rotation \& translation enhancements}{equation.8.1.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Implementation}{61}{section.8.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2.1}Enhancing pose estimation}{61}{subsection.8.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Evaluation}{62}{section.8.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.1}Acquiring datasets}{62}{subsection.8.3.1}}
 \citation{website:relativePoseLibrary}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Test Environment}{37}{section.6.2}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Testing initial pair reconstrucion methods}{37}{section.6.3}}
-\newlabel{sec:Testin2Views}{{6.3}{37}{Testing initial pair reconstrucion methods}{section.6.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Accuracy - Epipolar lines correspondence}{37}{subsection.6.3.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Chart showing the sum of Sampson Errors in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{38}{figure.caption.14}}
-\newlabel{plot:TotalSampsonError}{{1}{38}{Chart showing the sum of Sampson Errors in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.2}Test Environment}{63}{subsection.8.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.3}Testing initial pair reconstruction methods}{63}{subsection.8.3.3}}
+\newlabel{sec:Testin2Views}{{8.3.3}{63}{Testing initial pair reconstruction methods}{subsection.8.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.3.3.1}Accuracy - Epipolar lines correspondence}{63}{subsubsection.8.3.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Sum of Sampson Error depending on evaluated method}}{64}{figure.caption.50}}
+\newlabel{plot:TotalSampsonError}{{8.1}{64}{Sum of Sampson Error depending on evaluated method}{figure.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Sampson Error per corresponding point depending on evaluated method}}{65}{figure.caption.51}}
+\newlabel{plot:SampsonErrorPerPoint}{{8.2}{65}{Sampson Error per corresponding point depending on evaluated method}{figure.caption.51}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (1st group)}}{66}{figure.caption.52}}
+\newlabel{fig:SummaryEpiLines1300}{{8.3}{66}{The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (1st group)}{figure.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (2nd group)}}{67}{figure.caption.53}}
+\newlabel{fig:SummaryEpiLines2300}{{8.4}{67}{The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (2nd group)}{figure.caption.53}{}}
 \FN@pp@footnotehinttrue 
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Chart showing per point Sampson Error in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }}{40}{figure.caption.15}}
-\newlabel{plot:SampsonErrorPerPoint}{{2}{40}{Chart showing per point Sampson Error in a picture(1024x768pixels) per various initial Sift features sets sizes\relax }{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 300 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{41}{figure.caption.16}}
-\newlabel{fig:SummaryEpiLines1300}{{3}{41}{The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 300 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3) Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{42}{figure.caption.17}}
-\newlabel{fig:SummaryEpiLines2300}{{4}{42}{The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 300 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3) Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 1000 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }}{43}{figure.caption.18}}
-\newlabel{fig:SummaryEpiLines11000}{{5}{43}{The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 1000 Sift points. 1) Standard Fundamental 8-point algorithm (upper pair), 2) Rotation Enhanced Fundamental 8-point algorithm (middle pair), 3) Alternative 3-point algorithm (bottom pair) \relax }{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }}{44}{figure.caption.19}}
-\newlabel{fig:SummaryEpiLines21000}{{6}{44}{The results of drawing estimated epipolar lines for the Warsaw Univeristy Dataset with 1000 Sift points. 1) Fundamental matrix created from rotation and translation (upper pair), 2) Standard Essential matrix 5-point algorithm (middle pair), 3)Rotation Enhanced Essential 5-point algorithm (bottom pair) \relax }{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Time comparison}{45}{subsection.6.3.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Execution time of the proposed algorithms(1024x768pixels) per initial SIFT feature set size\relax }}{45}{figure.caption.20}}
-\newlabel{plot:ExecutionTime}{{7}{45}{Execution time of the proposed algorithms(1024x768pixels) per initial SIFT feature set size\relax }{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Testing reconstruction strategies}{46}{section.6.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Accuracy}{46}{subsection.6.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (1st group)}}{68}{figure.caption.54}}
+\newlabel{fig:SummaryEpiLines11000}{{8.5}{68}{The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (1st group)}{figure.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (2nd group)}}{69}{figure.caption.55}}
+\newlabel{fig:SummaryEpiLines21000}{{8.6}{69}{The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (2nd group)}{figure.caption.55}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.3.3.2}Time comparison}{70}{subsubsection.8.3.3.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces Execution time of the proposed algorithms depending on initial SIFT feature set size}}{70}{figure.caption.56}}
+\newlabel{plot:ExecutionTime}{{8.7}{70}{Execution time of the proposed algorithms depending on initial SIFT feature set size}{figure.caption.56}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.4}Testing reconstruction strategies}{71}{subsection.8.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.3.4.1}Accuracy}{71}{subsubsection.8.3.4.1}}
 \FN@pp@footnotehinttrue 
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{48}{figure.caption.21}}
-\newlabel{plot:BAError}{{8}{48}{Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }{figure.caption.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Execution time}{49}{subsection.6.4.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{72}{figure.caption.57}}
+\newlabel{plot:BAError}{{8.8}{72}{Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }{figure.caption.57}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {8.3.4.2}Execution time}{73}{subsubsection.8.3.4.2}}
 \FN@pp@footnotehinttrue 
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces 3D point clouds before Bundle Adjustment (upper) and after (bottom) for enhanced 8-point with enhanced pose estimation. Warsaw University of Technology dataset with 1000 SIFT corresponding features (left - front, right - side)\relax }}{50}{figure.caption.22}}
-\newlabel{fig:BundleAdjustmentComparison}{{9}{50}{3D point clouds before Bundle Adjustment (upper) and after (bottom) for enhanced 8-point with enhanced pose estimation. Warsaw University of Technology dataset with 1000 SIFT corresponding features (left - front, right - side)\relax }{figure.caption.22}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Total reconstruction execution time (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{51}{figure.caption.23}}
-\newlabel{plot:ReconstructionWithoutBA}{{10}{51}{Total reconstruction execution time (4 images with resolution 1024x768pixels) per SIFT features set size\relax }{figure.caption.23}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment (4 images with resolution 1024x768pixels) per SIFT features set size\relax }}{52}{figure.caption.24}}
-\newlabel{plot:ReconstructionWithBA}{{11}{52}{Total execution time of reconstruction with Bundle Adjustment (4 images with resolution 1024x768pixels) per SIFT features set size\relax }{figure.caption.24}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Effectivness}{53}{section.6.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces Total reconstruction execution time per SIFT features set size}}{74}{figure.caption.58}}
+\newlabel{plot:ReconstructionWithoutBA}{{8.9}{74}{Total reconstruction execution time per SIFT features set size}{figure.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment per SIFT features set size}}{75}{figure.caption.59}}
+\newlabel{plot:ReconstructionWithBA}{{8.10}{75}{Total execution time of reconstruction with Bundle Adjustment per SIFT features set size}{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.11}{\ignorespaces 3D point clouds before and after Bundle Adjustment for enhanced 8-point with enhanced pose estimation}}{76}{figure.caption.60}}
+\newlabel{fig:BundleAdjustmentComparison}{{8.11}{76}{3D point clouds before and after Bundle Adjustment for enhanced 8-point with enhanced pose estimation}{figure.caption.60}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3.5}Effectiveness}{77}{subsection.8.3.5}}
 \FN@pp@footnotehinttrue 
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{54}{figure.caption.25}}
-\newlabel{fig:uni4000Comparison}{{12}{54}{Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }{figure.caption.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }}{55}{figure.caption.26}}
-\newlabel{fig:uni400Comparison}{{13}{55}{Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features. From upper left to bottom right: 1) standard 8-point, 2) enhanced 8-point, 3) alternative 3-point, 4) known rotations and translations, 5) standard 5-point, 6) enhanced 5-point\relax }{figure.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Fail test case of Standard 8-point triangulation(left) in comparison to fortunate reconstruction(right)\relax }}{55}{figure.caption.27}}
-\newlabel{fig:FailCaseFundamental}{{14}{55}{Fail test case of Standard 8-point triangulation(left) in comparison to fortunate reconstruction(right)\relax }{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Pose estimation methods comparison (Views from front and side). Left: Normal Pose Estimation, right: Enhanced Rotation and Translation Pose Estimation\relax }}{56}{figure.caption.28}}
-\newlabel{fig:PoseEstimationMethodComparison}{{15}{56}{Pose estimation methods comparison (Views from front and side). Left: Normal Pose Estimation, right: Enhanced Rotation and Translation Pose Estimation\relax }{figure.caption.28}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Reconstruction results from known translations and rotations from different angles. The upper one shows the front face of building, the others present views from side angles. In the reconstructed model many outliers are present.\relax }}{57}{figure.caption.29}}
-\newlabel{fig:UniNone4000}{{16}{57}{Reconstruction results from known translations and rotations from different angles. The upper one shows the front face of building, the others present views from side angles. In the reconstructed model many outliers are present.\relax }{figure.caption.29}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features}}{78}{figure.caption.61}}
+\newlabel{fig:uni4000Comparison}{{8.12}{78}{Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features}{figure.caption.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features}}{79}{figure.caption.62}}
+\newlabel{fig:uni400Comparison}{{8.13}{79}{Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features}{figure.caption.62}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.14}{\ignorespaces Fail test case of Standard 8-point triangulation in comparison to fortunate reconstruction}}{79}{figure.caption.63}}
+\newlabel{fig:FailCaseFundamental}{{8.14}{79}{Fail test case of Standard 8-point triangulation in comparison to fortunate reconstruction}{figure.caption.63}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.15}{\ignorespaces Pose estimation methods comparison}}{80}{figure.caption.64}}
+\newlabel{fig:PoseEstimationMethodComparison}{{8.15}{80}{Pose estimation methods comparison}{figure.caption.64}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.16}{\ignorespaces Reconstruction results from known translations and rotations from different angles}}{81}{figure.caption.65}}
+\newlabel{fig:UniNone4000}{{8.16}{81}{Reconstruction results from known translations and rotations from different angles}{figure.caption.65}{}}
 \@setckpt{7/evaluation}{
-\setcounter{page}{58}
-\setcounter{equation}{0}
+\setcounter{page}{82}
+\setcounter{equation}{6}
 \setcounter{enumi}{5}
 \setcounter{enumii}{3}
 \setcounter{enumiii}{0}
@@ -61,9 +77,9 @@
 \setcounter{footnote}{0}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
-\setcounter{chapter}{6}
-\setcounter{section}{5}
-\setcounter{subsection}{0}
+\setcounter{chapter}{8}
+\setcounter{section}{3}
+\setcounter{subsection}{5}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
@@ -73,11 +89,14 @@
 \setcounter{pp@next@reset}{1}
 \setcounter{@fnserial}{0}
 \setcounter{NAT@ctr}{0}
-\setcounter{Item}{50}
-\setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{62}
 \setcounter{parentequation}{0}
+\setcounter{su@anzahl}{0}
+\setcounter{LT@tables}{1}
+\setcounter{LT@chunks}{1}
+\setcounter{Item}{62}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{80}
 \setcounter{lstnumber}{21}
-\setcounter{section@level}{1}
+\setcounter{section@level}{2}
 \setcounter{lstlisting}{0}
 }

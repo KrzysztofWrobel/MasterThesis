@@ -1,44 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: 0_frontmatter/abstract.aux
-A level-1 auxiliary file: 0_frontmatter/dedication.aux
-A level-1 auxiliary file: 0_frontmatter/acknowledgement.aux
-A level-1 auxiliary file: 0_frontmatter/glossary.aux
 A level-1 auxiliary file: 1_introduction/introduction.aux
 A level-1 auxiliary file: 2/fundamentals.aux
 A level-1 auxiliary file: 3/related_work.aux
-A level-1 auxiliary file: 5/concept.aux
 A level-1 auxiliary file: 6/implementation.aux
+A level-1 auxiliary file: 5/reconstruction_only_sensors.aux
+A level-1 auxiliary file: 6/reconstruction_3_point.aux
+A level-1 auxiliary file: 7/reconstruction_5_8point_enhanced.aux
 A level-1 auxiliary file: 7/evaluation.aux
 A level-1 auxiliary file: 8/conclusion.aux
 A level-1 auxiliary file: 9/materials_methods.aux
-The style file: ../Latex/Classes/PhDbiblio-url2.bst
+The style file: ../Latex/Classes/PhDbiblio-url.bst
 I couldn't open database file 9_backmatter/references.bib.bib
----line 69 of file thesis.aux
+---line 77 of file thesis.aux
  : \bibdata{9_backmatter/references.bib
  :                                     }
 I'm skipping whatever remains of this command
-A level-1 auxiliary file: 9_backmatter/declaration.aux
 I found no database files---while reading file thesis.aux
+Warning--I didn't find a database entry for "Cyganek3dVision"
+Warning--I didn't find a database entry for "website:cameraCalibration"
+Warning--I didn't find a database entry for "website:androidSensorFusion"
+Warning--I didn't find a database entry for "website:relativePoseLibrary"
+Warning--I didn't find a database entry for "HartleyMultipleView"
+Warning--I didn't find a database entry for "website:featureDetection"
+Warning--I didn't find a database entry for "website:SIFT"
+Warning--I didn't find a database entry for "website:failMatching"
+Warning--I didn't find a database entry for "website:ransac"
+Warning--I didn't find a database entry for "8Point"
+Warning--I didn't find a database entry for "iterative5point"
+Warning--I didn't find a database entry for "Batra5point"
+Warning--I didn't find a database entry for "website:bundle-adjustment"
 Warning--I didn't find a database entry for "website:androidSensorOverview"
 Warning--I didn't find a database entry for "website:accelerometer"
 Warning--I didn't find a database entry for "website:gyroscope"
-Warning--I didn't find a database entry for "website:magnetometer"
 Warning--I didn't find a database entry for "website:sensorFustion"
-Warning--I didn't find a database entry for "website:ransac"
-Warning--I didn't find a database entry for "HartleyMultipleView"
-Warning--I didn't find a database entry for "website:relativePoseLibrary"
-Warning--I didn't find a database entry for "website:kinect"
-Warning--I didn't find a database entry for "website:featureDetection"
-Warning--I didn't find a database entry for "website:SIFT"
-Warning--I didn't find a database entry for "website:bundle-adjustment"
+Warning--I didn't find a database entry for "sensorFusionSmartphones"
+Warning--I didn't find a database entry for "website:extendedSensorFusion"
+Warning--I didn't find a database entry for "indoorPosition"
 Warning--I didn't find a database entry for "objectRecAndLoc"
 Warning--I didn't find a database entry for "combinedMonoSlam"
-Warning--I didn't find a database entry for "8Point"
-Warning--I didn't find a database entry for "Batra5point"
 Warning--I didn't find a database entry for "Nister5point"
-Warning--I didn't find a database entry for "iterative5point"
 Warning--I didn't find a database entry for "RansacRefine"
 Warning--I didn't find a database entry for "HellwichEvaluation"
 Warning--I didn't find a database entry for "1point"
@@ -46,23 +48,19 @@ Warning--I didn't find a database entry for "4point"
 Warning--I didn't find a database entry for "robustCameraImu"
 Warning--I didn't find a database entry for "lineBasedPose"
 Warning--I didn't find a database entry for "pureTransl"
-Warning--I didn't find a database entry for "ptam"
-Warning--I didn't find a database entry for "monoSlam"
-Warning--I didn't find a database entry for "simultanousRecLocMap"
-Warning--I didn't find a database entry for "distributedAR"
-Warning--I didn't find a database entry for "homographyMobile"
 Warning--I didn't find a database entry for "rotationSpaceSearch"
 Warning--I didn't find a database entry for "Enqvist10stablestructure"
-Warning--I didn't find a database entry for "website:poseEstimation"
 Warning--I didn't find a database entry for "website:gradle"
-Warning--I didn't find a database entry for "website:walkingSpeed"
 Warning--I didn't find a database entry for "website:pcl"
 Warning--I didn't find a database entry for "website:cvsba"
 Warning--I didn't find a database entry for "website:eulerAngles"
+Warning--I didn't find a database entry for "website:walkingSpeed"
+Warning--I didn't find a database entry for "website:poseEstimation"
 Warning--I didn't find a database entry for "website:3dReconstructerMasterThesis"
+Warning--I didn't find a database entry for "ptam"
 You've used 0 entries,
             2776 wiz_defined-function locations,
-            679 strings with 6326 characters,
+            680 strings with 6426 characters,
 and the built_in function-call counts, 34 in all, are:
 = -- 0
 > -- 0

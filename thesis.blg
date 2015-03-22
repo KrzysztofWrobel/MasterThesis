@@ -11,49 +11,48 @@ A level-1 auxiliary file: 6/implementation.aux
 A level-1 auxiliary file: 7/evaluation.aux
 A level-1 auxiliary file: 8/conclusion.aux
 A level-1 auxiliary file: 9/materials_methods.aux
-The style file: Latex/Classes/PhDbiblio-url2.bst
-A level-1 auxiliary file: 9_backmatter/declaration.aux
+The style file: Latex/Classes/PhDbiblio-url.bst
 Database file #1: 9_backmatter/references.bib.bib
 Warning--empty journal in iterative5point
-You've used 45 entries,
+You've used 49 entries,
             2776 wiz_defined-function locations,
-            833 strings with 12219 characters,
-and the built_in function-call counts, 15274 in all, are:
-= -- 1526
-> -- 541
+            853 strings with 13134 characters,
+and the built_in function-call counts, 12378 in all, are:
+= -- 1194
+> -- 355
 < -- 2
-+ -- 222
-- -- 172
-* -- 879
-:= -- 2358
-add.period$ -- 115
-call.type$ -- 45
-change.case$ -- 178
++ -- 143
+- -- 94
+* -- 598
+:= -- 1664
+add.period$ -- 147
+call.type$ -- 49
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 46
-duplicate$ -- 563
-empty$ -- 1478
-format.name$ -- 172
-if$ -- 3714
+cite$ -- 50
+duplicate$ -- 511
+empty$ -- 1487
+format.name$ -- 94
+if$ -- 3360
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 25
-newline$ -- 208
-num.names$ -- 90
-pop$ -- 486
+int.to.str$ -- 49
+missing$ -- 26
+newline$ -- 248
+num.names$ -- 49
+pop$ -- 420
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 0
 quote$ -- 0
-skip$ -- 946
+skip$ -- 922
 stack$ -- 0
-substring$ -- 367
-swap$ -- 172
+substring$ -- 137
+swap$ -- 164
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 178
+type$ -- 0
 warning$ -- 1
-while$ -- 98
-width$ -- 47
-write$ -- 421
+while$ -- 57
+width$ -- 51
+write$ -- 501
 (There was 1 warning)
