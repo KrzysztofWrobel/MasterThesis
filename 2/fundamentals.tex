@@ -48,7 +48,7 @@ h_{x} & 0 & o_{x} \\
 \end{array}
 \end{equation}
 where $h_{x}$ and $h_{y}$ represent the focal length of the camera expressed in pixel dimensions in the x and y direction respectively. Similarly, point \textbf{o} = $(o_{x},o_{y})$ is the principal point of camera in pixel dimensions. These parameters need to be calculated only once for each camera model. Once they are known, camera can be described as calibrated. 
-Calibration of cameras can be done with special reference boards of the known dimensions and characteristics. One of such boards (Figure ) as well as sample code that allows to calibrate camera is available on OpenCV website \cite{website:cameraCalibration}.
+Calibration of cameras can be done with special reference boards of the known dimensions and characteristics. One of such boards (Figure \ref{fig:camera_model}) as well as sample code that allows to calibrate camera is available on OpenCV website \cite{website:cameraCalibration}.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{opencv_camera_calib}
@@ -83,7 +83,7 @@ Figure \ref{fig:EpipolarGeometry} shows different perspective on epipolar lines 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.8\textwidth]{EpipolarGeometry}
-    \caption[Epipolar lines found in an image of a vase]{Epipolar lines found in an image of a vase \cite{HartleyMultipleView}. It is good to spot that all points that lay on corresponding epipolar lines and are visible in both images can be easily matched}
+    \caption[Epipolar lines found in an image of a vase]{Epipolar lines found in an image of a vase \cite{HartleyMultipleView}. It is worth noting that all points that lay on corresponding epipolar lines and are visible in both images can be easily matched}
     \label{fig:EpipolarGeometry}
 \end{figure} \\
 \subsection{Fundamental \& Essential Matrix estimations}
@@ -126,7 +126,7 @@ Unfortunately, there are four possible solutions for such decomposition of essen
     \label{fig:fourAmbig}
 \end{figure}
 \\
-However it is good to note, that only in (a) is the reconstructed point in front of both cameras. Usually to determine proper solution it is enough using each of corresponding feature point to calculate its 3D positions and perform simple test checking if it lies in front of both cameras image planes. It may seem simple task, but from computer perspective it's hard to determine proper decomposition, when not all of outliers were removed during feature matching phase. Often outliers pair will show itself in front of both cameras for not correct solution.
+However it is worth noting, that only in (a) is the reconstructed point in front of both cameras. Usually to determine proper solution it is enough using each of corresponding feature point to calculate its 3D positions and perform simple test checking if it lies in front of both cameras image planes. It may seem simple task, but from computer perspective it's hard to determine proper decomposition, when not all of outliers were removed during feature matching phase. Often outliers pair will show itself in front of both cameras for not correct solution.
 This is the place in reconstruction pipeline where additional sensor data can be used to determine proper solution. In fact Sensor Fusion data can limit E matrix decomposition only to two solutions - (a) and (b) cases from Figure \ref{fig:fourAmbig}). What is most important that even in presence of many outliers it will produce proper perceptible models (cases (a) and (b) are baseline reversal). This will be explained in detail, when discussing enhancements to 8 and 5 point algorithms.
 \subsection{Points Triangulation} \label{sec:points_triangulation}
 Once internal and external camera parameters are calculated, the triangulation can be performed in order to acquire an affine reconstruction model (Figure \ref{fig:3Dreconstruction}).
@@ -152,7 +152,7 @@ where \textbf{I} is identity matrix, \textbf{0} is zero column vector, \textbf{R
 \end{equation}
 where \textbf{X} is 3D position of point in space.
 \\
-Basically having relative cameras positions fully established (known internal parameters, rotation and translation) all rays connecting camera centres and corresponding image pairs will cross in place of their 3D location. Thus, it is good to note here that resolution and density of 3D models rely on picture resolution and number of matching correspondences found. 
+Basically having relative cameras positions fully established (known internal parameters, rotation and translation) all rays connecting camera centres and corresponding image pairs will cross in place of their 3D location. Thus, it is worth noting here that resolution and density of 3D models rely on picture resolution and number of matching correspondences found. 
 The only element that cannot be determined in such a case is the scale, because only relative positions between cameras can be established. This process is described in more details in Chapter 10 of Hartley's book\cite{HartleyMultipleView}.
 \section{Structure from Motion}
 The term ''Structure from Motion (SfM)'' refers to the reconstruction performed from the consecutive sequences of a moving camera. It is a popular research topic and the two main approaches, namely the Pose Estimation and Homography Estimation, can be used for the purposes of reconstructing a 3D model of an object visible throughout images sequence.
