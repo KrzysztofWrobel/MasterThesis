@@ -1,8 +1,8 @@
 \select@language {english}
-\contentsline {chapter}{List of Figures}{v}{chapter*.2}
-\contentsline {chapter}{List of Tables}{ix}{chapter*.3}
-\contentsline {section}{Nomenclature}{x}{section*.4}
-\contentsline {section}{List of symbols}{x}{section*.6}
+\contentsline {chapter}{List of Figures}{iv}{chapter*.2}
+\contentsline {chapter}{List of Tables}{viii}{chapter*.3}
+\contentsline {section}{Nomenclature}{ix}{section*.4}
+\contentsline {section}{List of symbols}{ix}{section*.6}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Purpose of this thesis}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope}{2}{section.1.2}
@@ -53,36 +53,31 @@
 \contentsline {section}{\numberline {6.2}Implementation}{45}{section.6.2}
 \contentsline {section}{\numberline {6.3}Evaluation}{46}{section.6.3}
 \contentsline {chapter}{\numberline {7}Enhanced 8-point and 5-point reconstruction}{48}{chapter.7}
-\contentsline {section}{\numberline {7.1}Concept}{48}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Requirements}{49}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Enhancing epipolar geometry equations with initial rotation matrix}{49}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Implementation}{50}{section.7.2}
-\contentsline {subsubsection}{\numberline {7.2.0.1}Enhancing epipolar equations}{51}{subsubsection.7.2.0.1}
-\contentsline {section}{\numberline {7.3}Evaluation}{52}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Rotation calculation tests}{52}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.1}Concept - enhancing epipolar equation with initial rotation matrix}{48}{section.7.1}
+\contentsline {section}{\numberline {7.2}General algorithms modification}{50}{section.7.2}
+\contentsline {section}{\numberline {7.3}Evaluation}{51}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Rotation calculation tests}{51}{subsection.7.3.1}
 \contentsline {subsection}{\numberline {7.3.2}Epipolar line calculation}{53}{subsection.7.3.2}
-\contentsline {chapter}{\numberline {8}Structure From Motion with Sensor Fusion}{59}{chapter.8}
-\contentsline {section}{\numberline {8.1}Concept}{59}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Reconstruction process strategy}{59}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Pose estimation}{60}{subsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.2.1}Rotation enhancements}{60}{subsubsection.8.1.2.1}
-\contentsline {subsubsection}{\numberline {8.1.2.2}Rotation \& translation enhancements}{61}{subsubsection.8.1.2.2}
-\contentsline {section}{\numberline {8.2}Implementation}{61}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Enhancing pose estimation}{61}{subsection.8.2.1}
-\contentsline {section}{\numberline {8.3}Evaluation}{62}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Acquiring datasets}{62}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Test Environment}{63}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}Testing initial pair reconstruction methods}{63}{subsection.8.3.3}
-\contentsline {subsubsection}{\numberline {8.3.3.1}Accuracy - Epipolar lines correspondence}{63}{subsubsection.8.3.3.1}
-\contentsline {subsubsection}{\numberline {8.3.3.2}Time comparison}{70}{subsubsection.8.3.3.2}
-\contentsline {subsection}{\numberline {8.3.4}Testing reconstruction strategies}{71}{subsection.8.3.4}
-\contentsline {subsubsection}{\numberline {8.3.4.1}Accuracy}{71}{subsubsection.8.3.4.1}
-\contentsline {subsubsection}{\numberline {8.3.4.2}Execution time}{73}{subsubsection.8.3.4.2}
-\contentsline {subsection}{\numberline {8.3.5}Effectiveness}{77}{subsection.8.3.5}
-\contentsline {chapter}{\numberline {9}Conclusions}{82}{chapter.9}
-\contentsline {section}{\numberline {9.1}Summary}{82}{section.9.1}
-\contentsline {section}{\numberline {9.2}Dissemination}{84}{section.9.2}
-\contentsline {section}{\numberline {9.3}Problems encountered}{84}{section.9.3}
-\contentsline {section}{\numberline {9.4}Future work}{84}{section.9.4}
-\contentsline {chapter}{\numberline {10}Additional materials}{86}{chapter.10}
-\contentsline {chapter}{References}{93}{chapter*.75}
+\contentsline {chapter}{\numberline {8}Structure From Motion with Sensor Fusion}{57}{chapter.8}
+\contentsline {section}{\numberline {8.1}Concept - enhancing Pose estimation}{57}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Rotation enhancements}{58}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Rotation \& translation enhancements}{58}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}General implementation aspects}{58}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Reconstruction process strategy}{59}{subsection.8.2.1}
+\contentsline {section}{\numberline {8.3}Evaluation}{60}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Acquiring datasets}{60}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Test Environment}{61}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Testing initial pair reconstruction methods}{61}{subsection.8.3.3}
+\contentsline {subsubsection}{\numberline {8.3.3.1}Accuracy - Epipolar lines correspondence}{61}{subsubsection.8.3.3.1}
+\contentsline {subsubsection}{\numberline {8.3.3.2}Time comparison}{69}{subsubsection.8.3.3.2}
+\contentsline {subsection}{\numberline {8.3.4}Testing reconstruction strategies}{70}{subsection.8.3.4}
+\contentsline {subsubsection}{\numberline {8.3.4.1}Accuracy}{70}{subsubsection.8.3.4.1}
+\contentsline {subsubsection}{\numberline {8.3.4.2}Execution time}{71}{subsubsection.8.3.4.2}
+\contentsline {subsection}{\numberline {8.3.5}Effectiveness}{76}{subsection.8.3.5}
+\contentsline {chapter}{\numberline {9}Conclusions}{81}{chapter.9}
+\contentsline {section}{\numberline {9.1}Summary}{81}{section.9.1}
+\contentsline {section}{\numberline {9.2}Dissemination}{83}{section.9.2}
+\contentsline {section}{\numberline {9.3}Problems encountered}{83}{section.9.3}
+\contentsline {section}{\numberline {9.4}Future work}{83}{section.9.4}
+\contentsline {chapter}{\numberline {10}Additional materials}{85}{chapter.10}
+\contentsline {chapter}{References}{92}{chapter*.75}

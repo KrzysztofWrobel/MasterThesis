@@ -110,7 +110,7 @@ After the pictures were taken many tests were made in order to verify, what diff
 \begin{enumerate} \label{enum:rotation_calcs_types}
 \item Selecting proper corresponding points by user from image
 \item Selecting proper corresponding points and adding few outliers by user
-\item Automatic correspondence matching with Sift descriptors and BruteForce matching from OpenCV
+\item Automatic correspondence matching with SIFT descriptors and BruteForce matching from OpenCV
 \item Rotation angles calculation directly from Sensor Fusion data
 \end{enumerate}
 In 4th case it was not necessary to calculate fundamental matrix and later decompose it to rotation angles. In others first fundamental matrix was calculated using standard 8-point algorithm implementation. In combination with internal camera matrix it allowed to calculate essential matrix. \textbf{E} was later was decomposed in the already described way to acquire proper rotation matrix. In figures \ref{fig:01_matching} - \ref{fig:01_matching_outliers} and \ref{fig:02_matching} - \ref{fig:02_matching_outliers} it can be seen, which points were selected by the author for two example image pairs to perform camera rotation estimation tests. In both cases red line means proper correspondence and yellow means improper match. In figures \ref{fig:f_01_auto_sift} and \ref{fig:f_02_auto_sift} reader can see, what types of results usually automatic matching produces. These results are quite good, but unfortunately have some outliers. 
@@ -130,7 +130,7 @@ In 4th case it was not necessary to calculate fundamental matrix and later decom
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{f_01_auto_sift}
-    \caption{Automatically matched points with usage of Sift descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).}
+    \caption{Automatically matched points with usage of SIFT descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).}
     \label{fig:f_01_auto_sift}
 \end{figure}
 
@@ -150,7 +150,7 @@ In 4th case it was not necessary to calculate fundamental matrix and later decom
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{f_02_auto_sift}
-    \caption{Automatically matched points with usage of Sift descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).}
+    \caption{Automatically matched points with usage of SIFT descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).}
     \label{fig:f_02_auto_sift}
 \end{figure}
 

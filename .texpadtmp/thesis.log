@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  22 MAR 2015 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.4)  23 MAR 2015 04:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1289,33 +1289,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `thesis.ist'.
 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3])
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
 \tf@toc=\write10
 \openout10 = `thesis.toc'.
 
- [4] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.lof
+ [3] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.lof
 
-Package natbib Warning: Citation `Cyganek3dVision' on page v undefined on input line 4.
-
-
-Package natbib Warning: Citation `website:cameraCalibration' on page v undefined on input line 5.
+Package natbib Warning: Citation `Cyganek3dVision' on page iv undefined on input line 4.
 
 
-Package natbib Warning: Citation `Cyganek3dVision' on page v undefined on input line 8.
+Package natbib Warning: Citation `website:cameraCalibration' on page iv undefined on input line 5.
 
-[5
 
-] [6] [7])
+Package natbib Warning: Citation `Cyganek3dVision' on page iv undefined on input line 8.
+
+[4
+
+] [5] [6])
 \tf@lof=\write11
 \openout11 = `thesis.lof'.
 
- [8] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.lot)
+ [7] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.lot)
 \tf@lot=\write12
 \openout12 = `thesis.lot'.
 
- [9
+ [8
 
-] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.acr) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.gls) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.syi) [10
+] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.acr) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.gls) (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.syi) [9
 
 
 ]
@@ -1347,7 +1347,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 5 undefined on in
 
 
 
-] <figures/camera_model.png, id=651, 796.9775pt x 475.7775pt>
+] <figures/camera_model.png, id=622, 796.9775pt x 475.7775pt>
 File: figures/camera_model.png Graphic file (type png)
  <use figures/camera_model.png>
 Package pdftex.def Info: figures/camera_model.png used on input line 34.
@@ -1362,7 +1362,7 @@ Package natbib Warning: Citation `Cyganek3dVision' on page 6 undefined on input 
 
 Package natbib Warning: Citation `website:cameraCalibration' on page 6 undefined on input line 51.
 
-<figures/opencv_camera_calib.png, id=652, 1836.8625pt x 1334.9875pt>
+<figures/opencv_camera_calib.png, id=624, 1836.8625pt x 1334.9875pt>
 File: figures/opencv_camera_calib.png Graphic file (type png)
  <use figures/opencv_camera_calib.png>
 Package pdftex.def Info: figures/opencv_camera_calib.png used on input line 54.
@@ -1374,7 +1374,7 @@ Package natbib Warning: Citation `website:cameraCalibration' on page 6 undefined
 
 Package natbib Warning: Citation `website:cameraCalibration' on page 6 undefined on input line 55.
 
-[6 <./figures/camera_model.png>] <figures/correspondingMatching.png, id=667, 2684.0275pt x 1100.11pt>
+[6 <./figures/camera_model.png>] <figures/correspondingMatching.png, id=638, 2684.0275pt x 1100.11pt>
 File: figures/correspondingMatching.png Graphic file (type png)
  <use figures/correspondingMatching.png>
 Package pdftex.def Info: figures/correspondingMatching.png used on input line 63.
@@ -1386,7 +1386,7 @@ Package natbib Warning: Citation `website:featureDetection' on page 7 undefined 
 
 Package natbib Warning: Citation `website:SIFT' on page 7 undefined on input line 67.
 
-<figures/failMatching.png, id=669, 1085.05376pt x 441.65pt>
+<figures/failMatching.png, id=640, 1085.05376pt x 441.65pt>
 File: figures/failMatching.png Graphic file (type png)
  <use figures/failMatching.png>
 Package pdftex.def Info: figures/failMatching.png used on input line 70.
@@ -1401,7 +1401,7 @@ Package natbib Warning: Citation `website:failMatching' on page 7 undefined on i
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./figures/opencv_camera_calib.png>] <figures/epipolar_geometry.png, id=676, 765.86125pt x 541.02126pt>
+[7 <./figures/opencv_camera_calib.png>] <figures/epipolar_geometry.png, id=647, 765.86125pt x 541.02126pt>
 File: figures/epipolar_geometry.png Graphic file (type png)
  <use figures/epipolar_geometry.png>
 Package pdftex.def Info: figures/epipolar_geometry.png used on input line 78.
@@ -1413,7 +1413,7 @@ Package natbib Warning: Citation `Cyganek3dVision' on page 8 undefined on input 
 
 Package natbib Warning: Citation `Cyganek3dVision' on page 8 undefined on input line 79.
 
-<figures/EpipolarGeometry.png, id=678, 911.405pt x 657.45625pt>
+<figures/EpipolarGeometry.png, id=649, 911.405pt x 657.45625pt>
 File: figures/EpipolarGeometry.png Graphic file (type png)
  <use figures/EpipolarGeometry.png>
 Package pdftex.def Info: figures/EpipolarGeometry.png used on input line 85.
@@ -1438,7 +1438,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 9 undefined on in
 
 Package natbib Warning: Citation `website:ransac' on page 9 undefined on input line 94.
 
-<figures/RANSACFitting.png, id=685, 609.27625pt x 592.2125pt>
+<figures/RANSACFitting.png, id=656, 609.27625pt x 592.2125pt>
 File: figures/RANSACFitting.png Graphic file (type png)
  <use figures/RANSACFitting.png>
 Package pdftex.def Info: figures/RANSACFitting.png used on input line 97.
@@ -1468,7 +1468,7 @@ Package natbib Warning: Citation `Batra5point' on page 11 undefined on input lin
 
 Package natbib Warning: Citation `HartleyMultipleView' on page 12 undefined on input line 120.
 
-<figures/fourAmbig.png, id=710, 824.07875pt x 583.17876pt>
+<figures/fourAmbig.png, id=682, 824.07875pt x 583.17876pt>
 File: figures/fourAmbig.png Graphic file (type png)
  <use figures/fourAmbig.png>
 Package pdftex.def Info: figures/fourAmbig.png used on input line 124.
@@ -1483,7 +1483,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 12 undefined on i
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/3Dreconstruction.png, id=713, 604.2575pt x 351.3125pt>
+<figures/3Dreconstruction.png, id=685, 604.2575pt x 351.3125pt>
 File: figures/3Dreconstruction.png Graphic file (type png)
  <use figures/3Dreconstruction.png>
 Package pdftex.def Info: figures/3Dreconstruction.png used on input line 135.
@@ -1499,7 +1499,7 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 13 undefined on i
 
 Package natbib Warning: Citation `website:bundle-adjustment' on page 15 undefined on input line 163.
 
-<figures/BundleAdjustment.png, id=735, 767.86874pt x 335.2525pt>
+<figures/BundleAdjustment.png, id=707, 767.86874pt x 335.2525pt>
 File: figures/BundleAdjustment.png Graphic file (type png)
  <use figures/BundleAdjustment.png>
 Package pdftex.def Info: figures/BundleAdjustment.png used on input line 166.
@@ -1525,7 +1525,7 @@ Package natbib Warning: Citation `website:gyroscope' on page 16 undefined on inp
 
 Package natbib Warning: Citation `website:sensorFustion' on page 17 undefined on input line 179.
 
-<figures/angles_from_gravity.png, id=748, 385.44pt x 333.245pt>
+<figures/angles_from_gravity.png, id=720, 385.44pt x 333.245pt>
 File: figures/angles_from_gravity.png Graphic file (type png)
  <use figures/angles_from_gravity.png>
 Package pdftex.def Info: figures/angles_from_gravity.png used on input line 184.
@@ -1543,7 +1543,7 @@ Package natbib Warning: Citation `sensorFusionSmartphones' on page 17 undefined 
 
 Package natbib Warning: Citation `website:extendedSensorFusion' on page 17 undefined on input line 188.
 
-<figures/linear_acceleration.png, id=750, 595.22375pt x 597.23125pt>
+<figures/linear_acceleration.png, id=722, 595.22375pt x 597.23125pt>
 File: figures/linear_acceleration.png Graphic file (type png)
  <use figures/linear_acceleration.png>
 Package pdftex.def Info: figures/linear_acceleration.png used on input line 193.
@@ -1638,7 +1638,7 @@ Underfull \vbox (badness 3260) has occurred while \output is active []
 
 Package natbib Warning: Citation `website:gradle' on page 24 undefined on input line 26.
 
-<figures/AndroidScreenShot.png, id=791, 1927.2pt x 1084.05pt>
+<figures/AndroidScreenShot.png, id=762, 1927.2pt x 1084.05pt>
 File: figures/AndroidScreenShot.png Graphic file (type png)
  <use figures/AndroidScreenShot.png>
 Package pdftex.def Info: figures/AndroidScreenShot.png used on input line 39.
@@ -1707,17 +1707,17 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on in
 
 LaTeX Warning: Float too large for page by 47.48244pt on input line 75.
 
-<figures/setup_schematic.png, id=890, 653.44125pt x 582.175pt>
+<figures/setup_schematic.png, id=861, 653.44125pt x 582.175pt>
 File: figures/setup_schematic.png Graphic file (type png)
  <use figures/setup_schematic.png>
 Package pdftex.def Info: figures/setup_schematic.png used on input line 89.
 (pdftex.def)             Requested size: 330.05322pt x 294.05379pt.
- <figures/setup_env_rot_test.jpg, id=892, 3276.24pt x 2457.18pt>
+ <figures/setup_env_rot_test.jpg, id=863, 3276.24pt x 2457.18pt>
 File: figures/setup_env_rot_test.jpg Graphic file (type jpg)
  <use figures/setup_env_rot_test.jpg>
 Package pdftex.def Info: figures/setup_env_rot_test.jpg used on input line 96.
 (pdftex.def)             Requested size: 330.05322pt x 247.53207pt.
- <figures/marker_env.jpg, id=894, 959.585pt x 774.895pt>
+ <figures/marker_env.jpg, id=865, 959.585pt x 774.895pt>
 File: figures/marker_env.jpg Graphic file (type jpg)
  <use figures/marker_env.jpg>
 Package pdftex.def Info: figures/marker_env.jpg used on input line 103.
@@ -1732,7 +1732,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[32] [33] [34 <./figures/setup_schematic.png>] <figures/01_matching.png, id=964, 2798.455pt x 1100.11pt>
+[32] [33] [34 <./figures/setup_schematic.png>] <figures/01_matching.png, id=936, 2798.455pt x 1100.11pt>
 File: figures/01_matching.png Graphic file (type png)
  <use figures/01_matching.png>
 Package pdftex.def Info: figures/01_matching.png used on input line 120.
@@ -1741,7 +1741,7 @@ Package pdftex.def Info: figures/01_matching.png used on input line 120.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/01_matching_outliers.png, id=965, 2798.455pt x 1100.11pt>
+<figures/01_matching_outliers.png, id=937, 2798.455pt x 1100.11pt>
 File: figures/01_matching_outliers.png Graphic file (type png)
  <use figures/01_matching_outliers.png>
 Package pdftex.def Info: figures/01_matching_outliers.png used on input line 126.
@@ -1750,7 +1750,7 @@ Package pdftex.def Info: figures/01_matching_outliers.png used on input line 126
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_01_auto_sift.png, id=966, 2684.0275pt x 1100.11pt>
+<figures/f_01_auto_sift.png, id=938, 2684.0275pt x 1100.11pt>
 File: figures/f_01_auto_sift.png Graphic file (type png)
  <use figures/f_01_auto_sift.png>
 Package pdftex.def Info: figures/f_01_auto_sift.png used on input line 132.
@@ -1759,7 +1759,7 @@ Package pdftex.def Info: figures/f_01_auto_sift.png used on input line 132.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/02_matching.png, id=967, 2798.455pt x 1100.11pt>
+<figures/02_matching.png, id=939, 2798.455pt x 1100.11pt>
 File: figures/02_matching.png Graphic file (type png)
  <use figures/02_matching.png>
 Package pdftex.def Info: figures/02_matching.png used on input line 139.
@@ -1768,7 +1768,7 @@ Package pdftex.def Info: figures/02_matching.png used on input line 139.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/02_matching_outliers.png, id=968, 2798.455pt x 1100.11pt>
+<figures/02_matching_outliers.png, id=940, 2798.455pt x 1100.11pt>
 File: figures/02_matching_outliers.png Graphic file (type png)
  <use figures/02_matching_outliers.png>
 Package pdftex.def Info: figures/02_matching_outliers.png used on input line 145.
@@ -1777,7 +1777,7 @@ Package pdftex.def Info: figures/02_matching_outliers.png used on input line 145
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_02_auto_sift.png, id=969, 2684.0275pt x 1100.11pt>
+<figures/f_02_auto_sift.png, id=941, 2684.0275pt x 1100.11pt>
 File: figures/f_02_auto_sift.png Graphic file (type png)
  <use figures/f_02_auto_sift.png>
 Package pdftex.def Info: figures/f_02_auto_sift.png used on input line 152.
@@ -1786,12 +1786,12 @@ Package pdftex.def Info: figures/f_02_auto_sift.png used on input line 152.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/rot_tests_01.png, id=973, 792.561pt x 137.313pt>
+<figures/rot_tests_01.png, id=945, 792.561pt x 137.313pt>
 File: figures/rot_tests_01.png Graphic file (type png)
  <use figures/rot_tests_01.png>
 Package pdftex.def Info: figures/rot_tests_01.png used on input line 163.
 (pdftex.def)             Requested size: 391.93544pt x 67.90413pt.
- <figures/rot_tests_02.png, id=974, 792.561pt x 137.313pt>
+ <figures/rot_tests_02.png, id=946, 792.561pt x 137.313pt>
 File: figures/rot_tests_02.png Graphic file (type png)
  <use figures/rot_tests_02.png>
 Package pdftex.def Info: figures/rot_tests_02.png used on input line 169.
@@ -1800,7 +1800,7 @@ Package pdftex.def Info: figures/rot_tests_02.png used on input line 169.
 
 Package natbib Warning: Citation `indoorPosition' on page 38 undefined on input line 174.
 
-<figures/distance_tests.pdf, id=995, 583.47797pt x 347.46414pt>
+<figures/distance_tests.pdf, id=966, 583.47797pt x 347.46414pt>
 File: figures/distance_tests.pdf Graphic file (type pdf)
  <use figures/distance_tests.pdf>
 Package pdftex.def Info: figures/distance_tests.pdf used on input line 177.
@@ -1809,7 +1809,7 @@ Package pdftex.def Info: figures/distance_tests.pdf used on input line 177.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./figures/rot_tests_01.png> <./figures/rot_tests_02.png>] <figures/f_01.png, id=1009, 2595.6975pt x 967.615pt>
+[38 <./figures/rot_tests_01.png> <./figures/rot_tests_02.png>] <figures/f_01.png, id=980, 2595.6975pt x 967.615pt>
 File: figures/f_01.png Graphic file (type png)
  <use figures/f_01.png>
 Package pdftex.def Info: figures/f_01.png used on input line 188.
@@ -1818,7 +1818,7 @@ Package pdftex.def Info: figures/f_01.png used on input line 188.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/01_matching_outliers_epi.png, id=1010, 2798.455pt x 1100.11pt>
+<figures/01_matching_outliers_epi.png, id=981, 2798.455pt x 1100.11pt>
 File: figures/01_matching_outliers_epi.png Graphic file (type png)
  <use figures/01_matching_outliers_epi.png>
 Package pdftex.def Info: figures/01_matching_outliers_epi.png used on input line 195.
@@ -1827,7 +1827,7 @@ Package pdftex.def Info: figures/01_matching_outliers_epi.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_01_8point.png, id=1011, 2684.0275pt x 1100.11pt>
+<figures/f_01_8point.png, id=982, 2684.0275pt x 1100.11pt>
 File: figures/f_01_8point.png Graphic file (type png)
  <use figures/f_01_8point.png>
 Package pdftex.def Info: figures/f_01_8point.png used on input line 202.
@@ -1836,7 +1836,7 @@ Package pdftex.def Info: figures/f_01_8point.png used on input line 202.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_01_sensor.png, id=1012, 2684.0275pt x 1100.11pt>
+<figures/f_01_sensor.png, id=983, 2684.0275pt x 1100.11pt>
 File: figures/f_01_sensor.png Graphic file (type png)
  <use figures/f_01_sensor.png>
 Package pdftex.def Info: figures/f_01_sensor.png used on input line 209.
@@ -1845,7 +1845,7 @@ Package pdftex.def Info: figures/f_01_sensor.png used on input line 209.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_02.png, id=1013, 2587.6675pt x 1043.9pt>
+<figures/f_02.png, id=984, 2587.6675pt x 1043.9pt>
 File: figures/f_02.png Graphic file (type png)
  <use figures/f_02.png>
 Package pdftex.def Info: figures/f_02.png used on input line 216.
@@ -1854,7 +1854,7 @@ Package pdftex.def Info: figures/f_02.png used on input line 216.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/02_matching_outliers_epi.png, id=1014, 2798.455pt x 1100.11pt>
+<figures/02_matching_outliers_epi.png, id=985, 2798.455pt x 1100.11pt>
 File: figures/02_matching_outliers_epi.png Graphic file (type png)
  <use figures/02_matching_outliers_epi.png>
 Package pdftex.def Info: figures/02_matching_outliers_epi.png used on input line 223.
@@ -1863,7 +1863,7 @@ Package pdftex.def Info: figures/02_matching_outliers_epi.png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_02_8point.png, id=1015, 2684.0275pt x 1100.11pt>
+<figures/f_02_8point.png, id=986, 2684.0275pt x 1100.11pt>
 File: figures/f_02_8point.png Graphic file (type png)
  <use figures/f_02_8point.png>
 Package pdftex.def Info: figures/f_02_8point.png used on input line 230.
@@ -1872,7 +1872,7 @@ Package pdftex.def Info: figures/f_02_8point.png used on input line 230.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_02_sensor.png, id=1016, 2684.0275pt x 1100.11pt>
+<figures/f_02_sensor.png, id=987, 2684.0275pt x 1100.11pt>
 File: figures/f_02_sensor.png Graphic file (type png)
  <use figures/f_02_sensor.png>
 Package pdftex.def Info: figures/f_02_sensor.png used on input line 237.
@@ -1901,12 +1901,12 @@ Package natbib Warning: Citation `HartleyMultipleView' on page 43 undefined on i
 
 
 
-] [44] [45] <figures/f_01_3point.png, id=1127, 2684.0275pt x 1100.11pt>
+] [44] [45] <figures/f_01_3point.png, id=1097, 2684.0275pt x 1100.11pt>
 File: figures/f_01_3point.png Graphic file (type png)
  <use figures/f_01_3point.png>
 Package pdftex.def Info: figures/f_01_3point.png used on input line 151.
 (pdftex.def)             Requested size: 330.05322pt x 135.28082pt.
- [46] <figures/f_02_3point.png, id=1155, 2684.0275pt x 1100.11pt>
+ [46] <figures/f_02_3point.png, id=1127, 2684.0275pt x 1100.11pt>
 File: figures/f_02_3point.png Graphic file (type png)
  <use figures/f_02_3point.png>
 Package pdftex.def Info: figures/f_02_3point.png used on input line 158.
@@ -1916,160 +1916,156 @@ Package pdftex.def Info: figures/f_02_3point.png used on input line 158.
 
  (./7/reconstruction_5_8point_enhanced.tex
 Chapter 7.
-
-Package natbib Warning: Citation `website:androidSensorOverview' on page 48 undefined on input line 6.
-
-
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
- [48
+[48
 
 
 
-] [49]
+]
 
-Package natbib Warning: Citation `HartleyMultipleView' on page 50 undefined on input line 35.
+Package natbib Warning: Citation `8Point' on page 49 undefined on input line 27.
 
 
-Package natbib Warning: Citation `website:relativePoseLibrary' on page 50 undefined on input line 53.
+Package natbib Warning: Citation `Batra5point' on page 49 undefined on input line 27.
 
-[50]
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 55.
+Package natbib Warning: Citation `HartleyMultipleView' on page 49 undefined on input line 29.
 
-[51] <figures/rotation_tests_enh_01.png, id=1217, 585.8688pt x 237.0456pt>
+
+Package natbib Warning: Citation `website:relativePoseLibrary' on page 49 undefined on input line 45.
+
+[49] [50] <figures/rotation_tests_enh_01.png, id=1190, 585.8688pt x 237.0456pt>
 File: figures/rotation_tests_enh_01.png Graphic file (type png)
  <use figures/rotation_tests_enh_01.png>
-Package pdftex.def Info: figures/rotation_tests_enh_01.png used on input line 106.
+Package pdftex.def Info: figures/rotation_tests_enh_01.png used on input line 98.
 (pdftex.def)             Requested size: 330.05322pt x 133.54398pt.
- [52] <figures/rotation_tests_enh_02.png, id=1241, 583.9416pt x 235.1184pt>
+ <figures/rotation_tests_enh_02.png, id=1191, 583.9416pt x 235.1184pt>
 File: figures/rotation_tests_enh_02.png Graphic file (type png)
  <use figures/rotation_tests_enh_02.png>
-Package pdftex.def Info: figures/rotation_tests_enh_02.png used on input line 113.
+Package pdftex.def Info: figures/rotation_tests_enh_02.png used on input line 104.
 (pdftex.def)             Requested size: 330.05322pt x 132.89235pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/f_01_8point_comp.png, id=1247, 2684.0275pt x 2200.22pt>
+ [51] [52 <./figures/rotation_tests_enh_01.png> <./figures/rotation_tests_enh_02.png>] <figures/f_01_8point_comp.png, id=1228, 2684.0275pt x 2200.22pt>
 File: figures/f_01_8point_comp.png Graphic file (type png)
  <use figures/f_01_8point_comp.png>
-Package pdftex.def Info: figures/f_01_8point_comp.png used on input line 122.
+Package pdftex.def Info: figures/f_01_8point_comp.png used on input line 116.
 (pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
- [53 <./figures/rotation_tests_enh_01.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/f_01_5point_comp.png, id=1253, 2684.0275pt x 2200.22pt>
+ <figures/f_01_5point_comp.png, id=1229, 2684.0275pt x 2200.22pt>
 File: figures/f_01_5point_comp.png Graphic file (type png)
  <use figures/f_01_5point_comp.png>
-Package pdftex.def Info: figures/f_01_5point_comp.png used on input line 129.
+Package pdftex.def Info: figures/f_01_5point_comp.png used on input line 123.
 (pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_02_8point_comp.png, id=1254, 2684.0275pt x 2200.22pt>
+<figures/f_02_8point_comp.png, id=1230, 2684.0275pt x 2200.22pt>
 File: figures/f_02_8point_comp.png Graphic file (type png)
  <use figures/f_02_8point_comp.png>
-Package pdftex.def Info: figures/f_02_8point_comp.png used on input line 136.
+Package pdftex.def Info: figures/f_02_8point_comp.png used on input line 130.
 (pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/f_02_5point_comp.png, id=1255, 2684.0275pt x 2200.22pt>
+<figures/f_02_5point_comp.png, id=1231, 2684.0275pt x 2200.22pt>
 File: figures/f_02_5point_comp.png Graphic file (type png)
  <use figures/f_02_5point_comp.png>
-Package pdftex.def Info: figures/f_02_5point_comp.png used on input line 143.
+Package pdftex.def Info: figures/f_02_5point_comp.png used on input line 137.
 (pdftex.def)             Requested size: 330.05322pt x 270.56166pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [54 <./figures/rotation_tests_enh_02.png>] [55 <./figures/f_01_8point_comp.png>] [56 <./figures/f_01_5point_comp.png>] [57 <./figures/f_02_8point_comp.png>] [58 <./figures/f_02_5point_comp.png>]
+) [53
+
+ <./figures/f_01_8point_comp.png>] [54 <./figures/f_01_5point_comp.png>] [55 <./figures/f_02_8point_comp.png>] [56 <./figures/f_02_5point_comp.png>]
 \openout2 = `7/evaluation.aux'.
 
  (./7/evaluation.tex
 Chapter 8.
-[59
+[57
 
 
-
-] [60]
-
-Package natbib Warning: Citation `website:poseEstimation' on page 61 undefined on input line 68.
-
-[61] [62]
-
-Package natbib Warning: Citation `website:relativePoseLibrary' on page 63 undefined on input line 129.
-
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-PGFPlots: reading {SampsonTotal.csv}
-
-Overfull \hbox (17.03592pt too wide) in paragraph at lines 158--159
- [] 
- []
-
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-PGFPlots: reading {SampsonPerPoint.csv}
-<figures/summary1Sift300.jpg, id=1345, 2569.6pt x 2890.8pt>
-File: figures/summary1Sift300.jpg Graphic file (type jpg)
- <use figures/summary1Sift300.jpg>
-Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 197.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift300.jpg, id=1346, 2569.6pt x 2890.8pt>
-File: figures/summary2Sift300.jpg Graphic file (type jpg)
- <use figures/summary2Sift300.jpg>
-Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 203.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary1Sift1000.jpg, id=1349, 2569.6pt x 2890.8pt>
-File: figures/summary1Sift1000.jpg Graphic file (type jpg)
- <use figures/summary1Sift1000.jpg>
-Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 211.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- <figures/summary2Sift1000.jpg, id=1350, 2569.6pt x 2890.8pt>
-File: figures/summary2Sift1000.jpg Graphic file (type jpg)
- <use figures/summary2Sift1000.jpg>
-Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 217.
-(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
- [63] [64]
-Underfull \vbox (badness 1320) has occurred while \output is active []
-
- [65] [66 <./figures/summary1Sift300.jpg>] [67 <./figures/summary2Sift300.jpg>] [68 <./figures/summary1Sift1000.jpg>] [69 <./figures/summary2Sift1000.jpg>]
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-PGFPlots: reading {ExecutionTime.csv}
-
-Overfull \hbox (11.56091pt too wide) in paragraph at lines 249--250
- [] 
- []
-
-[70
 
 ]
+
+Package natbib Warning: Citation `website:poseEstimation' on page 58 undefined on input line 47.
+
+[58] [59]
+
+Package natbib Warning: Citation `HartleyMultipleView' on page 60 undefined on input line 92.
+
+[60]
+
+Package natbib Warning: Citation `website:relativePoseLibrary' on page 61 undefined on input line 115.
+
+PGFPlots: reading {SampsonTotal.csv}
+PGFPlots: reading {SampsonTotal.csv}
+PGFPlots: reading {SampsonTotal.csv}
+PGFPlots: reading {SampsonTotal.csv}
+PGFPlots: reading {SampsonTotal.csv}
+PGFPlots: reading {SampsonTotal.csv}
+
+Overfull \hbox (17.03592pt too wide) in paragraph at lines 144--145
+ [] 
+ []
+
+PGFPlots: reading {SampsonPerPoint.csv}
+PGFPlots: reading {SampsonPerPoint.csv}
+PGFPlots: reading {SampsonPerPoint.csv}
+PGFPlots: reading {SampsonPerPoint.csv}
+PGFPlots: reading {SampsonPerPoint.csv}
+PGFPlots: reading {SampsonPerPoint.csv}
+<figures/summary1Sift300.jpg, id=1314, 2569.6pt x 2890.8pt>
+File: figures/summary1Sift300.jpg Graphic file (type jpg)
+ <use figures/summary1Sift300.jpg>
+Package pdftex.def Info: figures/summary1Sift300.jpg used on input line 183.
+(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
+ <figures/summary2Sift300.jpg, id=1315, 2569.6pt x 2890.8pt>
+File: figures/summary2Sift300.jpg Graphic file (type jpg)
+ <use figures/summary2Sift300.jpg>
+Package pdftex.def Info: figures/summary2Sift300.jpg used on input line 189.
+(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
+ <figures/summary1Sift1000.jpg, id=1318, 2569.6pt x 2890.8pt>
+File: figures/summary1Sift1000.jpg Graphic file (type jpg)
+ <use figures/summary1Sift1000.jpg>
+Package pdftex.def Info: figures/summary1Sift1000.jpg used on input line 197.
+(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
+ <figures/summary2Sift1000.jpg, id=1319, 2569.6pt x 2890.8pt>
+File: figures/summary2Sift1000.jpg Graphic file (type jpg)
+ <use figures/summary2Sift1000.jpg>
+Package pdftex.def Info: figures/summary2Sift1000.jpg used on input line 203.
+(pdftex.def)             Requested size: 330.05322pt x 371.27386pt.
+ [61] [62] [63] [64] [65 <./figures/summary1Sift300.jpg>] [66 <./figures/summary2Sift300.jpg>] [67 <./figures/summary1Sift1000.jpg>] [68 <./figures/summary2Sift1000.jpg>]
+PGFPlots: reading {ExecutionTime.csv}
+PGFPlots: reading {ExecutionTime.csv}
+PGFPlots: reading {ExecutionTime.csv}
+PGFPlots: reading {ExecutionTime.csv}
+PGFPlots: reading {ExecutionTime.csv}
+PGFPlots: reading {ExecutionTime.csv}
+
+Overfull \hbox (11.56091pt too wide) in paragraph at lines 234--235
+ [] 
+ []
+
+[69
+
+]
+
+Package natbib Warning: Citation `website:sba' on page 70 undefined on input line 253.
+
 PGFPlots: reading {BAerror2.csv}
 PGFPlots: reading {BAerror2.csv}
- [71] [72]
+[70]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 PGFPlots: reading {ReconstructTotal.csv}
 PGFPlots: reading {ReconstructTotal.csv}
 PGFPlots: reading {ReconstructTotal.csv}
 PGFPlots: reading {ReconstructTotal.csv}
 PGFPlots: reading {ReconstructTotal.csv}
 
-Overfull \hbox (6.0859pt too wide) in paragraph at lines 325--326
+Overfull \hbox (6.0859pt too wide) in paragraph at lines 307--308
  [] 
  []
 
@@ -2082,72 +2078,70 @@ PGFPlots: reading {ReconstructBA.csv}
 PGFPlots: reading {ReconstructBA.csv}
 PGFPlots: reading {ReconstructBA.csv}
 
-Overfull \hbox (11.56091pt too wide) in paragraph at lines 356--357
+Overfull \hbox (11.56091pt too wide) in paragraph at lines 338--339
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/bundleAdjustmentComparison.png, id=1411, 3001.2125pt x 2214.2725pt>
+<figures/bundleAdjustmentComparison.png, id=1382, 3001.2125pt x 2214.2725pt>
 File: figures/bundleAdjustmentComparison.png Graphic file (type png)
  <use figures/bundleAdjustmentComparison.png>
-Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 363.
+Package pdftex.def Info: figures/bundleAdjustmentComparison.png used on input line 345.
 (pdftex.def)             Requested size: 412.56496pt x 304.38739pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[73
-
-] [74] [75] [76 <./figures/bundleAdjustmentComparison.png>] <figures/uni4000Comparison.png, id=1435, 1975.38pt x 2978.12625pt>
+[71] [72] [73] [74] [75 <./figures/bundleAdjustmentComparison.png>] <figures/uni4000Comparison.png, id=1408, 1975.38pt x 2978.12625pt>
 File: figures/uni4000Comparison.png Graphic file (type png)
  <use figures/uni4000Comparison.png>
-Package pdftex.def Info: figures/uni4000Comparison.png used on input line 379.
+Package pdftex.def Info: figures/uni4000Comparison.png used on input line 361.
 (pdftex.def)             Requested size: 371.30594pt x 559.76059pt.
 
 
-LaTeX Warning: Float too large for page by 34.4051pt on input line 382.
+LaTeX Warning: Float too large for page by 34.4051pt on input line 364.
 
-<figures/uni400Comparison.png, id=1436, 1978.39125pt x 1939.245pt>
+<figures/uni400Comparison.png, id=1409, 1978.39125pt x 1939.245pt>
 File: figures/uni400Comparison.png Graphic file (type png)
  <use figures/uni400Comparison.png>
-Package pdftex.def Info: figures/uni400Comparison.png used on input line 385.
+Package pdftex.def Info: figures/uni400Comparison.png used on input line 367.
 (pdftex.def)             Requested size: 371.30594pt x 363.93304pt.
- <figures/FailCaseFundamental.png, id=1437, 1953.2975pt x 598.235pt>
+ <figures/FailCaseFundamental.png, id=1410, 1953.2975pt x 598.235pt>
 File: figures/FailCaseFundamental.png Graphic file (type png)
  <use figures/FailCaseFundamental.png>
-Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 391.
+Package pdftex.def Info: figures/FailCaseFundamental.png used on input line 373.
 (pdftex.def)             Requested size: 371.30594pt x 113.71147pt.
- <figures/PoseEstimationMethodComparison.png, id=1438, 1987.425pt x 1280.785pt>
+ <figures/PoseEstimationMethodComparison.png, id=1411, 1987.425pt x 1280.785pt>
 File: figures/PoseEstimationMethodComparison.png Graphic file (type png)
  <use figures/PoseEstimationMethodComparison.png>
-Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 397.
+Package pdftex.def Info: figures/PoseEstimationMethodComparison.png used on input line 379.
 (pdftex.def)             Requested size: 371.30594pt x 239.2867pt.
- <figures/uniNone4000.png, id=1439, 1062.97125pt x 2047.65pt>
+ <figures/uniNone4000.png, id=1412, 1062.97125pt x 2047.65pt>
 File: figures/uniNone4000.png Graphic file (type png)
  <use figures/uniNone4000.png>
-Package pdftex.def Info: figures/uniNone4000.png used on input line 403.
+Package pdftex.def Info: figures/uniNone4000.png used on input line 385.
 (pdftex.def)             Requested size: 265.8557pt x 512.1496pt.
-) [77
+) [76
 
-] [78 <./figures/uni4000Comparison.png>] [79 <./figures/uni400Comparison.png> <./figures/FailCaseFundamental.png>] [80 <./figures/PoseEstimationMethodComparison.png>] [81 <./figures/uniNone4000.png>]
+] [77 <./figures/uni4000Comparison.png>] [78 <./figures/uni400Comparison.png> <./figures/FailCaseFundamental.png>] [79 <./figures/PoseEstimationMethodComparison.png>] [80 <./figures/uniNone4000.png>]
 \openout2 = `8/conclusion.aux'.
 
  (./8/conclusion.tex
 Chapter 9.
-[82
+[81
 
 
 
-] [83]
+] [82]
 
-Package natbib Warning: Citation `website:3dReconstructerMasterThesis' on page 84 undefined on input line 25.
+Package natbib Warning: Citation `website:3dReconstructerMasterThesis' on page 83 undefined on input line 25.
 
 
-Package natbib Warning: Citation `ptam' on page 84 undefined on input line 30.
+Package natbib Warning: Citation `ptam' on page 83 undefined on input line 30.
 
-[84]) [85]
+[83]) [84]
 \openout2 = `9/materials_methods.aux'.
 
  (./9/materials_methods.tex
@@ -2159,11 +2153,11 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 12.
 
-[86
+[85
 
 
 
-] [87] <figures/Gate4000Comparison.png, id=1522, 1971.365pt x 2309.62875pt>
+] [86] <figures/Gate4000Comparison.png, id=1496, 1971.365pt x 2309.62875pt>
 File: figures/Gate4000Comparison.png Graphic file (type png)
  <use figures/Gate4000Comparison.png>
 Package pdftex.def Info: figures/Gate4000Comparison.png used on input line 110.
@@ -2173,12 +2167,12 @@ Overfull \hbox (24.56587pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
-<figures/Pole4000Comparison.png, id=1523, 1958.31625pt x 2943.99875pt>
+<figures/Pole4000Comparison.png, id=1497, 1958.31625pt x 2943.99875pt>
 File: figures/Pole4000Comparison.png Graphic file (type png)
  <use figures/Pole4000Comparison.png>
 Package pdftex.def Info: figures/Pole4000Comparison.png used on input line 116.
 (pdftex.def)             Requested size: 340.67854pt x 512.1496pt.
- <figures/GalleryBack4000Comparison.png, id=1524, 1970.36125pt x 2323.68124pt>
+ <figures/GalleryBack4000Comparison.png, id=1498, 1970.36125pt x 2323.68124pt>
 File: figures/GalleryBack4000Comparison.png Graphic file (type png)
  <use figures/GalleryBack4000Comparison.png>
 Package pdftex.def Info: figures/GalleryBack4000Comparison.png used on input line 122.
@@ -2188,12 +2182,12 @@ Overfull \hbox (21.69756pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
-<figures/GallerFrontReconstruction.png, id=1525, 1955.305pt x 1599.9775pt>
+<figures/GallerFrontReconstruction.png, id=1499, 1955.305pt x 1599.9775pt>
 File: figures/GallerFrontReconstruction.png Graphic file (type png)
  <use figures/GallerFrontReconstruction.png>
 Package pdftex.def Info: figures/GallerFrontReconstruction.png used on input line 128.
 (pdftex.def)             Requested size: 412.56496pt x 337.59207pt.
-) [88] [89 <./figures/Gate4000Comparison.png>] [90 <./figures/Pole4000Comparison.png>] [91 <./figures/GalleryBack4000Comparison.png>] [92 <./figures/GallerFrontReconstruction.png>] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.bbl (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.brf)
+) [87] [88 <./figures/Gate4000Comparison.png>] [89 <./figures/Pole4000Comparison.png>] [90 <./figures/GalleryBack4000Comparison.png>] [91 <./figures/GallerFrontReconstruction.png>] (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.bbl (/Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.brf)
 \tf@brf=\write13
 \openout13 = `thesis.brf'.
 
@@ -2205,7 +2199,7 @@ Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
 Package natbib Warning: There were undefined citations.
 
-[93
+[92
 
 
 \FN@pp@footnotehinttrue 
@@ -2233,18 +2227,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 44429 strings out of 493117
- 976878 string characters out of 6135433
- 1279709 words of memory out of 5000000
- 46441 multiletter control sequences out of 15000+600000
+ 44417 strings out of 493117
+ 976681 string characters out of 6135433
+ 1285442 words of memory out of 5000000
+ 46436 multiletter control sequences out of 15000+600000
  17276 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,102p,10422b,2214s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,20n,102p,10422b,2212s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.pdf (103 pages, 79262250 bytes).
+Output written on /Users/krzysztofwrobel/Documents/MasterThesisPol/.texpadtmp/thesis.pdf (101 pages, 79257934 bytes).
 PDF statistics:
- 1729 PDF objects out of 2073 (max. 8388607)
- 1487 compressed objects within 15 object streams
- 566 named destinations out of 1000 (max. 500000)
- 984 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1702 PDF objects out of 1728 (max. 8388607)
+ 1462 compressed objects within 15 object streams
+ 559 named destinations out of 1000 (max. 500000)
+ 944 words of extra memory for PDF output out of 10000 (max. 10000000)
 

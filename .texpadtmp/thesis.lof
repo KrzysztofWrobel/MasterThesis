@@ -22,10 +22,10 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Image of marker used to indicate position for test capturing.\relax }}{35}{figure.caption.24}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Points matches selected by the author (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.25}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Points matches selected by the author with additional outliers (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.26}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Automatically matched points with usage of Sift descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Automatically matched points with usage of SIFT descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).\relax }}{36}{figure.caption.27}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Points matches selected by the author (Images 0.jpg and 2.jpg).\relax }}{37}{figure.caption.28}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Points matches selected by the author with additional outliers (Images 0.jpg and 2.jpg).\relax }}{37}{figure.caption.29}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Automatically matched points with usage of Sift descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).\relax }}{37}{figure.caption.30}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Automatically matched points with usage of SIFT descriptors and BruteForce matcher (Images 0.jpg and 1.jpg).\relax }}{37}{figure.caption.30}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Rotation tests comparison in Sensor only based approach - 1st example}}{38}{figure.caption.31}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Rotation tests comparison in Sensor only based approach -2nd example}}{38}{figure.caption.32}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Screenshot from table of results conducted on Sensor Fusion data based translation estimation during walking with smartphone. In red are indicated values, which were highly unexpected, especially in Y axis, which is perpendicular to earth surface\relax }}{39}{figure.caption.33}
@@ -41,32 +41,32 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Visualisation of epipolar lines for 3-point translation estimation and Sensor Fusion rotation approach - 1st example}}{47}{figure.caption.42}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Visualisation of epipolar lines for 3-point translation estimation and Sensor Fusion rotation approach - 2nd example}}{47}{figure.caption.43}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Rotation tests comparison for all proposed approaches - 1st example}}{53}{figure.caption.44}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Rotation tests comparison for all proposed approaches - 2nd example}}{54}{figure.caption.45}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparison of epipolar lines for 8-point standard and enhanced versions - 1st example}}{55}{figure.caption.46}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Comparison of epipolar lines for 5-point standard and enhanced versions - 1st example}}{56}{figure.caption.47}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Comparison of epipolar lines for 8-point standard and enhanced versions - 2nd example}}{57}{figure.caption.48}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Comparison of epipolar lines for 5-point standard and enhanced versions - 2nd example}}{58}{figure.caption.49}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Rotation tests comparison for all proposed approaches - 1st example}}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Rotation tests comparison for all proposed approaches - 2nd example}}{52}{figure.caption.45}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparison of epipolar lines for 8-point standard and enhanced versions - 1st example}}{53}{figure.caption.46}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Comparison of epipolar lines for 5-point standard and enhanced versions - 1st example}}{54}{figure.caption.47}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Comparison of epipolar lines for 8-point standard and enhanced versions - 2nd example}}{55}{figure.caption.48}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Comparison of epipolar lines for 5-point standard and enhanced versions - 2nd example}}{56}{figure.caption.49}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Sum of Sampson Error depending on evaluated method}}{64}{figure.caption.50}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Sampson Error per corresponding point depending on evaluated method}}{65}{figure.caption.51}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (1st group)}}{66}{figure.caption.52}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 Sift points (2nd group)}}{67}{figure.caption.53}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (1st group)}}{68}{figure.caption.54}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 Sift points (2nd group)}}{69}{figure.caption.55}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Execution time of the proposed algorithms depending on initial SIFT feature set size}}{70}{figure.caption.56}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies \relax }}{72}{figure.caption.57}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Total reconstruction execution time per SIFT features set size}}{74}{figure.caption.58}
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment per SIFT features set size}}{75}{figure.caption.59}
-\contentsline {figure}{\numberline {8.11}{\ignorespaces 3D point clouds before and after Bundle Adjustment for enhanced 8-point with enhanced pose estimation}}{76}{figure.caption.60}
-\contentsline {figure}{\numberline {8.12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features}}{78}{figure.caption.61}
-\contentsline {figure}{\numberline {8.13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features}}{79}{figure.caption.62}
-\contentsline {figure}{\numberline {8.14}{\ignorespaces Fail test case of Standard 8-point triangulation in comparison to fortunate reconstruction}}{79}{figure.caption.63}
-\contentsline {figure}{\numberline {8.15}{\ignorespaces Pose estimation methods comparison}}{80}{figure.caption.64}
-\contentsline {figure}{\numberline {8.16}{\ignorespaces Reconstruction results from known translations and rotations from different angles}}{81}{figure.caption.65}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Sum of Sampson Error depending on evaluated method}}{63}{figure.caption.50}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Sampson Error per corresponding point depending on evaluated method}}{64}{figure.caption.51}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 SIFT points (1st group)}}{65}{figure.caption.52}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 300 SIFT points (2nd group)}}{66}{figure.caption.53}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 SIFT points (1st group)}}{67}{figure.caption.54}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces The results of drawing estimated epipolar lines for the Warsaw University Dataset with 1000 SIFT points (2nd group)}}{68}{figure.caption.55}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Execution time of the proposed algorithms depending on initial SIFT feature set size}}{69}{figure.caption.56}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Influence of Bundle Adjustment on the models produced with different reconstruction strategies in Warsaw University datasets\relax }}{72}{figure.caption.57}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Total reconstruction execution time per SIFT features set size}}{73}{figure.caption.58}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Total execution time of reconstruction with Bundle Adjustment per SIFT features set size}}{74}{figure.caption.59}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces 3D point clouds before and after Bundle Adjustment for enhanced 8-point with enhanced pose estimation}}{75}{figure.caption.60}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 4000 SIFT features}}{77}{figure.caption.61}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Reconstructed models for the proposed initial reconstruction methods and 400 SIFT features}}{78}{figure.caption.62}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Fail test case of Standard 8-point triangulation in comparison to fortunate reconstruction}}{78}{figure.caption.63}
+\contentsline {figure}{\numberline {8.15}{\ignorespaces Pose estimation methods comparison}}{79}{figure.caption.64}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Reconstruction results from known translations and rotations from different angles}}{80}{figure.caption.65}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Reconstruction results of ''Gate'' dataset}}{89}{figure.caption.71}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Reconstruction results of ''Pole'' dataset}}{90}{figure.caption.72}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Reconstruction results of ''Gallery Back'' dataset}}{91}{figure.caption.73}
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Reconstruction results of ''Gallery Front'' dataset}}{92}{figure.caption.74}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Reconstruction results of ''Gate'' dataset}}{88}{figure.caption.71}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Reconstruction results of ''Pole'' dataset}}{89}{figure.caption.72}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Reconstruction results of ''Gallery Back'' dataset}}{90}{figure.caption.73}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Reconstruction results of ''Gallery Front'' dataset}}{91}{figure.caption.74}
